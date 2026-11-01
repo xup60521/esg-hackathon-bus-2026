@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: Manrope, 'Noto Sans TC', 'Microsoft JhengHei', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Neutral UI tokens per theme (data colours come from src/lib/palette.ts). */
+[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f3ef;
+  --fg: #1c1f26;
+  --fg2: #4a4f5a;
+  --muted: #6b707b;
+  --accent: #b35c00;
+  --panel: rgba(255, 255, 255, 0.95);
+  --panel-shadow: 0 10px 30px rgba(28, 31, 38, 0.12);
+  --line: rgba(28, 31, 38, 0.1);
+  --chip: rgba(28, 31, 38, 0.045);
+  --chip-hover: rgba(28, 31, 38, 0.09);
+  --grid: rgba(28, 31, 38, 0.08);
+  --axis: rgba(28, 31, 38, 0.3);
+  --tip-bg: rgba(255, 255, 255, 0.98);
+  --active-border: rgba(179, 92, 0, 0.55);
+  --active-bg: rgba(230, 128, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #070a10;
+  --fg: #f0efec;
+  --fg2: #c3c2b7;
+  --muted: #8b8a84;
+  --accent: #ffcd6e;
+  --panel: rgba(12, 16, 24, 0.9);
+  --panel-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --line: rgba(255, 255, 255, 0.1);
+  --chip: rgba(255, 255, 255, 0.04);
+  --chip-hover: rgba(255, 255, 255, 0.1);
+  --grid: rgba(255, 255, 255, 0.07);
+  --axis: rgba(255, 255, 255, 0.25);
+  --tip-bg: rgba(14, 18, 27, 0.96);
+  --active-border: rgba(255, 205, 110, 0.6);
+  --active-bg: rgba(255, 205, 110, 0.12);
+}
+
+@layer components {
+  .panel {
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    /* no backdrop-filter: blurring a constantly redrawing WebGL canvas is very expensive */
+    background: var(--panel);
+    box-shadow: var(--panel-shadow);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--chip);
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--fg);
+    cursor: pointer;
+    transition: background 120ms;
+  }
+  .btn:hover {
+    background: var(--chip-hover);
+  }
+  .btn-active {
+    border-color: var(--active-border);
+    background: var(--active-bg);
+  }
+}

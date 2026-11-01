@@ -1,0 +1,33 @@
+{
+ "bounds": [
+  120.5,
+  23.78,
+  121.05,
+  24.3
+ ],
+ "width": 2048,
+ "height": 1936,
+ "encoding": "terrarium",
+ "minElevation": 0.0,
+ "maxElevation": 2994.3,
+ "source": "內政部國土測繪中心 20m DEM (data.gov.tw 35430), EPSG:3826 reprojected to WGS84, bilinear; nodata/sea = 0 m",
+ "elevationSmall": "terrain-elevation-1024.png",
+ "elevationSmallSize": [
+  1024,
+  968
+ ],
+ "texture": "terrain-texture.webp",
+ "textureSize": [
+  4096,
+  3873
+ ],
+ "heightmap": {
+  "file": "terrain-height-768.i16",
+  "width": 768,
+  "height": 726,
+  "dtype": "int16le",
+  "units": "m",
+  "order": "row-major, north to south, west to east"
+ },
+ "textureLight": "terrain-texture-light.webp"
+}

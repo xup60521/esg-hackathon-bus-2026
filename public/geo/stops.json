@@ -1,0 +1,178 @@
+[
+ {
+  "id": "airport",
+  "name": "台中航空站",
+  "officialName": "台中航空站",
+  "lat": 24.252927,
+  "lon": 120.59871,
+  "elevation": 187.6,
+  "seq": 1,
+  "coordSource": "去程",
+  "order": 1
+ },
+ {
+  "id": "taichung",
+  "name": "臺中",
+  "officialName": "臺中干城站",
+  "lat": 24.1411,
+  "lon": 120.68561,
+  "elevation": 77.0,
+  "seq": 2,
+  "coordSource": "去程",
+  "order": 2
+ },
+ {
+  "id": "thsr",
+  "name": "高鐵臺中站",
+  "officialName": "高鐵臺中站",
+  "lat": 24.11105,
+  "lon": 120.6165,
+  "elevation": 26.0,
+  "seq": 6,
+  "coordSource": "去程",
+  "order": 3
+ },
+ {
+  "id": "niuer",
+  "name": "牛耳石雕公園",
+  "officialName": "牛耳石雕公園",
+  "lat": 23.966347,
+  "lon": 120.943998,
+  "elevation": 420.8,
+  "seq": 8,
+  "coordSource": "去程",
+  "order": 4
+ },
+ {
+  "id": "qixia",
+  "name": "崎下",
+  "officialName": "崎下",
+  "lat": 23.97099,
+  "lon": 120.94883,
+  "elevation": 425.8,
+  "seq": 9,
+  "coordSource": "去程",
+  "order": 5
+ },
+ {
+  "id": "puli",
+  "name": "埔里站",
+  "officialName": "埔里轉運站",
+  "lat": 23.96352,
+  "lon": 120.96915,
+  "elevation": 443.0,
+  "seq": 17,
+  "coordSource": "去程",
+  "order": 6
+ },
+ {
+  "id": "jnu_campus",
+  "name": "暨南大學校內",
+  "officialName": "暨南大學(校內)",
+  "lat": 23.94992,
+  "lon": 120.93812,
+  "elevation": 461.9,
+  "seq": 18,
+  "coordSource": "去程",
+  "order": 7
+ },
+ {
+  "id": "jnu",
+  "name": "暨南大學",
+  "officialName": "暨南大學(校外)",
+  "lat": 23.94906,
+  "lon": 120.93771,
+  "elevation": 466.0,
+  "seq": 19,
+  "coordSource": "去程",
+  "order": 8
+ },
+ {
+  "id": "taomi",
+  "name": "桃米坑",
+  "officialName": "桃米坑(紙教堂)",
+  "lat": 23.94224,
+  "lon": 120.9296,
+  "elevation": 468.1,
+  "seq": 20,
+  "coordSource": "去程",
+  "order": 9
+ },
+ {
+  "id": "dayan",
+  "name": "大雁",
+  "officialName": "大雁(澀水社區)",
+  "lat": 23.91859,
+  "lon": 120.92558,
+  "elevation": 618.5,
+  "seq": 21,
+  "coordSource": "去程",
+  "order": 10
+ },
+ {
+  "id": "formosan",
+  "name": "九族文化村",
+  "officialName": "九族文化村(部分班次停靠)",
+  "lat": 23.87151,
+  "lon": 120.94418,
+  "elevation": 744.9,
+  "seq": 26,
+  "coordSource": "去程",
+  "order": 11
+ },
+ {
+  "id": "yuchi",
+  "name": "魚池",
+  "officialName": "魚池",
+  "lat": 23.89649,
+  "lon": 120.93507,
+  "elevation": 652.1,
+  "seq": 27,
+  "coordSource": "去程",
+  "order": 12
+ },
+ {
+  "id": "tea",
+  "name": "日月老茶廠",
+  "officialName": "日月老茶場",
+  "lat": 23.89328,
+  "lon": 120.92449,
+  "elevation": 662.2,
+  "seq": 28,
+  "coordSource": "去程",
+  "order": 13
+ },
+ {
+  "id": "sunmoonlake",
+  "name": "日月潭",
+  "officialName": "日月潭",
+  "lat": 23.86661,
+  "lon": 120.91129,
+  "elevation": 759.3,
+  "seq": 29,
+  "coordSource": "去程",
+  "order": 14
+ },
+ {
+  "id": "shuishe",
+  "name": "水社",
+  "officialName": "水社",
+  "lat": 23.86703,
+  "lon": 120.90255,
+  "elevation": 756.2,
+  "seq": 30,
+  "coordSource": "去程",
+  "order": 15
+ },
+ {
+  "id": "xiangshan",
+  "name": "向山行政中心",
+  "officialName": "向山行政中心(部分班次停靠)",
+  "lat": 23.85219,
+  "lon": 120.90133,
+  "elevation": 760.1,
+  "seq": 31,
+  "coordSource": "去程",
+  "order": 16
+ }
+]

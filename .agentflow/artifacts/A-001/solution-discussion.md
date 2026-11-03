@@ -1,33 +1,59 @@
-# Agreed recommendation
+# 三方共識與建議方案
 
-Codex finalized S1 unchanged. Claude and Gemini explicitly accepted the same text without blocking objections. No material dissent remains. This is discussion, not implementation approval.
+Codex 已確認 S1 定稿，Claude 與 Gemini 均接受同一份原文，沒有尚未解決的實質異議。以下為繁體中文改寫，保留原文的建議與限制。三方接受的是英文原文，本次中文版本未另行交由三方審閱。本文件記錄方案討論，不代表已核准實作。
 
-**S1**
+## 建議方向
 
-Recommend a bounded hackathon demonstration: use historical card aggregates to nominate one intermediate stop and candidate peak period, then compare existing service with one extra upstream departure and one departure beginning nearer the target stop. Without independent queue and operational observations, passenger demand and intervention benefits must remain explicitly synthetic. This is a proposed synthesis for Claude and Gemini’s acceptance, not completed three-model consensus.
+建議將黑客松展示範圍收斂為一個中間站與一個候選尖峰時段。先用歷史刷卡彙整資料篩選案例，再比較現有服務、從上游起點加開一班車，以及從目標站附近加開一班車的差異。
 
-The simplest adequate alternative is historical screening plus a fixed-service scenario comparison. It avoids a denied-passenger estimator and still addresses the practical question: where should additional service begin to improve access for the selected passengers?
+如果缺少獨立的候車觀察與營運紀錄，乘客需求及加班車效益都必須明確標示為模擬情境。最簡單且足以回答問題的方案，是「歷史資料篩選＋固定班次的情境比較」。目前不必建立無法上車人數的估計模型，也能探討實際問題：加班車應從哪裡出發，才能改善目標乘客的搭乘機會？
 
-The supplied drafts report source-level observations that the public export contains hourly station aggregates, while the schema includes vehicle and journey-time fields. These are reported repository observations, not independently validated operational data. The aggregates cannot reconstruct individual bus loads. Their high-demand and low-boarding flags are screening heuristics, not statistical tests. Zero-filled hours do not establish that every selected service operated.
+## 現有資料能支持什麼
 
-The operator notice, as described in the narrative, supports investigating intermediate-stop boarding difficulties. Its wording, timing and applicability remain unverified here. We should neither generalize it to every Sunday nor select a universal Sunday afternoon window. Narrative transaction totals, correlations and subroute figures also remain unverified. Recorded dates are not confirmed operating dates, and totals need consistent populations and units before reuse. External cases and papers provide supplied context only; this recommendation depends on no claimed legal rule, headway or paper formula.
+各方草稿指出，公開匯出檔是逐小時的站點統計，資料庫結構則包含車輛與旅次時間欄位。這些是檢視專案原始碼得到的資訊，尚未經獨立營運資料驗證。
 
-Successful boardings alone cannot distinguish low demand from capacity-constrained demand. A missing hourly dip does not rule out failures, because passengers may board later within the hour or demand may rise everywhere. Conversely, a dip may reflect service changes, missing records or fewer arrivals. Unobserved abandonment prevents a finite upper estimate without additional evidence or explicit assumptions.
+逐小時彙整資料無法重建個別班次的載客量。「高需求」與「低上車量」標記只是用來篩選可疑時段的經驗規則，不是統計檢定。將沒有紀錄的時段補成零，也不能證明所選支線在該時段確實有行駛。
 
-Reject empirical card-load ceilings as evidence of physical capacity or denied demand. Repeated loads may reflect demand, payment coverage or reconstruction errors. Card loads are lower bounds only conditional on valid assignments and coverage. Reserved passengers may also tap, so reservations cannot automatically be added as missing riders.
+原討論引用的業者公告，提供了調查中間站搭乘困難的理由，但本次未重新查核公告原文、適用時段與範圍。因此不能把問題概括為每個星期日，也不能直接將所有星期日下午當成固定問題時段。
 
-Trip reconstruction remains optional. Aggregate boarding/alighting conservation does not validate timestamps, tap-outs or trip assignments, and vehicle identity alone does not identify a departure. Any future reconstruction needs corroborating service records and must expose ambiguous assignments and inconsistent loads. Unreliable reconstruction should end that branch of work rather than invite increasingly elaborate repairs.
+原討論中的交易總數、相關係數與支線數據同樣尚未獨立查核。有資料的日期不等於已確認的營運日期；重新引用總量前，必須先統一統計對象與單位。國內外案例與論文僅作為既有討論背景，本建議不依賴尚未查證的法規、班距或論文公式。
 
-For the service comparison, use the same stated passenger-arrival and service assumptions across alternatives. Recompute usable capacity after alighting at every stop, accounting for applicable reservation restrictions without double counting. A full bus can regain capacity downstream. Reconstructed overcapacity calls for investigation of inputs or assignments; it does not measure denied passengers.
+## 為什麼不能直接估算搭不上車的人數
 
-Choose the added departure’s origin and stopping pattern around the actual target passengers. A Puli-origin bus can fill at Puli and fail farther downstream. Neither Puli nor Yuchi is a settled solution, and an intermediate origin guarantees no downstream benefit by itself.
+只看成功上車的紀錄，無法區分「原本就沒有人要搭」與「有人想搭，但車上沒有空位」。逐小時曲線沒有低窪，也不能排除搭不上車的情況，因為乘客可能在同一小時內改搭下一班，或各站需求同時增加。反過來說，低窪也可能來自班次異動、資料缺漏或候車人數減少。
 
-Reject fabricated capacities, quotas, recovered-passenger counts and zero-deadheading claims. Dividing hourly totals among assumed departures creates synthetic runs, not historical reconstruction. Capacity sensitivity ranges describe scenarios, not statistical confidence intervals. Dynamic quotas and fitted latent-demand models add unresolved assumptions and are unnecessary for this minimum demonstration.
+途中放棄候車的人不會留下刷卡紀錄。缺少額外證據或明確假設時，無法替這部分需求建立有限的估計上限。
 
-The smallest honest demonstration contains one historical screening case and an explicitly synthetic departure sequence comparing the three service alternatives. Report waiting, remaining queues, failed boarding attempts, distinct affected passengers where distinguishable, and added vehicle time and distance. Include effects on upstream passengers and any displaced service.
+反覆出現的刷卡載客量高點，也不能當成車輛座位上限或需求受到容量限制的證據。這種現象可能來自需求型態、支付管道涵蓋率或班次重建錯誤。只有在旅次歸屬與資料涵蓋範圍可靠時，刷卡載客量才可視為實際載客量的下限。預約乘客也可能刷卡，不能把所有預約人數再加一次，當成未記錄的乘客。
 
-Future validation could use independent operator records or structured queue observations; fieldwork is not the only possible evidence source. Synthetic checks test mechanics, not real-world accuracy. Statistical estimates would require validation on separate complete days and uncertainty checks against independent observations.
+## 逐班載客重建是選配
 
-The ESG claim is a proposed improvement in intermediate-stop access. Passenger purposes, equity benefits and net emissions savings are not established. Added service also adds vehicle activity.
+上下車總數相等，不代表上下車時間、下車紀錄或班次歸屬正確；同一個車輛代碼，也不等於同一班車。
 
-Only necessary next decisions remain: identify target passengers, stop and candidate period; establish available evidence and feasible departure origins; and choose scenario demonstration or a later validated estimate. This discussion authorizes no queries, code, UI, fieldwork, contact or policy execution. No files changed. The required baseline and writing rules were read; optional `.agentflow/rules.md` was absent.
+未來若要重建逐班載客量，需要實際服務紀錄佐證，並公開標示無法明確歸屬的旅次與不合理的載客數。如果重建結果不可靠，就應停止這條分析路徑，不必不斷增加修補規則。
+
+## 如何比較加班車方案
+
+三種方案必須使用相同且明列的乘客抵達與服務假設，才能公平比較。
+
+每到一站，都要先處理下車，再重新計算可用容量，並納入適用的預約保留規則，避免重複計算乘客。一班車在上游客滿，仍可能因為有人下車而在後續站點釋出座位。若重建載客量超過核定容量，應先調查輸入資料或班次歸屬，不能把超出的數字當成搭不上車的人數。
+
+加班車的起點與停靠方式，必須依實際要服務的乘客決定。從埔里出發的空車，可能在埔里就坐滿，仍然無法服務更下游的站點。因此埔里、魚池都只是待評估的起點，尚未定案；從中途始發，本身也不保證下游乘客受益。
+
+不得使用沒有根據的座位數、保留配額、改善人數或「不增加空駛」等說法。把每小時總量分配到假設的班次，只能產生模擬班次，不是重建歷史班次。改變容量參數得到的結果範圍，是情境差異，不是統計信賴區間。動態座位配額與潛在需求估計會引入更多尚未確認的假設，目前的最小展示不需要納入。
+
+## 最小展示與後續驗證
+
+最小展示包含一個歷史資料篩選案例，以及一組明確標示為模擬的班次序列，用來比較三種服務方案。
+
+應呈現候車時間、尚未上車的隊伍、因容量不足而未能上車的次數，以及新增的車輛行駛時間與里程。如果資料能區分，也應分別計算受影響乘客人數與未能上車次數，避免同一人連續錯過兩班車就被算成兩人。比較時也要納入上游乘客的影響，以及是否排擠其他既有服務。缺少實際觀察時，這些乘客效益都只是情境結果。
+
+後續可以透過獨立的業者紀錄或有系統的候車觀察驗證，現地調查並非唯一證據來源。模擬資料只能檢查計算機制，不能證明真實世界的估計準確。若進一步建立統計估計，應保留不同的完整日期作為驗證資料，並用獨立觀察檢查估計的不確定性。
+
+## ESG 主張與下一步
+
+目前可以提出的 ESG 方向，是改善中間站的搭乘機會。乘客的旅行目的、交通公平效益與淨減碳效益，都尚未獲得證實；加班車本身也會增加車輛行駛。
+
+後續只需先釐清幾項選擇：要服務哪些乘客與站點、研究哪個候選時段、能取得哪些證據、哪些發車起點在營運上可行，以及黑客松要展示情境比較，還是日後再追求經驗證的人數估計。
+
+本次僅完成討論文件改寫，未執行資料庫查詢、程式或 UI 修改、現地調查、對外聯繫或政策調整。

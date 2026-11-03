@@ -8,7 +8,7 @@ Checkout: /home/zup/code/esg-hackathon-bus-2026
 
 Branch: main
 
-Current: A-001 discussion complete; [agreed recommendation](artifacts/A-001/solution-discussion.md).
+Current: A-002 completed Traditional Chinese rewrite of the agreed recommendation.
 
 Proven: three blind drafts, reciprocal critique and exact S1 acceptance completed.
 
@@ -51,3 +51,21 @@ Created an empty registry scaffold. No accepted IDs or guarantees.
 ---
 
 # → Ask / A-002
+
++ rewrite the file in zh-tw
+
+# → Reply / A-002
+
+* _2026-11-03 17:19:21 +0800_
+
+1. rewrite the file in zh-tw
+
+   已將[方案討論文件](artifacts/A-001/solution-discussion.md)改寫為繁體中文，保留建議、證據限制及共識紀錄，並註明三方接受的是英文原文。
+
+## 問題
+
+- 無。
+
+---
+
+# → Ask / A-003

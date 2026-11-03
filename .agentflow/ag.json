@@ -8,7 +8,7 @@
     "auto-push": "on",
     "gate-design": "off",
     "gate-tracker": "off",
-    "inline-reply": "off",
+    "inline-reply": "on",
     "omit-asker": "on",
     "omit-run": "on",
     "omit-wip": "off",

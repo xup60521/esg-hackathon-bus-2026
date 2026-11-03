@@ -8,7 +8,7 @@ Checkout: /home/zup/code/esg-hackathon-bus-2026
 
 Branch: main
 
-Current: A-004 completed assessment of relative boarding-time shifts.
+Current: A-005 completed actual boarding-time shift analysis; [report](artifacts/A-005/report.zh-TW.md).
 
 Proven: three blind drafts, reciprocal critique and exact S1 acceptance completed.
 
@@ -106,3 +106,26 @@ Created an empty registry scaffold. No accepted IDs or guarantees.
 ---
 
 # → Ask / A-005
+
++ 之後開啟 inline reply
+實際跑數據來看看
+
+# → Reply / A-005
+
+* _2026-11-03 17:42:36 +0800_
+
+1. 之後開啟 inline reply
+
+   已開啟，之後直接在對話中呈現結果。
+
+2. 實際跑數據來看看
+
+   已分析 2024–2025 年既有小時級資料。6670D 回程埔里、魚池未見持續相對延後；6670F 暨南大學校內的小幅延後對時段敏感。沒有證明不存在拒載，也未估算候車分鐘或未上車人數。[完整方法與結果](artifacts/A-005/report.zh-TW.md)。
+
+## 問題
+
+- 無。
+
+---
+
+# → Ask / A-006

@@ -8,7 +8,7 @@ Checkout: /home/zup/code/esg-hackathon-bus-2026
 
 Branch: main
 
-Current: A-003 completed literature search on intermediate-stop boarding reconstruction.
+Current: A-004 completed assessment of relative boarding-time shifts.
 
 Proven: three blind drafts, reciprocal critique and exact S1 acceptance completed.
 
@@ -88,3 +88,21 @@ Created an empty registry scaffold. No accepted IDs or guarantees.
 ---
 
 # → Ask / A-004
+
++ 或者說，可以比較頭尾站的上車時間 vs. 中間站，如果中間站比較晚而且晚很多，便能夠量化來呈現
+
+# → Reply / A-004
+
+* _2026-11-03 17:38:28 +0800_
+
+1. 比較頭尾站與中間站的上車時間，量化中間站較晚的現象。
+
+   [指標與限制](artifacts/A-004/boarding-time-shift.zh-TW.md)。可量化上車時段相對位移，但須固定方向與服務，調整上游位移及行車時間。結果不等於候車時間或未能上車人數。示例為假設數字，未執行實測。
+
+## 問題
+
+- 無。
+
+---
+
+# → Ask / A-005

@@ -62,7 +62,7 @@ for r in results:
 summary={k:v for k,v in dict(source_sha256=hashlib.sha256(raw).hexdigest(),generated_at=data['generatedAt'],row_count=len(data['rows']),results=results).items()}
 (root/'results.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2))
 with (root/'paired-days.csv').open('w') as f:
- fields=['route','direction','reference','target','date','controls','reference_count','target_count','reference_shift','target_shift','relative_shift','raw_gap'];w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
+ fields=['route','direction','reference','target','date','controls','reference_count','target_count','reference_shift','target_shift','relative_shift','raw_gap'];w=csv.DictWriter(f,fieldnames=fields,lineterminator="\n");w.writeheader()
  for r in results:
   for row in r.get('pairs',[]):w.writerow({**row,'controls':'|'.join(row['controls'])})
 for r in results:

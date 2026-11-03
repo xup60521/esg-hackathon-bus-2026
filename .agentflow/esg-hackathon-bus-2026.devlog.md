@@ -8,7 +8,7 @@ Checkout: /home/zup/code/esg-hackathon-bus-2026
 
 Branch: main
 
-Current: A-002 completed Traditional Chinese rewrite of the agreed recommendation.
+Current: A-003 completed literature search on intermediate-stop boarding reconstruction.
 
 Proven: three blind drafts, reciprocal critique and exact S1 acceptance completed.
 
@@ -69,3 +69,22 @@ Created an empty registry scaffold. No accepted IDs or guarantees.
 ---
 
 # → Ask / A-003
+
++ 對，我的確要關注中間站的問題
+但刷卡資料只能看出來成功搭上車的資料，在網路上搜尋，有沒有重建搭乘模型的辦法？
+
+# → Reply / A-003
+
+* _2026-11-03 17:31:42 +0800_
+
+1. 在網路上搜尋，有沒有重建搭乘模型的辦法？
+
+   [研究結果與適用性分析](artifacts/A-003/boarding-model-research.zh-TW.md)。有公車未能上車推估、放棄候車建模及逐班載客重建研究；可用模型間接推估，但現有逐小時資料不足。全文與資料適用性仍有未驗證部分。
+
+## 問題
+
+- 無。本次完成文獻查找與說明，未啟動實作。
+
+---
+
+# → Ask / A-004

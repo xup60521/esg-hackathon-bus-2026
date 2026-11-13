@@ -1,0 +1,638 @@
+{
+  "_about": "人工撰寫的問答驗證集（作者與實作者為同一代理，非獨立驗證）。expect.kind 為預期回答類型；includes 必須全部出現在回答文字；excludes 一項都不可出現。班表數值已與官網表（public/data/lab/assistant/timetable.json）人工核對。",
+  "items": [
+    {
+      "id": "fare-base",
+      "q": "6670 單程票價多少？",
+      "expect": {
+        "kind": "answer",
+        "basis": "official",
+        "includes": [
+          "193",
+          "360",
+          "臺中干城站"
+        ]
+      }
+    },
+    {
+      "id": "fare-roundtrip-where",
+      "q": "來回票要去哪裡買？",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "臺中干城站",
+          "高鐵臺中站"
+        ]
+      }
+    },
+    {
+      "id": "fare-thsr",
+      "q": "高鐵臺中站到日月潭多少錢",
+      "expect": {
+        "kind": "answer",
+        "basis": "official-image",
+        "includes": [
+          "166",
+          "146",
+          "目視"
+        ]
+      }
+    },
+    {
+      "id": "fare-puli",
+      "q": "台中到埔里的票價",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "110",
+          "6670H"
+        ]
+      }
+    },
+    {
+      "id": "fare-airport",
+      "q": "機場線的票價是多少",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "231",
+          "116"
+        ]
+      }
+    },
+    {
+      "id": "fare-od-unknown",
+      "q": "埔里到日月潭多少錢",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "沒有轉錄"
+        ],
+        "excludes": [
+          "193 元",
+          "166 元",
+          "110 元"
+        ]
+      }
+    },
+    {
+      "id": "fare-od-unknown-2",
+      "q": "魚池到暨南大學車資多少",
+      "expect": {
+        "kind": "refusal",
+        "excludes": [
+          "193 元",
+          "110 元"
+        ]
+      }
+    },
+    {
+      "id": "discount-senior",
+      "q": "65歲有半票嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "65",
+          "半票"
+        ]
+      }
+    },
+    {
+      "id": "discount-child",
+      "q": "身高110公分的小孩要買票嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "115",
+          "免費"
+        ]
+      }
+    },
+    {
+      "id": "purchase-ibon",
+      "q": "ibon 買的票有保留座位嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "沒有保留座位"
+        ]
+      }
+    },
+    {
+      "id": "purchase-pay",
+      "q": "車上可以用悠遊卡付款嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "悠遊卡"
+        ]
+      }
+    },
+    {
+      "id": "reservation",
+      "q": "怎麼預約座位",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "1–15",
+          "南投假期"
+        ]
+      }
+    },
+    {
+      "id": "full-bus",
+      "q": "客滿的時候中間站能上車嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "無法於中間站點再載客"
+        ]
+      }
+    },
+    {
+      "id": "refuse-rejected",
+      "q": "我在埔里站會不會被拒載",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "不能用來推論"
+        ],
+        "excludes": [
+          "會被拒載",
+          "不會被拒載"
+        ]
+      }
+    },
+    {
+      "id": "bike",
+      "q": "可以帶折疊腳踏車嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "攜車袋"
+        ]
+      }
+    },
+    {
+      "id": "pet",
+      "q": "可以帶寵物上車嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "半票",
+          "不得佔用座位"
+        ]
+      }
+    },
+    {
+      "id": "accessible",
+      "q": "有沒有輪椅無障礙班車",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "049-2984031"
+        ]
+      }
+    },
+    {
+      "id": "contact",
+      "q": "南投客運的客服電話",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "049-2984031"
+        ]
+      }
+    },
+    {
+      "id": "subroutes",
+      "q": "6670 的 A 線和 B 線有什麼不同",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "直達",
+          "經埔里"
+        ]
+      }
+    },
+    {
+      "id": "route-c",
+      "q": "6670C 是什麼",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "例假日",
+          "沒有 6670C"
+        ]
+      }
+    },
+    {
+      "id": "stops",
+      "q": "6670 有哪些停靠站",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "高鐵臺中站",
+          "日月潭"
+        ]
+      }
+    },
+    {
+      "id": "attraction",
+      "q": "九族文化村要在哪一站下車",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "九族文化村（部分班次停靠）"
+        ]
+      }
+    },
+    {
+      "id": "airport-notice",
+      "q": "機場線最近有調整嗎",
+      "expect": {
+        "kind": "answer",
+        "basis": "timetable",
+        "includes": [
+          "115 年 11 月 1 日",
+          "福興溫泉"
+        ]
+      }
+    },
+    {
+      "id": "day-rule",
+      "q": "平日班和假日班怎麼分",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "周一至周四",
+          "周五至周日"
+        ]
+      }
+    },
+    {
+      "id": "data-source",
+      "q": "你們的刷卡資料是什麼，可靠嗎",
+      "expect": {
+        "kind": "answer",
+        "basis": "history",
+        "includes": [
+          "成功搭上車"
+        ]
+      }
+    },
+    {
+      "id": "tt-after",
+      "q": "高鐵臺中站 9 點後到日月潭有哪些班次",
+      "expect": {
+        "kind": "answer",
+        "basis": "timetable",
+        "includes": [
+          "09:10",
+          "10:40",
+          "09:25",
+          "10:45"
+        ]
+      }
+    },
+    {
+      "id": "tt-last-lake",
+      "q": "日月潭站的末班車幾點",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "19:25"
+        ]
+      }
+    },
+    {
+      "id": "tt-first-thsr",
+      "q": "高鐵臺中站週一往日月潭的首班車",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "平日",
+          "07:45"
+        ]
+      }
+    },
+    {
+      "id": "tt-weekend",
+      "q": "週六埔里站去台中下午3點後",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "15:00",
+          "16:15"
+        ]
+      }
+    },
+    {
+      "id": "tt-before",
+      "q": "從日月潭到埔里 下午四點前抵達",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "16:00"
+        ]
+      }
+    },
+    {
+      "id": "tt-duration",
+      "q": "高鐵臺中站到日月潭要多久",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "表定行車時間",
+          "不含實際路況"
+        ]
+      }
+    },
+    {
+      "id": "tt-friday-is-holiday",
+      "q": "週五高鐵臺中站 9點後到日月潭",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "假日"
+        ],
+        "excludes": [
+          "平日（周一~四）"
+        ]
+      }
+    },
+    {
+      "id": "tt-dest-only",
+      "q": "九點到埔里的車有嗎",
+      "expect": {
+        "kind": "clarify"
+      }
+    },
+    {
+      "id": "tt-no-stop",
+      "q": "6670 最早一班幾點",
+      "expect": {
+        "kind": "clarify"
+      }
+    },
+    {
+      "id": "tt-next-needs-now",
+      "q": "今天高鐵臺中站到埔里站下一班",
+      "expect": {
+        "kind": "clarify"
+      }
+    },
+    {
+      "id": "tt-next-with-now",
+      "q": "下一班高鐵臺中站到埔里站",
+      "now": {
+        "weekday": 6,
+        "hhmm": "09:10"
+      },
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "09:10",
+          "10:00",
+          "周六"
+        ]
+      }
+    },
+    {
+      "id": "tt-special-day",
+      "q": "春節連假有加班車嗎",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "不推測"
+        ]
+      }
+    },
+    {
+      "id": "tt-wrong-direction",
+      "q": "日月潭到高鐵臺中站 8 點後有車嗎",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "高鐵臺中站 抵達"
+        ]
+      }
+    },
+    {
+      "id": "hist-weekend-puli",
+      "q": "埔里站週末幾點上車人比較多",
+      "expect": {
+        "kind": "answer",
+        "basis": "history",
+        "includes": [
+          "14:00–15:00",
+          "不是候車人數"
+        ]
+      }
+    },
+    {
+      "id": "hist-no-stop",
+      "q": "哪個時段人多",
+      "expect": {
+        "kind": "clarify"
+      }
+    },
+    {
+      "id": "hist-no-data-stop",
+      "q": "捷運大慶站的尖峰時段",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "沒有收錄"
+        ]
+      }
+    },
+    {
+      "id": "rt-seat",
+      "q": "現在還有位子嗎",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "沒有即時資料"
+        ]
+      }
+    },
+    {
+      "id": "rt-next",
+      "q": "下一班車什麼時候到",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "rt-last-seat",
+      "q": "最後一班車有位子嗎",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "rt-late",
+      "q": "6670 現在有誤點嗎",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "rt-crowd-now",
+      "q": "現在日月潭站人多嗎",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "forecast",
+      "q": "明天會不會客滿",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "不做客滿或人潮預測"
+        ]
+      }
+    },
+    {
+      "id": "oos-weather",
+      "q": "颱風天會停駛嗎",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "oos-refund",
+      "q": "退票要怎麼辦",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "未收錄"
+        ]
+      }
+    },
+    {
+      "id": "oos-hotel",
+      "q": "日月潭有什麼住宿推薦",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "oos-route",
+      "q": "清境線怎麼搭",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "oos-opening",
+      "q": "九族文化村幾點開門，門票多少",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "unknown-1",
+      "q": "日月潭的水深有多少",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "沒有可靠的依據"
+        ]
+      }
+    },
+    {
+      "id": "unknown-2",
+      "q": "司機會講英文嗎",
+      "expect": {
+        "kind": "refusal"
+      }
+    },
+    {
+      "id": "heldout-fare-train-station",
+      "q": "從台中火車站搭到日月潭要多少錢",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "沒有轉錄"
+        ],
+        "excludes": [
+          "193 元"
+        ]
+      }
+    },
+    {
+      "id": "heldout-6670h-count",
+      "q": "6670H 有幾班",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "12 班次"
+        ]
+      }
+    },
+    {
+      "id": "heldout-distance",
+      "q": "水社碼頭離日月潭站多遠",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "超出本原型範圍"
+        ]
+      }
+    },
+    {
+      "id": "heldout-airport-holiday-empty",
+      "q": "台中航空站到日月潭幾點",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "假日（周五~日）：官網這張表上沒有符合的班次",
+          "09:00",
+          "10:45"
+        ]
+      }
+    },
+    {
+      "id": "heldout-last-bus-home",
+      "q": "最晚幾點可以從日月潭回台中",
+      "expect": {
+        "kind": "answer",
+        "includes": [
+          "19:25",
+          "21:15"
+        ]
+      }
+    },
+    {
+      "id": "heldout-no-stop-night",
+      "q": "6670 平日晚上八點還有車嗎",
+      "expect": {
+        "kind": "clarify"
+      }
+    },
+    {
+      "id": "heldout-standing",
+      "q": "我可以站著搭嗎",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "沒有可靠的依據"
+        ]
+      }
+    },
+    {
+      "id": "heldout-crowd-weekend",
+      "q": "6670 假日會不會很擠",
+      "expect": {
+        "kind": "refusal",
+        "includes": [
+          "不做客滿或人潮預測"
+        ]
+      }
+    }
+  ],
+  "_heldout": "id 以 heldout- 開頭者，是第一輪實作後以另 18 題「未調校」問題測出缺陷（6670H 班數、水社距離、火車站票價、機場假日靜默缺漏等）並修規則後才加入；其餘為先寫的題庫。"
+}

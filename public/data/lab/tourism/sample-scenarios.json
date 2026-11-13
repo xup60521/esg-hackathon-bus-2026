@@ -1,0 +1,302 @@
+[
+  {
+    "scenarioId": "scenario_thsr_to_xiangshan",
+    "title": "高鐵臺中站 往 向山遊客中心 (平日晨間悠活遊)",
+    "targetUser": "搭乘高鐵抵達臺中、欲直達向山遊客中心與欣賞清水模建築之個人或情侶旅客",
+    "description": "驗證搭乘 6670F 延駛向山班次直達向山行政中心，並在安全緩衝內搭車返回高鐵臺中站。",
+    "request": {
+      "originStopId": "thsr",
+      "attractionId": "xiangshan_visitor_center",
+      "departureDate": "2026-11-05",
+      "departureTime": "08:30",
+      "customDwellMinutes": 90,
+      "profile": "general"
+    },
+    "result": {
+      "isValid": true,
+      "originStopId": "thsr",
+      "destinationStopId": "xiangshan",
+      "attractionId": "xiangshan_visitor_center",
+      "attractionName": "向山行政暨遊客中心",
+      "dayType": "weekday",
+      "dayTypeSource": "OFFICIAL_NOTES_CALENDAR",
+      "timetableStatus": "OFFICIAL_SCHEDULED",
+      "outbound": {
+        "tripNumber": 6,
+        "inferredSubroute": "6670F",
+        "subrouteClassification": "inferred",
+        "departureTime": "08:45",
+        "arrivalTime": "10:15",
+        "walkToAttractionMinutes": 2,
+        "attractionArrivalTime": "10:17"
+      },
+      "dwell": {
+        "userRequestedDwellMinutes": 90,
+        "actualDwellMinutes": 90,
+        "waitingForOpenMinutes": 0,
+        "attractionOpenTime": "09:00",
+        "attractionCloseTime": "17:00",
+        "attractionArrivalTime": "10:17",
+        "attractionDepartureTime": "11:47",
+        "walkToStopMinutes": 2,
+        "busStopArrivalTime": "11:49",
+        "isWithinOpenHours": true
+      },
+      "inbound": {
+        "tripNumber": 16,
+        "inferredSubroute": "6670F",
+        "subrouteClassification": "inferred",
+        "departureTime": "13:30",
+        "destinationArrivalTime": "15:00",
+        "waitAtStopMinutes": 101
+      },
+      "lastBusRisk": {
+        "riskLevel": "SAFE",
+        "returnBusDepartureTime": "13:30",
+        "lastBusDepartureTime": "16:30",
+        "penultimateBusDepartureTime": "15:30",
+        "bufferMinutes": 180,
+        "remainingTripsCount": 3,
+        "riskExplanation": "此6670快照中，距離末班車尚有充足時間緩衝 (180 分鐘)，返回【thsr】尚有 3 班排定車次。",
+        "backupPlan": "末班車時間為 16:30。",
+        "disclaimer": "SAFE 表示排定班表有充足緩衝班次（剩餘 3 班可達班次），但非保證營運安全、路況準點或現場必有座位。"
+      },
+      "warnings": [
+        "僅為6670班表快照與假設的條件式模擬，isValid不代表旅行有效；快照有效範圍未知，任意未來日期不保證仍現行。",
+        "步行時間、站點映射及建議停留時間為演算法情境假設，路徑未實測；自訂停留時間為使用者輸入。",
+        "臨時休園、天災、修繕及班表異動未即時查證，出發前請向營運方及景點確認。",
+        "官方正文每日09:00-17:00，天災或修繕可能休園。",
+        "最後入園時間未知，UNKNOWN不代表沒有末入限制。"
+      ],
+      "disclaimer": "官網時刻表僅提供班次編號與停靠時間，6670A~F 為依停靠模式推論 (inferred)，非官方正式車次代碼。",
+      "status": "conditional_snapshot_simulation"
+    }
+  },
+  {
+    "scenarioId": "scenario_taichung_to_paperdome",
+    "title": "臺中干城站 往 桃米坑紙教堂 (假日親子生態半日遊)",
+    "targetUser": "攜帶孩童之家庭旅客，需要較充裕之步行緩衝時間與安全停留時段",
+    "description": "驗證桃米坑紙教堂假日接駁，考量親子同行步行倍率 (1.3x) 與回程末班車安全性。",
+    "request": {
+      "originStopId": "taichung",
+      "attractionId": "paper_dome",
+      "departureDate": "2026-11-07",
+      "departureTime": "10:00",
+      "customDwellMinutes": 90,
+      "profile": "family"
+    },
+    "result": {
+      "isValid": true,
+      "originStopId": "taichung",
+      "destinationStopId": "taomi",
+      "attractionId": "paper_dome",
+      "attractionName": "紙教堂 (新故鄉見學園區)",
+      "dayType": "holiday",
+      "dayTypeSource": "OFFICIAL_NOTES_CALENDAR",
+      "timetableStatus": "OFFICIAL_SCHEDULED",
+      "outbound": {
+        "tripNumber": 11,
+        "inferredSubroute": "6670B",
+        "subrouteClassification": "inferred",
+        "departureTime": "10:20",
+        "arrivalTime": "11:46",
+        "walkToAttractionMinutes": 8,
+        "attractionArrivalTime": "11:54"
+      },
+      "dwell": {
+        "userRequestedDwellMinutes": 90,
+        "actualDwellMinutes": 90,
+        "waitingForOpenMinutes": 0,
+        "attractionOpenTime": "09:30",
+        "attractionCloseTime": "17:00",
+        "attractionArrivalTime": "11:54",
+        "attractionDepartureTime": "13:24",
+        "walkToStopMinutes": 8,
+        "busStopArrivalTime": "13:32",
+        "isWithinOpenHours": true
+      },
+      "inbound": {
+        "tripNumber": 15,
+        "inferredSubroute": "6670D",
+        "subrouteClassification": "inferred",
+        "departureTime": "13:44",
+        "destinationArrivalTime": "15:15",
+        "waitAtStopMinutes": 12
+      },
+      "lastBusRisk": {
+        "riskLevel": "SAFE",
+        "returnBusDepartureTime": "13:44",
+        "lastBusDepartureTime": "19:44",
+        "penultimateBusDepartureTime": "18:44",
+        "bufferMinutes": 360,
+        "remainingTripsCount": 14,
+        "riskExplanation": "此6670快照中，距離末班車尚有充足時間緩衝 (360 分鐘)，返回【taichung】尚有 14 班排定車次。",
+        "backupPlan": "末班車時間為 19:44。",
+        "disclaimer": "SAFE 表示排定班表有充足緩衝班次（剩餘 14 班可達班次），但非保證營運安全、路況準點或現場必有座位。"
+      },
+      "warnings": [
+        "僅為6670班表快照與假設的條件式模擬，isValid不代表旅行有效；快照有效範圍未知，任意未來日期不保證仍現行。",
+        "步行時間、站點映射及建議停留時間為演算法情境假設，路徑未實測；自訂停留時間為使用者輸入。",
+        "臨時休園、天災、修繕及班表異動未即時查證，出發前請向營運方及景點確認。",
+        "週五至週二09:30-17:00，最後入園16:30；週三四公休，但國定假日、寒暑假、預約團例外。除夕亦休；週六限定夜景依公告，不納入本模擬。"
+      ],
+      "disclaimer": "官網時刻表僅提供班次編號與停靠時間，6670A~F 為依停靠模式推論 (inferred)，非官方正式車次代碼。",
+      "status": "conditional_snapshot_simulation"
+    }
+  },
+  {
+    "scenarioId": "scenario_paperdome_closed_wednesday",
+    "title": "紙教堂週三一般公休條件不成立，例外待確認",
+    "targetUser": "未注意景點休館時間之一般旅客",
+    "description": "依一般週三四公休規則拒絕本模擬；國定假日、寒暑假與預約團例外需確認。",
+    "request": {
+      "originStopId": "thsr",
+      "attractionId": "paper_dome",
+      "departureDate": "2026-11-04",
+      "departureTime": "09:00",
+      "customDwellMinutes": 90,
+      "profile": "general"
+    },
+    "result": {
+      "isValid": false,
+      "invalidReason": "景點【紙教堂 (新故鄉見學園區)】於 Wednesday 的一般公休條件下不成立；國定假日、寒暑假、預約團等例外需另向景點確認。",
+      "originStopId": "thsr",
+      "destinationStopId": "taomi",
+      "attractionId": "paper_dome",
+      "attractionName": "紙教堂 (新故鄉見學園區)",
+      "dayType": "weekday",
+      "dayTypeSource": "OFFICIAL_NOTES_CALENDAR",
+      "timetableStatus": "OFFICIAL_SCHEDULED",
+      "outbound": null,
+      "dwell": null,
+      "inbound": null,
+      "lastBusRisk": null,
+      "warnings": [
+        "僅為6670班表快照與假設的條件式模擬，isValid不代表旅行有效；快照有效範圍未知，任意未來日期不保證仍現行。",
+        "步行時間、站點映射及建議停留時間為演算法情境假設，路徑未實測；自訂停留時間為使用者輸入。",
+        "臨時休園、天災、修繕及班表異動未即時查證，出發前請向營運方及景點確認。",
+        "週五至週二09:30-17:00，最後入園16:30；週三四公休，但國定假日、寒暑假、預約團例外。除夕亦休；週六限定夜景依公告，不納入本模擬。",
+        "本模擬採一般公休日假設: Wednesday, Thursday。"
+      ],
+      "disclaimer": "官網時刻表僅提供班次編號與停靠時間，6670A~F 為依停靠模式推論 (inferred)，非官方正式車次代碼。",
+      "status": "conditional_snapshot_simulation"
+    }
+  },
+  {
+    "scenarioId": "scenario_dwell_exceeds_close_rejected",
+    "title": "停留時間跨越閉館安全拒絕 (拒絕擅自截短旅客停留)",
+    "targetUser": "午後出發且自訂較長停留時間之旅客",
+    "description": "旅客於 12:45 搭車抵達向山 (約 14:17 入園)，自訂停留 180 分鐘將跨越 17:00 閉館時間；系統安全拒絕行程，絕不擅自縮短旅客停留時間。",
+    "request": {
+      "originStopId": "thsr",
+      "attractionId": "xiangshan_visitor_center",
+      "departureDate": "2026-11-05",
+      "departureTime": "12:30",
+      "customDwellMinutes": 180,
+      "profile": "general"
+    },
+    "result": {
+      "isValid": false,
+      "invalidReason": "依使用者預計停留 180 分鐘，離開時間 (17:17) 已超過景點打烊時間 (17:00)！系統不可擅自縮短旅客停留時間，行程無法成立。",
+      "originStopId": "thsr",
+      "destinationStopId": "xiangshan",
+      "attractionId": "xiangshan_visitor_center",
+      "attractionName": "向山行政暨遊客中心",
+      "dayType": "weekday",
+      "dayTypeSource": "OFFICIAL_NOTES_CALENDAR",
+      "timetableStatus": "OFFICIAL_SCHEDULED",
+      "outbound": {
+        "tripNumber": 15,
+        "inferredSubroute": "6670F",
+        "subrouteClassification": "inferred",
+        "departureTime": "12:45",
+        "arrivalTime": "14:15",
+        "walkToAttractionMinutes": 2,
+        "attractionArrivalTime": "14:17"
+      },
+      "dwell": null,
+      "inbound": null,
+      "lastBusRisk": null,
+      "warnings": [
+        "僅為6670班表快照與假設的條件式模擬，isValid不代表旅行有效；快照有效範圍未知，任意未來日期不保證仍現行。",
+        "步行時間、站點映射及建議停留時間為演算法情境假設，路徑未實測；自訂停留時間為使用者輸入。",
+        "臨時休園、天災、修繕及班表異動未即時查證，出發前請向營運方及景點確認。",
+        "官方正文每日09:00-17:00，天災或修繕可能休園。",
+        "最後入園時間未知，UNKNOWN不代表沒有末入限制。",
+        "景點打烊時間為 17:00，若欲成行請縮短自訂停留時間。"
+      ],
+      "disclaimer": "官網時刻表僅提供班次編號與停靠時間，6670A~F 為依停靠模式推論 (inferred)，非官方正式車次代碼。",
+      "status": "conditional_snapshot_simulation"
+    }
+  },
+  {
+    "scenarioId": "scenario_stranded_xiangshan",
+    "title": "向山行政中心傍晚嚴重滯留情境 (STRANDED 示範與標準查證警報)",
+    "targetUser": "出發較晚或停留過久、錯過向山 16:30 返回高鐵末班車之旅客",
+    "description": "旅客錯過向山直達高鐵之6670快照末班車，系統觸發 STRANDED 警報，並依誠信規範提示向營運方確認其他未查證服務。",
+    "request": {
+      "originStopId": "thsr",
+      "attractionId": "xiangshan_visitor_center",
+      "departureDate": "2026-11-05",
+      "departureTime": "12:30",
+      "customDwellMinutes": 150,
+      "profile": "general"
+    },
+    "result": {
+      "isValid": false,
+      "invalidReason": "旅客於 16:49 抵達站牌，但此6670快照未找到該站返回【thsr】之班次（末班車為 16:30）。",
+      "originStopId": "thsr",
+      "destinationStopId": "xiangshan",
+      "attractionId": "xiangshan_visitor_center",
+      "attractionName": "向山行政暨遊客中心",
+      "dayType": "weekday",
+      "dayTypeSource": "OFFICIAL_NOTES_CALENDAR",
+      "timetableStatus": "OFFICIAL_SCHEDULED",
+      "outbound": {
+        "tripNumber": 15,
+        "inferredSubroute": "6670F",
+        "subrouteClassification": "inferred",
+        "departureTime": "12:45",
+        "arrivalTime": "14:15",
+        "walkToAttractionMinutes": 2,
+        "attractionArrivalTime": "14:17"
+      },
+      "dwell": {
+        "userRequestedDwellMinutes": 150,
+        "actualDwellMinutes": 150,
+        "waitingForOpenMinutes": 0,
+        "attractionOpenTime": "09:00",
+        "attractionCloseTime": "17:00",
+        "attractionArrivalTime": "14:17",
+        "attractionDepartureTime": "16:47",
+        "walkToStopMinutes": 2,
+        "busStopArrivalTime": "16:49",
+        "isWithinOpenHours": true
+      },
+      "inbound": null,
+      "lastBusRisk": {
+        "riskLevel": "STRANDED",
+        "returnBusDepartureTime": "16:49",
+        "lastBusDepartureTime": "16:30",
+        "penultimateBusDepartureTime": "15:30",
+        "bufferMinutes": -19,
+        "remainingTripsCount": 0,
+        "riskExplanation": "此6670快照中，預計搭乘時間 (16:49) 已超過返回【thsr】之當日末班車 (16:30)。",
+        "backupPlan": "此6670快照未找到符合回程，其他服務未查證，請向營運方確認",
+        "disclaimer": "SAFE 表示排定班表有充足緩衝班次（剩餘 0 班可達班次），但非保證營運安全、路況準點或現場必有座位。"
+      },
+      "warnings": [
+        "僅為6670班表快照與假設的條件式模擬，isValid不代表旅行有效；快照有效範圍未知，任意未來日期不保證仍現行。",
+        "步行時間、站點映射及建議停留時間為演算法情境假設，路徑未實測；自訂停留時間為使用者輸入。",
+        "臨時休園、天災、修繕及班表異動未即時查證，出發前請向營運方及景點確認。",
+        "官方正文每日09:00-17:00，天災或修繕可能休園。",
+        "最後入園時間未知，UNKNOWN不代表沒有末入限制。",
+        "【末班車已過警報】：此6670快照未找到符合回程，其他公車與服務未查證。",
+        "此6670快照中，預計搭乘時間 (16:49) 已超過返回【thsr】之當日末班車 (16:30)。",
+        "此6670快照未找到符合回程，其他服務未查證，請向營運方確認"
+      ],
+      "disclaimer": "官網時刻表僅提供班次編號與停靠時間，6670A~F 為依停靠模式推論 (inferred)，非官方正式車次代碼。",
+      "status": "conditional_snapshot_simulation"
+    }
+  }
+]

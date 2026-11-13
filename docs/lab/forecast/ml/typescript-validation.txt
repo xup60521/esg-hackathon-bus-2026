@@ -1,0 +1,2 @@
+PASS: node_modules/.bin/tsc --ignoreConfig --noEmit --strict --skipLibCheck --target es2022 --module esnext src/features/lab/forecast/ml/data.ts
+Initial invocation without --ignoreConfig rejected by TS5112; corrected isolated check passed. No project-wide TypeScript check.

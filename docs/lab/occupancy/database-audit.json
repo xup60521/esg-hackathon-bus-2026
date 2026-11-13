@@ -1,0 +1,20 @@
+{
+  "queriedAt": "2026-11-03T16:56:53.380Z",
+  "sql": "SELECT count(*) records, count(DISTINCT vehicle) vehicle_values,\n sum(CASE WHEN trim(coalesce(vehicle,''))='' THEN 1 ELSE 0 END) missing_vehicle,\n sum(CASE WHEN lower(trim(vehicle)) IN ('null','none','unknown','0','-','n/a') THEN 1 ELSE 0 END) sentinel_vehicle,\n sum(CASE WHEN board_date != date(board_ts,'unixepoch','+8 hours') THEN 1 ELSE 0 END) board_date_mismatch,\n sum(CASE WHEN trim(coalesce(alight_stop,''))='' THEN 1 ELSE 0 END) missing_alight_stop,\n sum(CASE WHEN alight_ts IS NULL THEN 1 ELSE 0 END) missing_alight_ts,\n sum(CASE WHEN alight_ts<board_ts THEN 1 ELSE 0 END) reversed_time,\n sum(CASE WHEN alight_ts=board_ts THEN 1 ELSE 0 END) zero_duration,\n sum(CASE WHEN alight_ts-board_ts>21600 THEN 1 ELSE 0 END) over_six_hours,\n min(board_date) first_date,max(board_date) last_date,\n count(DISTINCT board_date) active_dates,\n sum(CASE WHEN board_ts%60!=0 THEN 1 ELSE 0 END) second_precision_rows\n FROM trips",
+  "summary": {
+    "records": 1800910,
+    "vehicle_values": 122,
+    "missing_vehicle": 0,
+    "sentinel_vehicle": 0,
+    "board_date_mismatch": 0,
+    "missing_alight_stop": 0,
+    "missing_alight_ts": 0,
+    "reversed_time": 0,
+    "zero_duration": 0,
+    "over_six_hours": 251,
+    "first_date": "2024-01-01",
+    "last_date": "2025-12-31",
+    "active_dates": 725,
+    "second_precision_rows": 1770855
+  }
+}

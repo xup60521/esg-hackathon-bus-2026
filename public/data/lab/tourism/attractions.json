@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "description": "6670 三景點官方正文摘要與演算法情境假設",
+    "authority": "日月潭國家風景區管理處、台灣好行官網及各景點公告",
+    "retrievedDate": "2026-11-04",
+    "totalAttractions": 3,
+    "verificationMethod": "依主代理提供的三景點官方正文摘要有限標記；網址本身不構成驗證，假設與未知欄位另列。"
+  },
+  "attractions": [
+    {
+      "id": "xiangshan_visitor_center",
+      "name": "向山行政暨遊客中心",
+      "englishName": "Xiangshan Administration and Visitor Center",
+      "stopId": "xiangshan",
+      "stopName": "向山行政中心(部分班次停靠)",
+      "category": "architecture_nature",
+      "coordinates": null,
+      "coordinatesStatus": "UNKNOWN",
+      "walkTimeMinutes": 2,
+      "walkTimeStatus": "ASSUMED_ESTIMATE",
+      "walkDistanceMeters": null,
+      "walkPathNote": "演算法情境假設，未實測步行路徑、距離或無障礙設施。",
+      "openTime": "09:00",
+      "closeTime": "17:00",
+      "lastEntryTime": null,
+      "lastEntryStatus": "UNKNOWN",
+      "closedDays": [],
+      "recommendedDwellMinutes": 90,
+      "minDwellMinutes": 45,
+      "ticketRequired": null,
+      "ticketInfo": "收費條件與金額未核實，請向景點確認",
+      "ticketStatus": "UNKNOWN",
+      "officialUrl": "https://www.sunmoonlake.gov.tw/attractions/Attractions?A=20&Id=78",
+      "provenance": {
+        "exactSourceUrl": "https://www.sunmoonlake.gov.tw/attractions/Attractions?A=20&Id=78",
+        "retrievedDate": "2026-11-04",
+        "evidenceBasis": "主代理實讀官方正文後提供之取證摘要，非本腳本自動驗證；未保存景點HTML。",
+        "sourceScheduleNote": "官方正文每日09:00-17:00，天災或修繕可能休園。",
+        "verifiedFields": [
+          "name",
+          "openTime",
+          "scheduleNote",
+          "closeTime"
+        ],
+        "assumedFields": [
+          "stopId",
+          "stopName",
+          "walkTimeMinutes",
+          "recommendedDwellMinutes",
+          "minDwellMinutes",
+          "closedDays"
+        ],
+        "unknownFields": [
+          "coordinates",
+          "walkDistanceMeters",
+          "ticketInfo",
+          "lastEntryTime",
+          "ticketRequired"
+        ]
+      },
+      "highlights": [],
+      "scheduleNote": "官方正文每日09:00-17:00，天災或修繕可能休園。"
+    },
+    {
+      "id": "paper_dome",
+      "name": "紙教堂 (新故鄉見學園區)",
+      "englishName": "Paper Dome",
+      "stopId": "taomi",
+      "stopName": "桃米坑(紙教堂)",
+      "category": "culture_eco",
+      "coordinates": null,
+      "coordinatesStatus": "UNKNOWN",
+      "walkTimeMinutes": 6,
+      "walkTimeStatus": "ASSUMED_ESTIMATE",
+      "walkDistanceMeters": null,
+      "walkPathNote": "演算法情境假設，未實測步行路徑、距離或無障礙設施。",
+      "openTime": "09:30",
+      "closeTime": "17:00",
+      "lastEntryTime": "16:30",
+      "lastEntryStatus": "OFFICIAL_VERIFIED",
+      "closedDays": [
+        "Wednesday",
+        "Thursday"
+      ],
+      "recommendedDwellMinutes": 90,
+      "minDwellMinutes": 45,
+      "ticketRequired": true,
+      "ticketInfo": "收費入園，詳官網；金額未核實",
+      "ticketStatus": "UNKNOWN",
+      "officialUrl": "https://www.sunmoonlake.gov.tw/attractions/Attractions?A=20&Id=4",
+      "provenance": {
+        "exactSourceUrl": "https://www.sunmoonlake.gov.tw/attractions/Attractions?A=20&Id=4",
+        "retrievedDate": "2026-11-04",
+        "evidenceBasis": "主代理實讀官方正文後提供之取證摘要，非本腳本自動驗證；未保存景點HTML。",
+        "sourceScheduleNote": "週五至週二09:30-17:00，最後入園16:30；週三四公休，但國定假日、寒暑假、預約團例外。除夕亦休；週六限定夜景依公告，不納入本模擬。",
+        "verifiedFields": [
+          "name",
+          "openTime",
+          "scheduleNote",
+          "lastEntryTime",
+          "closedDays",
+          "ticketRequired"
+        ],
+        "assumedFields": [
+          "stopId",
+          "stopName",
+          "walkTimeMinutes",
+          "recommendedDwellMinutes",
+          "minDwellMinutes",
+          "closeTime"
+        ],
+        "unknownFields": [
+          "coordinates",
+          "walkDistanceMeters",
+          "ticketInfo"
+        ]
+      },
+      "highlights": [],
+      "scheduleNote": "週五至週二09:30-17:00，最後入園16:30；週三四公休，但國定假日、寒暑假、預約團例外。除夕亦休；週六限定夜景依公告，不納入本模擬。"
+    },
+    {
+      "id": "formosan_village",
+      "name": "九族文化村",
+      "englishName": "Formosan Aboriginal Culture Village",
+      "stopId": "formosan",
+      "stopName": "九族文化村(部分班次停靠)",
+      "category": "amusement_culture",
+      "coordinates": null,
+      "coordinatesStatus": "UNKNOWN",
+      "walkTimeMinutes": 3,
+      "walkTimeStatus": "ASSUMED_ESTIMATE",
+      "walkDistanceMeters": null,
+      "walkPathNote": "演算法情境假設，未實測步行路徑、距離或無障礙設施。",
+      "openTime": "09:30",
+      "closeTime": "17:00",
+      "lastEntryTime": null,
+      "lastEntryStatus": "UNKNOWN",
+      "closedDays": [],
+      "recommendedDwellMinutes": 240,
+      "minDwellMinutes": 120,
+      "ticketRequired": null,
+      "ticketInfo": "收費條件與金額未核實，請向景點確認",
+      "ticketStatus": "UNKNOWN",
+      "officialUrl": "https://www.sunmoonlake.gov.tw/attractions/Attractions?A=20&Id=13",
+      "provenance": {
+        "exactSourceUrl": "https://www.sunmoonlake.gov.tw/attractions/Attractions?A=20&Id=13",
+        "retrievedDate": "2026-11-04",
+        "evidenceBasis": "主代理實讀官方正文後提供之取證摘要，非本腳本自動驗證；未保存景點HTML。",
+        "sourceScheduleNote": "官方正文平日09:30-17:00、假日09:30-17:30；本模擬統一17:00為保守假設，官方平假日定義未與6670班表對齊。",
+        "verifiedFields": [
+          "name",
+          "openTime",
+          "scheduleNote"
+        ],
+        "assumedFields": [
+          "stopId",
+          "stopName",
+          "walkTimeMinutes",
+          "recommendedDwellMinutes",
+          "minDwellMinutes",
+          "closeTime",
+          "closedDays"
+        ],
+        "unknownFields": [
+          "coordinates",
+          "walkDistanceMeters",
+          "ticketInfo",
+          "lastEntryTime",
+          "ticketRequired"
+        ]
+      },
+      "highlights": [],
+      "scheduleNote": "官方正文平日09:30-17:00、假日09:30-17:30；本模擬統一17:00為保守假設，官方平假日定義未與6670班表對齊。"
+    }
+  ]
+}

@@ -1,0 +1,1885 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-11-04",
+  "disclaimer": "假設情境求解，非營運班表；刷卡不等同完整需求。",
+  "inventory": {
+    "source": "public/data/midstop.json",
+    "sha256": "59b9e8cc4c88b081c30523795663a5fddfdc6aa8afe036d3f04c88e5c3d30141",
+    "generatedAt": "2026-11-03T08:19:37.886Z",
+    "sourceChecks": {
+      "monthlyFiles": 24,
+      "matchedAggregateKeys": 292562,
+      "duplicatePublicKeys": 0,
+      "missingDates": [
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-07-07"
+      ]
+    },
+    "rows": 292562,
+    "observedDates": 725,
+    "firstDate": "2024-01-01",
+    "lastDate": "2025-12-31",
+    "boardings": 1800910,
+    "alightings": 1800910,
+    "unknownBoardings": 6281,
+    "selectedObservation": {
+      "date": "2025-03-02",
+      "subroute": "6670D",
+      "hour": 14,
+      "boardings": 125,
+      "stop": "埔里站",
+      "direction": "inbound",
+      "selection": "maximum hourly boardings excluding 6670H; earliest date breaks ties"
+    }
+  },
+  "results": [
+    {
+      "scenario": {
+        "id": "baseline-capacity-gap",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-4",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 540,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": false
+      },
+      "solution": {
+        "status": "optimal",
+        "selectedTripIds": [
+          "baseline-1"
+        ],
+        "assignments": [
+          {
+            "tripId": "baseline-1",
+            "resourceId": "pair-1"
+          }
+        ],
+        "evaluation": {
+          "reservations": [
+            {
+              "targetId": "puli-inbound-hour",
+              "suppliedSeats": 20,
+              "assumedPassengers": 125,
+              "shortfall": 105,
+              "services": 1
+            }
+          ],
+          "shortfall": 105,
+          "extraCost": 0,
+          "extraTrips": 0
+        },
+        "searchedSubsets": 1,
+        "rejected": {},
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": []
+    },
+    {
+      "scenario": {
+        "id": "full-extra-feasible",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "full-1",
+            "kind": "full-extra",
+            "startMinute": 755,
+            "endMinute": 1025,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-2",
+            "kind": "full-extra",
+            "startMinute": 760,
+            "endMinute": 1030,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-3",
+            "kind": "full-extra",
+            "startMinute": 765,
+            "endMinute": 1035,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-4",
+            "kind": "full-extra",
+            "startMinute": 770,
+            "endMinute": 1040,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-5",
+            "kind": "full-extra",
+            "startMinute": 775,
+            "endMinute": 1045,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 865
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-6",
+            "kind": "full-extra",
+            "startMinute": 780,
+            "endMinute": 1050,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 870
+              }
+            ],
+            "cost": 360
+          }
+        ],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-4",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-5",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-6",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-7",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 2160,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": true
+      },
+      "solution": {
+        "status": "optimal",
+        "selectedTripIds": [
+          "baseline-1",
+          "full-1",
+          "full-2",
+          "full-3",
+          "full-4",
+          "full-5",
+          "full-6"
+        ],
+        "assignments": [
+          {
+            "tripId": "baseline-1",
+            "resourceId": "pair-1"
+          },
+          {
+            "tripId": "full-1",
+            "resourceId": "pair-2"
+          },
+          {
+            "tripId": "full-2",
+            "resourceId": "pair-3"
+          },
+          {
+            "tripId": "full-3",
+            "resourceId": "pair-4"
+          },
+          {
+            "tripId": "full-4",
+            "resourceId": "pair-5"
+          },
+          {
+            "tripId": "full-5",
+            "resourceId": "pair-6"
+          },
+          {
+            "tripId": "full-6",
+            "resourceId": "pair-7"
+          }
+        ],
+        "evaluation": {
+          "reservations": [
+            {
+              "targetId": "puli-inbound-hour",
+              "suppliedSeats": 140,
+              "assumedPassengers": 125,
+              "shortfall": 0,
+              "services": 7
+            }
+          ],
+          "shortfall": 0,
+          "extraCost": 2160,
+          "extraTrips": 6
+        },
+        "searchedSubsets": 64,
+        "rejected": {
+          "assumed-capacity-target": 63
+        },
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": []
+    },
+    {
+      "scenario": {
+        "id": "mixed-feasible",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "midstop-1",
+            "kind": "midstop-extra",
+            "startMinute": 815,
+            "endMinute": 965,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-2",
+            "kind": "midstop-extra",
+            "startMinute": 820,
+            "endMinute": 970,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-3",
+            "kind": "midstop-extra",
+            "startMinute": 825,
+            "endMinute": 975,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-4",
+            "kind": "midstop-extra",
+            "startMinute": 830,
+            "endMinute": 980,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "full-1",
+            "kind": "full-extra",
+            "startMinute": 755,
+            "endMinute": 1025,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-2",
+            "kind": "full-extra",
+            "startMinute": 760,
+            "endMinute": 1030,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-3",
+            "kind": "full-extra",
+            "startMinute": 765,
+            "endMinute": 1035,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-4",
+            "kind": "full-extra",
+            "startMinute": 770,
+            "endMinute": 1040,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-5",
+            "kind": "full-extra",
+            "startMinute": 775,
+            "endMinute": 1045,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 865
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-6",
+            "kind": "full-extra",
+            "startMinute": 780,
+            "endMinute": 1050,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 870
+              }
+            ],
+            "cost": 360
+          }
+        ],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-4",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 540,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": true
+      },
+      "solution": {
+        "status": "optimal",
+        "selectedTripIds": [
+          "baseline-1",
+          "midstop-1",
+          "midstop-2",
+          "midstop-3"
+        ],
+        "assignments": [
+          {
+            "tripId": "baseline-1",
+            "resourceId": "pair-1"
+          },
+          {
+            "tripId": "midstop-1",
+            "resourceId": "pair-2"
+          },
+          {
+            "tripId": "midstop-2",
+            "resourceId": "pair-3"
+          },
+          {
+            "tripId": "midstop-3",
+            "resourceId": "pair-4"
+          }
+        ],
+        "evaluation": {
+          "reservations": [
+            {
+              "targetId": "puli-inbound-hour",
+              "suppliedSeats": 140,
+              "assumedPassengers": 125,
+              "shortfall": 0,
+              "services": 4
+            }
+          ],
+          "shortfall": 0,
+          "extraCost": 540,
+          "extraTrips": 3
+        },
+        "searchedSubsets": 1024,
+        "rejected": {
+          "assumed-capacity-target": 41,
+          "budget": 803,
+          "extra-trip-limit": 176
+        },
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": []
+    },
+    {
+      "scenario": {
+        "id": "fleet-infeasible",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "midstop-1",
+            "kind": "midstop-extra",
+            "startMinute": 815,
+            "endMinute": 965,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-2",
+            "kind": "midstop-extra",
+            "startMinute": 820,
+            "endMinute": 970,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-3",
+            "kind": "midstop-extra",
+            "startMinute": 825,
+            "endMinute": 975,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-4",
+            "kind": "midstop-extra",
+            "startMinute": 830,
+            "endMinute": 980,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "full-1",
+            "kind": "full-extra",
+            "startMinute": 755,
+            "endMinute": 1025,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-2",
+            "kind": "full-extra",
+            "startMinute": 760,
+            "endMinute": 1030,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-3",
+            "kind": "full-extra",
+            "startMinute": 765,
+            "endMinute": 1035,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-4",
+            "kind": "full-extra",
+            "startMinute": 770,
+            "endMinute": 1040,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-5",
+            "kind": "full-extra",
+            "startMinute": 775,
+            "endMinute": 1045,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 865
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-6",
+            "kind": "full-extra",
+            "startMinute": 780,
+            "endMinute": 1050,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 870
+              }
+            ],
+            "cost": 360
+          }
+        ],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 540,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": true
+      },
+      "solution": {
+        "status": "infeasible",
+        "selectedTripIds": [],
+        "assignments": [],
+        "evaluation": null,
+        "searchedSubsets": 1024,
+        "rejected": {
+          "assumed-capacity-target": 41,
+          "resource-assignment": 4,
+          "budget": 803,
+          "extra-trip-limit": 176
+        },
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": null
+    },
+    {
+      "scenario": {
+        "id": "budget-infeasible",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "midstop-1",
+            "kind": "midstop-extra",
+            "startMinute": 815,
+            "endMinute": 965,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-2",
+            "kind": "midstop-extra",
+            "startMinute": 820,
+            "endMinute": 970,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-3",
+            "kind": "midstop-extra",
+            "startMinute": 825,
+            "endMinute": 975,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-4",
+            "kind": "midstop-extra",
+            "startMinute": 830,
+            "endMinute": 980,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "full-1",
+            "kind": "full-extra",
+            "startMinute": 755,
+            "endMinute": 1025,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-2",
+            "kind": "full-extra",
+            "startMinute": 760,
+            "endMinute": 1030,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-3",
+            "kind": "full-extra",
+            "startMinute": 765,
+            "endMinute": 1035,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-4",
+            "kind": "full-extra",
+            "startMinute": 770,
+            "endMinute": 1040,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-5",
+            "kind": "full-extra",
+            "startMinute": 775,
+            "endMinute": 1045,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 865
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-6",
+            "kind": "full-extra",
+            "startMinute": 780,
+            "endMinute": 1050,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 870
+              }
+            ],
+            "cost": 360
+          }
+        ],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-4",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 539,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": true
+      },
+      "solution": {
+        "status": "infeasible",
+        "selectedTripIds": [],
+        "assignments": [],
+        "evaluation": null,
+        "searchedSubsets": 1024,
+        "rejected": {
+          "assumed-capacity-target": 17,
+          "budget": 831,
+          "extra-trip-limit": 176
+        },
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": null
+    },
+    {
+      "scenario": {
+        "id": "shift-infeasible",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "midstop-1",
+            "kind": "midstop-extra",
+            "startMinute": 815,
+            "endMinute": 965,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-2",
+            "kind": "midstop-extra",
+            "startMinute": 820,
+            "endMinute": 970,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-3",
+            "kind": "midstop-extra",
+            "startMinute": 825,
+            "endMinute": 975,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-4",
+            "kind": "midstop-extra",
+            "startMinute": 830,
+            "endMinute": 980,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 40,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "full-1",
+            "kind": "full-extra",
+            "startMinute": 755,
+            "endMinute": 1025,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-2",
+            "kind": "full-extra",
+            "startMinute": 760,
+            "endMinute": 1030,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-3",
+            "kind": "full-extra",
+            "startMinute": 765,
+            "endMinute": 1035,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-4",
+            "kind": "full-extra",
+            "startMinute": 770,
+            "endMinute": 1040,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-5",
+            "kind": "full-extra",
+            "startMinute": 775,
+            "endMinute": 1045,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 865
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-6",
+            "kind": "full-extra",
+            "startMinute": 780,
+            "endMinute": 1050,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 870
+              }
+            ],
+            "cost": 360
+          }
+        ],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 900,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 900,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 900,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-4",
+            "availableFrom": 720,
+            "availableUntil": 900,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 540,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": true
+      },
+      "solution": {
+        "status": "infeasible",
+        "selectedTripIds": [],
+        "assignments": [],
+        "evaluation": null,
+        "searchedSubsets": 1024,
+        "rejected": {
+          "assumed-capacity-target": 41,
+          "resource-assignment": 4,
+          "budget": 803,
+          "extra-trip-limit": 176
+        },
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": null
+    },
+    {
+      "scenario": {
+        "id": "midstop-seats30-infeasible",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "midstop-1",
+            "kind": "midstop-extra",
+            "startMinute": 815,
+            "endMinute": 965,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-2",
+            "kind": "midstop-extra",
+            "startMinute": 820,
+            "endMinute": 970,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-3",
+            "kind": "midstop-extra",
+            "startMinute": 825,
+            "endMinute": 975,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-4",
+            "kind": "midstop-extra",
+            "startMinute": 830,
+            "endMinute": 980,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "full-1",
+            "kind": "full-extra",
+            "startMinute": 755,
+            "endMinute": 1025,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-2",
+            "kind": "full-extra",
+            "startMinute": 760,
+            "endMinute": 1030,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-3",
+            "kind": "full-extra",
+            "startMinute": 765,
+            "endMinute": 1035,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-4",
+            "kind": "full-extra",
+            "startMinute": 770,
+            "endMinute": 1040,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-5",
+            "kind": "full-extra",
+            "startMinute": 775,
+            "endMinute": 1045,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 865
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-6",
+            "kind": "full-extra",
+            "startMinute": 780,
+            "endMinute": 1050,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 870
+              }
+            ],
+            "cost": 360
+          }
+        ],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-4",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 540,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": true
+      },
+      "solution": {
+        "status": "infeasible",
+        "selectedTripIds": [],
+        "assignments": [],
+        "evaluation": null,
+        "searchedSubsets": 1024,
+        "rejected": {
+          "assumed-capacity-target": 45,
+          "budget": 803,
+          "extra-trip-limit": 176
+        },
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": null
+    },
+    {
+      "scenario": {
+        "id": "midstop-seats30-expanded-feasible",
+        "assumptions": [
+          "歷史最高小時刷卡量僅作事後容量壓力測試，不是未來完整需求或代表日。",
+          "所有情境乘客假設於該小時整點已在埔里站，最晚整點加59分鐘可獲保留座位；真實到站與候車未知。",
+          "假設基準1班，全程加班可保留20席，中間站起駛可保留40席；每車容量40。其餘席位不評估。",
+          "全程車占用270分鐘，中間站車150分鐘，含共同車庫定位、行駛、返庫與恢復，非實測時間。",
+          "每個資源是1車加1名合格司機，單一可用時段且占用工作上限300分鐘；不是法定工時認證。",
+          "加班成本為假設比較單位，全程360、中間站180，非業者報價或新臺幣。",
+          "候選全程6班、中間站4班，服務時刻為整點後每5分鐘；保留原基準班，不允許刪班。",
+          "僅涵蓋單支線單方向埔里站；不以時段上車量重建全線載客率，不估排隊、拒載或候車分鐘。"
+        ],
+        "targets": [
+          {
+            "id": "puli-inbound-hour",
+            "observedBoardings": 125,
+            "assumedPassengers": 125,
+            "minimumServices": 1,
+            "readyMinute": 840,
+            "deadlineMinute": 899
+          }
+        ],
+        "baseline": [
+          {
+            "id": "baseline-1",
+            "kind": "baseline",
+            "startMinute": 750,
+            "endMinute": 1020,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 840
+              }
+            ],
+            "cost": 0
+          }
+        ],
+        "candidates": [
+          {
+            "id": "midstop-1",
+            "kind": "midstop-extra",
+            "startMinute": 815,
+            "endMinute": 965,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-2",
+            "kind": "midstop-extra",
+            "startMinute": 820,
+            "endMinute": 970,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-3",
+            "kind": "midstop-extra",
+            "startMinute": 825,
+            "endMinute": 975,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "midstop-4",
+            "kind": "midstop-extra",
+            "startMinute": 830,
+            "endMinute": 980,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 30,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 180
+          },
+          {
+            "id": "full-1",
+            "kind": "full-extra",
+            "startMinute": 755,
+            "endMinute": 1025,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 845
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-2",
+            "kind": "full-extra",
+            "startMinute": 760,
+            "endMinute": 1030,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 850
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-3",
+            "kind": "full-extra",
+            "startMinute": 765,
+            "endMinute": 1035,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 855
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-4",
+            "kind": "full-extra",
+            "startMinute": 770,
+            "endMinute": 1040,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 860
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-5",
+            "kind": "full-extra",
+            "startMinute": 775,
+            "endMinute": 1045,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 865
+              }
+            ],
+            "cost": 360
+          },
+          {
+            "id": "full-6",
+            "kind": "full-extra",
+            "startMinute": 780,
+            "endMinute": 1050,
+            "capacity": 40,
+            "reservations": [
+              {
+                "targetId": "puli-inbound-hour",
+                "seats": 20,
+                "serviceMinute": 870
+              }
+            ],
+            "cost": 360
+          }
+        ],
+        "resources": [
+          {
+            "id": "pair-1",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-2",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-3",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-4",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          },
+          {
+            "id": "pair-5",
+            "availableFrom": 720,
+            "availableUntil": 1080,
+            "maxWorkMinutes": 300
+          }
+        ],
+        "extraBudget": 720,
+        "maxExtraTrips": 6,
+        "requireFullCoverage": true
+      },
+      "solution": {
+        "status": "optimal",
+        "selectedTripIds": [
+          "baseline-1",
+          "midstop-1",
+          "midstop-2",
+          "midstop-3",
+          "midstop-4"
+        ],
+        "assignments": [
+          {
+            "tripId": "baseline-1",
+            "resourceId": "pair-1"
+          },
+          {
+            "tripId": "midstop-1",
+            "resourceId": "pair-2"
+          },
+          {
+            "tripId": "midstop-2",
+            "resourceId": "pair-3"
+          },
+          {
+            "tripId": "midstop-3",
+            "resourceId": "pair-4"
+          },
+          {
+            "tripId": "midstop-4",
+            "resourceId": "pair-5"
+          }
+        ],
+        "evaluation": {
+          "reservations": [
+            {
+              "targetId": "puli-inbound-hour",
+              "suppliedSeats": 140,
+              "assumedPassengers": 125,
+              "shortfall": 0,
+              "services": 5
+            }
+          ],
+          "shortfall": 0,
+          "extraCost": 720,
+          "extraTrips": 4
+        },
+        "searchedSubsets": 1024,
+        "rejected": {
+          "assumed-capacity-target": 96,
+          "budget": 751,
+          "extra-trip-limit": 176
+        },
+        "scope": "finite-candidate-scenario-only"
+      },
+      "certificateErrors": []
+    }
+  ]
+}

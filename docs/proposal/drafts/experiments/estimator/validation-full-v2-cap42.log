@@ -1,0 +1,18 @@
+2026-11-11T23:42:36+08:00
+Traceback (most recent call last):
+  File "/home/zup/code/esg-hackathon-bus-2026/docs/proposal/drafts/experiments/estimator/validate.py", line 59, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/zup/code/esg-hackathon-bus-2026/docs/proposal/drafts/experiments/estimator/validate.py", line 46, in main
+    runs = [one(cap, a, b, shock, args.seed + cell*100000 + i*10, args.bootstrap) for i in range(args.repetitions)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zup/code/esg-hackathon-bus-2026/docs/proposal/drafts/experiments/estimator/validate.py", line 19, in one
+    sim.run(SimpleNamespace(**args, seed=seed+i, visible=paths[2*i], truth=paths[2*i+1]))
+  File "/home/zup/code/esg-hackathon-bus-2026/docs/proposal/drafts/experiments/estimator/sim.py", line 83, in run
+    truth.write(json.dumps(dict(**event, **extra, fresh=fresh, carried=carried,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 200, in encode
+Interrupted: 2026-11-11T23:48:06+08:00

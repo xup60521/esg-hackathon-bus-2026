@@ -1,0 +1,267 @@
+{
+ "generatedAt": "2026-11-03T17:07:43.006Z",
+ "rules": {
+  "lookbackDays": 56,
+  "maxPeers": 4,
+  "minPeers": 2,
+  "surgeRatio": 1.5,
+  "surgeMinExcess": 10,
+  "dropRatio": 0.5,
+  "dropMinBase": 10,
+  "silenceMinBase": 5,
+  "sustainedHours": 2,
+  "midMinBase": 3,
+  "firstHour": 5,
+  "lastHour": 23
+ },
+ "range": {
+  "first": "2024-01-01",
+  "last": "2025-12-31",
+  "dates": 725,
+  "missingDates": [
+   "2024-07-24",
+   "2024-07-25",
+   "2024-10-02",
+   "2024-10-03",
+   "2024-10-31",
+   "2025-07-07"
+  ]
+ },
+ "calendar": {
+  "source": "中華民國政府行政機關辦公日曆表（新北市政府資料開放平台 dataset 308dcd75-6434-45bc-a95f-584da4fed251）",
+  "fetchedAt": "2026-11-03T16:55:39.507Z",
+  "entries": 37
+ },
+ "backtest": {
+  "evaluatedDays": 678,
+  "evaluatedDirDays": 1356,
+  "methods": {
+   "mean4-calendar": {
+    "hourly": {
+     "cells": 25764,
+     "actual": 1666784,
+     "abs": 335533.0833333333,
+     "wape": 0.20130567808026315,
+     "mae": 13.023330357604927
+    },
+    "daily": {
+     "cells": 1356,
+     "actual": 1666784,
+     "abs": 182989.25,
+     "wape": 0.1097858210781961,
+     "mae": 134.9478244837758
+    },
+    "rangeCoverage": 0.6609610308958236
+   },
+   "mean4-weekday": {
+    "hourly": {
+     "cells": 25764,
+     "actual": 1666784,
+     "abs": 339895.5,
+     "wape": 0.20392294382475473,
+     "mae": 13.19265253842571
+    },
+    "daily": {
+     "cells": 1356,
+     "actual": 1666784,
+     "abs": 183663.5,
+     "wape": 0.11019034259988097,
+     "mae": 135.44505899705015
+    },
+    "rangeCoverage": 0.6704316099984474
+   },
+   "nearest-peer-calendar": {
+    "hourly": {
+     "cells": 25764,
+     "actual": 1666784,
+     "abs": 401815,
+     "wape": 0.24107202852919155,
+     "mae": 15.59598664803602
+    },
+    "daily": {
+     "cells": 1356,
+     "actual": 1666784,
+     "abs": 207811,
+     "wape": 0.12467782268128323,
+     "mae": 153.25294985250738
+    },
+    "rangeCoverage": null
+   }
+  }
+ },
+ "alertSensitivity": [
+  {
+   "surgeRatio": 1.3,
+   "replayedHours": 13775,
+   "surgeAlerts": 1949,
+   "sustainedAlerts": 730
+  },
+  {
+   "surgeRatio": 1.5,
+   "replayedHours": 13775,
+   "surgeAlerts": 871,
+   "sustainedAlerts": 229
+  },
+  {
+   "surgeRatio": 2,
+   "replayedHours": 13775,
+   "surgeAlerts": 157,
+   "sustainedAlerts": 38
+  }
+ ],
+ "alertCountsDefaultRules": {
+  "baseline-missing": 1786,
+  "drop": 445,
+  "surge": 871,
+  "sustained-surge": 229,
+  "mid-dip-lead": 92,
+  "silent": 10
+ },
+ "highlights": {
+  "surge": [
+   {
+    "date": "2025-02-27",
+    "actual": 3773,
+    "baseline": 2078.25,
+    "ratio": 1.8154697461806808,
+    "tag": "放假日前一日（和平紀念日）"
+   },
+   {
+    "date": "2025-02-16",
+    "actual": 3563,
+    "baseline": 2276.25,
+    "ratio": 1.5652937946183416,
+    "tag": null
+   },
+   {
+    "date": "2025-04-02",
+    "actual": 3247,
+    "baseline": 2090,
+    "ratio": 1.5535885167464114,
+    "tag": "放假日前一日"
+   },
+   {
+    "date": "2024-04-03",
+    "actual": 3197,
+    "baseline": 2082,
+    "ratio": 1.5355427473583094,
+    "tag": "放假日前一日（兒童節及民族掃墓節）"
+   },
+   {
+    "date": "2025-10-09",
+    "actual": 3332,
+    "baseline": 2201.75,
+    "ratio": 1.5133416600431475,
+    "tag": "放假日前一日（國慶日）"
+   },
+   {
+    "date": "2025-09-30",
+    "actual": 2494,
+    "baseline": 1700,
+    "ratio": 1.4670588235294117,
+    "tag": "放假日後一日"
+   },
+   {
+    "date": "2024-12-31",
+    "actual": 3040,
+    "baseline": 2085,
+    "ratio": 1.4580335731414868,
+    "tag": "放假日前一日（中華民國開國紀念日）"
+   },
+   {
+    "date": "2024-10-09",
+    "actual": 2804,
+    "baseline": 1957.75,
+    "ratio": 1.4322564168050058,
+    "tag": "放假日前一日（國慶日）"
+   },
+   {
+    "date": "2024-06-11",
+    "actual": 2378,
+    "baseline": 1669.25,
+    "ratio": 1.4245918825819979,
+    "tag": "放假日後一日（端午節）"
+   },
+   {
+    "date": "2024-04-02",
+    "actual": 2909,
+    "baseline": 2053,
+    "ratio": 1.4169508037018996,
+    "tag": null
+   }
+  ],
+  "drop": [
+   {
+    "date": "2024-07-26",
+    "actual": 1209,
+    "baseline": 2456.25,
+    "ratio": 0.49221374045801525,
+    "tag": null
+   },
+   {
+    "date": "2025-11-12",
+    "actual": 1216,
+    "baseline": 2202.75,
+    "ratio": 0.5520372261945296,
+    "tag": null
+   },
+   {
+    "date": "2024-04-24",
+    "actual": 1432,
+    "baseline": 2361,
+    "ratio": 0.6065226598898772,
+    "tag": null
+   },
+   {
+    "date": "2025-07-09",
+    "actual": 1442,
+    "baseline": 2237,
+    "ratio": 0.6446133214126062,
+    "tag": null
+   },
+   {
+    "date": "2025-07-31",
+    "actual": 1394,
+    "baseline": 2092,
+    "ratio": 0.6663479923518164,
+    "tag": null
+   },
+   {
+    "date": "2025-08-13",
+    "actual": 1365,
+    "baseline": 1995,
+    "ratio": 0.6842105263157895,
+    "tag": null
+   },
+   {
+    "date": "2025-01-17",
+    "actual": 2170,
+    "baseline": 3118.5,
+    "ratio": 0.6958473625140292,
+    "tag": null
+   },
+   {
+    "date": "2024-01-23",
+    "actual": 1589,
+    "baseline": 2281.333333333333,
+    "ratio": 0.6965225014611339,
+    "tag": null
+   },
+   {
+    "date": "2025-08-02",
+    "actual": 1735,
+    "baseline": 2451.25,
+    "ratio": 0.7078021417644059,
+    "tag": null
+   },
+   {
+    "date": "2025-11-13",
+    "actual": 1853,
+    "baseline": 2617.25,
+    "ratio": 0.7079950329544369,
+    "tag": null
+   }
+  ],
+  "eligible": 678
+ }
+}

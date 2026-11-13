@@ -1,13 +1,22 @@
 import { useQuery } from "@tanstack/react-query";
-import { ClientOnly, createFileRoute } from "@tanstack/react-router";
-import { CalendarDays, Clock3, Moon, Pause, Play, Sun } from "lucide-react";
+import { ClientOnly, createFileRoute, Link } from "@tanstack/react-router";
+import {
+	CalendarDays,
+	ChartColumn,
+	Clock3,
+	Gauge,
+	Moon,
+	Pause,
+	Play,
+	Sun,
+} from "lucide-react";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import type { AnimatedTrip, StopValue } from "#/components/BusMap";
 import HourBars from "#/components/HourBars";
 import Timeline, { type DailySeries } from "#/components/Timeline";
 import { useTRPC } from "#/integrations/trpc/react";
 import { type GeoAssets, loadGeoAssets } from "#/lib/geo";
-import { PALETTES, SUBROUTES, type Theme } from "#/lib/palette";
+import { SUBROUTES, THEME_KEY, type Theme, themeVars } from "#/lib/palette";
 
 const BusMap = lazy(() => import("#/components/BusMap"));
 
@@ -38,21 +47,6 @@ function haversine(a: [number, number], b: [number, number]) {
 		Math.sin(dLat / 2) ** 2 +
 		Math.cos(a[1] * toR) * Math.cos(b[1] * toR) * Math.sin(dLon / 2) ** 2;
 	return 2 * R * Math.asin(Math.sqrt(s));
-}
-
-const THEME_KEY = "bus6670-theme";
-
-/** Palette-driven CSS variables (sub-route colours etc.); neutral UI tokens live in styles.css. */
-function themeVars(theme: Theme): React.CSSProperties {
-	const p = PALETTES[theme];
-	const vars: Record<string, string> = {
-		"--boarding": p.boardingHex,
-		"--alighting": p.alightingHex,
-		"--rider": p.riderHex,
-		"--chart-surface": p.chartSurface,
-	};
-	for (const [k, v] of Object.entries(p.subroutes)) vars[`--s-${k}`] = v;
-	return vars as React.CSSProperties;
 }
 
 function Home() {
@@ -406,6 +400,12 @@ function Home() {
 						</span>
 					)}
 				</div>
+				<Link to="/analysis" className="btn mt-3 w-full justify-center">
+					<ChartColumn className="size-4" /> 中站上車低窪分析 Mid-stop analysis
+				</Link>
+				<Link to="/dashboard" className="btn mt-2 w-full justify-center">
+					<Gauge className="size-4" /> 營運儀表板（歷史回測） Ops dashboard
+				</Link>
 			</header>
 
 			{/* selected-day panel */}

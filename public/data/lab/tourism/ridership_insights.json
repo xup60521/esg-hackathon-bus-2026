@@ -1,0 +1,1207 @@
+{
+  "metadata": {
+    "description": "6670 觀光沿線重點站點 2024-2025 歷史電子票證上下車刷卡筆數紀錄（純觀測資料）",
+    "totalDays": 725,
+    "totalMonths": 24,
+    "retrievedDate": "2026-11-04",
+    "integrityNotice": [
+      "1. 歷史 2024-2025 年電子票證刷卡記錄僅為過往已登車成功刷卡之客觀觀測值，不能作為 2026 年班車營運、準點或滿載的證明。",
+      "2. 刷卡為 0 之站點（如日月老茶場）僅代表該資料集未記錄到票證扣款，其成因未有官方驗證文獻（可能涉及分段計費設定、票證設備、特約套票或其它因素），嚴格禁止推論為招呼站、旅客無需求或資料歸戶原因。",
+      "3. 未登車旅客、排隊候車者及使用紙本套票/現金之旅客均不涵蓋於此資料集內。"
+    ]
+  },
+  "stopsAnalysis": {
+    "九族文化村": {
+      "totalInboundBoardings": 17125,
+      "totalOutboundAlightings": 25444,
+      "peakDepartureHour": 16,
+      "peakDepartureHourBoardings": 5608,
+      "eveningBoardingsCount": 10759,
+      "eveningBoardingsRatioPercent": 62.83,
+      "zeroCountObservation": null,
+      "inboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 1095,
+          "alightings": 1670
+        },
+        "10": {
+          "boardings": 2,
+          "alightings": 1
+        },
+        "11": {
+          "boardings": 4,
+          "alightings": 1
+        },
+        "12": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "13": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "14": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "15": {
+          "boardings": 5265,
+          "alightings": 114
+        },
+        "16": {
+          "boardings": 5608,
+          "alightings": 79
+        },
+        "17": {
+          "boardings": 5018,
+          "alightings": 95
+        },
+        "18": {
+          "boardings": 128,
+          "alightings": 4
+        },
+        "19": {
+          "boardings": 5,
+          "alightings": 7
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 1
+        },
+        "8": {
+          "boardings": 2,
+          "alightings": 242
+        },
+        "9": {
+          "boardings": 103,
+          "alightings": 7768
+        },
+        "10": {
+          "boardings": 190,
+          "alightings": 6906
+        },
+        "11": {
+          "boardings": 156,
+          "alightings": 4390
+        },
+        "12": {
+          "boardings": 3,
+          "alightings": 490
+        },
+        "13": {
+          "boardings": 0,
+          "alightings": 42
+        },
+        "14": {
+          "boardings": 0,
+          "alightings": 19
+        },
+        "15": {
+          "boardings": 2,
+          "alightings": 5
+        },
+        "16": {
+          "boardings": 3,
+          "alightings": 7
+        },
+        "17": {
+          "boardings": 899,
+          "alightings": 5443
+        },
+        "18": {
+          "boardings": 7,
+          "alightings": 61
+        },
+        "19": {
+          "boardings": 1,
+          "alightings": 58
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 12
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      }
+    },
+    "向山行政中心": {
+      "totalInboundBoardings": 16280,
+      "totalOutboundAlightings": 6849,
+      "peakDepartureHour": 13,
+      "peakDepartureHourBoardings": 5975,
+      "eveningBoardingsCount": 2227,
+      "eveningBoardingsRatioPercent": 13.68,
+      "zeroCountObservation": null,
+      "inboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "10": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "11": {
+          "boardings": 2281,
+          "alightings": 0
+        },
+        "12": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "13": {
+          "boardings": 5975,
+          "alightings": 0
+        },
+        "14": {
+          "boardings": 5,
+          "alightings": 0
+        },
+        "15": {
+          "boardings": 5792,
+          "alightings": 0
+        },
+        "16": {
+          "boardings": 2227,
+          "alightings": 0
+        },
+        "17": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 0,
+          "alightings": 172
+        },
+        "10": {
+          "boardings": 0,
+          "alightings": 3461
+        },
+        "11": {
+          "boardings": 0,
+          "alightings": 1628
+        },
+        "12": {
+          "boardings": 0,
+          "alightings": 52
+        },
+        "13": {
+          "boardings": 0,
+          "alightings": 729
+        },
+        "14": {
+          "boardings": 0,
+          "alightings": 796
+        },
+        "15": {
+          "boardings": 0,
+          "alightings": 7
+        },
+        "16": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "17": {
+          "boardings": 0,
+          "alightings": 4
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      }
+    },
+    "大雁": {
+      "totalInboundBoardings": 3510,
+      "totalOutboundAlightings": 5307,
+      "peakDepartureHour": 11,
+      "peakDepartureHourBoardings": 603,
+      "eveningBoardingsCount": 248,
+      "eveningBoardingsRatioPercent": 7.07,
+      "zeroCountObservation": null,
+      "inboundHourly": {
+        "6": {
+          "boardings": 18,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 541,
+          "alightings": 31
+        },
+        "8": {
+          "boardings": 546,
+          "alightings": 201
+        },
+        "9": {
+          "boardings": 195,
+          "alightings": 281
+        },
+        "10": {
+          "boardings": 490,
+          "alightings": 170
+        },
+        "11": {
+          "boardings": 603,
+          "alightings": 178
+        },
+        "12": {
+          "boardings": 260,
+          "alightings": 94
+        },
+        "13": {
+          "boardings": 257,
+          "alightings": 113
+        },
+        "14": {
+          "boardings": 233,
+          "alightings": 116
+        },
+        "15": {
+          "boardings": 119,
+          "alightings": 296
+        },
+        "16": {
+          "boardings": 139,
+          "alightings": 311
+        },
+        "17": {
+          "boardings": 61,
+          "alightings": 185
+        },
+        "18": {
+          "boardings": 29,
+          "alightings": 74
+        },
+        "19": {
+          "boardings": 19,
+          "alightings": 24
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 2,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 1,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 69,
+          "alightings": 384
+        },
+        "9": {
+          "boardings": 158,
+          "alightings": 440
+        },
+        "10": {
+          "boardings": 117,
+          "alightings": 325
+        },
+        "11": {
+          "boardings": 194,
+          "alightings": 262
+        },
+        "12": {
+          "boardings": 56,
+          "alightings": 323
+        },
+        "13": {
+          "boardings": 143,
+          "alightings": 351
+        },
+        "14": {
+          "boardings": 146,
+          "alightings": 577
+        },
+        "15": {
+          "boardings": 186,
+          "alightings": 554
+        },
+        "16": {
+          "boardings": 42,
+          "alightings": 332
+        },
+        "17": {
+          "boardings": 56,
+          "alightings": 714
+        },
+        "18": {
+          "boardings": 56,
+          "alightings": 421
+        },
+        "19": {
+          "boardings": 67,
+          "alightings": 328
+        },
+        "20": {
+          "boardings": 17,
+          "alightings": 219
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 76
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 1
+        }
+      }
+    },
+    "日月潭": {
+      "totalInboundBoardings": 291416,
+      "totalOutboundAlightings": 278751,
+      "peakDepartureHour": 15,
+      "peakDepartureHourBoardings": 45480,
+      "eveningBoardingsCount": 96284,
+      "eveningBoardingsRatioPercent": 33.04,
+      "zeroCountObservation": null,
+      "inboundHourly": {
+        "6": {
+          "boardings": 350,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 5791,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 4332,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 18664,
+          "alightings": 0
+        },
+        "10": {
+          "boardings": 20194,
+          "alightings": 4
+        },
+        "11": {
+          "boardings": 17257,
+          "alightings": 1100
+        },
+        "12": {
+          "boardings": 18799,
+          "alightings": 0
+        },
+        "13": {
+          "boardings": 37180,
+          "alightings": 1207
+        },
+        "14": {
+          "boardings": 27073,
+          "alightings": 0
+        },
+        "15": {
+          "boardings": 45480,
+          "alightings": 815
+        },
+        "16": {
+          "boardings": 42359,
+          "alightings": 525
+        },
+        "17": {
+          "boardings": 30021,
+          "alightings": 2
+        },
+        "18": {
+          "boardings": 17952,
+          "alightings": 0
+        },
+        "19": {
+          "boardings": 5942,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 8,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 2,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 473
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 117
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 9006
+        },
+        "9": {
+          "boardings": 65,
+          "alightings": 41708
+        },
+        "10": {
+          "boardings": 283,
+          "alightings": 48870
+        },
+        "11": {
+          "boardings": 155,
+          "alightings": 43245
+        },
+        "12": {
+          "boardings": 52,
+          "alightings": 47793
+        },
+        "13": {
+          "boardings": 307,
+          "alightings": 29042
+        },
+        "14": {
+          "boardings": 182,
+          "alightings": 19326
+        },
+        "15": {
+          "boardings": 5,
+          "alightings": 13851
+        },
+        "16": {
+          "boardings": 12,
+          "alightings": 7844
+        },
+        "17": {
+          "boardings": 0,
+          "alightings": 4415
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 6088
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 3310
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 2697
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 912
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 54
+        }
+      }
+    },
+    "日月老茶場": {
+      "totalInboundBoardings": 0,
+      "totalOutboundAlightings": 0,
+      "peakDepartureHour": 0,
+      "peakDepartureHourBoardings": 0,
+      "eveningBoardingsCount": 0,
+      "eveningBoardingsRatioPercent": 0,
+      "zeroCountObservation": "觀測到 2024-2025 年上下車刷卡筆數記錄為 0，成因未知且無官方證據，不作任何因果推論。",
+      "inboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "10": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "11": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "12": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "13": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "14": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "15": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "16": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "17": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "10": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "11": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "12": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "13": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "14": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "15": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "16": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "17": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      }
+    },
+    "桃米坑": {
+      "totalInboundBoardings": 3828,
+      "totalOutboundAlightings": 5008,
+      "peakDepartureHour": 15,
+      "peakDepartureHourBoardings": 445,
+      "eveningBoardingsCount": 768,
+      "eveningBoardingsRatioPercent": 20.06,
+      "zeroCountObservation": null,
+      "inboundHourly": {
+        "6": {
+          "boardings": 10,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 161,
+          "alightings": 38
+        },
+        "8": {
+          "boardings": 283,
+          "alightings": 66
+        },
+        "9": {
+          "boardings": 318,
+          "alightings": 79
+        },
+        "10": {
+          "boardings": 348,
+          "alightings": 268
+        },
+        "11": {
+          "boardings": 330,
+          "alightings": 186
+        },
+        "12": {
+          "boardings": 380,
+          "alightings": 127
+        },
+        "13": {
+          "boardings": 383,
+          "alightings": 118
+        },
+        "14": {
+          "boardings": 401,
+          "alightings": 110
+        },
+        "15": {
+          "boardings": 445,
+          "alightings": 65
+        },
+        "16": {
+          "boardings": 357,
+          "alightings": 102
+        },
+        "17": {
+          "boardings": 256,
+          "alightings": 43
+        },
+        "18": {
+          "boardings": 67,
+          "alightings": 73
+        },
+        "19": {
+          "boardings": 88,
+          "alightings": 26
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 5,
+          "alightings": 1
+        },
+        "7": {
+          "boardings": 1,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 24,
+          "alightings": 199
+        },
+        "9": {
+          "boardings": 49,
+          "alightings": 447
+        },
+        "10": {
+          "boardings": 21,
+          "alightings": 494
+        },
+        "11": {
+          "boardings": 78,
+          "alightings": 540
+        },
+        "12": {
+          "boardings": 97,
+          "alightings": 393
+        },
+        "13": {
+          "boardings": 155,
+          "alightings": 396
+        },
+        "14": {
+          "boardings": 136,
+          "alightings": 377
+        },
+        "15": {
+          "boardings": 100,
+          "alightings": 432
+        },
+        "16": {
+          "boardings": 53,
+          "alightings": 298
+        },
+        "17": {
+          "boardings": 64,
+          "alightings": 798
+        },
+        "18": {
+          "boardings": 21,
+          "alightings": 238
+        },
+        "19": {
+          "boardings": 22,
+          "alightings": 154
+        },
+        "20": {
+          "boardings": 10,
+          "alightings": 178
+        },
+        "21": {
+          "boardings": 3,
+          "alightings": 62
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 1
+        }
+      }
+    },
+    "水社": {
+      "totalInboundBoardings": 615,
+      "totalOutboundAlightings": 1026,
+      "peakDepartureHour": 11,
+      "peakDepartureHourBoardings": 194,
+      "eveningBoardingsCount": 182,
+      "eveningBoardingsRatioPercent": 29.59,
+      "zeroCountObservation": null,
+      "inboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 4,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 20,
+          "alightings": 0
+        },
+        "10": {
+          "boardings": 1,
+          "alightings": 0
+        },
+        "11": {
+          "boardings": 194,
+          "alightings": 65
+        },
+        "12": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "13": {
+          "boardings": 135,
+          "alightings": 66
+        },
+        "14": {
+          "boardings": 0,
+          "alightings": 3
+        },
+        "15": {
+          "boardings": 79,
+          "alightings": 34
+        },
+        "16": {
+          "boardings": 182,
+          "alightings": 26
+        },
+        "17": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 0,
+          "alightings": 20
+        },
+        "10": {
+          "boardings": 7,
+          "alightings": 129
+        },
+        "11": {
+          "boardings": 5,
+          "alightings": 170
+        },
+        "12": {
+          "boardings": 0,
+          "alightings": 46
+        },
+        "13": {
+          "boardings": 8,
+          "alightings": 377
+        },
+        "14": {
+          "boardings": 5,
+          "alightings": 231
+        },
+        "15": {
+          "boardings": 0,
+          "alightings": 5
+        },
+        "16": {
+          "boardings": 0,
+          "alightings": 12
+        },
+        "17": {
+          "boardings": 0,
+          "alightings": 6
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 30
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      }
+    },
+    "牛耳石雕公園": {
+      "totalInboundBoardings": 1013,
+      "totalOutboundAlightings": 1946,
+      "peakDepartureHour": 14,
+      "peakDepartureHourBoardings": 167,
+      "eveningBoardingsCount": 208,
+      "eveningBoardingsRatioPercent": 20.53,
+      "zeroCountObservation": null,
+      "inboundHourly": {
+        "6": {
+          "boardings": 9,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 8,
+          "alightings": 26
+        },
+        "8": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "9": {
+          "boardings": 1,
+          "alightings": 4
+        },
+        "10": {
+          "boardings": 166,
+          "alightings": 263
+        },
+        "11": {
+          "boardings": 139,
+          "alightings": 286
+        },
+        "12": {
+          "boardings": 157,
+          "alightings": 128
+        },
+        "13": {
+          "boardings": 65,
+          "alightings": 51
+        },
+        "14": {
+          "boardings": 167,
+          "alightings": 195
+        },
+        "15": {
+          "boardings": 93,
+          "alightings": 130
+        },
+        "16": {
+          "boardings": 101,
+          "alightings": 302
+        },
+        "17": {
+          "boardings": 78,
+          "alightings": 208
+        },
+        "18": {
+          "boardings": 18,
+          "alightings": 102
+        },
+        "19": {
+          "boardings": 10,
+          "alightings": 3
+        },
+        "20": {
+          "boardings": 1,
+          "alightings": 0
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      },
+      "outboundHourly": {
+        "6": {
+          "boardings": 1,
+          "alightings": 0
+        },
+        "7": {
+          "boardings": 2,
+          "alightings": 13
+        },
+        "8": {
+          "boardings": 68,
+          "alightings": 219
+        },
+        "9": {
+          "boardings": 48,
+          "alightings": 175
+        },
+        "10": {
+          "boardings": 96,
+          "alightings": 238
+        },
+        "11": {
+          "boardings": 125,
+          "alightings": 140
+        },
+        "12": {
+          "boardings": 67,
+          "alightings": 198
+        },
+        "13": {
+          "boardings": 113,
+          "alightings": 186
+        },
+        "14": {
+          "boardings": 81,
+          "alightings": 175
+        },
+        "15": {
+          "boardings": 76,
+          "alightings": 207
+        },
+        "16": {
+          "boardings": 22,
+          "alightings": 89
+        },
+        "17": {
+          "boardings": 83,
+          "alightings": 256
+        },
+        "18": {
+          "boardings": 0,
+          "alightings": 3
+        },
+        "19": {
+          "boardings": 0,
+          "alightings": 0
+        },
+        "20": {
+          "boardings": 0,
+          "alightings": 24
+        },
+        "21": {
+          "boardings": 0,
+          "alightings": 23
+        },
+        "22": {
+          "boardings": 0,
+          "alightings": 0
+        }
+      }
+    }
+  }
+}

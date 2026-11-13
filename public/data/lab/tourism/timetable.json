@@ -1,0 +1,3523 @@
+{
+  "metadata": {
+    "routeNumber": "6670",
+    "routeName": "台灣好行日月潭線",
+    "operator": "南投汽車客運股份有限公司 (南投客運)",
+    "authority": "交通部觀光署 / 交通部公路局",
+    "sourceUrl": "https://www.taiwantrip.com.tw/Frontend/Bustime/TimeTable/R0005",
+    "snapshotSha256": "43266287f17a4d227d5c316a695d27dab6615ed6b95fe50ffb3fddd7c5a5f1b2",
+    "retrievedDate": "2026-11-04",
+    "scheduleType": "OFFICIAL_FIXED_SCHEDULE",
+    "validityRange": "UNKNOWN",
+    "scheduleNotes": [
+      "平日班次為周一~周四",
+      "假日班次為周五~周日",
+      "中台禪寺路線維持例假日行駛"
+    ],
+    "subrouteDisclaimer": "官網時刻表僅提供班次編號與停靠時間，6670A~F 為依停靠模式推論 (inferred)，非官方正式車次代碼。",
+    "lastBusDisclaimer": "SAFE 等級僅代表排定班次具緩衝，不保證現場路況準點、行車安全或必有空位。"
+  },
+  "schedules": {
+    "weekday_outbound": {
+      "label": "平日去程 (往向山/日月潭)",
+      "totalTrips": 27,
+      "stopsHeader": [
+        {
+          "name": "台中航空站",
+          "id": "airport"
+        },
+        {
+          "name": "臺中干城站",
+          "id": "taichung"
+        },
+        {
+          "name": "臺中車站(民族路口)",
+          "id": "taichung_station"
+        },
+        {
+          "name": "民興公園(執行分署)",
+          "id": "minxing_park"
+        },
+        {
+          "name": "捷運大慶站",
+          "id": "daqing"
+        },
+        {
+          "name": "高鐵臺中站",
+          "id": "thsr"
+        },
+        {
+          "name": "埔里遊客中心",
+          "id": "puli_visitor"
+        },
+        {
+          "name": "牛耳石雕公園",
+          "id": "niuer"
+        },
+        {
+          "name": "崎下",
+          "id": "qixia"
+        },
+        {
+          "name": "大成國小",
+          "id": "dacheng_school"
+        },
+        {
+          "name": "榮民醫院",
+          "id": "veterans_hospital"
+        },
+        {
+          "name": "埔里酒廠",
+          "id": "puli_brewery"
+        },
+        {
+          "name": "仁愛公園",
+          "id": "renai_park"
+        },
+        {
+          "name": "中台禪寺",
+          "id": "chungtai"
+        },
+        {
+          "name": "中台世界博物館",
+          "id": "chungtai_museum"
+        },
+        {
+          "name": "福興溫泉遊客中心",
+          "id": "fuxing_hotspring"
+        },
+        {
+          "name": "地理中心碑",
+          "id": "geo_center"
+        },
+        {
+          "name": "埔里站",
+          "id": "puli"
+        },
+        {
+          "name": "暨南大學(校內)",
+          "id": "jnu_campus"
+        },
+        {
+          "name": "暨南大學(校外)",
+          "id": "jnu"
+        },
+        {
+          "name": "桃米坑(紙教堂)",
+          "id": "taomi"
+        },
+        {
+          "name": "大雁(澀水社區)",
+          "id": "dayan"
+        },
+        {
+          "name": "新城國小",
+          "id": "xincheng_school"
+        },
+        {
+          "name": "三育神學院",
+          "id": "sanyu"
+        },
+        {
+          "name": "經典驛棧",
+          "id": "classic_inn"
+        },
+        {
+          "name": "晶園渡假村",
+          "id": "jingyuan"
+        },
+        {
+          "name": "九族文化村(部分班次停靠)",
+          "id": "formosan"
+        },
+        {
+          "name": "魚池",
+          "id": "yuchi"
+        },
+        {
+          "name": "日月老茶場",
+          "id": "tea"
+        },
+        {
+          "name": "日月潭",
+          "id": "sunmoonlake"
+        },
+        {
+          "name": "水社",
+          "id": "shuishe"
+        },
+        {
+          "name": "向山行政中心(部分班次停靠)",
+          "id": "xiangshan"
+        }
+      ],
+      "trips": [
+        {
+          "tripNumber": 1,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "07:20",
+            "taichung_station": "07:23",
+            "minxing_park": "07:31",
+            "daqing": "07:37",
+            "thsr": "07:45",
+            "puli_visitor": "08:24",
+            "niuer": "08:26",
+            "jnu_campus": "08:30",
+            "taomi": "08:46",
+            "dayan": "08:51",
+            "xincheng_school": "08:52",
+            "sanyu": "08:53",
+            "yuchi": "08:57",
+            "tea": "09:01",
+            "sunmoonlake": "09:05"
+          }
+        },
+        {
+          "tripNumber": 2,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "07:30",
+            "taichung_station": "07:33",
+            "minxing_park": "07:41",
+            "daqing": "07:47",
+            "thsr": "07:55",
+            "puli_visitor": "08:34",
+            "niuer": "08:36",
+            "jnu_campus": "08:40",
+            "taomi": "08:56",
+            "dayan": "09:01",
+            "xincheng_school": "09:02",
+            "sanyu": "09:03",
+            "yuchi": "09:07",
+            "tea": "09:11",
+            "sunmoonlake": "09:15"
+          }
+        },
+        {
+          "tripNumber": 3,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "07:45",
+            "taichung_station": "07:48",
+            "minxing_park": "07:56",
+            "daqing": "08:02",
+            "thsr": "08:10",
+            "puli_visitor": "08:49",
+            "niuer": "08:51",
+            "qixia": "08:53",
+            "dacheng_school": "08:54",
+            "veterans_hospital": "08:55",
+            "puli_brewery": "08:56",
+            "renai_park": "08:57",
+            "puli": "09:00",
+            "jnu": "09:10",
+            "taomi": "09:11",
+            "dayan": "09:16",
+            "xincheng_school": "09:17",
+            "sanyu": "09:18",
+            "classic_inn": "09:20",
+            "jingyuan": "09:23",
+            "formosan": "09:25",
+            "yuchi": "09:29",
+            "tea": "09:33",
+            "sunmoonlake": "09:40"
+          }
+        },
+        {
+          "tripNumber": 4,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:00",
+            "taichung_station": "08:03",
+            "minxing_park": "08:11",
+            "daqing": "08:17",
+            "thsr": "08:25",
+            "puli_visitor": "09:04",
+            "niuer": "09:06",
+            "jnu_campus": "09:10",
+            "taomi": "09:26",
+            "dayan": "09:31",
+            "xincheng_school": "09:32",
+            "sanyu": "09:33",
+            "yuchi": "09:37",
+            "tea": "09:41",
+            "sunmoonlake": "09:45"
+          }
+        },
+        {
+          "tripNumber": 5,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:15",
+            "taichung_station": "08:18",
+            "minxing_park": "08:26",
+            "daqing": "08:32",
+            "thsr": "08:35",
+            "puli_visitor": "09:14",
+            "niuer": "09:16",
+            "qixia": "09:18",
+            "dacheng_school": "09:19",
+            "veterans_hospital": "09:20",
+            "puli_brewery": "09:21",
+            "renai_park": "09:22",
+            "puli": "09:25",
+            "jnu": "09:35",
+            "taomi": "09:36",
+            "dayan": "09:41",
+            "xincheng_school": "09:42",
+            "sanyu": "09:43",
+            "yuchi": "09:47",
+            "tea": "09:51",
+            "sunmoonlake": "10:05"
+          }
+        },
+        {
+          "tripNumber": 6,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:20",
+            "taichung_station": "08:23",
+            "minxing_park": "08:31",
+            "daqing": "08:37",
+            "thsr": "08:45",
+            "puli_visitor": "09:24",
+            "niuer": "09:26",
+            "jnu_campus": "09:30",
+            "taomi": "09:46",
+            "dayan": "09:51",
+            "xincheng_school": "09:52",
+            "sanyu": "09:53",
+            "yuchi": "09:57",
+            "tea": "10:01",
+            "sunmoonlake": "10:05",
+            "shuishe": "10:06",
+            "xiangshan": "10:15"
+          }
+        },
+        {
+          "tripNumber": 7,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:45",
+            "taichung_station": "08:48",
+            "minxing_park": "08:56",
+            "daqing": "09:02",
+            "thsr": "09:10",
+            "puli_visitor": "09:49",
+            "niuer": "09:51",
+            "qixia": "09:53",
+            "dacheng_school": "09:54",
+            "veterans_hospital": "09:55",
+            "puli_brewery": "09:56",
+            "renai_park": "09:57",
+            "puli": "10:00",
+            "jnu": "10:10",
+            "taomi": "10:11",
+            "dayan": "10:16",
+            "xincheng_school": "10:17",
+            "sanyu": "10:18",
+            "classic_inn": "10:20",
+            "jingyuan": "10:23",
+            "formosan": "10:25",
+            "yuchi": "10:29",
+            "tea": "10:33",
+            "sunmoonlake": "10:40"
+          }
+        },
+        {
+          "tripNumber": 8,
+          "inferredSubroute": "6670E",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "airport": "09:00",
+            "thsr": "09:25",
+            "puli_visitor": "10:04",
+            "niuer": "10:06",
+            "jnu_campus": "10:10",
+            "taomi": "10:26",
+            "dayan": "10:31",
+            "xincheng_school": "10:32",
+            "sanyu": "10:33",
+            "yuchi": "10:37",
+            "tea": "10:41",
+            "sunmoonlake": "10:45"
+          }
+        },
+        {
+          "tripNumber": 9,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "09:20",
+            "taichung_station": "09:23",
+            "minxing_park": "09:31",
+            "daqing": "09:37",
+            "thsr": "09:45",
+            "puli_visitor": "10:24",
+            "niuer": "10:26",
+            "jnu_campus": "10:30",
+            "taomi": "10:46",
+            "dayan": "10:51",
+            "xincheng_school": "10:52",
+            "sanyu": "10:53",
+            "yuchi": "10:57",
+            "tea": "11:01",
+            "sunmoonlake": "11:05",
+            "shuishe": "11:06",
+            "xiangshan": "11:15"
+          }
+        },
+        {
+          "tripNumber": 10,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "09:45",
+            "taichung_station": "09:48",
+            "minxing_park": "09:56",
+            "daqing": "10:02",
+            "thsr": "10:10",
+            "puli_visitor": "10:49",
+            "niuer": "10:51",
+            "qixia": "10:53",
+            "dacheng_school": "10:54",
+            "veterans_hospital": "10:55",
+            "puli_brewery": "10:56",
+            "renai_park": "10:57",
+            "puli": "11:00",
+            "jnu": "11:10",
+            "taomi": "11:11",
+            "dayan": "11:16",
+            "xincheng_school": "11:17",
+            "sanyu": "11:18",
+            "classic_inn": "11:20",
+            "jingyuan": "11:23",
+            "formosan": "11:25",
+            "yuchi": "11:29",
+            "tea": "11:33",
+            "sunmoonlake": "11:40"
+          }
+        },
+        {
+          "tripNumber": 11,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "10:20",
+            "taichung_station": "10:23",
+            "minxing_park": "10:31",
+            "daqing": "10:37",
+            "thsr": "10:45",
+            "puli_visitor": "11:24",
+            "niuer": "11:26",
+            "jnu_campus": "11:30",
+            "taomi": "11:46",
+            "dayan": "11:51",
+            "xincheng_school": "11:52",
+            "sanyu": "11:53",
+            "yuchi": "11:57",
+            "tea": "12:01",
+            "sunmoonlake": "12:05"
+          }
+        },
+        {
+          "tripNumber": 12,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "10:45",
+            "taichung_station": "10:48",
+            "minxing_park": "10:56",
+            "daqing": "11:02",
+            "thsr": "11:10",
+            "puli_visitor": "11:49",
+            "niuer": "11:51",
+            "qixia": "11:53",
+            "dacheng_school": "11:54",
+            "veterans_hospital": "11:55",
+            "puli_brewery": "11:56",
+            "renai_park": "11:57",
+            "puli": "12:00",
+            "jnu": "12:10",
+            "taomi": "12:11",
+            "dayan": "12:16",
+            "xincheng_school": "12:17",
+            "sanyu": "12:18",
+            "yuchi": "12:22",
+            "tea": "12:26",
+            "sunmoonlake": "12:30"
+          }
+        },
+        {
+          "tripNumber": 13,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "11:20",
+            "taichung_station": "11:23",
+            "minxing_park": "11:31",
+            "daqing": "11:37",
+            "thsr": "11:45",
+            "puli_visitor": "12:24",
+            "niuer": "12:26",
+            "jnu_campus": "12:30",
+            "taomi": "12:46",
+            "dayan": "12:51",
+            "xincheng_school": "12:52",
+            "sanyu": "12:53",
+            "yuchi": "12:57",
+            "tea": "13:01",
+            "sunmoonlake": "13:05",
+            "shuishe": "13:06",
+            "xiangshan": "13:15"
+          }
+        },
+        {
+          "tripNumber": 14,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "11:45",
+            "taichung_station": "11:48",
+            "minxing_park": "11:56",
+            "daqing": "12:02",
+            "thsr": "12:10",
+            "puli_visitor": "12:49",
+            "niuer": "12:51",
+            "qixia": "12:53",
+            "dacheng_school": "12:54",
+            "veterans_hospital": "12:55",
+            "puli_brewery": "12:56",
+            "renai_park": "12:57",
+            "puli": "13:00",
+            "jnu": "13:10",
+            "taomi": "13:11",
+            "dayan": "13:16",
+            "xincheng_school": "13:17",
+            "sanyu": "13:18",
+            "yuchi": "13:22",
+            "tea": "13:26",
+            "sunmoonlake": "13:30"
+          }
+        },
+        {
+          "tripNumber": 15,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "12:20",
+            "taichung_station": "12:23",
+            "minxing_park": "12:31",
+            "daqing": "12:37",
+            "thsr": "12:45",
+            "puli_visitor": "13:24",
+            "niuer": "13:26",
+            "jnu_campus": "13:30",
+            "taomi": "13:46",
+            "dayan": "13:51",
+            "xincheng_school": "13:52",
+            "sanyu": "13:53",
+            "yuchi": "13:57",
+            "tea": "14:01",
+            "sunmoonlake": "14:05",
+            "shuishe": "14:06",
+            "xiangshan": "14:15"
+          }
+        },
+        {
+          "tripNumber": 16,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "12:35",
+            "taichung_station": "12:38",
+            "minxing_park": "12:46",
+            "daqing": "12:52",
+            "thsr": "13:00",
+            "puli_visitor": "13:39",
+            "niuer": "13:41",
+            "jnu_campus": "13:45",
+            "taomi": "14:01",
+            "dayan": "14:06",
+            "xincheng_school": "14:07",
+            "sanyu": "14:08",
+            "yuchi": "14:12",
+            "tea": "14:16",
+            "sunmoonlake": "14:20"
+          }
+        },
+        {
+          "tripNumber": 17,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "12:45",
+            "taichung_station": "12:48",
+            "minxing_park": "12:56",
+            "daqing": "13:02",
+            "thsr": "13:10",
+            "puli_visitor": "13:49",
+            "niuer": "13:51",
+            "qixia": "13:53",
+            "dacheng_school": "13:54",
+            "veterans_hospital": "13:55",
+            "puli_brewery": "13:56",
+            "renai_park": "13:57",
+            "puli": "14:00",
+            "jnu": "14:10",
+            "taomi": "14:11",
+            "dayan": "14:16",
+            "xincheng_school": "14:17",
+            "sanyu": "14:18",
+            "yuchi": "14:22",
+            "tea": "14:26",
+            "sunmoonlake": "14:30"
+          }
+        },
+        {
+          "tripNumber": 18,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "13:20",
+            "taichung_station": "13:23",
+            "minxing_park": "13:31",
+            "daqing": "13:37",
+            "thsr": "13:45",
+            "puli_visitor": "14:24",
+            "niuer": "14:26",
+            "jnu_campus": "14:30",
+            "taomi": "14:46",
+            "dayan": "14:51",
+            "xincheng_school": "14:52",
+            "sanyu": "14:53",
+            "yuchi": "14:57",
+            "tea": "15:01",
+            "sunmoonlake": "15:05"
+          }
+        },
+        {
+          "tripNumber": 19,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "13:45",
+            "taichung_station": "13:48",
+            "minxing_park": "13:56",
+            "daqing": "14:02",
+            "thsr": "14:10",
+            "puli_visitor": "14:49",
+            "niuer": "14:51",
+            "qixia": "14:53",
+            "dacheng_school": "14:54",
+            "veterans_hospital": "14:55",
+            "puli_brewery": "14:56",
+            "renai_park": "14:57",
+            "puli": "15:00",
+            "jnu": "15:10",
+            "taomi": "15:11",
+            "dayan": "15:16",
+            "xincheng_school": "15:17",
+            "sanyu": "15:18",
+            "yuchi": "15:22",
+            "tea": "15:26",
+            "sunmoonlake": "15:30"
+          }
+        },
+        {
+          "tripNumber": 20,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "14:20",
+            "taichung_station": "14:23",
+            "minxing_park": "14:31",
+            "daqing": "14:37",
+            "thsr": "14:45",
+            "puli_visitor": "15:24",
+            "niuer": "15:26",
+            "jnu_campus": "15:30",
+            "taomi": "15:46",
+            "dayan": "15:51",
+            "xincheng_school": "15:52",
+            "sanyu": "15:53",
+            "yuchi": "15:57",
+            "tea": "16:01",
+            "sunmoonlake": "16:05"
+          }
+        },
+        {
+          "tripNumber": 21,
+          "inferredSubroute": "6670E",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "airport": "14:30",
+            "thsr": "14:55",
+            "puli_visitor": "15:34",
+            "niuer": "15:36",
+            "jnu_campus": "15:40",
+            "taomi": "15:56",
+            "dayan": "16:01",
+            "xincheng_school": "16:02",
+            "sanyu": "16:03",
+            "yuchi": "16:07",
+            "tea": "16:11",
+            "sunmoonlake": "16:15"
+          }
+        },
+        {
+          "tripNumber": 22,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "14:45",
+            "taichung_station": "14:48",
+            "minxing_park": "14:56",
+            "daqing": "15:02",
+            "thsr": "15:10",
+            "puli_visitor": "15:49",
+            "niuer": "15:51",
+            "qixia": "15:53",
+            "dacheng_school": "15:54",
+            "veterans_hospital": "15:55",
+            "puli_brewery": "15:56",
+            "renai_park": "15:57",
+            "puli": "16:00",
+            "jnu": "16:10",
+            "taomi": "16:11",
+            "dayan": "16:16",
+            "xincheng_school": "16:17",
+            "sanyu": "16:18",
+            "yuchi": "16:22",
+            "tea": "16:26",
+            "sunmoonlake": "16:30"
+          }
+        },
+        {
+          "tripNumber": 23,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "15:45",
+            "taichung_station": "15:48",
+            "minxing_park": "15:56",
+            "daqing": "16:02",
+            "thsr": "16:10",
+            "puli_visitor": "16:49",
+            "niuer": "16:51",
+            "qixia": "16:53",
+            "dacheng_school": "16:54",
+            "veterans_hospital": "16:55",
+            "puli_brewery": "16:56",
+            "renai_park": "16:57",
+            "puli": "17:00",
+            "jnu": "17:10",
+            "taomi": "17:11",
+            "dayan": "17:16",
+            "xincheng_school": "17:17",
+            "sanyu": "17:18",
+            "classic_inn": "17:20",
+            "jingyuan": "17:23",
+            "formosan": "17:25",
+            "yuchi": "17:29",
+            "tea": "17:33",
+            "sunmoonlake": "17:40"
+          }
+        },
+        {
+          "tripNumber": 24,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "16:20",
+            "taichung_station": "16:23",
+            "minxing_park": "16:31",
+            "daqing": "16:37",
+            "thsr": "16:45",
+            "puli_visitor": "17:24",
+            "niuer": "17:26",
+            "jnu_campus": "17:30",
+            "taomi": "17:46",
+            "dayan": "17:51",
+            "xincheng_school": "17:52",
+            "sanyu": "17:53",
+            "yuchi": "17:57",
+            "tea": "18:01",
+            "sunmoonlake": "18:05"
+          }
+        },
+        {
+          "tripNumber": 25,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "16:45",
+            "taichung_station": "16:48",
+            "minxing_park": "16:56",
+            "daqing": "17:02",
+            "thsr": "17:10",
+            "puli_visitor": "17:49",
+            "niuer": "17:51",
+            "qixia": "17:53",
+            "dacheng_school": "17:54",
+            "veterans_hospital": "17:55",
+            "puli_brewery": "17:56",
+            "renai_park": "17:57",
+            "puli": "18:00",
+            "jnu": "18:10",
+            "taomi": "18:11",
+            "dayan": "18:16",
+            "xincheng_school": "18:17",
+            "sanyu": "18:18",
+            "yuchi": "18:22",
+            "tea": "18:26",
+            "sunmoonlake": "18:30"
+          }
+        },
+        {
+          "tripNumber": 26,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "17:45",
+            "taichung_station": "17:48",
+            "minxing_park": "17:56",
+            "daqing": "18:02",
+            "thsr": "18:10",
+            "puli_visitor": "18:49",
+            "niuer": "18:51",
+            "qixia": "18:53",
+            "dacheng_school": "18:54",
+            "veterans_hospital": "18:55",
+            "puli_brewery": "18:56",
+            "renai_park": "18:57",
+            "puli": "19:00",
+            "jnu": "19:10",
+            "taomi": "19:11",
+            "dayan": "19:16",
+            "xincheng_school": "19:17",
+            "sanyu": "19:18",
+            "yuchi": "19:22",
+            "tea": "19:26",
+            "sunmoonlake": "19:30"
+          }
+        },
+        {
+          "tripNumber": 27,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "18:45",
+            "taichung_station": "18:48",
+            "minxing_park": "18:56",
+            "daqing": "19:02",
+            "thsr": "19:10",
+            "puli_visitor": "19:49",
+            "niuer": "19:51",
+            "qixia": "19:53",
+            "dacheng_school": "19:54",
+            "veterans_hospital": "19:55",
+            "puli_brewery": "19:56",
+            "renai_park": "19:57",
+            "puli": "20:00",
+            "jnu": "20:10",
+            "taomi": "20:11",
+            "dayan": "20:16",
+            "xincheng_school": "20:17",
+            "sanyu": "20:18",
+            "yuchi": "20:22",
+            "tea": "20:26",
+            "sunmoonlake": "20:30"
+          }
+        }
+      ]
+    },
+    "weekday_inbound": {
+      "label": "平日回程 (往臺中/航空站)",
+      "totalTrips": 27,
+      "stopsHeader": [
+        {
+          "name": "向山行政中心(部分班次停靠)",
+          "id": "xiangshan"
+        },
+        {
+          "name": "水社",
+          "id": "shuishe"
+        },
+        {
+          "name": "日月潭",
+          "id": "sunmoonlake"
+        },
+        {
+          "name": "日月老茶場",
+          "id": "tea"
+        },
+        {
+          "name": "魚池",
+          "id": "yuchi"
+        },
+        {
+          "name": "九族文化村(部分班次停靠)",
+          "id": "formosan"
+        },
+        {
+          "name": "晶園渡假村",
+          "id": "jingyuan"
+        },
+        {
+          "name": "經典驛棧",
+          "id": "classic_inn"
+        },
+        {
+          "name": "三育神學院",
+          "id": "sanyu"
+        },
+        {
+          "name": "新城國小",
+          "id": "xincheng_school"
+        },
+        {
+          "name": "大雁(澀水社區)",
+          "id": "dayan"
+        },
+        {
+          "name": "桃米坑(紙教堂)",
+          "id": "taomi"
+        },
+        {
+          "name": "暨南大學(校外)",
+          "id": "jnu"
+        },
+        {
+          "name": "暨南大學(校內)",
+          "id": "jnu_campus"
+        },
+        {
+          "name": "埔里站",
+          "id": "puli"
+        },
+        {
+          "name": "地理中心碑",
+          "id": "geo_center"
+        },
+        {
+          "name": "福興溫泉遊客中心",
+          "id": "fuxing_hotspring"
+        },
+        {
+          "name": "中台世界博物館",
+          "id": "chungtai_museum"
+        },
+        {
+          "name": "中台禪寺",
+          "id": "chungtai"
+        },
+        {
+          "name": "仁愛公園",
+          "id": "renai_park"
+        },
+        {
+          "name": "埔里酒廠",
+          "id": "puli_brewery"
+        },
+        {
+          "name": "榮民醫院",
+          "id": "veterans_hospital"
+        },
+        {
+          "name": "大成國小",
+          "id": "dacheng_school"
+        },
+        {
+          "name": "崎下",
+          "id": "qixia"
+        },
+        {
+          "name": "牛耳石雕公園",
+          "id": "niuer"
+        },
+        {
+          "name": "埔里遊客中心",
+          "id": "puli_visitor"
+        },
+        {
+          "name": "高鐵臺中站",
+          "id": "thsr"
+        },
+        {
+          "name": "捷運大慶站",
+          "id": "daqing"
+        },
+        {
+          "name": "五權車站",
+          "id": "wuquan_station"
+        },
+        {
+          "name": "臺中車站(民族路口)",
+          "id": "taichung_station"
+        },
+        {
+          "name": "臺中干城站",
+          "id": "taichung"
+        },
+        {
+          "name": "台中航空站",
+          "id": "airport"
+        }
+      ],
+      "trips": [
+        {
+          "tripNumber": 1,
+          "inferredSubroute": "6670E",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "06:50",
+            "tea": "06:53",
+            "yuchi": "06:55",
+            "sanyu": "06:56",
+            "xincheng_school": "06:58",
+            "dayan": "07:00",
+            "taomi": "07:05",
+            "jnu_campus": "07:10",
+            "niuer": "07:15",
+            "puli_visitor": "07:17",
+            "thsr": "08:00",
+            "airport": "08:35"
+          }
+        },
+        {
+          "tripNumber": 2,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "07:25",
+            "tea": "07:28",
+            "yuchi": "07:32",
+            "sanyu": "07:33",
+            "xincheng_school": "07:35",
+            "dayan": "07:39",
+            "taomi": "07:44",
+            "jnu": "07:46",
+            "puli": "08:00",
+            "renai_park": "08:03",
+            "puli_brewery": "08:04",
+            "veterans_hospital": "08:05",
+            "dacheng_school": "08:06",
+            "qixia": "08:07",
+            "niuer": "08:09",
+            "puli_visitor": "08:11",
+            "thsr": "08:50",
+            "daqing": "08:58",
+            "wuquan_station": "09:04",
+            "taichung_station": "09:12",
+            "taichung": "09:15"
+          }
+        },
+        {
+          "tripNumber": 3,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "08:25",
+            "tea": "08:28",
+            "yuchi": "08:32",
+            "sanyu": "08:33",
+            "xincheng_school": "08:35",
+            "dayan": "08:39",
+            "taomi": "08:44",
+            "jnu": "08:46",
+            "puli": "09:00",
+            "renai_park": "09:03",
+            "puli_brewery": "09:04",
+            "veterans_hospital": "09:05",
+            "dacheng_school": "09:06",
+            "qixia": "09:07",
+            "niuer": "09:09",
+            "puli_visitor": "09:11",
+            "thsr": "09:50",
+            "daqing": "09:58",
+            "wuquan_station": "10:04",
+            "taichung_station": "10:12",
+            "taichung": "10:15"
+          }
+        },
+        {
+          "tripNumber": 4,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "09:10",
+            "tea": "09:13",
+            "yuchi": "09:17",
+            "formosan": "09:25",
+            "jingyuan": "09:26",
+            "classic_inn": "09:28",
+            "sanyu": "09:29",
+            "xincheng_school": "09:31",
+            "dayan": "09:35",
+            "taomi": "09:40",
+            "jnu": "09:42",
+            "puli": "10:00",
+            "renai_park": "10:03",
+            "puli_brewery": "10:04",
+            "veterans_hospital": "10:05",
+            "dacheng_school": "10:06",
+            "qixia": "10:07",
+            "niuer": "10:09",
+            "puli_visitor": "10:11",
+            "thsr": "10:50",
+            "daqing": "10:58",
+            "wuquan_station": "11:04",
+            "taichung_station": "11:12",
+            "taichung": "11:15"
+          }
+        },
+        {
+          "tripNumber": 5,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "09:40",
+            "tea": "09:43",
+            "yuchi": "09:47",
+            "sanyu": "09:48",
+            "xincheng_school": "09:50",
+            "dayan": "09:54",
+            "taomi": "09:59",
+            "jnu_campus": "10:00",
+            "niuer": "10:19",
+            "puli_visitor": "10:21",
+            "thsr": "11:00",
+            "daqing": "11:08",
+            "wuquan_station": "11:14",
+            "taichung_station": "11:22",
+            "taichung": "11:25"
+          }
+        },
+        {
+          "tripNumber": 6,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:00",
+            "tea": "10:03",
+            "yuchi": "10:07",
+            "sanyu": "10:08",
+            "xincheng_school": "10:10",
+            "dayan": "10:14",
+            "taomi": "10:19",
+            "jnu_campus": "10:20",
+            "niuer": "10:39",
+            "puli_visitor": "10:41",
+            "thsr": "11:20",
+            "daqing": "11:28",
+            "wuquan_station": "11:34",
+            "taichung_station": "11:42",
+            "taichung": "11:45"
+          }
+        },
+        {
+          "tripNumber": 7,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:10",
+            "tea": "10:13",
+            "yuchi": "10:17",
+            "sanyu": "10:18",
+            "xincheng_school": "10:20",
+            "dayan": "10:24",
+            "taomi": "10:29",
+            "jnu_campus": "10:30",
+            "niuer": "10:49",
+            "puli_visitor": "10:51",
+            "thsr": "11:30",
+            "daqing": "11:38",
+            "wuquan_station": "11:44",
+            "taichung_station": "11:52",
+            "taichung": "11:55"
+          }
+        },
+        {
+          "tripNumber": 8,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:25",
+            "tea": "10:28",
+            "yuchi": "10:32",
+            "sanyu": "10:33",
+            "xincheng_school": "10:35",
+            "dayan": "10:39",
+            "taomi": "10:44",
+            "jnu": "10:46",
+            "puli": "11:00",
+            "renai_park": "11:03",
+            "puli_brewery": "11:04",
+            "veterans_hospital": "11:05",
+            "dacheng_school": "11:06",
+            "qixia": "11:07",
+            "niuer": "11:09",
+            "puli_visitor": "11:11",
+            "thsr": "11:50",
+            "daqing": "11:58",
+            "wuquan_station": "12:04",
+            "taichung_station": "12:12",
+            "taichung": "12:15"
+          }
+        },
+        {
+          "tripNumber": 9,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:40",
+            "tea": "10:43",
+            "yuchi": "10:47",
+            "sanyu": "10:48",
+            "xincheng_school": "10:50",
+            "dayan": "10:54",
+            "taomi": "10:59",
+            "jnu_campus": "11:00",
+            "niuer": "11:19",
+            "puli_visitor": "11:21",
+            "thsr": "12:00",
+            "daqing": "12:08",
+            "wuquan_station": "12:14",
+            "taichung_station": "12:22",
+            "taichung": "12:25"
+          }
+        },
+        {
+          "tripNumber": 10,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "11:00",
+            "tea": "11:03",
+            "yuchi": "11:07",
+            "sanyu": "11:08",
+            "xincheng_school": "11:10",
+            "dayan": "11:14",
+            "taomi": "11:19",
+            "jnu_campus": "11:20",
+            "niuer": "11:39",
+            "puli_visitor": "11:41",
+            "thsr": "12:20",
+            "daqing": "12:28",
+            "wuquan_station": "12:34",
+            "taichung_station": "12:42",
+            "taichung": "12:45"
+          }
+        },
+        {
+          "tripNumber": 11,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "11:25",
+            "tea": "11:28",
+            "yuchi": "11:32",
+            "sanyu": "11:33",
+            "xincheng_school": "11:35",
+            "dayan": "11:39",
+            "taomi": "11:44",
+            "jnu": "11:46",
+            "puli": "12:00",
+            "renai_park": "12:03",
+            "puli_brewery": "12:04",
+            "veterans_hospital": "12:05",
+            "dacheng_school": "12:06",
+            "qixia": "12:07",
+            "niuer": "12:09",
+            "puli_visitor": "12:11",
+            "thsr": "12:50",
+            "daqing": "12:58",
+            "wuquan_station": "13:04",
+            "taichung_station": "13:12",
+            "taichung": "13:15"
+          }
+        },
+        {
+          "tripNumber": 12,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "11:30",
+            "shuishe": "11:39",
+            "sunmoonlake": "11:40",
+            "tea": "11:43",
+            "yuchi": "11:47",
+            "sanyu": "11:48",
+            "xincheng_school": "11:50",
+            "dayan": "11:54",
+            "taomi": "11:59",
+            "jnu_campus": "12:00",
+            "niuer": "12:19",
+            "puli_visitor": "12:21",
+            "thsr": "13:00",
+            "daqing": "13:08",
+            "wuquan_station": "13:14",
+            "taichung_station": "13:22",
+            "taichung": "13:25"
+          }
+        },
+        {
+          "tripNumber": 13,
+          "inferredSubroute": "6670E",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "12:10",
+            "tea": "12:13",
+            "yuchi": "12:15",
+            "sanyu": "12:16",
+            "xincheng_school": "12:18",
+            "dayan": "12:20",
+            "taomi": "12:25",
+            "jnu_campus": "12:30",
+            "niuer": "12:35",
+            "puli_visitor": "12:37",
+            "thsr": "13:20",
+            "airport": "13:55"
+          }
+        },
+        {
+          "tripNumber": 14,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "12:25",
+            "tea": "12:28",
+            "yuchi": "12:32",
+            "sanyu": "12:33",
+            "xincheng_school": "12:35",
+            "dayan": "12:39",
+            "taomi": "12:44",
+            "jnu": "12:46",
+            "puli": "13:00",
+            "renai_park": "13:03",
+            "puli_brewery": "13:04",
+            "veterans_hospital": "13:05",
+            "dacheng_school": "13:06",
+            "qixia": "13:07",
+            "niuer": "13:09",
+            "puli_visitor": "13:11",
+            "thsr": "13:50",
+            "daqing": "13:58",
+            "wuquan_station": "14:04",
+            "taichung_station": "14:12",
+            "taichung": "14:15"
+          }
+        },
+        {
+          "tripNumber": 15,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "13:25",
+            "tea": "13:28",
+            "yuchi": "13:32",
+            "sanyu": "13:33",
+            "xincheng_school": "13:35",
+            "dayan": "13:39",
+            "taomi": "13:44",
+            "jnu": "13:46",
+            "puli": "14:00",
+            "renai_park": "14:03",
+            "puli_brewery": "14:04",
+            "veterans_hospital": "14:05",
+            "dacheng_school": "14:06",
+            "qixia": "14:07",
+            "niuer": "14:09",
+            "puli_visitor": "14:11",
+            "thsr": "14:50",
+            "daqing": "14:58",
+            "wuquan_station": "15:04",
+            "taichung_station": "15:12",
+            "taichung": "15:15"
+          }
+        },
+        {
+          "tripNumber": 16,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "13:30",
+            "shuishe": "13:39",
+            "sunmoonlake": "13:40",
+            "tea": "13:43",
+            "yuchi": "13:47",
+            "sanyu": "13:48",
+            "xincheng_school": "13:50",
+            "dayan": "13:54",
+            "taomi": "13:59",
+            "jnu_campus": "14:00",
+            "niuer": "14:19",
+            "puli_visitor": "14:21",
+            "thsr": "15:00",
+            "daqing": "15:08",
+            "wuquan_station": "15:14",
+            "taichung_station": "15:22",
+            "taichung": "15:25"
+          }
+        },
+        {
+          "tripNumber": 17,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "14:25",
+            "tea": "14:28",
+            "yuchi": "14:32",
+            "sanyu": "14:33",
+            "xincheng_school": "14:35",
+            "dayan": "14:39",
+            "taomi": "14:44",
+            "jnu": "14:46",
+            "puli": "15:00",
+            "renai_park": "15:03",
+            "puli_brewery": "15:04",
+            "veterans_hospital": "15:05",
+            "dacheng_school": "15:06",
+            "qixia": "15:07",
+            "niuer": "15:09",
+            "puli_visitor": "15:11",
+            "thsr": "15:50",
+            "daqing": "15:58",
+            "wuquan_station": "16:04",
+            "taichung_station": "16:12",
+            "taichung": "16:15"
+          }
+        },
+        {
+          "tripNumber": 18,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "14:40",
+            "tea": "14:43",
+            "yuchi": "14:47",
+            "sanyu": "14:48",
+            "xincheng_school": "14:50",
+            "dayan": "14:54",
+            "taomi": "14:59",
+            "jnu_campus": "15:00",
+            "niuer": "15:19",
+            "puli_visitor": "15:21",
+            "thsr": "16:00",
+            "daqing": "16:08",
+            "wuquan_station": "16:14",
+            "taichung_station": "16:22",
+            "taichung": "16:25"
+          }
+        },
+        {
+          "tripNumber": 19,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "15:10",
+            "tea": "15:13",
+            "yuchi": "15:17",
+            "formosan": "15:25",
+            "jingyuan": "15:26",
+            "classic_inn": "15:28",
+            "sanyu": "15:29",
+            "xincheng_school": "15:31",
+            "dayan": "15:35",
+            "taomi": "15:40",
+            "jnu": "15:42",
+            "puli": "16:00",
+            "renai_park": "16:03",
+            "puli_brewery": "16:04",
+            "veterans_hospital": "16:05",
+            "dacheng_school": "16:06",
+            "qixia": "16:07",
+            "niuer": "16:09",
+            "puli_visitor": "16:11",
+            "thsr": "16:50",
+            "daqing": "16:58",
+            "wuquan_station": "17:04",
+            "taichung_station": "17:12",
+            "taichung": "17:15"
+          }
+        },
+        {
+          "tripNumber": 20,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "15:30",
+            "tea": "15:33",
+            "yuchi": "15:37",
+            "sanyu": "15:38",
+            "xincheng_school": "15:40",
+            "dayan": "15:44",
+            "taomi": "15:49",
+            "jnu_campus": "15:50",
+            "niuer": "16:09",
+            "puli_visitor": "16:11",
+            "thsr": "16:50",
+            "daqing": "16:58",
+            "wuquan_station": "17:04",
+            "taichung_station": "17:12",
+            "taichung": "17:15"
+          }
+        },
+        {
+          "tripNumber": 21,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "15:30",
+            "shuishe": "15:39",
+            "sunmoonlake": "15:40",
+            "tea": "15:43",
+            "yuchi": "15:47",
+            "sanyu": "15:48",
+            "xincheng_school": "15:50",
+            "dayan": "15:54",
+            "taomi": "15:59",
+            "jnu_campus": "16:00",
+            "niuer": "16:19",
+            "puli_visitor": "16:21",
+            "thsr": "17:00",
+            "daqing": "17:08",
+            "wuquan_station": "17:14",
+            "taichung_station": "17:22",
+            "taichung": "17:25"
+          }
+        },
+        {
+          "tripNumber": 22,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "16:30",
+            "tea": "16:33",
+            "yuchi": "16:37",
+            "sanyu": "16:38",
+            "xincheng_school": "16:40",
+            "dayan": "16:44",
+            "taomi": "16:49",
+            "jnu_campus": "16:50",
+            "niuer": "17:09",
+            "puli_visitor": "17:11",
+            "thsr": "17:50",
+            "daqing": "17:58",
+            "wuquan_station": "18:04",
+            "taichung_station": "18:12",
+            "taichung": "18:15"
+          }
+        },
+        {
+          "tripNumber": 23,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "16:10",
+            "tea": "16:13",
+            "yuchi": "16:17",
+            "formosan": "16:25",
+            "jingyuan": "16:26",
+            "classic_inn": "16:28",
+            "sanyu": "16:29",
+            "xincheng_school": "16:31",
+            "dayan": "16:35",
+            "taomi": "16:40",
+            "jnu": "16:42",
+            "puli": "17:00",
+            "renai_park": "17:03",
+            "puli_brewery": "17:04",
+            "veterans_hospital": "17:05",
+            "dacheng_school": "17:06",
+            "qixia": "17:07",
+            "niuer": "17:09",
+            "puli_visitor": "17:11",
+            "thsr": "17:50",
+            "daqing": "17:58",
+            "wuquan_station": "18:04",
+            "taichung_station": "18:12",
+            "taichung": "18:15"
+          }
+        },
+        {
+          "tripNumber": 24,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "16:30",
+            "shuishe": "16:39",
+            "sunmoonlake": "16:40",
+            "tea": "16:43",
+            "yuchi": "16:47",
+            "sanyu": "16:48",
+            "xincheng_school": "16:50",
+            "dayan": "16:54",
+            "taomi": "16:59",
+            "jnu_campus": "17:00",
+            "niuer": "17:19",
+            "puli_visitor": "17:21",
+            "thsr": "18:00",
+            "daqing": "18:08",
+            "wuquan_station": "18:14",
+            "taichung_station": "18:22",
+            "taichung": "18:25"
+          }
+        },
+        {
+          "tripNumber": 25,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "17:10",
+            "tea": "17:13",
+            "yuchi": "17:17",
+            "formosan": "17:25",
+            "jingyuan": "17:26",
+            "classic_inn": "17:28",
+            "sanyu": "17:29",
+            "xincheng_school": "17:31",
+            "dayan": "17:35",
+            "taomi": "17:40",
+            "jnu": "17:42",
+            "puli": "18:00",
+            "renai_park": "18:03",
+            "puli_brewery": "18:04",
+            "veterans_hospital": "18:05",
+            "dacheng_school": "18:06",
+            "qixia": "18:07",
+            "niuer": "18:09",
+            "puli_visitor": "18:11",
+            "thsr": "18:50",
+            "daqing": "18:58",
+            "wuquan_station": "19:04",
+            "taichung_station": "19:12",
+            "taichung": "19:15"
+          }
+        },
+        {
+          "tripNumber": 26,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "18:25",
+            "tea": "18:28",
+            "yuchi": "18:32",
+            "sanyu": "18:33",
+            "xincheng_school": "18:35",
+            "dayan": "18:39",
+            "taomi": "18:44",
+            "jnu": "18:46",
+            "puli": "19:00",
+            "renai_park": "19:03",
+            "puli_brewery": "19:04",
+            "veterans_hospital": "19:05",
+            "dacheng_school": "19:06",
+            "qixia": "19:07",
+            "niuer": "19:09",
+            "puli_visitor": "19:11",
+            "thsr": "19:50",
+            "daqing": "19:58",
+            "wuquan_station": "20:04",
+            "taichung_station": "20:12",
+            "taichung": "20:15"
+          }
+        },
+        {
+          "tripNumber": 27,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "19:25",
+            "tea": "19:28",
+            "yuchi": "19:32",
+            "sanyu": "19:33",
+            "xincheng_school": "19:35",
+            "dayan": "19:39",
+            "taomi": "19:44",
+            "jnu": "19:46",
+            "puli": "20:00",
+            "renai_park": "20:03",
+            "puli_brewery": "20:04",
+            "veterans_hospital": "20:05",
+            "dacheng_school": "20:06",
+            "qixia": "20:07",
+            "niuer": "20:09",
+            "puli_visitor": "20:11",
+            "thsr": "20:50",
+            "daqing": "20:58",
+            "wuquan_station": "21:04",
+            "taichung_station": "21:12",
+            "taichung": "21:15"
+          }
+        }
+      ]
+    },
+    "holiday_outbound": {
+      "label": "假日去程 (往向山/日月潭)",
+      "totalTrips": 29,
+      "stopsHeader": [
+        {
+          "name": "台中航空站",
+          "id": "airport"
+        },
+        {
+          "name": "臺中干城站",
+          "id": "taichung"
+        },
+        {
+          "name": "臺中車站(民族路口)",
+          "id": "taichung_station"
+        },
+        {
+          "name": "民興公園(執行分署)",
+          "id": "minxing_park"
+        },
+        {
+          "name": "捷運大慶站",
+          "id": "daqing"
+        },
+        {
+          "name": "高鐵臺中站",
+          "id": "thsr"
+        },
+        {
+          "name": "埔里遊客中心",
+          "id": "puli_visitor"
+        },
+        {
+          "name": "牛耳石雕公園",
+          "id": "niuer"
+        },
+        {
+          "name": "崎下",
+          "id": "qixia"
+        },
+        {
+          "name": "大成國小",
+          "id": "dacheng_school"
+        },
+        {
+          "name": "榮民醫院",
+          "id": "veterans_hospital"
+        },
+        {
+          "name": "埔里酒廠",
+          "id": "puli_brewery"
+        },
+        {
+          "name": "仁愛公園",
+          "id": "renai_park"
+        },
+        {
+          "name": "中台禪寺",
+          "id": "chungtai"
+        },
+        {
+          "name": "中台世界博物館",
+          "id": "chungtai_museum"
+        },
+        {
+          "name": "福興溫泉遊客中心",
+          "id": "fuxing_hotspring"
+        },
+        {
+          "name": "地理中心碑",
+          "id": "geo_center"
+        },
+        {
+          "name": "埔里站",
+          "id": "puli"
+        },
+        {
+          "name": "暨南大學(校內)",
+          "id": "jnu_campus"
+        },
+        {
+          "name": "暨南大學(校外)",
+          "id": "jnu"
+        },
+        {
+          "name": "桃米坑(紙教堂)",
+          "id": "taomi"
+        },
+        {
+          "name": "大雁(澀水社區)",
+          "id": "dayan"
+        },
+        {
+          "name": "新城國小",
+          "id": "xincheng_school"
+        },
+        {
+          "name": "三育神學院",
+          "id": "sanyu"
+        },
+        {
+          "name": "經典驛棧",
+          "id": "classic_inn"
+        },
+        {
+          "name": "晶園渡假村",
+          "id": "jingyuan"
+        },
+        {
+          "name": "九族文化村(部分班次停靠)",
+          "id": "formosan"
+        },
+        {
+          "name": "魚池",
+          "id": "yuchi"
+        },
+        {
+          "name": "日月老茶場",
+          "id": "tea"
+        },
+        {
+          "name": "日月潭",
+          "id": "sunmoonlake"
+        },
+        {
+          "name": "水社",
+          "id": "shuishe"
+        },
+        {
+          "name": "向山行政中心(部分班次停靠)",
+          "id": "xiangshan"
+        }
+      ],
+      "trips": [
+        {
+          "tripNumber": 1,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "07:20",
+            "taichung_station": "07:23",
+            "minxing_park": "07:31",
+            "daqing": "07:37",
+            "thsr": "07:45",
+            "puli_visitor": "08:24",
+            "niuer": "08:26",
+            "jnu_campus": "08:30",
+            "taomi": "08:46",
+            "dayan": "08:51",
+            "xincheng_school": "08:52",
+            "sanyu": "08:53",
+            "yuchi": "08:57",
+            "tea": "09:01",
+            "sunmoonlake": "09:05"
+          }
+        },
+        {
+          "tripNumber": 2,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "07:30",
+            "taichung_station": "07:33",
+            "minxing_park": "07:41",
+            "daqing": "07:47",
+            "thsr": "07:55",
+            "puli_visitor": "08:34",
+            "niuer": "08:36",
+            "jnu_campus": "08:40",
+            "taomi": "08:56",
+            "dayan": "09:01",
+            "xincheng_school": "09:02",
+            "sanyu": "09:03",
+            "yuchi": "09:07",
+            "tea": "09:11",
+            "sunmoonlake": "09:15"
+          }
+        },
+        {
+          "tripNumber": 3,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "07:45",
+            "taichung_station": "07:48",
+            "minxing_park": "07:56",
+            "daqing": "08:02",
+            "thsr": "08:10",
+            "puli_visitor": "08:49",
+            "niuer": "08:51",
+            "qixia": "08:53",
+            "dacheng_school": "08:54",
+            "veterans_hospital": "08:55",
+            "puli_brewery": "08:56",
+            "renai_park": "08:57",
+            "puli": "09:00",
+            "jnu": "09:10",
+            "taomi": "09:11",
+            "dayan": "09:16",
+            "xincheng_school": "09:17",
+            "sanyu": "09:18",
+            "classic_inn": "09:20",
+            "jingyuan": "09:23",
+            "formosan": "09:25",
+            "yuchi": "09:29",
+            "tea": "09:33",
+            "sunmoonlake": "09:40"
+          }
+        },
+        {
+          "tripNumber": 4,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:00",
+            "taichung_station": "08:03",
+            "minxing_park": "08:11",
+            "daqing": "08:17",
+            "thsr": "08:25",
+            "puli_visitor": "09:04",
+            "niuer": "09:06",
+            "jnu_campus": "09:10",
+            "taomi": "09:26",
+            "dayan": "09:31",
+            "xincheng_school": "09:32",
+            "sanyu": "09:33",
+            "yuchi": "09:37",
+            "tea": "09:41",
+            "sunmoonlake": "09:45"
+          }
+        },
+        {
+          "tripNumber": 5,
+          "inferredSubroute": "6670C",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:00",
+            "taichung_station": "08:03",
+            "minxing_park": "08:11",
+            "daqing": "08:17",
+            "thsr": "08:20",
+            "chungtai": "09:10",
+            "chungtai_museum": "09:11",
+            "fuxing_hotspring": "09:15",
+            "geo_center": "09:25",
+            "puli": "09:35",
+            "jnu": "09:45",
+            "taomi": "09:46",
+            "dayan": "09:51",
+            "xincheng_school": "09:52",
+            "sanyu": "09:53",
+            "yuchi": "09:57",
+            "tea": "10:01",
+            "sunmoonlake": "10:05"
+          }
+        },
+        {
+          "tripNumber": 6,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:15",
+            "taichung_station": "08:18",
+            "minxing_park": "08:26",
+            "daqing": "08:32",
+            "thsr": "08:35",
+            "puli_visitor": "09:14",
+            "niuer": "09:16",
+            "qixia": "09:18",
+            "dacheng_school": "09:19",
+            "veterans_hospital": "09:20",
+            "puli_brewery": "09:21",
+            "renai_park": "09:22",
+            "puli": "09:25",
+            "jnu": "09:35",
+            "taomi": "09:36",
+            "dayan": "09:41",
+            "xincheng_school": "09:42",
+            "sanyu": "09:43",
+            "yuchi": "09:47",
+            "tea": "09:51",
+            "sunmoonlake": "10:05"
+          }
+        },
+        {
+          "tripNumber": 7,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:20",
+            "taichung_station": "08:23",
+            "minxing_park": "08:31",
+            "daqing": "08:37",
+            "thsr": "08:45",
+            "puli_visitor": "09:24",
+            "niuer": "09:26",
+            "jnu_campus": "09:30",
+            "taomi": "09:46",
+            "dayan": "09:51",
+            "xincheng_school": "09:52",
+            "sanyu": "09:53",
+            "yuchi": "09:57",
+            "tea": "10:01",
+            "sunmoonlake": "10:05",
+            "shuishe": "10:06",
+            "xiangshan": "10:15"
+          }
+        },
+        {
+          "tripNumber": 8,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "08:45",
+            "taichung_station": "08:48",
+            "minxing_park": "08:56",
+            "daqing": "09:02",
+            "thsr": "09:10",
+            "puli_visitor": "09:49",
+            "niuer": "09:51",
+            "qixia": "09:53",
+            "dacheng_school": "09:54",
+            "veterans_hospital": "09:55",
+            "puli_brewery": "09:56",
+            "renai_park": "09:57",
+            "puli": "10:00",
+            "jnu": "10:10",
+            "taomi": "10:11",
+            "dayan": "10:16",
+            "xincheng_school": "10:17",
+            "sanyu": "10:18",
+            "classic_inn": "10:20",
+            "jingyuan": "10:23",
+            "formosan": "10:25",
+            "yuchi": "10:29",
+            "tea": "10:33",
+            "sunmoonlake": "10:40"
+          }
+        },
+        {
+          "tripNumber": 9,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "09:20",
+            "taichung_station": "09:23",
+            "minxing_park": "09:31",
+            "daqing": "09:37",
+            "thsr": "09:45",
+            "puli_visitor": "10:24",
+            "niuer": "10:26",
+            "jnu_campus": "10:30",
+            "taomi": "10:46",
+            "dayan": "10:51",
+            "xincheng_school": "10:52",
+            "sanyu": "10:53",
+            "yuchi": "10:57",
+            "tea": "11:01",
+            "sunmoonlake": "11:05",
+            "shuishe": "11:06",
+            "xiangshan": "11:15"
+          }
+        },
+        {
+          "tripNumber": 10,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "09:45",
+            "taichung_station": "09:48",
+            "minxing_park": "09:56",
+            "daqing": "10:02",
+            "thsr": "10:10",
+            "puli_visitor": "10:49",
+            "niuer": "10:51",
+            "qixia": "10:53",
+            "dacheng_school": "10:54",
+            "veterans_hospital": "10:55",
+            "puli_brewery": "10:56",
+            "renai_park": "10:57",
+            "puli": "11:00",
+            "jnu": "11:10",
+            "taomi": "11:11",
+            "dayan": "11:16",
+            "xincheng_school": "11:17",
+            "sanyu": "11:18",
+            "classic_inn": "11:20",
+            "jingyuan": "11:23",
+            "formosan": "11:25",
+            "yuchi": "11:29",
+            "tea": "11:33",
+            "sunmoonlake": "11:40"
+          }
+        },
+        {
+          "tripNumber": 11,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "10:20",
+            "taichung_station": "10:23",
+            "minxing_park": "10:31",
+            "daqing": "10:37",
+            "thsr": "10:45",
+            "puli_visitor": "11:24",
+            "niuer": "11:26",
+            "jnu_campus": "11:30",
+            "taomi": "11:46",
+            "dayan": "11:51",
+            "xincheng_school": "11:52",
+            "sanyu": "11:53",
+            "yuchi": "11:57",
+            "tea": "12:01",
+            "sunmoonlake": "12:05"
+          }
+        },
+        {
+          "tripNumber": 12,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "10:45",
+            "taichung_station": "10:48",
+            "minxing_park": "10:56",
+            "daqing": "11:02",
+            "thsr": "11:10",
+            "puli_visitor": "11:49",
+            "niuer": "11:51",
+            "qixia": "11:53",
+            "dacheng_school": "11:54",
+            "veterans_hospital": "11:55",
+            "puli_brewery": "11:56",
+            "renai_park": "11:57",
+            "puli": "12:00",
+            "jnu": "12:10",
+            "taomi": "12:11",
+            "dayan": "12:16",
+            "xincheng_school": "12:17",
+            "sanyu": "12:18",
+            "yuchi": "12:22",
+            "tea": "12:26",
+            "sunmoonlake": "12:30"
+          }
+        },
+        {
+          "tripNumber": 13,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "11:20",
+            "taichung_station": "11:23",
+            "minxing_park": "11:31",
+            "daqing": "11:37",
+            "thsr": "11:45",
+            "puli_visitor": "12:24",
+            "niuer": "12:26",
+            "jnu_campus": "12:30",
+            "taomi": "12:46",
+            "dayan": "12:51",
+            "xincheng_school": "12:52",
+            "sanyu": "12:53",
+            "yuchi": "12:57",
+            "tea": "13:01",
+            "sunmoonlake": "13:05",
+            "shuishe": "13:06",
+            "xiangshan": "13:15"
+          }
+        },
+        {
+          "tripNumber": 14,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "11:45",
+            "taichung_station": "11:48",
+            "minxing_park": "11:56",
+            "daqing": "12:02",
+            "thsr": "12:10",
+            "puli_visitor": "12:49",
+            "niuer": "12:51",
+            "qixia": "12:53",
+            "dacheng_school": "12:54",
+            "veterans_hospital": "12:55",
+            "puli_brewery": "12:56",
+            "renai_park": "12:57",
+            "puli": "13:00",
+            "jnu": "13:10",
+            "taomi": "13:11",
+            "dayan": "13:16",
+            "xincheng_school": "13:17",
+            "sanyu": "13:18",
+            "yuchi": "13:22",
+            "tea": "13:26",
+            "sunmoonlake": "13:30"
+          }
+        },
+        {
+          "tripNumber": 15,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "12:20",
+            "taichung_station": "12:23",
+            "minxing_park": "12:31",
+            "daqing": "12:37",
+            "thsr": "12:45",
+            "puli_visitor": "13:24",
+            "niuer": "13:26",
+            "jnu_campus": "13:30",
+            "taomi": "13:46",
+            "dayan": "13:51",
+            "xincheng_school": "13:52",
+            "sanyu": "13:53",
+            "yuchi": "13:57",
+            "tea": "14:01",
+            "sunmoonlake": "14:05",
+            "shuishe": "14:06",
+            "xiangshan": "14:15"
+          }
+        },
+        {
+          "tripNumber": 16,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "12:35",
+            "taichung_station": "12:38",
+            "minxing_park": "12:46",
+            "daqing": "12:52",
+            "thsr": "13:00",
+            "puli_visitor": "13:39",
+            "niuer": "13:41",
+            "jnu_campus": "13:45",
+            "taomi": "14:01",
+            "dayan": "14:06",
+            "xincheng_school": "14:07",
+            "sanyu": "14:08",
+            "yuchi": "14:12",
+            "tea": "14:16",
+            "sunmoonlake": "14:20"
+          }
+        },
+        {
+          "tripNumber": 17,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "12:45",
+            "taichung_station": "12:48",
+            "minxing_park": "12:56",
+            "daqing": "13:02",
+            "thsr": "13:10",
+            "puli_visitor": "13:49",
+            "niuer": "13:51",
+            "qixia": "13:53",
+            "dacheng_school": "13:54",
+            "veterans_hospital": "13:55",
+            "puli_brewery": "13:56",
+            "renai_park": "13:57",
+            "puli": "14:00",
+            "jnu": "14:10",
+            "taomi": "14:11",
+            "dayan": "14:16",
+            "xincheng_school": "14:17",
+            "sanyu": "14:18",
+            "yuchi": "14:22",
+            "tea": "14:26",
+            "sunmoonlake": "14:30"
+          }
+        },
+        {
+          "tripNumber": 18,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "13:20",
+            "taichung_station": "13:23",
+            "minxing_park": "13:31",
+            "daqing": "13:37",
+            "thsr": "13:45",
+            "puli_visitor": "14:24",
+            "niuer": "14:26",
+            "jnu_campus": "14:30",
+            "taomi": "14:46",
+            "dayan": "14:51",
+            "xincheng_school": "14:52",
+            "sanyu": "14:53",
+            "yuchi": "14:57",
+            "tea": "15:01",
+            "sunmoonlake": "15:05"
+          }
+        },
+        {
+          "tripNumber": 19,
+          "inferredSubroute": "6670C",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "14:00",
+            "taichung_station": "14:03",
+            "minxing_park": "14:11",
+            "daqing": "14:17",
+            "thsr": "14:25",
+            "chungtai": "15:10",
+            "chungtai_museum": "15:11",
+            "fuxing_hotspring": "15:15",
+            "geo_center": "15:25",
+            "puli": "15:35",
+            "jnu": "15:45",
+            "taomi": "15:46",
+            "dayan": "15:51",
+            "xincheng_school": "15:52",
+            "sanyu": "15:53",
+            "yuchi": "15:57",
+            "tea": "16:01",
+            "sunmoonlake": "16:05"
+          }
+        },
+        {
+          "tripNumber": 20,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "13:45",
+            "taichung_station": "13:48",
+            "minxing_park": "13:56",
+            "daqing": "14:02",
+            "thsr": "14:10",
+            "puli_visitor": "14:49",
+            "niuer": "14:51",
+            "qixia": "14:53",
+            "dacheng_school": "14:54",
+            "veterans_hospital": "14:55",
+            "puli_brewery": "14:56",
+            "renai_park": "14:57",
+            "puli": "15:00",
+            "jnu": "15:10",
+            "taomi": "15:11",
+            "dayan": "15:16",
+            "xincheng_school": "15:17",
+            "sanyu": "15:18",
+            "yuchi": "15:22",
+            "tea": "15:26",
+            "sunmoonlake": "15:30"
+          }
+        },
+        {
+          "tripNumber": 21,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "14:20",
+            "taichung_station": "14:23",
+            "minxing_park": "14:31",
+            "daqing": "14:37",
+            "thsr": "14:45",
+            "puli_visitor": "15:24",
+            "niuer": "15:26",
+            "jnu_campus": "15:30",
+            "taomi": "15:46",
+            "dayan": "15:51",
+            "xincheng_school": "15:52",
+            "sanyu": "15:53",
+            "yuchi": "15:57",
+            "tea": "16:01",
+            "sunmoonlake": "16:05"
+          }
+        },
+        {
+          "tripNumber": 22,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "14:45",
+            "taichung_station": "14:48",
+            "minxing_park": "14:56",
+            "daqing": "15:02",
+            "thsr": "15:10",
+            "puli_visitor": "15:49",
+            "niuer": "15:51",
+            "qixia": "15:53",
+            "dacheng_school": "15:54",
+            "veterans_hospital": "15:55",
+            "puli_brewery": "15:56",
+            "renai_park": "15:57",
+            "puli": "16:00",
+            "jnu": "16:10",
+            "taomi": "16:11",
+            "dayan": "16:16",
+            "xincheng_school": "16:17",
+            "sanyu": "16:18",
+            "yuchi": "16:22",
+            "tea": "16:26",
+            "sunmoonlake": "16:30"
+          }
+        },
+        {
+          "tripNumber": 23,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "15:20",
+            "taichung_station": "15:23",
+            "minxing_park": "15:31",
+            "daqing": "15:37",
+            "thsr": "15:45",
+            "puli_visitor": "16:24",
+            "niuer": "16:26",
+            "jnu_campus": "16:30",
+            "taomi": "16:46",
+            "dayan": "16:51",
+            "xincheng_school": "16:52",
+            "sanyu": "16:53",
+            "yuchi": "16:57",
+            "tea": "17:01",
+            "sunmoonlake": "17:05"
+          }
+        },
+        {
+          "tripNumber": 24,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "15:45",
+            "taichung_station": "15:48",
+            "minxing_park": "15:56",
+            "daqing": "16:02",
+            "thsr": "16:10",
+            "puli_visitor": "16:49",
+            "niuer": "16:51",
+            "qixia": "16:53",
+            "dacheng_school": "16:54",
+            "veterans_hospital": "16:55",
+            "puli_brewery": "16:56",
+            "renai_park": "16:57",
+            "puli": "17:00",
+            "jnu": "17:10",
+            "taomi": "17:11",
+            "dayan": "17:16",
+            "xincheng_school": "17:17",
+            "sanyu": "17:18",
+            "classic_inn": "17:20",
+            "jingyuan": "17:23",
+            "formosan": "17:25",
+            "yuchi": "17:29",
+            "tea": "17:33",
+            "sunmoonlake": "17:40"
+          }
+        },
+        {
+          "tripNumber": 25,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "16:20",
+            "taichung_station": "16:23",
+            "minxing_park": "16:31",
+            "daqing": "16:37",
+            "thsr": "16:45",
+            "puli_visitor": "17:24",
+            "niuer": "17:26",
+            "jnu_campus": "17:30",
+            "taomi": "17:46",
+            "dayan": "17:51",
+            "xincheng_school": "17:52",
+            "sanyu": "17:53",
+            "yuchi": "17:57",
+            "tea": "18:01",
+            "sunmoonlake": "18:05"
+          }
+        },
+        {
+          "tripNumber": 26,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "16:45",
+            "taichung_station": "16:48",
+            "minxing_park": "16:56",
+            "daqing": "17:02",
+            "thsr": "17:10",
+            "puli_visitor": "17:49",
+            "niuer": "17:51",
+            "qixia": "17:53",
+            "dacheng_school": "17:54",
+            "veterans_hospital": "17:55",
+            "puli_brewery": "17:56",
+            "renai_park": "17:57",
+            "puli": "18:00",
+            "jnu": "18:10",
+            "taomi": "18:11",
+            "dayan": "18:16",
+            "xincheng_school": "18:17",
+            "sanyu": "18:18",
+            "yuchi": "18:22",
+            "tea": "18:26",
+            "sunmoonlake": "18:30"
+          }
+        },
+        {
+          "tripNumber": 27,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "17:45",
+            "taichung_station": "17:48",
+            "minxing_park": "17:56",
+            "daqing": "18:02",
+            "thsr": "18:10",
+            "puli_visitor": "18:49",
+            "niuer": "18:51",
+            "qixia": "18:53",
+            "dacheng_school": "18:54",
+            "veterans_hospital": "18:55",
+            "puli_brewery": "18:56",
+            "renai_park": "18:57",
+            "puli": "19:00",
+            "jnu": "19:10",
+            "taomi": "19:11",
+            "dayan": "19:16",
+            "xincheng_school": "19:17",
+            "sanyu": "19:18",
+            "yuchi": "19:22",
+            "tea": "19:26",
+            "sunmoonlake": "19:30"
+          }
+        },
+        {
+          "tripNumber": 28,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "18:45",
+            "taichung_station": "18:48",
+            "minxing_park": "18:56",
+            "daqing": "19:02",
+            "thsr": "19:10",
+            "puli_visitor": "19:49",
+            "niuer": "19:51",
+            "qixia": "19:53",
+            "dacheng_school": "19:54",
+            "veterans_hospital": "19:55",
+            "puli_brewery": "19:56",
+            "renai_park": "19:57",
+            "puli": "20:00",
+            "jnu": "20:10",
+            "taomi": "20:11",
+            "dayan": "20:16",
+            "xincheng_school": "20:17",
+            "sanyu": "20:18",
+            "yuchi": "20:22",
+            "tea": "20:26",
+            "sunmoonlake": "20:30"
+          }
+        },
+        {
+          "tripNumber": 29,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "taichung": "19:45",
+            "taichung_station": "19:48",
+            "minxing_park": "19:56",
+            "daqing": "20:02",
+            "thsr": "20:10",
+            "puli_visitor": "20:49",
+            "niuer": "20:51",
+            "qixia": "20:53",
+            "dacheng_school": "20:54",
+            "veterans_hospital": "20:55",
+            "puli_brewery": "20:56",
+            "renai_park": "20:57",
+            "puli": "21:00",
+            "jnu": "21:10",
+            "taomi": "21:11",
+            "dayan": "21:16",
+            "xincheng_school": "21:17",
+            "sanyu": "21:18",
+            "yuchi": "21:22",
+            "tea": "21:26",
+            "sunmoonlake": "21:30"
+          }
+        }
+      ]
+    },
+    "holiday_inbound": {
+      "label": "假日回程 (往臺中/航空站)",
+      "totalTrips": 28,
+      "stopsHeader": [
+        {
+          "name": "向山行政中心(部分班次停靠)",
+          "id": "xiangshan"
+        },
+        {
+          "name": "水社",
+          "id": "shuishe"
+        },
+        {
+          "name": "日月潭",
+          "id": "sunmoonlake"
+        },
+        {
+          "name": "日月老茶場",
+          "id": "tea"
+        },
+        {
+          "name": "魚池",
+          "id": "yuchi"
+        },
+        {
+          "name": "九族文化村(部分班次停靠)",
+          "id": "formosan"
+        },
+        {
+          "name": "晶園渡假村",
+          "id": "jingyuan"
+        },
+        {
+          "name": "經典驛棧",
+          "id": "classic_inn"
+        },
+        {
+          "name": "三育神學院",
+          "id": "sanyu"
+        },
+        {
+          "name": "新城國小",
+          "id": "xincheng_school"
+        },
+        {
+          "name": "大雁(澀水社區)",
+          "id": "dayan"
+        },
+        {
+          "name": "桃米坑(紙教堂)",
+          "id": "taomi"
+        },
+        {
+          "name": "暨南大學(校外)",
+          "id": "jnu"
+        },
+        {
+          "name": "暨南大學(校內)",
+          "id": "jnu_campus"
+        },
+        {
+          "name": "埔里站",
+          "id": "puli"
+        },
+        {
+          "name": "地理中心碑",
+          "id": "geo_center"
+        },
+        {
+          "name": "福興溫泉遊客中心",
+          "id": "fuxing_hotspring"
+        },
+        {
+          "name": "中台世界博物館",
+          "id": "chungtai_museum"
+        },
+        {
+          "name": "中台禪寺",
+          "id": "chungtai"
+        },
+        {
+          "name": "仁愛公園",
+          "id": "renai_park"
+        },
+        {
+          "name": "埔里酒廠",
+          "id": "puli_brewery"
+        },
+        {
+          "name": "榮民醫院",
+          "id": "veterans_hospital"
+        },
+        {
+          "name": "大成國小",
+          "id": "dacheng_school"
+        },
+        {
+          "name": "崎下",
+          "id": "qixia"
+        },
+        {
+          "name": "牛耳石雕公園",
+          "id": "niuer"
+        },
+        {
+          "name": "埔里遊客中心",
+          "id": "puli_visitor"
+        },
+        {
+          "name": "高鐵臺中站",
+          "id": "thsr"
+        },
+        {
+          "name": "捷運大慶站",
+          "id": "daqing"
+        },
+        {
+          "name": "五權車站",
+          "id": "wuquan_station"
+        },
+        {
+          "name": "臺中車站(民族路口)",
+          "id": "taichung_station"
+        },
+        {
+          "name": "臺中干城站",
+          "id": "taichung"
+        },
+        {
+          "name": "台中航空站",
+          "id": "airport"
+        }
+      ],
+      "trips": [
+        {
+          "tripNumber": 1,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "07:25",
+            "tea": "07:28",
+            "yuchi": "07:32",
+            "sanyu": "07:33",
+            "xincheng_school": "07:35",
+            "dayan": "07:39",
+            "taomi": "07:44",
+            "jnu": "07:46",
+            "puli": "08:00",
+            "renai_park": "08:03",
+            "puli_brewery": "08:04",
+            "veterans_hospital": "08:05",
+            "dacheng_school": "08:06",
+            "qixia": "08:07",
+            "niuer": "08:09",
+            "puli_visitor": "08:11",
+            "thsr": "08:50",
+            "daqing": "08:58",
+            "wuquan_station": "09:04",
+            "taichung_station": "09:12",
+            "taichung": "09:15"
+          }
+        },
+        {
+          "tripNumber": 2,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "08:25",
+            "tea": "08:28",
+            "yuchi": "08:32",
+            "sanyu": "08:33",
+            "xincheng_school": "08:35",
+            "dayan": "08:39",
+            "taomi": "08:44",
+            "jnu": "08:46",
+            "puli": "09:00",
+            "renai_park": "09:03",
+            "puli_brewery": "09:04",
+            "veterans_hospital": "09:05",
+            "dacheng_school": "09:06",
+            "qixia": "09:07",
+            "niuer": "09:09",
+            "puli_visitor": "09:11",
+            "thsr": "09:50",
+            "daqing": "09:58",
+            "wuquan_station": "10:04",
+            "taichung_station": "10:12",
+            "taichung": "10:15"
+          }
+        },
+        {
+          "tripNumber": 3,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "09:10",
+            "tea": "09:13",
+            "yuchi": "09:17",
+            "formosan": "09:25",
+            "jingyuan": "09:26",
+            "classic_inn": "09:28",
+            "sanyu": "09:29",
+            "xincheng_school": "09:31",
+            "dayan": "09:35",
+            "taomi": "09:40",
+            "jnu": "09:42",
+            "puli": "10:00",
+            "renai_park": "10:03",
+            "puli_brewery": "10:04",
+            "veterans_hospital": "10:05",
+            "dacheng_school": "10:06",
+            "qixia": "10:07",
+            "niuer": "10:09",
+            "puli_visitor": "10:11",
+            "thsr": "10:50",
+            "daqing": "10:58",
+            "wuquan_station": "11:04",
+            "taichung_station": "11:12",
+            "taichung": "11:15"
+          }
+        },
+        {
+          "tripNumber": 4,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "09:40",
+            "tea": "09:43",
+            "yuchi": "09:47",
+            "sanyu": "09:48",
+            "xincheng_school": "09:50",
+            "dayan": "09:54",
+            "taomi": "09:59",
+            "jnu_campus": "10:00",
+            "niuer": "10:19",
+            "puli_visitor": "10:21",
+            "thsr": "11:00",
+            "daqing": "11:08",
+            "wuquan_station": "11:14",
+            "taichung_station": "11:22",
+            "taichung": "11:25"
+          }
+        },
+        {
+          "tripNumber": 5,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:00",
+            "tea": "10:03",
+            "yuchi": "10:07",
+            "sanyu": "10:08",
+            "xincheng_school": "10:10",
+            "dayan": "10:14",
+            "taomi": "10:19",
+            "jnu_campus": "10:20",
+            "niuer": "10:39",
+            "puli_visitor": "10:41",
+            "thsr": "11:20",
+            "daqing": "11:28",
+            "wuquan_station": "11:34",
+            "taichung_station": "11:42",
+            "taichung": "11:45"
+          }
+        },
+        {
+          "tripNumber": 6,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:10",
+            "tea": "10:13",
+            "yuchi": "10:17",
+            "sanyu": "10:18",
+            "xincheng_school": "10:20",
+            "dayan": "10:24",
+            "taomi": "10:29",
+            "jnu_campus": "10:30",
+            "niuer": "10:49",
+            "puli_visitor": "10:51",
+            "thsr": "11:30",
+            "daqing": "11:38",
+            "wuquan_station": "11:44",
+            "taichung_station": "11:52",
+            "taichung": "11:55"
+          }
+        },
+        {
+          "tripNumber": 7,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:25",
+            "tea": "10:28",
+            "yuchi": "10:32",
+            "sanyu": "10:33",
+            "xincheng_school": "10:35",
+            "dayan": "10:39",
+            "taomi": "10:44",
+            "jnu": "10:46",
+            "puli": "11:00",
+            "renai_park": "11:03",
+            "puli_brewery": "11:04",
+            "veterans_hospital": "11:05",
+            "dacheng_school": "11:06",
+            "qixia": "11:07",
+            "niuer": "11:09",
+            "puli_visitor": "11:11",
+            "thsr": "11:50",
+            "daqing": "11:58",
+            "wuquan_station": "12:04",
+            "taichung_station": "12:12",
+            "taichung": "12:15"
+          }
+        },
+        {
+          "tripNumber": 8,
+          "inferredSubroute": "6670C",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:50",
+            "tea": "10:53",
+            "yuchi": "10:57",
+            "sanyu": "10:58",
+            "xincheng_school": "11:00",
+            "dayan": "11:04",
+            "taomi": "11:09",
+            "jnu": "11:11",
+            "puli": "11:25",
+            "geo_center": "11:35",
+            "fuxing_hotspring": "11:45",
+            "chungtai_museum": "11:50",
+            "chungtai": "11:51",
+            "thsr": "12:50",
+            "daqing": "12:58",
+            "wuquan_station": "13:04",
+            "taichung_station": "13:12",
+            "taichung": "13:15"
+          }
+        },
+        {
+          "tripNumber": 9,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "10:40",
+            "tea": "10:43",
+            "yuchi": "10:47",
+            "sanyu": "10:48",
+            "xincheng_school": "10:50",
+            "dayan": "10:54",
+            "taomi": "10:59",
+            "jnu_campus": "11:00",
+            "niuer": "11:19",
+            "puli_visitor": "11:21",
+            "thsr": "12:00",
+            "daqing": "12:08",
+            "wuquan_station": "12:14",
+            "taichung_station": "12:22",
+            "taichung": "12:25"
+          }
+        },
+        {
+          "tripNumber": 10,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "11:00",
+            "tea": "11:03",
+            "yuchi": "11:07",
+            "sanyu": "11:08",
+            "xincheng_school": "11:10",
+            "dayan": "11:14",
+            "taomi": "11:19",
+            "jnu_campus": "11:20",
+            "niuer": "11:39",
+            "puli_visitor": "11:41",
+            "thsr": "12:20",
+            "daqing": "12:28",
+            "wuquan_station": "12:34",
+            "taichung_station": "12:42",
+            "taichung": "12:45"
+          }
+        },
+        {
+          "tripNumber": 11,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "11:25",
+            "tea": "11:28",
+            "yuchi": "11:32",
+            "sanyu": "11:33",
+            "xincheng_school": "11:35",
+            "dayan": "11:39",
+            "taomi": "11:44",
+            "jnu": "11:46",
+            "puli": "12:00",
+            "renai_park": "12:03",
+            "puli_brewery": "12:04",
+            "veterans_hospital": "12:05",
+            "dacheng_school": "12:06",
+            "qixia": "12:07",
+            "niuer": "12:09",
+            "puli_visitor": "12:11",
+            "thsr": "12:50",
+            "daqing": "12:58",
+            "wuquan_station": "13:04",
+            "taichung_station": "13:12",
+            "taichung": "13:15"
+          }
+        },
+        {
+          "tripNumber": 12,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "11:30",
+            "shuishe": "11:39",
+            "sunmoonlake": "11:40",
+            "tea": "11:43",
+            "yuchi": "11:47",
+            "sanyu": "11:48",
+            "xincheng_school": "11:50",
+            "dayan": "11:54",
+            "taomi": "11:59",
+            "jnu_campus": "12:00",
+            "niuer": "12:19",
+            "puli_visitor": "12:21",
+            "thsr": "13:00",
+            "daqing": "13:08",
+            "wuquan_station": "13:14",
+            "taichung_station": "13:22",
+            "taichung": "13:25"
+          }
+        },
+        {
+          "tripNumber": 13,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "12:25",
+            "tea": "12:28",
+            "yuchi": "12:32",
+            "sanyu": "12:33",
+            "xincheng_school": "12:35",
+            "dayan": "12:39",
+            "taomi": "12:44",
+            "jnu": "12:46",
+            "puli": "13:00",
+            "renai_park": "13:03",
+            "puli_brewery": "13:04",
+            "veterans_hospital": "13:05",
+            "dacheng_school": "13:06",
+            "qixia": "13:07",
+            "niuer": "13:09",
+            "puli_visitor": "13:11",
+            "thsr": "13:50",
+            "daqing": "13:58",
+            "wuquan_station": "14:04",
+            "taichung_station": "14:12",
+            "taichung": "14:15"
+          }
+        },
+        {
+          "tripNumber": 14,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "12:40",
+            "tea": "12:43",
+            "yuchi": "12:47",
+            "sanyu": "12:48",
+            "xincheng_school": "12:50",
+            "dayan": "12:54",
+            "taomi": "12:59",
+            "jnu_campus": "13:00",
+            "niuer": "13:19",
+            "puli_visitor": "13:21",
+            "thsr": "14:00",
+            "daqing": "14:08",
+            "wuquan_station": "14:14",
+            "taichung_station": "14:22",
+            "taichung": "14:25"
+          }
+        },
+        {
+          "tripNumber": 15,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "13:25",
+            "tea": "13:28",
+            "yuchi": "13:32",
+            "sanyu": "13:33",
+            "xincheng_school": "13:35",
+            "dayan": "13:39",
+            "taomi": "13:44",
+            "jnu": "13:46",
+            "puli": "14:00",
+            "renai_park": "14:03",
+            "puli_brewery": "14:04",
+            "veterans_hospital": "14:05",
+            "dacheng_school": "14:06",
+            "qixia": "14:07",
+            "niuer": "14:09",
+            "puli_visitor": "14:11",
+            "thsr": "14:50",
+            "daqing": "14:58",
+            "wuquan_station": "15:04",
+            "taichung_station": "15:12",
+            "taichung": "15:15"
+          }
+        },
+        {
+          "tripNumber": 16,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "13:30",
+            "shuishe": "13:39",
+            "sunmoonlake": "13:40",
+            "tea": "13:43",
+            "yuchi": "13:47",
+            "sanyu": "13:48",
+            "xincheng_school": "13:50",
+            "dayan": "13:54",
+            "taomi": "13:59",
+            "jnu_campus": "14:00",
+            "niuer": "14:19",
+            "puli_visitor": "14:21",
+            "thsr": "15:00",
+            "daqing": "15:08",
+            "wuquan_station": "15:14",
+            "taichung_station": "15:22",
+            "taichung": "15:25"
+          }
+        },
+        {
+          "tripNumber": 17,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "14:00",
+            "tea": "14:03",
+            "yuchi": "14:07",
+            "sanyu": "14:08",
+            "xincheng_school": "14:10",
+            "dayan": "14:14",
+            "taomi": "14:19",
+            "jnu": "14:21",
+            "puli": "14:35",
+            "renai_park": "14:38",
+            "puli_brewery": "14:39",
+            "veterans_hospital": "14:40",
+            "dacheng_school": "14:41",
+            "qixia": "14:42",
+            "niuer": "14:44",
+            "puli_visitor": "14:46",
+            "thsr": "15:25",
+            "daqing": "15:33",
+            "wuquan_station": "15:39",
+            "taichung_station": "15:47",
+            "taichung": "15:50"
+          }
+        },
+        {
+          "tripNumber": 18,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "14:25",
+            "tea": "14:28",
+            "yuchi": "14:32",
+            "sanyu": "14:33",
+            "xincheng_school": "14:35",
+            "dayan": "14:39",
+            "taomi": "14:44",
+            "jnu": "14:46",
+            "puli": "15:00",
+            "renai_park": "15:03",
+            "puli_brewery": "15:04",
+            "veterans_hospital": "15:05",
+            "dacheng_school": "15:06",
+            "qixia": "15:07",
+            "niuer": "15:09",
+            "puli_visitor": "15:11",
+            "thsr": "15:50",
+            "daqing": "15:58",
+            "wuquan_station": "16:04",
+            "taichung_station": "16:12",
+            "taichung": "16:15"
+          }
+        },
+        {
+          "tripNumber": 19,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "15:10",
+            "tea": "15:13",
+            "yuchi": "15:17",
+            "formosan": "15:25",
+            "jingyuan": "15:26",
+            "classic_inn": "15:28",
+            "sanyu": "15:29",
+            "xincheng_school": "15:31",
+            "dayan": "15:35",
+            "taomi": "15:40",
+            "jnu": "15:42",
+            "puli": "16:00",
+            "renai_park": "16:03",
+            "puli_brewery": "16:04",
+            "veterans_hospital": "16:05",
+            "dacheng_school": "16:06",
+            "qixia": "16:07",
+            "niuer": "16:09",
+            "puli_visitor": "16:11",
+            "thsr": "16:50",
+            "daqing": "16:58",
+            "wuquan_station": "17:04",
+            "taichung_station": "17:12",
+            "taichung": "17:15"
+          }
+        },
+        {
+          "tripNumber": 20,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "15:30",
+            "shuishe": "15:39",
+            "sunmoonlake": "15:40",
+            "tea": "15:43",
+            "yuchi": "15:47",
+            "sanyu": "15:48",
+            "xincheng_school": "15:50",
+            "dayan": "15:54",
+            "taomi": "15:59",
+            "jnu_campus": "16:00",
+            "niuer": "16:19",
+            "puli_visitor": "16:21",
+            "thsr": "17:00",
+            "daqing": "17:08",
+            "wuquan_station": "17:14",
+            "taichung_station": "17:22",
+            "taichung": "17:25"
+          }
+        },
+        {
+          "tripNumber": 21,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "16:30",
+            "tea": "16:33",
+            "yuchi": "16:37",
+            "sanyu": "16:38",
+            "xincheng_school": "16:40",
+            "dayan": "16:44",
+            "taomi": "16:49",
+            "jnu_campus": "16:50",
+            "niuer": "17:09",
+            "puli_visitor": "17:11",
+            "thsr": "17:50",
+            "daqing": "17:58",
+            "wuquan_station": "18:04",
+            "taichung_station": "18:12",
+            "taichung": "18:15"
+          }
+        },
+        {
+          "tripNumber": 22,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "16:10",
+            "tea": "16:13",
+            "yuchi": "16:17",
+            "formosan": "16:25",
+            "jingyuan": "16:26",
+            "classic_inn": "16:28",
+            "sanyu": "16:29",
+            "xincheng_school": "16:31",
+            "dayan": "16:35",
+            "taomi": "16:40",
+            "jnu": "16:42",
+            "puli": "17:00",
+            "renai_park": "17:03",
+            "puli_brewery": "17:04",
+            "veterans_hospital": "17:05",
+            "dacheng_school": "17:06",
+            "qixia": "17:07",
+            "niuer": "17:09",
+            "puli_visitor": "17:11",
+            "thsr": "17:50",
+            "daqing": "17:58",
+            "wuquan_station": "18:04",
+            "taichung_station": "18:12",
+            "taichung": "18:15"
+          }
+        },
+        {
+          "tripNumber": 23,
+          "inferredSubroute": "6670C",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "17:00",
+            "tea": "17:03",
+            "yuchi": "17:07",
+            "sanyu": "17:08",
+            "xincheng_school": "17:10",
+            "dayan": "17:14",
+            "taomi": "17:19",
+            "jnu": "17:21",
+            "puli": "17:35",
+            "geo_center": "17:45",
+            "fuxing_hotspring": "17:55",
+            "chungtai_museum": "18:00",
+            "chungtai": "18:01",
+            "thsr": "19:00",
+            "daqing": "19:08",
+            "wuquan_station": "19:14",
+            "taichung_station": "19:22",
+            "taichung": "19:25"
+          }
+        },
+        {
+          "tripNumber": 24,
+          "inferredSubroute": "6670F",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "xiangshan": "16:30",
+            "shuishe": "16:39",
+            "sunmoonlake": "16:40",
+            "tea": "16:43",
+            "yuchi": "16:47",
+            "sanyu": "16:48",
+            "xincheng_school": "16:50",
+            "dayan": "16:54",
+            "taomi": "16:59",
+            "jnu_campus": "17:00",
+            "niuer": "17:19",
+            "puli_visitor": "17:21",
+            "thsr": "18:00",
+            "daqing": "18:08",
+            "wuquan_station": "18:14",
+            "taichung_station": "18:22",
+            "taichung": "18:25"
+          }
+        },
+        {
+          "tripNumber": 25,
+          "inferredSubroute": "6670A",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "17:10",
+            "tea": "17:13",
+            "yuchi": "17:17",
+            "formosan": "17:25",
+            "jingyuan": "17:26",
+            "classic_inn": "17:28",
+            "sanyu": "17:29",
+            "xincheng_school": "17:31",
+            "dayan": "17:35",
+            "taomi": "17:40",
+            "jnu": "17:42",
+            "puli": "18:00",
+            "renai_park": "18:03",
+            "puli_brewery": "18:04",
+            "veterans_hospital": "18:05",
+            "dacheng_school": "18:06",
+            "qixia": "18:07",
+            "niuer": "18:09",
+            "puli_visitor": "18:11",
+            "thsr": "18:50",
+            "daqing": "18:58",
+            "wuquan_station": "19:04",
+            "taichung_station": "19:12",
+            "taichung": "19:15"
+          }
+        },
+        {
+          "tripNumber": 26,
+          "inferredSubroute": "6670B",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "17:40",
+            "tea": "17:43",
+            "yuchi": "17:47",
+            "sanyu": "17:48",
+            "xincheng_school": "17:50",
+            "dayan": "17:54",
+            "taomi": "17:59",
+            "jnu_campus": "18:00",
+            "niuer": "18:19",
+            "puli_visitor": "18:21",
+            "thsr": "19:00",
+            "daqing": "19:08",
+            "wuquan_station": "19:14",
+            "taichung_station": "19:22",
+            "taichung": "19:25"
+          }
+        },
+        {
+          "tripNumber": 27,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "18:25",
+            "tea": "18:28",
+            "yuchi": "18:32",
+            "sanyu": "18:33",
+            "xincheng_school": "18:35",
+            "dayan": "18:39",
+            "taomi": "18:44",
+            "jnu": "18:46",
+            "puli": "19:00",
+            "renai_park": "19:03",
+            "puli_brewery": "19:04",
+            "veterans_hospital": "19:05",
+            "dacheng_school": "19:06",
+            "qixia": "19:07",
+            "niuer": "19:09",
+            "puli_visitor": "19:11",
+            "thsr": "19:50",
+            "daqing": "19:58",
+            "wuquan_station": "20:04",
+            "taichung_station": "20:12",
+            "taichung": "20:15"
+          }
+        },
+        {
+          "tripNumber": 28,
+          "inferredSubroute": "6670D",
+          "subrouteClassification": "inferred",
+          "remark": "-",
+          "stopTimes": {
+            "sunmoonlake": "19:25",
+            "tea": "19:28",
+            "yuchi": "19:32",
+            "sanyu": "19:33",
+            "xincheng_school": "19:35",
+            "dayan": "19:39",
+            "taomi": "19:44",
+            "jnu": "19:46",
+            "puli": "20:00",
+            "renai_park": "20:03",
+            "puli_brewery": "20:04",
+            "veterans_hospital": "20:05",
+            "dacheng_school": "20:06",
+            "qixia": "20:07",
+            "niuer": "20:09",
+            "puli_visitor": "20:11",
+            "thsr": "20:50",
+            "daqing": "20:58",
+            "wuquan_station": "21:04",
+            "taichung_station": "21:12",
+            "taichung": "21:15"
+          }
+        }
+      ]
+    }
+  }
+}

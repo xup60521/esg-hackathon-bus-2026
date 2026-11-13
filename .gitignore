@@ -17,3 +17,7 @@ todos.json
 data/
 *.xlsx
 *.db
+
+# Published aggregate data for the analysis page (raw data remains ignored).
+!public/data/
+!public/data/midstop.json

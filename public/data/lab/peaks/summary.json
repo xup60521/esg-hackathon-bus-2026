@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "data": {
+    "generatedAt": "2026-11-03T17:12:53.635Z",
+    "calendar": {
+      "retrievedAt": "2026-11-03T16:53:50.857Z",
+      "dataset": "https://data.gov.tw/dataset/14718",
+      "provider": "行政院人事行政總處",
+      "field": "rest=true 即 是否放假=2（週休、國定假日、補假）；rest=false 為上班日，含補行上班日",
+      "sources": [
+        {
+          "year": 2024,
+          "label": "113年中華民國政府行政機關辦公日曆表",
+          "days": 366,
+          "sha256": "365de663017f123a9f8100fec47706bdbae67ed7810a995659fa4743d89bbee8",
+          "url": "https://www.dgpa.gov.tw/FileConversion?filename=dgpa/files/202407/777152e9-fdd1-4a61-876c-2733e7692538.csv&nfix=&name=113%e5%b9%b4%e4%b8%ad%e8%8f%af%e6%b0%91%e5%9c%8b%e6%94%bf%e5%ba%9c%e8%a1%8c%e6%94%bf%e6%a9%9f%e9%97%9c%e8%be%a6%e5%85%ac%e6%97%a5%e6%9b%86%e8%a1%a8.csv"
+        },
+        {
+          "year": 2025,
+          "label": "114年中華民國政府行政機關辦公日曆表(1141020更新)",
+          "days": 365,
+          "sha256": "b4bd40d4d1f4ffc20cb724a07bf3b7c5c1b32a9100e55dcf216f329af3513ca6",
+          "url": "https://www.dgpa.gov.tw/FileConversion?filename=dgpa/files/202510/b84cb88a-803c-4621-a843-d637b2775615.csv&nfix=&name=114%e5%b9%b4%e4%b8%ad%e8%8f%af%e6%b0%91%e5%9c%8b%e6%94%bf%e5%ba%9c%e8%a1%8c%e6%94%bf%e6%a9%9f%e9%97%9c%e8%be%a6%e5%85%ac%e6%97%a5%e6%9b%86%e8%a1%a8(1141020%e6%9b%b4%e6%96%b0).csv"
+        }
+      ]
+    },
+    "analysisHours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "dataSpan": {
+      "startDate": "2024-01-01",
+      "endDate": "2025-12-31",
+      "totalCalendarDays": 731,
+      "observedDays": 725,
+      "missingDays": 6
+    },
+    "totalBoardings": 1800910,
+    "totalAlightings": 1800910,
+    "directionBreakdown": {
+      "outbound": {
+        "boardings": 922660,
+        "alightings": 922660,
+        "share": 0.5123298776729542
+      },
+      "inbound": {
+        "boardings": 871969,
+        "alightings": 871969,
+        "share": 0.48418244109922204
+      },
+      "unknown": {
+        "boardings": 6281,
+        "alightings": 6281,
+        "share": 0.003487681227823711
+      }
+    },
+    "overallMetrics": {
+      "all": {
+        "analysisHours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "includedVolume": 1800910,
+        "excludedVolume": 0,
+        "peakHour": 9,
+        "peakVolume": 154986,
+        "baseVolume": 75037.91666666667,
+        "peakToBaseRatio": 2.0654358074528987,
+        "cr3": 0.2540199121555214,
+        "cr4": 0.3359273922628005,
+        "gini": 0.45752804600637087,
+        "amPeakHour": 9,
+        "amPeakVolume": 154986,
+        "pmPeakHour": 16,
+        "pmPeakVolume": 152959
+      },
+      "restVsWorkdayObservedMeanRatio": 1.2166078469785488,
+      "fridayVsMonThuObservedMeanRatio": 1.3132056299247958
+    },
+    "comparisonSamples": {
+      "workday": {
+        "observedDays": 492,
+        "totalBoardings": 1142595,
+        "mean": 2322.3475609756097
+      },
+      "restday": {
+        "observedDays": 233,
+        "totalBoardings": 658315,
+        "mean": 2825.3862660944205
+      },
+      "friday": {
+        "observedDays": 104,
+        "totalBoardings": 302766,
+        "mean": 2911.2115384615386
+      },
+      "monThu": {
+        "observedDays": 413,
+        "totalBoardings": 915569,
+        "mean": 2216.8740920096852
+      }
+    },
+    "dataQuality": {
+      "totalRows": 292562,
+      "missingDates": [
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-07-07"
+      ],
+      "missingCause": "unknown",
+      "reconciliation": {
+        "months": 24,
+        "keys": 292562,
+        "status": "exact_key_match"
+      }
+    }
+  }
+}

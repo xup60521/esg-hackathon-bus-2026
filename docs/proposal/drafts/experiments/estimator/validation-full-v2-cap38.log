@@ -1,0 +1,11 @@
+2026-11-11T23:42:36+08:00
+Traceback (most recent call last):
+  File "/home/zup/code/esg-hackathon-bus-2026/docs/proposal/drafts/experiments/estimator/validate.py", line 59, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/zup/code/esg-hackathon-bus-2026/docs/proposal/drafts/experiments/estimator/validate.py", line 46, in main
+    runs = [one(cap, a, b, shock, args.seed + cell*100000 + i*10, args.bootstrap) for i in range(args.repetitions)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zup/code/esg-hackathon-bus-2026/docs/proposal/drafts/experiments/estimator/validate.py", line 21, in one
+    result = estimator.estimate(estimator.read(paths[0]), visible, cap, bootstrap=boot, seed=seed+2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Interrupted: 2026-11-11T23:48:06+08:00

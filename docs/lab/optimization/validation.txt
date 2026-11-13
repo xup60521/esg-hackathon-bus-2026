@@ -1,0 +1,251 @@
+Validation date: 2026-11-04
+$ bun scripts/lab/optimization/build.ts
+{
+  "inventory": {
+    "source": "public/data/midstop.json",
+    "sha256": "59b9e8cc4c88b081c30523795663a5fddfdc6aa8afe036d3f04c88e5c3d30141",
+    "generatedAt": "2026-11-03T08:19:37.886Z",
+    "sourceChecks": {
+      "monthlyFiles": 24,
+      "matchedAggregateKeys": 292562,
+      "duplicatePublicKeys": 0,
+      "missingDates": [
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-07-07"
+      ]
+    },
+    "rows": 292562,
+    "observedDates": 725,
+    "firstDate": "2024-01-01",
+    "lastDate": "2025-12-31",
+    "boardings": 1800910,
+    "alightings": 1800910,
+    "unknownBoardings": 6281,
+    "selectedObservation": {
+      "date": "2025-03-02",
+      "subroute": "6670D",
+      "hour": 14,
+      "boardings": 125,
+      "stop": "埔里站",
+      "direction": "inbound",
+      "selection": "maximum hourly boardings excluding 6670H; earliest date breaks ties"
+    }
+  },
+  "results": [
+    {
+      "id": "baseline-capacity-gap",
+      "status": "optimal",
+      "selected": [
+        "baseline-1"
+      ],
+      "evaluation": {
+        "reservations": [
+          {
+            "targetId": "puli-inbound-hour",
+            "suppliedSeats": 20,
+            "assumedPassengers": 125,
+            "shortfall": 105,
+            "services": 1
+          }
+        ],
+        "shortfall": 105,
+        "extraCost": 0,
+        "extraTrips": 0
+      },
+      "searchedSubsets": 1,
+      "rejected": {},
+      "certificateErrors": []
+    },
+    {
+      "id": "full-extra-feasible",
+      "status": "optimal",
+      "selected": [
+        "baseline-1",
+        "full-1",
+        "full-2",
+        "full-3",
+        "full-4",
+        "full-5",
+        "full-6"
+      ],
+      "evaluation": {
+        "reservations": [
+          {
+            "targetId": "puli-inbound-hour",
+            "suppliedSeats": 140,
+            "assumedPassengers": 125,
+            "shortfall": 0,
+            "services": 7
+          }
+        ],
+        "shortfall": 0,
+        "extraCost": 2160,
+        "extraTrips": 6
+      },
+      "searchedSubsets": 64,
+      "rejected": {
+        "assumed-capacity-target": 63
+      },
+      "certificateErrors": []
+    },
+    {
+      "id": "mixed-feasible",
+      "status": "optimal",
+      "selected": [
+        "baseline-1",
+        "midstop-1",
+        "midstop-2",
+        "midstop-3"
+      ],
+      "evaluation": {
+        "reservations": [
+          {
+            "targetId": "puli-inbound-hour",
+            "suppliedSeats": 140,
+            "assumedPassengers": 125,
+            "shortfall": 0,
+            "services": 4
+          }
+        ],
+        "shortfall": 0,
+        "extraCost": 540,
+        "extraTrips": 3
+      },
+      "searchedSubsets": 1024,
+      "rejected": {
+        "assumed-capacity-target": 41,
+        "budget": 803,
+        "extra-trip-limit": 176
+      },
+      "certificateErrors": []
+    },
+    {
+      "id": "fleet-infeasible",
+      "status": "infeasible",
+      "selected": [],
+      "evaluation": null,
+      "searchedSubsets": 1024,
+      "rejected": {
+        "assumed-capacity-target": 41,
+        "resource-assignment": 4,
+        "budget": 803,
+        "extra-trip-limit": 176
+      },
+      "certificateErrors": null
+    },
+    {
+      "id": "budget-infeasible",
+      "status": "infeasible",
+      "selected": [],
+      "evaluation": null,
+      "searchedSubsets": 1024,
+      "rejected": {
+        "assumed-capacity-target": 17,
+        "budget": 831,
+        "extra-trip-limit": 176
+      },
+      "certificateErrors": null
+    },
+    {
+      "id": "shift-infeasible",
+      "status": "infeasible",
+      "selected": [],
+      "evaluation": null,
+      "searchedSubsets": 1024,
+      "rejected": {
+        "assumed-capacity-target": 41,
+        "resource-assignment": 4,
+        "budget": 803,
+        "extra-trip-limit": 176
+      },
+      "certificateErrors": null
+    },
+    {
+      "id": "midstop-seats30-infeasible",
+      "status": "infeasible",
+      "selected": [],
+      "evaluation": null,
+      "searchedSubsets": 1024,
+      "rejected": {
+        "assumed-capacity-target": 45,
+        "budget": 803,
+        "extra-trip-limit": 176
+      },
+      "certificateErrors": null
+    },
+    {
+      "id": "midstop-seats30-expanded-feasible",
+      "status": "optimal",
+      "selected": [
+        "baseline-1",
+        "midstop-1",
+        "midstop-2",
+        "midstop-3",
+        "midstop-4"
+      ],
+      "evaluation": {
+        "reservations": [
+          {
+            "targetId": "puli-inbound-hour",
+            "suppliedSeats": 140,
+            "assumedPassengers": 125,
+            "shortfall": 0,
+            "services": 5
+          }
+        ],
+        "shortfall": 0,
+        "extraCost": 720,
+        "extraTrips": 4
+      },
+      "searchedSubsets": 1024,
+      "rejected": {
+        "assumed-capacity-target": 96,
+        "budget": 751,
+        "extra-trip-limit": 176
+      },
+      "certificateErrors": []
+    }
+  ]
+}
+Exit status: 0
+
+$ bun test src/features/lab/optimization/solver.test.ts
+bun test v1.4.4 (38afee6c8)
+
+src/features/lab/optimization/solver.test.ts:
+(pass) bounded exact optimization > returns verified full coverage within constraints [1.60ms]
+(pass) bounded exact optimization > overlap makes one resource infeasible [0.15ms]
+(pass) bounded exact optimization > end equals start permits reuse, cumulative work still binds [0.13ms]
+(pass) bounded exact optimization > availability and return to depot are required [0.05ms]
+(pass) bounded exact optimization > budget equality is allowed; one less is infeasible [0.08ms]
+(pass) bounded exact optimization > trip limit applies independently of capacity [0.06ms]
+(pass) bounded exact optimization > minimum service cannot be satisfied by seats on too few trips [0.09ms]
+(pass) bounded exact optimization > soft coverage reports modeled shortfall, not denied boarding [0.10ms]
+(pass) bounded exact optimization > keeps fixed baseline and assigns its resource [0.17ms]
+(pass) bounded exact optimization > rejects capacity, invalid counts, identifiers and timing input [0.17ms]
+(pass) bounded exact optimization > does not double count reservation within one trip [0.03ms]
+(pass) bounded exact optimization > limits candidate enumeration [0.17ms]
+(pass) bounded exact optimization > detects tampered resource, overlap and objective certificate [0.20ms]
+(pass) bounded exact optimization > zero passengers still enforces service floor [0.06ms]
+(pass) bounded exact optimization > reservation sum across targets cannot exceed vehicle capacity [0.08ms]
+(pass) bounded exact optimization > 50 seeded small cases match independent subset/resource brute force [6.28ms]
+
+ 16 pass
+ 0 fail
+ 131 expect() calls
+Ran 16 tests across 1 file. [12.00ms]
+Exit status: 0
+
+$ ./node_modules/.bin/tsc --ignoreConfig --noEmit --target ES2022 --module ESNext --moduleResolution bundler --types bun --skipLibCheck --strict --noUnusedLocals --noUnusedParameters src/features/lab/optimization/solver.ts src/features/lab/optimization/solver.test.ts scripts/lab/optimization/build.ts
+Exit status: 0
+
+$ ./node_modules/.bin/biome check src/features/lab/optimization
+Checked 2 files in 10ms. No fixes applied.
+Exit status: 0
+
+Repeated build output SHA-256 equality: PASS
+SHA-256: a66cab3d78c3056a265264ee3659b40499cab78da8dfc96360107e82e586242f

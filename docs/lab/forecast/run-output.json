@@ -1,0 +1,174 @@
+{
+  "quality": {
+    "inputRows": 292562,
+    "mergedRows": 292562,
+    "referenceReconciled": true,
+    "boardings": 1800910,
+    "alightings": 1800910,
+    "unknownDirectionBoardings": 6281,
+    "unknownDirectionShare": 0.003487681227823711,
+    "calendarDays": 731,
+    "boardingObservedDays": 725,
+    "missingBoardingDates": [
+      "2024-07-24",
+      "2024-07-25",
+      "2024-10-02",
+      "2024-10-03",
+      "2024-10-31",
+      "2025-07-07"
+    ],
+    "alightingOnlyDates": []
+  },
+  "groups": [
+    {
+      "id": "direction:inbound",
+      "selected": "weekday_median4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 145.23660714285714,
+        "rmse": 194.25100546715325,
+        "wape": 0.11669440578504096,
+        "bias": -10.099702380952381,
+        "peakN": 51,
+        "peakUnderforecastShare": 0.13730536306649824
+      }
+    },
+    {
+      "id": "direction:outbound",
+      "selected": "weekday_median4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 165.18154761904762,
+        "rmse": 231.75743554106614,
+        "wape": 0.12417303368272684,
+        "bias": -17.827380952380953,
+        "peakN": 54,
+        "peakUnderforecastShare": 0.16146482265968934
+      }
+    },
+    {
+      "id": "direction:unknown",
+      "selected": "mean28",
+      "validationDays": 76,
+      "testDays": 307,
+      "test": {
+        "n": 307,
+        "mae": 4.862145183806422,
+        "rmse": 7.599136231734307,
+        "wape": 0.5186513451801846,
+        "bias": 0.10016286644951146,
+        "peakN": 43,
+        "peakUnderforecastShare": 0.5936189544310875
+      }
+    },
+    {
+      "id": "subroute:6670A",
+      "selected": "weekday_median4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 57.46875,
+        "rmse": 105.6653839395629,
+        "wape": 0.16476526102018874,
+        "bias": -13.638392857142858,
+        "peakN": 25,
+        "peakUnderforecastShare": 0.4168800292611558
+      }
+    },
+    {
+      "id": "subroute:6670B",
+      "selected": "weekday_median4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 52.336309523809526,
+        "rmse": 74.03467052993611,
+        "wape": 0.17496467872564822,
+        "bias": -8.220238095238095,
+        "peakN": 84,
+        "peakUnderforecastShare": 0.17714376425087308
+      }
+    },
+    {
+      "id": "subroute:6670D",
+      "selected": "weekday_median4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 138.63988095238096,
+        "rmse": 178.82027839226097,
+        "wape": 0.11960950960178093,
+        "bias": -6.086309523809524,
+        "peakN": 27,
+        "peakUnderforecastShare": 0.15752347472130995
+      }
+    },
+    {
+      "id": "subroute:6670E",
+      "selected": "weekday_mean4",
+      "validationDays": 33,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 4.274553571428571,
+        "rmse": 5.484742771890905,
+        "wape": 0.2188071297989031,
+        "bias": -0.21800595238095238,
+        "peakN": 120,
+        "peakUnderforecastShare": 0.19436127744510978
+      }
+    },
+    {
+      "id": "subroute:6670F",
+      "selected": "weekday_median4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 39.82738095238095,
+        "rmse": 52.63822506596549,
+        "wape": 0.15780846472246135,
+        "bias": -0.5684523809523809,
+        "peakN": 69,
+        "peakUnderforecastShare": 0.1520484456298369
+      }
+    },
+    {
+      "id": "subroute:6670H",
+      "selected": "weekday_mean4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 99.8578869047619,
+        "rmse": 137.69292539513077,
+        "wape": 0.19760679179942636,
+        "bias": -5.262648809523809,
+        "peakN": 76,
+        "peakUnderforecastShare": 0.19272207187146723
+      }
+    },
+    {
+      "id": "total",
+      "selected": "weekday_median4",
+      "validationDays": 96,
+      "testDays": 336,
+      "test": {
+        "n": 336,
+        "mae": 291.5327380952381,
+        "rmse": 402.82229406431577,
+        "wape": 0.11281044321473198,
+        "bias": -22.470238095238095,
+        "peakN": 55,
+        "peakUnderforecastShare": 0.12754351556754107
+      }
+    }
+  ]
+}

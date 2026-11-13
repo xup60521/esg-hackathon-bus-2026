@@ -10,12 +10,48 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AnalysisRouteImport } from './routes/analysis'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as LabRouteImport } from './routes/lab'
+import { Route as LabIndexRouteImport } from './routes/lab.index'
+import { Route as LabAssistantRouteImport } from './routes/lab.assistant'
+import { Route as LabVisualizationRouteImport } from './routes/lab.visualization'
 import { Route as ApiTrpcSplatRouteImport } from './routes/api.trpc.$'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const AnalysisRoute = AnalysisRouteImport.update({
+  id: '/analysis',
+  path: '/analysis',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LabRoute = LabRouteImport.update({
+  id: '/lab',
+  path: '/lab',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LabIndexRoute = LabIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LabRoute,
+} as any)
+const LabAssistantRoute = LabAssistantRouteImport.update({
+  id: '/assistant',
+  path: '/assistant',
+  getParentRoute: () => LabRoute,
+} as any)
+const LabVisualizationRoute = LabVisualizationRouteImport.update({
+  id: '/visualization',
+  path: '/visualization',
+  getParentRoute: () => LabRoute,
 } as any)
 const ApiTrpcSplatRoute = ApiTrpcSplatRouteImport.update({
   id: '/api/trpc/$',
@@ -25,27 +61,71 @@ const ApiTrpcSplatRoute = ApiTrpcSplatRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/analysis': typeof AnalysisRoute
+  '/dashboard': typeof DashboardRoute
+  '/lab': typeof LabRouteWithChildren
+  '/lab/assistant': typeof LabAssistantRoute
+  '/lab/visualization': typeof LabVisualizationRoute
+  '/lab/': typeof LabIndexRoute
   '/api/trpc/$': typeof ApiTrpcSplatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/analysis': typeof AnalysisRoute
+  '/dashboard': typeof DashboardRoute
+  '/lab/assistant': typeof LabAssistantRoute
+  '/lab/visualization': typeof LabVisualizationRoute
+  '/lab': typeof LabIndexRoute
   '/api/trpc/$': typeof ApiTrpcSplatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/analysis': typeof AnalysisRoute
+  '/dashboard': typeof DashboardRoute
+  '/lab': typeof LabRouteWithChildren
+  '/lab/assistant': typeof LabAssistantRoute
+  '/lab/visualization': typeof LabVisualizationRoute
+  '/lab/': typeof LabIndexRoute
   '/api/trpc/$': typeof ApiTrpcSplatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api/trpc/$'
+  fullPaths:
+    | '/'
+    | '/analysis'
+    | '/dashboard'
+    | '/lab'
+    | '/lab/assistant'
+    | '/lab/visualization'
+    | '/lab/'
+    | '/api/trpc/$'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api/trpc/$'
-  id: '__root__' | '/' | '/api/trpc/$'
+  to:
+    | '/'
+    | '/analysis'
+    | '/dashboard'
+    | '/lab/assistant'
+    | '/lab/visualization'
+    | '/lab'
+    | '/api/trpc/$'
+  id:
+    | '__root__'
+    | '/'
+    | '/analysis'
+    | '/dashboard'
+    | '/lab'
+    | '/lab/assistant'
+    | '/lab/visualization'
+    | '/lab/'
+    | '/api/trpc/$'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AnalysisRoute: typeof AnalysisRoute
+  DashboardRoute: typeof DashboardRoute
+  LabRoute: typeof LabRouteWithChildren
   ApiTrpcSplatRoute: typeof ApiTrpcSplatRoute
 }
 
@@ -58,6 +138,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/analysis': {
+      id: '/analysis'
+      path: '/analysis'
+      fullPath: '/analysis'
+      preLoaderRoute: typeof AnalysisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lab': {
+      id: '/lab'
+      path: '/lab'
+      fullPath: '/lab'
+      preLoaderRoute: typeof LabRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lab/': {
+      id: '/lab/'
+      path: '/'
+      fullPath: '/lab/'
+      preLoaderRoute: typeof LabIndexRouteImport
+      parentRoute: typeof LabRoute
+    }
+    '/lab/assistant': {
+      id: '/lab/assistant'
+      path: '/assistant'
+      fullPath: '/lab/assistant'
+      preLoaderRoute: typeof LabAssistantRouteImport
+      parentRoute: typeof LabRoute
+    }
+    '/lab/visualization': {
+      id: '/lab/visualization'
+      path: '/visualization'
+      fullPath: '/lab/visualization'
+      preLoaderRoute: typeof LabVisualizationRouteImport
+      parentRoute: typeof LabRoute
+    }
     '/api/trpc/$': {
       id: '/api/trpc/$'
       path: '/api/trpc/$'
@@ -68,8 +190,25 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface LabRouteChildren {
+  LabAssistantRoute: typeof LabAssistantRoute
+  LabVisualizationRoute: typeof LabVisualizationRoute
+  LabIndexRoute: typeof LabIndexRoute
+}
+
+const LabRouteChildren: LabRouteChildren = {
+  LabAssistantRoute: LabAssistantRoute,
+  LabVisualizationRoute: LabVisualizationRoute,
+  LabIndexRoute: LabIndexRoute,
+}
+
+const LabRouteWithChildren = LabRoute._addFileChildren(LabRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AnalysisRoute: AnalysisRoute,
+  DashboardRoute: DashboardRoute,
+  LabRoute: LabRouteWithChildren,
   ApiTrpcSplatRoute: ApiTrpcSplatRoute,
 }
 export const routeTree = rootRouteImport

@@ -2,6 +2,7 @@ import {
 	AmbientLight,
 	COORDINATE_SYSTEM,
 	DirectionalLight,
+	type LayersList,
 	LightingEffect,
 	type MapViewState,
 } from "@deck.gl/core";
@@ -40,6 +41,15 @@ type Props = {
 	scaleMax: number;
 	trips: AnimatedTrip[] | null;
 	currentTime: number;
+	/** extra layers drawn on top (e.g. the dashboard's estimated bus positions) */
+	overlays?: LayersList;
+	/** makes stop dots clickable */
+	onStopClick?: (name: string) => void;
+	/** tooltip HTML for picked overlay objects */
+	overlayTooltip?: (object: unknown) => string | null;
+	initialView?: Partial<MapViewState>;
+	/** hide the built-in stop dots and labels (when an overlay draws its own) */
+	hideStops?: boolean;
 };
 
 const INITIAL_VIEW: MapViewState = {
@@ -335,6 +345,11 @@ function BusMap({
 	scaleMax,
 	trips,
 	currentTime,
+	overlays,
+	onStopClick,
+	overlayTooltip,
+	initialView,
+	hideStops,
 }: Props) {
 	const { sampler } = assets;
 	const pal = PALETTES[theme];
@@ -475,6 +490,7 @@ function BusMap({
 			}),
 		new ScatterplotLayer({
 			id: "stop-dots",
+			visible: !hideStops,
 			data: stopsZ,
 			getPosition: (d) => [d.stop.lon, d.stop.lat, d.z],
 			getRadius: 5,
@@ -484,11 +500,16 @@ function BusMap({
 			lineWidthUnits: "pixels",
 			getLineWidth: 2,
 			stroked: true,
+			pickable: !!onStopClick,
+			onClick: onStopClick
+				? ({ object }) => onStopClick(object.stop.name)
+				: undefined,
 			parameters: NO_DEPTH,
 			updateTriggers: { getFillColor: theme, getLineColor: theme },
 		}),
 		new TextLayer({
 			id: "stop-labels",
+			visible: !hideStops,
 			data: stopLabelData,
 			getPosition: (d) => [d.stop.lon, d.stop.lat, d.z],
 			getText: (d) => d.stop.name,
@@ -506,11 +527,14 @@ function BusMap({
 			parameters: NO_DEPTH,
 			updateTriggers: { getColor: theme },
 		}),
+		...(overlays ?? []),
 	];
 
 	return (
 		<DeckGL
-			initialViewState={INITIAL_VIEW}
+			initialViewState={
+				initialView ? { ...INITIAL_VIEW, ...initialView } : INITIAL_VIEW
+			}
 			onViewStateChange={({ viewState }) => {
 				const z = Math.round((viewState as MapViewState).zoom * 10) / 10;
 				if (z !== zoom) setZoom(z);
@@ -519,23 +543,33 @@ function BusMap({
 			layers={layers}
 			effects={EFFECTS}
 			useDevicePixels={PIXEL_RATIO}
+			getCursor={({ isHovering }) =>
+				isHovering && onStopClick ? "pointer" : "grab"
+			}
 			getTooltip={({ object }) => {
-				if (!object || !("kind" in object)) return null;
+				const { muted, ...tipStyle } = pal.tooltip;
+				const style = {
+					...tipStyle,
+					borderRadius: "8px",
+					padding: "10px 12px",
+					fontSize: "12px",
+					fontFamily: 'Manrope, "Noto Sans TC", sans-serif',
+				};
+				const extra = object && overlayTooltip?.(object);
+				if (extra) return { html: extra, style };
+				if (!object || !("stop" in object)) return null;
 				const s = object.stop as Stop;
+				if (!("kind" in object))
+					return onStopClick
+						? { html: `<b>${s.name}</b><div>點選查看站牌</div>`, style }
+						: null;
 				const v = stopValues.get(s.name) ?? { boardings: 0, alightings: 0 };
-				const { muted, ...style } = pal.tooltip;
 				return {
 					html: `<div style="font-weight:700;margin-bottom:4px">${s.name}</div>
             <div style="color:${muted};font-size:11px;margin-bottom:6px">${s.officialName}</div>
             <div>上車 Boardings <b>${v.boardings.toLocaleString()}</b></div>
             <div>下車 Alightings <b>${v.alightings.toLocaleString()}</b></div>`,
-					style: {
-						...style,
-						borderRadius: "8px",
-						padding: "10px 12px",
-						fontSize: "12px",
-						fontFamily: 'Manrope, "Noto Sans TC", sans-serif',
-					},
+					style,
 				};
 			}}
 		/>

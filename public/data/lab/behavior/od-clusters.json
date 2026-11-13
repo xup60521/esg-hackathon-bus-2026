@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 2,
+  "method": "ordered_manual_rules",
+  "generatedAt": "2026-11-04T07:16:10.933Z",
+  "totalTrips": 1800910,
+  "clusters": [
+    {
+      "clusterId": 1,
+      "archetype": "regional_commute",
+      "label": "臺中端至埔里走廊",
+      "description": "臺中或高鐵臺中站與埔里站連接，依序套用規則後歸入本組。",
+      "odPairCount": 4,
+      "totalTrips": 884732,
+      "totalTripShare": 0.4913,
+      "avgDurationMin": 62.1,
+      "durationSumSec": 3294635872,
+      "durationSampleCount": 884519,
+      "weekendRatio": 0.3339,
+      "amPeakRatio": 0.2301,
+      "pmPeakRatio": 0.3053,
+      "studentRatio": 0.1873,
+      "concessionRatio": 0.2216,
+      "generalRatio": 0.5276,
+      "topOdPairs": [
+        {
+          "boardStop": "埔里站",
+          "alightStop": "高鐵臺中站",
+          "trips": 339042,
+          "shareInCluster": 0.3832,
+          "avgDurationMin": 58
+        },
+        {
+          "boardStop": "高鐵臺中站",
+          "alightStop": "埔里站",
+          "trips": 325281,
+          "shareInCluster": 0.3677,
+          "avgDurationMin": 55.6
+        },
+        {
+          "boardStop": "臺中",
+          "alightStop": "埔里站",
+          "trips": 125897,
+          "shareInCluster": 0.1423,
+          "avgDurationMin": 80
+        },
+        {
+          "boardStop": "埔里站",
+          "alightStop": "臺中",
+          "trips": 94512,
+          "shareInCluster": 0.1068,
+          "avgDurationMin": 75.2
+        }
+      ]
+    },
+    {
+      "clusterId": 2,
+      "archetype": "tourism_intercity",
+      "label": "臺中端至日月潭／九族走廊",
+      "description": "臺中或高鐵臺中站連接日月潭或九族文化村，不推論搭乘目的。",
+      "odPairCount": 8,
+      "totalTrips": 533028,
+      "totalTripShare": 0.296,
+      "avgDurationMin": 99.8,
+      "durationSumSec": 3188791774,
+      "durationSampleCount": 532383,
+      "weekendRatio": 0.3284,
+      "amPeakRatio": 0.2984,
+      "pmPeakRatio": 0.1977,
+      "studentRatio": 0.0461,
+      "concessionRatio": 0.2094,
+      "generalRatio": 0.7183,
+      "topOdPairs": [
+        {
+          "boardStop": "日月潭",
+          "alightStop": "高鐵臺中站",
+          "trips": 150027,
+          "shareInCluster": 0.2815,
+          "avgDurationMin": 91.2
+        },
+        {
+          "boardStop": "高鐵臺中站",
+          "alightStop": "日月潭",
+          "trips": 130537,
+          "shareInCluster": 0.2449,
+          "avgDurationMin": 83.9
+        },
+        {
+          "boardStop": "臺中",
+          "alightStop": "日月潭",
+          "trips": 117910,
+          "shareInCluster": 0.2212,
+          "avgDurationMin": 113.9
+        },
+        {
+          "boardStop": "日月潭",
+          "alightStop": "臺中",
+          "trips": 103882,
+          "shareInCluster": 0.1949,
+          "avgDurationMin": 115.3
+        },
+        {
+          "boardStop": "臺中",
+          "alightStop": "九族文化村",
+          "trips": 10591,
+          "shareInCluster": 0.0199,
+          "avgDurationMin": 116.9
+        }
+      ]
+    },
+    {
+      "clusterId": 3,
+      "archetype": "campus_student",
+      "label": "校名站點或學生票占比組",
+      "description": "端點含暨南大學或為崎下，或學生票占比至少25%，不代表旅客身分或就學目的。",
+      "odPairCount": 67,
+      "totalTrips": 157727,
+      "totalTripShare": 0.0876,
+      "avgDurationMin": 47.5,
+      "durationSumSec": 440860108,
+      "durationSampleCount": 154840,
+      "weekendRatio": 0.2762,
+      "amPeakRatio": 0.2451,
+      "pmPeakRatio": 0.2519,
+      "studentRatio": 0.3583,
+      "concessionRatio": 0.1854,
+      "generalRatio": 0.3893,
+      "topOdPairs": [
+        {
+          "boardStop": "高鐵臺中站",
+          "alightStop": "崎下",
+          "trips": 36247,
+          "shareInCluster": 0.2298,
+          "avgDurationMin": 47.2
+        },
+        {
+          "boardStop": "暨南大學校內",
+          "alightStop": "高鐵臺中站",
+          "trips": 18549,
+          "shareInCluster": 0.1176,
+          "avgDurationMin": 54.2
+        },
+        {
+          "boardStop": "高鐵臺中站",
+          "alightStop": "暨南大學校內",
+          "trips": 17605,
+          "shareInCluster": 0.1116,
+          "avgDurationMin": 52.7
+        },
+        {
+          "boardStop": "臺中",
+          "alightStop": "崎下",
+          "trips": 13267,
+          "shareInCluster": 0.0841,
+          "avgDurationMin": 71.1
+        },
+        {
+          "boardStop": "崎下",
+          "alightStop": "高鐵臺中站",
+          "trips": 12472,
+          "shareInCluster": 0.0791,
+          "avgDurationMin": 44
+        }
+      ]
+    },
+    {
+      "clusterId": 4,
+      "archetype": "local_shuttle",
+      "label": "平均時長不逾50分鐘且千筆以上組",
+      "description": "前述規則未命中、有效樣本平均時長不逾50分鐘且旅次至少1000筆。",
+      "odPairCount": 24,
+      "totalTrips": 129267,
+      "totalTripShare": 0.0718,
+      "avgDurationMin": 27,
+      "durationSumSec": 203629418,
+      "durationSampleCount": 125734,
+      "weekendRatio": 0.295,
+      "amPeakRatio": 0.1909,
+      "pmPeakRatio": 0.2723,
+      "studentRatio": 0.108,
+      "concessionRatio": 0.2711,
+      "generalRatio": 0.5891,
+      "topOdPairs": [
+        {
+          "boardStop": "日月潭",
+          "alightStop": "埔里站",
+          "trips": 19874,
+          "shareInCluster": 0.1537,
+          "avgDurationMin": 39.3
+        },
+        {
+          "boardStop": "臺中",
+          "alightStop": "高鐵臺中站",
+          "trips": 17719,
+          "shareInCluster": 0.1371,
+          "avgDurationMin": 24.5
+        },
+        {
+          "boardStop": "埔里站",
+          "alightStop": "日月潭",
+          "trips": 16757,
+          "shareInCluster": 0.1296,
+          "avgDurationMin": 38.5
+        },
+        {
+          "boardStop": "埔里站",
+          "alightStop": "魚池",
+          "trips": 10473,
+          "shareInCluster": 0.081,
+          "avgDurationMin": 25.2
+        },
+        {
+          "boardStop": "高鐵臺中站",
+          "alightStop": "臺中",
+          "trips": 10295,
+          "shareInCluster": 0.0796,
+          "avgDurationMin": 21.2
+        }
+      ]
+    },
+    {
+      "clusterId": 5,
+      "archetype": "intermediate_minor",
+      "label": "其餘 OD 組",
+      "description": "未命中前述條件的 OD，包含無有效時長樣本者，不推定需求目的。",
+      "odPairCount": 87,
+      "totalTrips": 89875,
+      "totalTripShare": 0.0499,
+      "avgDurationMin": 80.7,
+      "durationSumSec": 430683612,
+      "durationSampleCount": 88900,
+      "weekendRatio": 0.3162,
+      "amPeakRatio": 0.2614,
+      "pmPeakRatio": 0.1879,
+      "studentRatio": 0.1005,
+      "concessionRatio": 0.3433,
+      "generalRatio": 0.5161,
+      "topOdPairs": [
+        {
+          "boardStop": "高鐵臺中站",
+          "alightStop": "魚池",
+          "trips": 14800,
+          "shareInCluster": 0.1647,
+          "avgDurationMin": 73.9
+        },
+        {
+          "boardStop": "魚池",
+          "alightStop": "高鐵臺中站",
+          "trips": 14772,
+          "shareInCluster": 0.1644,
+          "avgDurationMin": 76.5
+        },
+        {
+          "boardStop": "臺中",
+          "alightStop": "魚池",
+          "trips": 10593,
+          "shareInCluster": 0.1179,
+          "avgDurationMin": 102.3
+        },
+        {
+          "boardStop": "魚池",
+          "alightStop": "臺中",
+          "trips": 8656,
+          "shareInCluster": 0.0963,
+          "avgDurationMin": 97.3
+        },
+        {
+          "boardStop": "向山行政中心",
+          "alightStop": "高鐵臺中站",
+          "trips": 8561,
+          "shareInCluster": 0.0953,
+          "avgDurationMin": 89.7
+        }
+      ]
+    },
+    {
+      "clusterId": 6,
+      "archetype": "abnormal_tap",
+      "label": "同站 OD 待查組",
+      "description": "上下車站相同的紀錄，原因未知；與短於3分鐘的分析排除條件分開。",
+      "odPairCount": 16,
+      "totalTrips": 6281,
+      "totalTripShare": 0.0035,
+      "avgDurationMin": 31.4,
+      "durationSumSec": 3897289,
+      "durationSampleCount": 2066,
+      "weekendRatio": 0.3122,
+      "amPeakRatio": 0.2399,
+      "pmPeakRatio": 0.2436,
+      "studentRatio": 0.1108,
+      "concessionRatio": 0.2597,
+      "generalRatio": 0.5983,
+      "topOdPairs": [
+        {
+          "boardStop": "高鐵臺中站",
+          "alightStop": "高鐵臺中站",
+          "trips": 2117,
+          "shareInCluster": 0.337,
+          "avgDurationMin": 51.1
+        },
+        {
+          "boardStop": "埔里站",
+          "alightStop": "埔里站",
+          "trips": 1164,
+          "shareInCluster": 0.1853,
+          "avgDurationMin": 22.8
+        },
+        {
+          "boardStop": "日月潭",
+          "alightStop": "日月潭",
+          "trips": 1077,
+          "shareInCluster": 0.1715,
+          "avgDurationMin": 17.8
+        },
+        {
+          "boardStop": "臺中",
+          "alightStop": "臺中",
+          "trips": 816,
+          "shareInCluster": 0.1299,
+          "avgDurationMin": 30.1
+        },
+        {
+          "boardStop": "崎下",
+          "alightStop": "崎下",
+          "trips": 620,
+          "shareInCluster": 0.0987,
+          "avgDurationMin": 27.3
+        }
+      ]
+    }
+  ]
+}

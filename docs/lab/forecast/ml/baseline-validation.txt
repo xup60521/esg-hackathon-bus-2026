@@ -1,0 +1,10 @@
+test_exact_calendar_lags_and_missing_abstention (test_forecast.ForecastTests.test_exact_calendar_lags_and_missing_abstention) ... ok
+test_month_boundary_merges_without_double_count_dedup (test_forecast.ForecastTests.test_month_boundary_merges_without_double_count_dedup) ... ok
+test_outlier_robustness_and_no_future_leakage (test_forecast.ForecastTests.test_outlier_robustness_and_no_future_leakage) ... ok
+test_real_data_reconciliation_and_time_support (test_forecast.ForecastTests.test_real_data_reconciliation_and_time_support) ... ok
+test_zero_denominator_and_signed_bias (test_forecast.ForecastTests.test_zero_denominator_and_signed_bias) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.166s
+
+OK

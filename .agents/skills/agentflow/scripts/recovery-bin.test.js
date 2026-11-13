@@ -1,0 +1,55 @@
+'use strict'
+const test = require('node:test')
+const assert = require('node:assert/strict')
+const fs = require('node:fs')
+const os = require('node:os')
+const path = require('node:path')
+
+test('portable recovery preserves bytes and inode, records the original path and refuses replacement', t => {
+  const root = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'agf-recovery-')))
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }))
+  const { recovery_bin } = require('./recovery-bin')
+  const bin = recovery_bin({ home: root, platform: 'linux', env: {} })
+  const source = path.join(root, '測試 ? #'), destination = path.join(bin.root, 'kept')
+  fs.mkdirSync(source); fs.writeFileSync(path.join(source, 'product'), 'unchanged')
+  const id = fs.statSync(source)
+  bin.prepare(source)
+  assert.equal(bin.move(source, { destination }), destination)
+  assert.equal(fs.existsSync(source), false)
+  assert.equal(fs.statSync(destination).ino, id.ino)
+  assert.equal(fs.readFileSync(path.join(destination, 'product'), 'utf8'), 'unchanged')
+  const metadata = fs.readFileSync(path.join(bin.info, 'kept.trashinfo'), 'utf8')
+  assert.match(metadata, /\[Trash Info\]/)
+  assert.ok(metadata.includes(encodeURI(source).replace(/[?#]/g, encodeURIComponent)))
+  fs.mkdirSync(source)
+  assert.throws(() => bin.move(source, { destination }), /collision|exists/)
+  assert.ok(fs.existsSync(source))
+  fs.renameSync(destination, path.join(root, 'restored'))
+  assert.equal(fs.readFileSync(path.join(root, 'restored/product'), 'utf8'), 'unchanged')
+})
+
+test('Windows recovery uses a retained private directory rather than permanent deletion or an unproved Recycle Bin', t => {
+  const root = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'agf-recovery-')))
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }))
+  const bin = require('./recovery-bin').recovery_bin({ home: root, platform: 'win32', env: {} })
+  assert.equal(bin.root, path.join(root, '.agentflow-recovery', 'files'))
+  const file = path.join(root, 'owned-marker'); fs.writeFileSync(file, 'owner')
+  const moved = bin.move(file)
+  assert.equal(fs.readFileSync(moved, 'utf8'), 'owner')
+  assert.equal(fs.existsSync(file), false)
+})
+
+test('a failed move leaves no metadata, so a retry to the same destination succeeds', t => {
+  const root = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'agf-recovery-')))
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }))
+  const { recovery_bin } = require('./recovery-bin')
+  const bin = recovery_bin({ home: root, platform: 'linux', env: {} })
+  const source = path.join(root, 'busy'), destination = path.join(bin.root, 'busy-kept')
+  fs.mkdirSync(source)
+  const rename = fs.renameSync
+  fs.renameSync = () => { throw Object.assign(Error('busy'), { code: 'EBUSY' }) }
+  try { assert.throws(() => bin.move(source, { destination }), /busy/) } finally { fs.renameSync = rename }
+  assert.ok(fs.existsSync(source))
+  assert.equal(fs.existsSync(path.join(bin.info, 'busy-kept.trashinfo')), false)
+  assert.equal(bin.move(source, { destination }), destination)
+})

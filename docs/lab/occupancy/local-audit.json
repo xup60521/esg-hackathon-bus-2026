@@ -1,0 +1,30 @@
+{
+  "path": "public/data/midstop.json",
+  "sha256": "59b9e8cc4c88b081c30523795663a5fddfdc6aa8afe036d3f04c88e5c3d30141",
+  "generatedAt": "2026-11-03T08:19:37.886Z",
+  "columns": [
+    "date",
+    "subroute",
+    "direction",
+    "stop",
+    "hour",
+    "boardings",
+    "alightings"
+  ],
+  "rows": 292562,
+  "boardings": 1800910,
+  "alightings": 1800910,
+  "unknownBoardings": 6281,
+  "activeDates": 725,
+  "invalidRows": 0,
+  "routeBoardings": {
+    "6670A": 251742,
+    "6670B": 191415,
+    "6670D": 840431,
+    "6670F": 174273,
+    "6670H": 335066,
+    "6670E": 7983
+  },
+  "reconstructable": false,
+  "reason": "小時彙總缺 vehicle、配對上下車時間、trip_id、容量，無法識別逐班或同步載客。"
+}

@@ -1,0 +1,879 @@
+{
+ "generatedFrom": {
+  "file": "public/data/midstop.json",
+  "exporterGeneratedAt": "2026-11-03T08:19:37.886Z",
+  "calendarRetrievedAt": "2026-11-03T16:53:50.857Z"
+ },
+ "dataset": {
+  "rows": 292562,
+  "boardings": 1800910,
+  "alightings": 1800910,
+  "firstDate": "2024-01-01",
+  "lastDate": "2025-12-31",
+  "datesWithRecords": 725,
+  "calendarDays": 731,
+  "missingDates": [
+   "2024-07-24",
+   "2024-07-25",
+   "2024-10-02",
+   "2024-10-03",
+   "2024-10-31",
+   "2025-07-07"
+  ],
+  "unknownDirection": {
+   "boardings": 6281,
+   "alightings": 6281
+  },
+  "hourBuckets": {
+   "0": 16,
+   "5": 17747,
+   "6": 30492,
+   "7": 118772,
+   "8": 146695,
+   "9": 154986,
+   "10": 149522,
+   "11": 124940,
+   "12": 116518,
+   "13": 134735,
+   "14": 118584,
+   "15": 147508,
+   "16": 152959,
+   "17": 130971,
+   "18": 107809,
+   "19": 77094,
+   "20": 40310,
+   "21": 26307,
+   "22": 4941,
+   "23": 4
+  }
+ },
+ "overall": {
+  "boardings": 1800910,
+  "alightings": 1800910,
+  "activeDays": 725,
+  "avgBoardingsPerActiveDay": 2484,
+  "restOverWorkRatioBoardings": 1.217,
+  "peakBoardingHour": {
+   "hour": 9,
+   "share": 0.086
+  },
+  "top3HourShareBoardings": 0.254,
+  "workDays": 492,
+  "restDays": 233
+ },
+ "byDirection": {
+  "outbound": {
+   "boardings": 922660,
+   "alightings": 922660,
+   "activeDays": 725,
+   "avgBoardingsPerActiveDay": 1272.6,
+   "restOverWorkRatioBoardings": 1.247,
+   "peakBoardingHour": {
+    "hour": 8,
+    "share": 0.108
+   },
+   "top3HourShareBoardings": 0.3,
+   "workDays": 492,
+   "restDays": 233
+  },
+  "inbound": {
+   "boardings": 871969,
+   "alightings": 871969,
+   "activeDays": 725,
+   "avgBoardingsPerActiveDay": 1202.7,
+   "restOverWorkRatioBoardings": 1.185,
+   "peakBoardingHour": {
+    "hour": 15,
+    "share": 0.108
+   },
+   "top3HourShareBoardings": 0.307,
+   "workDays": 492,
+   "restDays": 233
+  }
+ },
+ "bySubroute": {
+  "6670A": {
+   "boardings": 251742,
+   "alightings": 251742,
+   "activeDays": 725,
+   "avgBoardingsPerActiveDay": 347.2,
+   "restOverWorkRatioBoardings": 1.264,
+   "peakBoardingHour": {
+    "hour": 9,
+    "share": 0.212
+   },
+   "top3HourShareBoardings": 0.545,
+   "workDays": 492,
+   "restDays": 233
+  },
+  "6670B": {
+   "boardings": 191415,
+   "alightings": 191415,
+   "activeDays": 725,
+   "avgBoardingsPerActiveDay": 264,
+   "restOverWorkRatioBoardings": 1.3,
+   "peakBoardingHour": {
+    "hour": 10,
+    "share": 0.236
+   },
+   "top3HourShareBoardings": 0.549,
+   "workDays": 492,
+   "restDays": 233
+  },
+  "6670D": {
+   "boardings": 840431,
+   "alightings": 840431,
+   "activeDays": 725,
+   "avgBoardingsPerActiveDay": 1159.2,
+   "restOverWorkRatioBoardings": 1.159,
+   "peakBoardingHour": {
+    "hour": 12,
+    "share": 0.097
+   },
+   "top3HourShareBoardings": 0.277,
+   "workDays": 492,
+   "restDays": 233
+  },
+  "6670E": {
+   "boardings": 7983,
+   "alightings": 7983,
+   "activeDays": 427,
+   "avgBoardingsPerActiveDay": 18.7,
+   "restOverWorkRatioBoardings": 1.091,
+   "peakBoardingHour": {
+    "hour": 9,
+    "share": 0.281
+   },
+   "top3HourShareBoardings": 0.676,
+   "workDays": 291,
+   "restDays": 136
+  },
+  "6670F": {
+   "boardings": 174273,
+   "alightings": 174273,
+   "activeDays": 725,
+   "avgBoardingsPerActiveDay": 240.4,
+   "restOverWorkRatioBoardings": 1.043,
+   "peakBoardingHour": {
+    "hour": 11,
+    "share": 0.174
+   },
+   "top3HourShareBoardings": 0.463,
+   "workDays": 492,
+   "restDays": 233
+  },
+  "6670H": {
+   "boardings": 335066,
+   "alightings": 335066,
+   "activeDays": 725,
+   "avgBoardingsPerActiveDay": 462.2,
+   "restOverWorkRatioBoardings": 1.39,
+   "peakBoardingHour": {
+    "hour": 7,
+    "share": 0.115
+   },
+   "top3HourShareBoardings": 0.334,
+   "workDays": 492,
+   "restDays": 233
+  }
+ },
+ "topWorkHours": [
+  {
+   "hour": 9,
+   "avg": 197.3
+  },
+  {
+   "hour": 16,
+   "avg": 196.8
+  },
+  {
+   "hour": 10,
+   "avg": 193.1
+  }
+ ],
+ "topRestHours": [
+  {
+   "hour": 9,
+   "avg": 248.7
+  },
+  {
+   "hour": 16,
+   "avg": 240.8
+  },
+  {
+   "hour": 15,
+   "avg": 234.9
+  }
+ ],
+ "stops": [
+  {
+   "stop": "台中航空站",
+   "order": 1,
+   "boardings": 1102,
+   "alightings": 380
+  },
+  {
+   "stop": "臺中",
+   "order": 2,
+   "boardings": 310206,
+   "alightings": 239654
+  },
+  {
+   "stop": "高鐵臺中站",
+   "order": 3,
+   "boardings": 556509,
+   "alightings": 576055
+  },
+  {
+   "stop": "牛耳石雕公園",
+   "order": 4,
+   "boardings": 1834,
+   "alightings": 3683
+  },
+  {
+   "stop": "崎下",
+   "order": 5,
+   "boardings": 33495,
+   "alightings": 65524
+  },
+  {
+   "stop": "埔里站",
+   "order": 6,
+   "boardings": 482079,
+   "alightings": 501658
+  },
+  {
+   "stop": "暨南大學校內",
+   "order": 7,
+   "boardings": 24296,
+   "alightings": 24869
+  },
+  {
+   "stop": "暨南大學",
+   "order": 8,
+   "boardings": 3001,
+   "alightings": 2268
+  },
+  {
+   "stop": "桃米坑",
+   "order": 9,
+   "boardings": 4671,
+   "alightings": 6313
+  },
+  {
+   "stop": "大雁",
+   "order": 10,
+   "boardings": 4838,
+   "alightings": 7399
+  },
+  {
+   "stop": "九族文化村",
+   "order": 11,
+   "boardings": 18584,
+   "alightings": 27508
+  },
+  {
+   "stop": "魚池",
+   "order": 12,
+   "boardings": 43550,
+   "alightings": 46317
+  },
+  {
+   "stop": "日月老茶廠",
+   "order": 13,
+   "boardings": 6246,
+   "alightings": 7707
+  },
+  {
+   "stop": "日月潭",
+   "order": 14,
+   "boardings": 293554,
+   "alightings": 283481
+  },
+  {
+   "stop": "水社",
+   "order": 15,
+   "boardings": 659,
+   "alightings": 1239
+  },
+  {
+   "stop": "向山行政中心",
+   "order": 16,
+   "boardings": 16286,
+   "alightings": 6855
+  }
+ ],
+ "stopsByDirection": {
+  "outbound": [
+   {
+    "stop": "台中航空站",
+    "order": 1,
+    "boardings": 1094,
+    "alightings": 0
+   },
+   {
+    "stop": "臺中",
+    "order": 2,
+    "boardings": 309390,
+    "alightings": 0
+   },
+   {
+    "stop": "高鐵臺中站",
+    "order": 3,
+    "boardings": 543933,
+    "alightings": 18352
+   },
+   {
+    "stop": "牛耳石雕公園",
+    "order": 4,
+    "boardings": 782,
+    "alightings": 1946
+   },
+   {
+    "stop": "崎下",
+    "order": 5,
+    "boardings": 14490,
+    "alightings": 49514
+   },
+   {
+    "stop": "埔里站",
+    "order": 6,
+    "boardings": 38373,
+    "alightings": 460865
+   },
+   {
+    "stop": "暨南大學校內",
+    "order": 7,
+    "boardings": 2848,
+    "alightings": 23356
+   },
+   {
+    "stop": "暨南大學",
+    "order": 8,
+    "boardings": 84,
+    "alightings": 2128
+   },
+   {
+    "stop": "桃米坑",
+    "order": 9,
+    "boardings": 839,
+    "alightings": 5008
+   },
+   {
+    "stop": "大雁",
+    "order": 10,
+    "boardings": 1310,
+    "alightings": 5307
+   },
+   {
+    "stop": "九族文化村",
+    "order": 11,
+    "boardings": 1366,
+    "alightings": 25444
+   },
+   {
+    "stop": "魚池",
+    "order": 12,
+    "boardings": 5728,
+    "alightings": 38844
+   },
+   {
+    "stop": "日月老茶廠",
+    "order": 13,
+    "boardings": 1337,
+    "alightings": 5270
+   },
+   {
+    "stop": "日月潭",
+    "order": 14,
+    "boardings": 1061,
+    "alightings": 278751
+   },
+   {
+    "stop": "水社",
+    "order": 15,
+    "boardings": 25,
+    "alightings": 1026
+   },
+   {
+    "stop": "向山行政中心",
+    "order": 16,
+    "boardings": 0,
+    "alightings": 6849
+   }
+  ],
+  "inbound": [
+   {
+    "stop": "台中航空站",
+    "order": 1,
+    "boardings": 0,
+    "alightings": 372
+   },
+   {
+    "stop": "臺中",
+    "order": 2,
+    "boardings": 0,
+    "alightings": 238838
+   },
+   {
+    "stop": "高鐵臺中站",
+    "order": 3,
+    "boardings": 10459,
+    "alightings": 555586
+   },
+   {
+    "stop": "牛耳石雕公園",
+    "order": 4,
+    "boardings": 1013,
+    "alightings": 1698
+   },
+   {
+    "stop": "崎下",
+    "order": 5,
+    "boardings": 18385,
+    "alightings": 15390
+   },
+   {
+    "stop": "埔里站",
+    "order": 6,
+    "boardings": 442542,
+    "alightings": 39629
+   },
+   {
+    "stop": "暨南大學校內",
+    "order": 7,
+    "boardings": 21351,
+    "alightings": 1416
+   },
+   {
+    "stop": "暨南大學",
+    "order": 8,
+    "boardings": 2908,
+    "alightings": 131
+   },
+   {
+    "stop": "桃米坑",
+    "order": 9,
+    "boardings": 3828,
+    "alightings": 1301
+   },
+   {
+    "stop": "大雁",
+    "order": 10,
+    "boardings": 3510,
+    "alightings": 2074
+   },
+   {
+    "stop": "九族文化村",
+    "order": 11,
+    "boardings": 17125,
+    "alightings": 1971
+   },
+   {
+    "stop": "魚池",
+    "order": 12,
+    "boardings": 37698,
+    "alightings": 7349
+   },
+   {
+    "stop": "日月老茶廠",
+    "order": 13,
+    "boardings": 4839,
+    "alightings": 2367
+   },
+   {
+    "stop": "日月潭",
+    "order": 14,
+    "boardings": 291416,
+    "alightings": 3653
+   },
+   {
+    "stop": "水社",
+    "order": 15,
+    "boardings": 615,
+    "alightings": 194
+   },
+   {
+    "stop": "向山行政中心",
+    "order": 16,
+    "boardings": 16280,
+    "alightings": 0
+   }
+  ]
+ },
+ "months": [
+  {
+   "month": "2024-01",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 70446,
+   "a": 70446
+  },
+  {
+   "month": "2024-02",
+   "calendarDays": 29,
+   "activeDays": 29,
+   "missingDays": 0,
+   "b": 72573,
+   "a": 72573
+  },
+  {
+   "month": "2024-03",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 77812,
+   "a": 77812
+  },
+  {
+   "month": "2024-04",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 72384,
+   "a": 72384
+  },
+  {
+   "month": "2024-05",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 71805,
+   "a": 71805
+  },
+  {
+   "month": "2024-06",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 69429,
+   "a": 69429
+  },
+  {
+   "month": "2024-07",
+   "calendarDays": 31,
+   "activeDays": 29,
+   "missingDays": 2,
+   "b": 60797,
+   "a": 60797
+  },
+  {
+   "month": "2024-08",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 70586,
+   "a": 70586
+  },
+  {
+   "month": "2024-09",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 71236,
+   "a": 71236
+  },
+  {
+   "month": "2024-10",
+   "calendarDays": 31,
+   "activeDays": 28,
+   "missingDays": 3,
+   "b": 72753,
+   "a": 72753
+  },
+  {
+   "month": "2024-11",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 79976,
+   "a": 79976
+  },
+  {
+   "month": "2024-12",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 85352,
+   "a": 85352
+  },
+  {
+   "month": "2025-01",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 73411,
+   "a": 73411
+  },
+  {
+   "month": "2025-02",
+   "calendarDays": 28,
+   "activeDays": 28,
+   "missingDays": 0,
+   "b": 73148,
+   "a": 73148
+  },
+  {
+   "month": "2025-03",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 83111,
+   "a": 83111
+  },
+  {
+   "month": "2025-04",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 82069,
+   "a": 82069
+  },
+  {
+   "month": "2025-05",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 81945,
+   "a": 81945
+  },
+  {
+   "month": "2025-06",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 70860,
+   "a": 70860
+  },
+  {
+   "month": "2025-07",
+   "calendarDays": 31,
+   "activeDays": 30,
+   "missingDays": 1,
+   "b": 64724,
+   "a": 64724
+  },
+  {
+   "month": "2025-08",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 72088,
+   "a": 72088
+  },
+  {
+   "month": "2025-09",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 72816,
+   "a": 72816
+  },
+  {
+   "month": "2025-10",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 87972,
+   "a": 87972
+  },
+  {
+   "month": "2025-11",
+   "calendarDays": 30,
+   "activeDays": 30,
+   "missingDays": 0,
+   "b": 79940,
+   "a": 79940
+  },
+  {
+   "month": "2025-12",
+   "calendarDays": 31,
+   "activeDays": 31,
+   "missingDays": 0,
+   "b": 83677,
+   "a": 83677
+  }
+ ],
+ "busiestDays": [
+  {
+   "date": "2025-02-28",
+   "boardings": 4244,
+   "note": "和平紀念日",
+   "rest": true
+  },
+  {
+   "date": "2025-04-03",
+   "boardings": 3986,
+   "note": "補假",
+   "rest": true
+  },
+  {
+   "date": "2025-05-02",
+   "boardings": 3814,
+   "note": null,
+   "rest": false
+  },
+  {
+   "date": "2025-02-27",
+   "boardings": 3787,
+   "note": null,
+   "rest": false
+  },
+  {
+   "date": "2025-03-02",
+   "boardings": 3786,
+   "note": null,
+   "rest": true
+  },
+  {
+   "date": "2025-10-03",
+   "boardings": 3679,
+   "note": null,
+   "rest": false
+  },
+  {
+   "date": "2024-12-27",
+   "boardings": 3667,
+   "note": null,
+   "rest": false
+  },
+  {
+   "date": "2025-09-26",
+   "boardings": 3652,
+   "note": null,
+   "rest": false
+  },
+  {
+   "date": "2024-10-13",
+   "boardings": 3628,
+   "note": null,
+   "rest": true
+  },
+  {
+   "date": "2025-02-16",
+   "boardings": 3571,
+   "note": null,
+   "rest": true
+  }
+ ],
+ "quietestActiveDays": [
+  {
+   "date": "2024-07-26",
+   "boardings": 1212,
+   "rest": false
+  },
+  {
+   "date": "2025-11-12",
+   "boardings": 1218,
+   "rest": false
+  },
+  {
+   "date": "2025-08-13",
+   "boardings": 1368,
+   "rest": false
+  },
+  {
+   "date": "2025-07-31",
+   "boardings": 1402,
+   "rest": false
+  },
+  {
+   "date": "2024-10-01",
+   "boardings": 1413,
+   "rest": false
+  },
+  {
+   "date": "2024-04-24",
+   "boardings": 1437,
+   "rest": false
+  },
+  {
+   "date": "2025-07-09",
+   "boardings": 1447,
+   "rest": false
+  },
+  {
+   "date": "2024-05-28",
+   "boardings": 1482,
+   "rest": false
+  },
+  {
+   "date": "2025-09-23",
+   "boardings": 1505,
+   "rest": false
+  },
+  {
+   "date": "2025-06-04",
+   "boardings": 1546,
+   "rest": false
+  }
+ ],
+ "validation": [
+  {
+   "name": "cube row count equals source",
+   "ok": true,
+   "detail": "292562"
+  },
+  {
+   "name": "cube boardings/alightings equal source",
+   "ok": true,
+   "detail": "1800910 / 1800910"
+  },
+  {
+   "name": "source boardings equal alightings (every trip has both taps)",
+   "ok": true,
+   "detail": "1800910 vs 1800910"
+  },
+  {
+   "name": "round trip: every source bucket recovered exactly, no duplicate keys",
+   "ok": true,
+   "detail": "0 mismatches"
+  },
+  {
+   "name": "analyze(all filters open) totals equal source",
+   "ok": true,
+   "detail": "1800910 / 1800910"
+  },
+  {
+   "name": "sum of per-stop totals equals total",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "hour profile sums to total",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "monthly rows sum to total",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "sub-route partition adds up",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "direction partition: outbound + inbound + dropped unknown = total",
+   "ok": true,
+   "detail": "922660+871969+6281"
+  },
+  {
+   "name": "day-type partition adds up",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "monthly cache totals equal published JSON",
+   "ok": true,
+   "detail": "24 files, 1800910 / 1800910"
+  },
+  {
+   "name": "official calendar covers every date with records",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

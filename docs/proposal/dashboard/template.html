@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>6670 營運決策儀表板（歷史回測）</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--fg:#1b2430;--muted:#5b6675;--line:#d9dee6;--a:#1f6f9f;--b:#d9822b;--ok:#2f8f5b;--warn:#c0392b;--soft:#eaf2f8}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10151c;--card:#18202a;--fg:#e7ecf2;--muted:#9aa7b6;--line:#2b3644;--a:#6bb6e6;--b:#f0a45a;--ok:#5fcf93;--warn:#ff7a6b;--soft:#1d2b38}}
+:root[data-theme=dark]{--bg:#10151c;--card:#18202a;--fg:#e7ecf2;--muted:#9aa7b6;--line:#2b3644;--a:#6bb6e6;--b:#f0a45a;--ok:#5fcf93;--warn:#ff7a6b;--soft:#1d2b38}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+header{padding:14px 16px;background:var(--card);border-bottom:1px solid var(--line)}
+h1{font-size:1.15rem;margin:0}header p{margin:4px 0 0;color:var(--muted);font-size:.85rem}
+.banner{background:var(--soft);border-left:4px solid var(--a);padding:8px 12px;margin:12px 16px;font-size:.85rem}
+nav{display:flex;gap:6px;overflow-x:auto;padding:0 16px 8px}nav button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:8px 12px;border-radius:8px;font:inherit;white-space:nowrap;cursor:pointer}
+nav button[aria-selected=true]{background:var(--a);color:#fff;border-color:var(--a)}
+main{padding:0 16px 40px;max-width:1040px;margin:0 auto}section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
+.card h2{font-size:1rem;margin:0 0 6px}.card p{margin:6px 0;color:var(--muted);font-size:.88rem}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0}.row label{font-size:.85rem;color:var(--muted)}
+select,input[type=number]{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:5px 8px;font:inherit}
+table{border-collapse:collapse;width:100%;font-size:.85rem}th,td{border-bottom:1px solid var(--line);padding:5px 6px;text-align:right}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.kpi{background:var(--soft);border-radius:10px;padding:10px}.kpi b{display:block;font-size:1.35rem}.kpi span{font-size:.78rem;color:var(--muted)}
+svg text{fill:var(--fg);font-size:11px}svg .axis{stroke:var(--line)}.al{background:rgba(192,57,43,.1)}.ok{color:var(--ok)}.bad{color:var(--warn)}
+.tag{display:inline-block;padding:1px 7px;border-radius:99px;font-size:.75rem;border:1px solid var(--line)}.tag.alert{background:var(--warn);color:#fff;border-color:var(--warn)}
+.scroll{max-height:380px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+button.theme{float:right;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:4px 10px;border-radius:8px;cursor:pointer}
+</style>
+</head>
+<body>
+<header><button class="theme" id="theme" aria-label="切換深淺色">深／淺</button>
+<h1>6670 營運決策儀表板（歷史回測）</h1>
+<p>南投客運 2024–2025 刷卡資料重算；席數為 41（一般大型客車）與 37（通用無障礙）兩種情境；座位不多＝上車前載客 ≥ 席數−5。</p></header>
+<div class="banner"><b>這是歷史回測，不是即時資料。</b>只看得到「有人刷卡上車」的到站；被留下的人、現金與漏刷看不到，所有緩解量與效益都是情境，不是預測。車牌與車型對照尚未取得。</div>
+<nav role="tablist" id="tabs"></nav>
+<main id="main"></main>
+<script id="data" type="application/json">/*DATA*/null</script>
+<script>
+var D=JSON.parse(document.getElementById('data').textContent);
+var TABS=[['over','總覽'],['conc','熱點集中度'],['alert','預警與重播'],['fc','需求預測'],['calc','加開專車損益']];
+var seat='41';
+function el(h){var d=document.createElement('div');d.innerHTML=h;return d.firstElementChild}
+function pct(x,d){return (100*x).toFixed(d===undefined?1:d)+'%'}
+function svgWrap(w,h,inner){return '<svg viewBox="0 0 '+w+' '+h+'" width="100%" role="img">'+inner+'</svg>'}
+function seatSel(id){return '<div class="row"><label>席數情境 <select id="'+id+'"><option value="41">41 席（一般大型客車）</option><option value="37">37 席（通用無障礙）</option></select></label></div>'}
+/* ---------- 總覽 ---------- */
+function viewOver(){
+  var c41=D.conc['41'].curve, k10=c41[9], t=D.alert.summary['41_few'].models;
+  return '<div class="card"><h2>三件已完成的回測</h2><div class="kpis">'+
+   '<div class="kpi"><b>'+pct(k10.coverage,0)+'</b><span>訓練期排序的前 10 個窗口，涵蓋留出期（2025 下半年）'+pct(k10.coverage,0)+' 的座位不多到站；隨機選 10 個只有 '+pct(k10.random,1)+'（41 席）</span></div>'+
+   '<div class="kpi"><b>'+pct(t.lightgbm.precision,0)+' / '+pct(t.lightgbm.recall,0)+'</b><span>預警模型精確率／召回率（41 席座位不多，逐站）；單純「上游載客 ≥ 席數−5」規則為 '+pct(t.R.precision,0)+' / '+pct(t.R.recall,0)+'，差距有限，班次層級同提示量下差異更小</span></div>'+
+   '<div class="kpi"><b>~11%</b><span>提前 7 天預測每日總上車人次的誤差（WAPE），與近四週均值差異不顯著</span></div>'+
+   '<div class="kpi"><b>≤ 1 人</b><span>每個熱點窗口每天加開 1 班，平均每班可緩解的座位不多上車人次（情境上限 50%）</span></div></div>'+
+   '<p>結論：熱點很集中，值得盯少數窗口；但每個窗口平均每天不到 0.4 次座位不多，新增固定排定的專車缺乏觀察資料支持（只計已上車者），應以「資訊與條件式觸發」優先，加開專車需先在現場量到被留下的人（見「加開專車損益」）。</p></div>'+
+   '<div class="card"><h2>怎麼讀這份儀表板</h2><p>「窗口」＝子路線×方向×小時×日類（休息日／上班日）。「座位不多到站」＝12 個中途站上車前載客已 ≥ 席數−5 的到站。訓練 2024-01～2025-03、選擇 2025-04～06、留出 2025-07～12，所有結果都在留出期計算。</p></div>';
+}
+/* ---------- 熱點集中度 ---------- */
+function viewConc(){
+  return '<div class="card"><h2>只要盯少數窗口</h2>'+seatSel('seatC')+'<div id="concChart"></div>'+
+   '<p>橫軸：依訓練期座位不多次數排序、選前 k 個窗口（共約 300 個窗口）。縱軸：這 k 個窗口涵蓋留出期座位不多到站的比例（含日重抽 95% 區間）。灰線是隨機選窗口，虛線是看過留出期的理論上限。</p></div>'+
+   '<div class="card"><h2>前 10 個熱點窗口</h2><div id="concTable"></div><p>方向沿用資料索引（由刷卡站序欄推定，未核實地理去回程）。日均＝留出期每個該日類的平均；「緩解/班」是假設每天在該窗口加開 1 班、吸收座位不多上車人次的 10／30／50%（上限 41）。數字小，代表新增固定專車很難達到損益與碳平衡。</p></div>';
+}
+function drawConc(){
+  var s=document.getElementById('seatC').value, d=D.conc[s], W=640,H=260,L=44,B=28,T=10,R=12;
+  var X=function(k){return L+(k-1)/29*(W-L-R)}, Y=function(v){return T+(1-v)*(H-T-B)};
+  var g='';for(var i=0;i<=5;i++){var v=i/5;g+='<line class="axis" x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'"/><text x="'+(L-6)+'" y="'+(Y(v)+4)+'" text-anchor="end">'+Math.round(v*100)+'%</text>'}
+  [1,5,10,15,20,25,30].forEach(function(k){g+='<text x="'+X(k)+'" y="'+(H-8)+'" text-anchor="middle">'+k+'</text>'});
+  var area='',ln='',rd='',or='';d.curve.forEach(function(p,i){ln+=(i?'L':'M')+X(p.k)+','+Y(p.coverage);rd+=(i?'L':'M')+X(p.k)+','+Y(p.random);or+=(i?'L':'M')+X(p.k)+','+Y(p.oracle)});
+  var up='',lo='';d.curve.forEach(function(p){up+=X(p.k)+','+Y(p.ci[1])+' '});d.curve.slice().reverse().forEach(function(p){lo+=X(p.k)+','+Y(p.ci[0])+' '});
+  area='<polygon points="'+up+lo+'" fill="var(--a)" opacity=".18"/>';
+  g+=area+'<path d="'+or+'" fill="none" stroke="var(--muted)" stroke-dasharray="4 3"/><path d="'+rd+'" fill="none" stroke="var(--muted)"/><path d="'+ln+'" fill="none" stroke="var(--a)" stroke-width="2.4"/>';
+  g+='<text x="'+(L+6)+'" y="'+(T+14)+'">前 k 個窗口涵蓋率（藍）、隨機（灰）、理論上限（虛線）</text>';
+  document.getElementById('concChart').innerHTML=svgWrap(W,H,g);
+  var h='<div class="scroll"><table><tr><th>窗口</th><th>座位不多到站/日</th><th>被影響上車人次/日</th><th>緩解/班 10%</th><th>30%</th><th>50%</th></tr>';
+  d.top10.forEach(function(t){h+='<tr><td>'+t.window[0]+' '+t.window[1]+' '+t.window[2]+'時 '+t.window[3]+'</td><td>'+t.holdout_near_per_day.toFixed(2)+'</td><td>'+t.holdout_exposed_boardings_per_day.toFixed(1)+'</td><td>'+t.relief_per_extra_run['0.1'].toFixed(2)+'</td><td>'+t.relief_per_extra_run['0.3'].toFixed(2)+'</td><td>'+t.relief_per_extra_run['0.5'].toFixed(2)+'</td></tr>'});
+  document.getElementById('concTable').innerHTML=h+'</table></div>';
+}
+/* ---------- 預警與重播 ---------- */
+function viewAlert(){
+  return '<div class="card"><h2>預警回測（留出期 2025-07～12）</h2>'+seatSel('seatA')+'<div class="row"><label>目標 <select id="goalA"><option value="few">座位不多（通過下游中途站時在車人數 ≥ 席數−5）</option><option value="full">推估座位已滿（≥ 席數）</option></select></label></div><div id="alertOps"></div>'+
+   '<p>每班車在每個「有人刷卡上車的站」離站時預測其後前 3 個中途站；目標用同班車的實際在車人數，<b>不論下游站有沒有人上車</b>。四種方法在相同每日提示上限 N 下比較（實際提示量因門檻離散而略有不同）：規則 R（上游離站載客）、歷史先驗、查表基線、模型（LightGBM）；候選站只取該子路線實際服務的站。提示在每班車首次分數超過門檻時發出，每日有硬上限；提示正確＝該離站點自己的前 3 個中途站確實達門檻。提前量以站間直線距離÷假設速度（預設 0.7 km／分）近似，僅為近似，需 GPS 驗證。<b>注意：</b>在相近的每日提示量下，模型與規則 R 的涵蓋差異很小；提前量多為數分鐘。</p></div>'+
+   '<div class="card"><h2>代表日重播（模型，每日上限 5 次）</h2><div class="row"><label>日類 <select id="dayA"><option value="work">上班日</option><option value="rest">休息日</option><option value="holiday">國定假日</option></select></label></div><div id="alertReplay"></div></div>';
+}
+function hhmm(ts){var d=new Date((ts+8*3600)*1000);return ('0'+d.getUTCHours()).slice(-2)+':'+('0'+d.getUTCMinutes()).slice(-2)}
+function drawAlert(){
+  var key=document.getElementById('seatA').value+'_'+document.getElementById('goalA').value, t=D.alert.summary[key];
+  var m=t.models, h='<div class="kpis"><div class="kpi"><b>'+pct(t.prev,1)+'</b><span>（站×班次）樣本中通過時在車人數達門檻的比例</span></div><div class="kpi"><b>'+pct(m.lightgbm.precision,0)+' / '+pct(m.lightgbm.recall,0)+'</b><span>模型 精確率／召回（逐站，選擇期選門檻）</span></div><div class="kpi"><b>'+pct(m.R.precision,0)+' / '+pct(m.R.recall,0)+'</b><span>規則 R（上游離站載客 ≥ 門檻）</span></div><div class="kpi"><b>'+t.pos_runs_per_day.toFixed(1)+' 班/日</b><span>每日平均有此目標發生的班次數</span></div></div>';
+  h+='<table><tr><th>每日提示上限</th><th>方法</th><th>精確率</th><th>涵蓋班次</th><th>每日提示（休息日／上班日）</th><th>提前≥10分</th></tr>';
+  ['3','5','10'].forEach(function(n){[['R','規則 R'],['prior','歷史先驗'],['lookup','查表基線'],['lightgbm','模型']].forEach(function(mm){var o=t.ops[n][mm[0]];h+='<tr><td>'+(mm[0]==='R'?'≤ '+n:'')+'</td><td>'+mm[1]+'</td><td>'+pct(o.precision,0)+'</td><td>'+pct(o.recall,0)+'</td><td>'+o.rest_alerts_per_day.toFixed(1)+' ／ '+o.work_alerts_per_day.toFixed(1)+'</td><td>'+(o.lead_min['0.7'].ge10_share==null?'—':pct(o.lead_min['0.7'].ge10_share,0))+'</td></tr>'})});
+  document.getElementById('alertOps').innerHTML=h+'</table>';
+  var r=D.replays[document.getElementById('dayA').value];
+  if(!r){document.getElementById('alertReplay').innerHTML='<p>無資料</p>';return}
+  var thr=key.indexOf('41')===0?(key.indexOf('few')>0?36:41):(key.indexOf('few')>0?32:37);
+  var ev=r.events.filter(function(e){return e[6]||e[7]}).sort(function(a,b){return a[0]-b[0]}), al=ev.filter(function(e){return e[6]}).length, hit=ev.filter(function(e){return e[6]&&e[7]}).length;
+  var out='<p>'+r.day+'（僅顯示已提示或後續確實達門檻的離站點；41 席座位不多重播）：提示 '+al+' 次，其中 '+hit+' 次後續前 3 個中途站確實 ≥ 36 人。</p><div class="scroll"><table><tr><th>離站時刻</th><th>子路線</th><th>方向</th><th>離站站</th><th>上游載客</th><th>模型分數</th><th>提示</th><th>後續確實達門檻</th></tr>';
+  ev.forEach(function(e){out+='<tr class="'+(e[6]?'al':'')+'"><td>'+hhmm(e[0])+'</td><td>'+e[1]+'</td><td>'+(e[2]>0?'往日月潭':'往臺中')+'</td><td>'+e[3]+'</td><td>'+e[4]+'</td><td>'+e[5]+'</td><td>'+(e[6]?'<span class="tag alert">提示</span>':'')+'</td><td class="'+(e[7]?'bad':'')+'">'+(e[7]?'是':'否')+'</td></tr>'});
+  document.getElementById('alertReplay').innerHTML=out+'</table></div>';
+}
+/* ---------- 需求預測 ---------- */
+function viewFc(){
+  return '<div class="card"><h2>提前 7 天預測每日總上車人次（留出期 2025 下半年）</h2><div id="fcChart"></div><p>LightGBM（日曆特徵＋近四週同星期均值＋去年同期）。WAPE 約 10.8%（95% 區間 9.4–12.4%）；相對「近四週同星期均值」只改善 0.9 個百分點，區間跨零，不宣稱顯著較佳。預測的是「已實現搭乘」，受容量與留站影響，可能低估真實需求。</p></div>'+
+   '<div class="card"><h2>連續假期（描述，未控制天氣與供給）</h2><div id="fcHol"></div></div>';
+}
+function drawFc(){
+  var a=D.fc.daily, W=640,H=240,L=46,B=26,T=10,R=10, mx=Math.max.apply(null,a.map(function(x){return Math.max(x[1],x[2])}))*1.05;
+  var X=function(i){return L+i/(a.length-1)*(W-L-R)}, Y=function(v){return T+(1-v/mx)*(H-T-B)};
+  var g='';[0,.25,.5,.75,1].forEach(function(f){var v=mx*f;g+='<line class="axis" x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'"/><text x="'+(L-6)+'" y="'+(Y(v)+4)+'" text-anchor="end">'+Math.round(v)+'</text>'});
+  var p='',q='';a.forEach(function(x,i){p+=(i?'L':'M')+X(i)+','+Y(x[1]);q+=(i?'L':'M')+X(i)+','+Y(x[2])});
+  g+='<path d="'+q+'" fill="none" stroke="var(--muted)" stroke-width="1.4"/><path d="'+p+'" fill="none" stroke="var(--a)" stroke-width="1.8"/><text x="'+(L+6)+'" y="'+(T+14)+'">實際（灰）、預測（藍）</text>';
+  ['07','08','09','10','11','12'].forEach(function(m,i){var idx=a.findIndex(function(x){return x[0].slice(5,7)===m});if(idx>=0)g+='<text x="'+X(idx)+'" y="'+(H-8)+'" text-anchor="middle">'+parseInt(m,10)+'月</text>'});
+  document.getElementById('fcChart').innerHTML=svgWrap(W,H,g);
+  var h='<table><tr><th>連假</th><th>節日</th><th>相對一般休息日</th><th>早晨高峰（去／回）</th><th>午後高峰（去／回）</th></tr>';
+  D.fc.holidays.forEach(function(x){h+='<tr><td>'+x.start+'～'+x.end.slice(5)+'</td><td>'+x.notes.slice(0,2).join('、')+'</td><td>'+x.ratio.toFixed(2)+'×</td><td>'+x.peaks.morning.outbound+'／'+x.peaks.morning.inbound+' 時</td><td>'+x.peaks.afternoon.outbound+'／'+x.peaks.afternoon.inbound+' 時</td></tr>'});
+  document.getElementById('fcHol').innerHTML=h+'</table><p>方向名稱沿用資料索引（outbound＝站序增），未核實地理去回程。</p>';
+}
+/* ---------- 損益計算器 ---------- */
+function viewCalc(){
+  return '<div class="card"><h2>加開專車的成本與碳：把假設填進去</h2><p>「緩解人次」是服務面的量（預設 0.5 取自回測前 10 窗口的情境上限，41 席 0–0.6、37 席 0–1.8，只含已上車者）；「由自用車轉乘的實到者」才是碳的抵換來源，兩者不同，請分開填。</p>'+
+  '<div class="row"><label>每班預期緩解人次 <input type="number" id="cRelief" value="0.5" min="0" step="0.5"></label><label>其中由自用車轉乘者（人） <input type="number" id="cTransfer" value="0" min="0" step="1"></label><label>每班成本（萬元） <input type="number" id="cCost" value="1" min="0.1" step="0.1"></label><label>每班車公里 <input type="number" id="cKm" value="80" min="10" step="10"></label><label>每位轉乘者避免公里 <input type="number" id="cD" value="30" min="5" step="5"></label></div><div id="calcOut"></div>'+
+  '<p>碳係數：公車 0.90–1.23 kg CO₂e／車公里（官方油耗標準與柴油係數算例，並與運研所 2022 公路客運 0.077 kg／人公里 × 平均載客 11.7–16.0 人交叉檢查）；自用車 0.104 kg／人公里（運研所 2022）。碳是獨立指標；服務、安全與無障礙等理由由業者與主管機關另行判斷。</p></div>'+
+  '<div class="card"><h2>不加班、車型指派能緩解多少？（零增加車公里）</h2><div id="scenB"></div><p>假設 37 席車占車隊 q，比較「隨機指派」與「37 席車避開前 K 個熱點窗口」的預期座位不多到站數（41 席定義、留出期）。固定需求下的反事實，<b>未套用無障礙乘客需求約束</b>，車型對照取得後才能核實。</p></div>';
+}
+function drawCalc(){
+  var rel=+document.getElementById('cRelief').value, tr=+document.getElementById('cTransfer').value, c=+document.getElementById('cCost').value, km=+document.getElementById('cKm').value, d=+document.getElementById('cD').value;
+  var lo=Math.ceil(km*0.90/(0.104*d)), hi=Math.ceil(km*1.23/(0.104*d)), per=rel>0?(c*10000/rel):Infinity;
+  var saved=tr*d*0.104, netLo=km*0.90-saved, netHi=km*1.23-saved;
+  var verdict=(netHi<=0)?'在全部係數下淨排放不增加':(netLo>0?'在全部係數下淨排放增加':'結果取決於公車係數，介於減少與增加之間');
+  document.getElementById('calcOut').innerHTML='<div class="kpis"><div class="kpi"><b>'+(isFinite(per)?Math.round(per).toLocaleString()+' 元':'—')+'</b><span>每緩解 1 人次的成本（成本 ÷ 緩解人次）</span></div><div class="kpi"><b>'+lo+'–'+hi+' 人</b><span>碳平衡點：需要這麼多由自用車轉乘的實到者，才不增加排放（取整）</span></div><div class="kpi"><b>'+netLo.toFixed(0)+' ～ '+netHi.toFixed(0)+' kg</b><span>在你填的轉乘人數（'+tr+' 人）下，這一班的淨排放變化（正＝增加）；'+verdict+'</span></div></div>';
+  var h='<table><tr><th>熱點窗口數 K</th><th>37 席占比 q</th><th>隨機指派</th><th>避開熱點</th><th>全部 41 席</th><th>減少</th></tr>';
+  D.scenB.forEach(function(s){h+='<tr><td>'+s.hot_windows+'</td><td>'+pct(s.q37,0)+'</td><td>'+Math.round(s.expected_near_random)+'</td><td>'+Math.round(s.expected_near_avoid_hot)+'</td><td>'+Math.round(s.all_41)+'</td><td>'+s.reduction_vs_random_pct.toFixed(1)+'%</td></tr>'});
+  document.getElementById('scenB').innerHTML=h+'</table><p>單位：留出期（2025 下半年）12 個中途站的座位不多到站數。</p>';
+}
+/* ---------- 路由 ---------- */
+var VIEWS={over:viewOver,conc:viewConc,alert:viewAlert,fc:viewFc,calc:viewCalc}, DRAW={conc:drawConc,alert:drawAlert,fc:drawFc,calc:drawCalc};
+var nav=document.getElementById('tabs'), main=document.getElementById('main');
+TABS.forEach(function(t,i){var b=document.createElement('button');b.textContent=t[1];b.setAttribute('role','tab');b.onclick=function(){show(t[0])};b.id='tab_'+t[0];nav.appendChild(b);var s=document.createElement('section');s.id='v_'+t[0];s.innerHTML=VIEWS[t[0]]();main.appendChild(s)});
+function show(k){TABS.forEach(function(t){document.getElementById('v_'+t[0]).classList.toggle('on',t[0]===k);document.getElementById('tab_'+t[0]).setAttribute('aria-selected',t[0]===k)});if(DRAW[k])DRAW[k]();try{location.hash=k}catch(e){}}
+['seatC','seatA','goalA','dayA','cRelief','cTransfer','cCost','cKm','cD'].forEach(function(id){var e=document.getElementById(id);if(e)e.addEventListener('input',function(){var k=location.hash.slice(1)||'over';if(DRAW[k])DRAW[k]()})});
+var th=document.getElementById('theme');th.onclick=function(){var r=document.documentElement;var cur=r.getAttribute('data-theme');r.setAttribute('data-theme',cur==='dark'?'light':'dark')};
+show((location.hash||'#over').slice(1)in VIEWS?(location.hash||'#over').slice(1):'over');
+</script>
+</body>
+</html>

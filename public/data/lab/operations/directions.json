@@ -1,0 +1,272 @@
+{
+ "generatedAt": "2026-11-04T07:37:37.460Z",
+ "unmappedFolders": [],
+ "items": [
+  {
+   "n": 1,
+   "slug": "forecast",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/forecast/report.zh-TW.md",
+   "title": "離線每日刷卡搭乘量預測與時間回測",
+   "excerpt": "2024 年驗證期選出的四週同星期中位數，在 2025 年共同可評估的 336 日，MAE 為每日 291.53 人次，WAPE 為 11.28%。相同日期的上週同日基準 MAE 為 352.33，選出模型降低 MAE 約 17.26%。這不是準確率或營運改善幅度。",
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "results.json",
+     "bytes": 1131991
+    },
+    {
+     "name": "summary.json",
+     "bytes": 125722
+    }
+   ],
+   "scriptFiles": 2,
+   "featureFiles": 1,
+   "reportUpdated": "2026-11-03T16:56:46.689Z"
+  },
+  {
+   "n": 2,
+   "slug": "optimization",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/optimization/report.zh-TW.md",
+   "title": "受限制加班與中間站起駛情境求解器",
+   "excerpt": "已完成可重現的有限候選精確求解器，保留假設基準班次，在車輛與司機配對、回庫占用時間、可用時段、工作量、加班班數、預算、座位保留與最低服務限制下，選出加班組合。輸出可行證明、有限候選內最優解或不可行，並以獨立驗證器查核可行解。",
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "scenarios.json",
+     "bytes": 55179
+    }
+   ],
+   "scriptFiles": 1,
+   "featureFiles": 2,
+   "reportUpdated": "2026-11-03T16:57:57.232Z"
+  },
+  {
+   "n": 3,
+   "slug": "peaks",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/peaks/report.zh-TW.md",
+   "title": "6670 時段分布修正版與整合契約",
+   "excerpt": null,
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "station-peaks.json",
+     "bytes": 207837
+    },
+    {
+     "name": "summary.json",
+     "bytes": 4265
+    },
+    {
+     "name": "hourly-peaks.json",
+     "bytes": 209276
+    },
+    {
+     "name": "calendar-audit.json",
+     "bytes": 174362
+    }
+   ],
+   "scriptFiles": 3,
+   "featureFiles": 5,
+   "reportUpdated": "2026-11-03T17:12:47.291Z"
+  },
+  {
+   "n": 4,
+   "slug": "behavior",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/behavior/report.zh-TW.md",
+   "title": "6670 旅次 OD 人工規則分類",
+   "excerpt": null,
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "od-behavior-summary.json",
+     "bytes": 320626
+    },
+    {
+     "name": "temporal-behavior.json",
+     "bytes": 6911
+    },
+    {
+     "name": "od-clusters.json",
+     "bytes": 9458
+    }
+   ],
+   "scriptFiles": 7,
+   "featureFiles": 8,
+   "reportUpdated": "2026-11-04T07:22:50.591Z"
+  },
+  {
+   "n": 5,
+   "slug": "occupancy",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/occupancy/report.zh-TW.md",
+   "title": "逐班重建可行性與有界分流情境",
+   "excerpt": "現有資料庫保有車輛欄位與秒級配對上下車時間，可以做「同車輛值的同步票證區間」診斷。公開小時彙總沒有這些欄位，不能拿來重建逐班載客。全庫 1,800,910 筆旅次共有 122 個車輛欄位值，但欄位值是否對應唯一實體車、逐班容量及非票證涵蓋率，仍未獲營運資料驗證。",
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "summary.json",
+     "bytes": 12006
+    }
+   ],
+   "scriptFiles": 3,
+   "featureFiles": 2,
+   "reportUpdated": "2026-11-03T16:58:36.338Z"
+  },
+  {
+   "n": 6,
+   "slug": "operations",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/operations/report.zh-TW.md",
+   "title": "研究實驗室入口與歷史營運決策原型（方向 6）",
+   "excerpt": "- **入口**：`/lab` 以十張卡片呈現十個方向，標示資料種類（歷史刷卡、情境假設、回測預測、即時資料未接、未驗證、官方文件）、可行性（引自 A-007 的工程判斷，非實測分數）與各方向是否已有報告和資料。進度索引由腳本掃描 repo 產生，不由人手填寫。",
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "replay.json",
+     "bytes": 300676
+    },
+    {
+     "name": "backtest.json",
+     "bytes": 5384
+    },
+    {
+     "name": "directions.json",
+     "bytes": 7428
+    },
+    {
+     "name": "calendar.json",
+     "bytes": 2762
+    }
+   ],
+   "scriptFiles": 3,
+   "featureFiles": 3,
+   "reportUpdated": "2026-11-03T17:16:05.067Z"
+  },
+  {
+   "n": 7,
+   "slug": "assistant",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/assistant/report.zh-TW.md",
+   "title": "6670 可信旅遊問答（檢索式原型）報告",
+   "excerpt": "- 做了一個**沒有接任何生成模型、不需要 API key** 的檢索式問答：答案全部來自三類有來源的資料——官網文字（人工整理成知識庫）、官網靜態時刻表（程式擷取並驗證）、2024–2025 歷史刷卡統計（由專案既有彙總產生）。沒有依據就拒答。",
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "history.json",
+     "bytes": 97422
+    },
+    {
+     "name": "timetable.json",
+     "bytes": 31017
+    }
+   ],
+   "scriptFiles": 3,
+   "featureFiles": 8,
+   "reportUpdated": "2026-11-03T17:30:07.070Z"
+  },
+  {
+   "n": 8,
+   "slug": "visualization",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/visualization/report.zh-TW.md",
+   "title": "/lab/visualization：6670 電子票證資料視覺化",
+   "excerpt": "- 新增可操作頁面 `/lab/visualization`：用本地 2024–2025 年刷卡彙總（1,800,910 人次，292,562 筆「日×支線×方向×站×小時」彙總），可依**支線、方向、站點、日期區間、日類型（上班日／休息日）**篩選，並切換**上車／下車**指標。",
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "cube.json",
+     "bytes": 2725420
+    },
+    {
+     "name": "calendar.json",
+     "bytes": 22165
+    },
+    {
+     "name": "findings.json",
+     "bytes": 14941
+    }
+   ],
+   "scriptFiles": 2,
+   "featureFiles": 2,
+   "reportUpdated": "2026-11-03T17:02:05.472Z"
+  },
+  {
+   "n": 9,
+   "slug": "tourism",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/tourism/report.zh-TW.md",
+   "title": "6670 旅遊快照模擬實作交接",
+   "excerpt": null,
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "sample-scenarios.json",
+     "bytes": 14870
+    },
+    {
+     "name": "raw_timetable_snapshot.html",
+     "bytes": 397905
+    },
+    {
+     "name": "attractions.json",
+     "bytes": 6785
+    },
+    {
+     "name": "ridership_insights.json",
+     "bytes": 25761
+    },
+    {
+     "name": "timetable.json",
+     "bytes": 103636
+    }
+   ],
+   "scriptFiles": 3,
+   "featureFiles": 6,
+   "reportUpdated": "2026-11-03T17:40:13.120Z"
+  },
+  {
+   "n": 10,
+   "slug": "esg",
+   "status": "ready",
+   "blocked": null,
+   "report": "docs/lab/esg/report.zh-TW.md",
+   "title": "ESG 修正版研究紀錄",
+   "excerpt": null,
+   "hold": null,
+   "dataFiles": [
+    {
+     "name": "od-carbon.json",
+     "bytes": 108388
+    },
+    {
+     "name": "scenarios.json",
+     "bytes": 6142
+    },
+    {
+     "name": "summary.json",
+     "bytes": 11605
+    },
+    {
+     "name": "monthly.json",
+     "bytes": 16632
+    }
+   ],
+   "scriptFiles": 2,
+   "featureFiles": 7,
+   "reportUpdated": "2026-11-03T17:15:42.059Z"
+  }
+ ]
+}

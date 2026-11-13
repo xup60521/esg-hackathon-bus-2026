@@ -38,6 +38,8 @@ export type ThemePalette = {
 	subroutes: Record<string, string>;
 	boardingHex: string;
 	alightingHex: string;
+	/** third categorical slot, used for middle-stop boardings in the analysis page */
+	middleHex: string;
 	riderHex: string;
 	chartSurface: string;
 	map: {
@@ -81,6 +83,7 @@ export const PALETTES: Record<Theme, ThemePalette> = {
 		},
 		boardingHex: "#2a78d6",
 		alightingHex: "#eb6834",
+		middleHex: "#1baf7a",
 		riderHex: "#d97300",
 		chartSurface: "#ffffff",
 		map: {
@@ -127,6 +130,7 @@ export const PALETTES: Record<Theme, ThemePalette> = {
 		},
 		boardingHex: "#3987e5",
 		alightingHex: "#d95926",
+		middleHex: "#199e70",
 		riderHex: "#ffcd6e",
 		chartSurface: "#10141c",
 		map: {
@@ -163,3 +167,19 @@ export const PALETTES: Record<Theme, ThemePalette> = {
 		},
 	},
 };
+
+export const THEME_KEY = "bus6670-theme";
+
+/** Palette-driven CSS variables (sub-route colours etc.); neutral UI tokens live in styles.css. */
+export function themeVars(theme: Theme): React.CSSProperties {
+	const p = PALETTES[theme];
+	const vars: Record<string, string> = {
+		"--boarding": p.boardingHex,
+		"--alighting": p.alightingHex,
+		"--middle": p.middleHex,
+		"--rider": p.riderHex,
+		"--chart-surface": p.chartSurface,
+	};
+	for (const [k, v] of Object.entries(p.subroutes)) vars[`--s-${k}`] = v;
+	return vars as React.CSSProperties;
+}

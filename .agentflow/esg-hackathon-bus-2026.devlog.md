@@ -8,11 +8,11 @@
 
 分支: main
 
-目前工作: A-007 已完成十個應用方向的可行性研究。
+目前工作: A-008 原型完成，Git 交付待恢復，見 [任務追蹤](artifacts/A-008/tracker.md#最終交付與恢復點)。
 
-已驗證: 已核對 ETL 欄位與官方資料來源；研究見 [A-007](artifacts/A-007/feasibility.zh-TW.md)，未執行模型或營運試驗。
+已驗證: 十方向本機原型與 Claude 介面已接入；[總報告](../docs/lab/report.zh-TW.md)列出成果與限制，未投入營運。
 
-下一步: 等待後續指示。
+下一步: 保留使用者要求的開發伺服器；核實既有混合修改歸屬後恢復 Git 交付。
 
 封存紀錄: 無。
 
@@ -193,3 +193,73 @@ ESG及低碳公共運輸創新方案
 ---
 
 # → Ask / A-008
+
++ 利用subagent 將十個方向分發給 claude code (Sonnet 5.5), codex (gpt models), and antigravity (gemini-3.8-flash)，time quota 為12個小時。由 6.1 sol 自主安排時程與決策，各方向獨立 agent，可再建立 subagents。UI 必須給 Claude；usage limit 時 UI 優先 fallback to Sonnet 5.5 in antigravity，再來 deepseek v4.1 flash free in opencode。需要 UI/UX 可實作進網頁，12 小時後回來。
+
++ 方向4 是不是卡住了？
+
++ ok 請繼續
+
++ 先開dev server 讓我可以看看目前進度
+
++ claude is available right now...
+
+## [WIP-001] 進度 — 2026-11-04 00:55:00 +0800 (A-008)
+
+**已完成：** 十方向派工與模型確認，設計與驗收已存 [任務追蹤](artifacts/A-008/tracker.md)。
+
+**執行中：** 十個獨立任務已取得 running 回應，實際 handles 見 [派工紀錄](artifacts/A-008/delegates.json)。
+
+**待完成：** 結果驗證、Claude 網頁整合、獨立審查及用量限制處理。
+
+**下一步：** 依完成通知續作，不輪詢。
+
+## [WIP-002] 進度 — 2026-11-04 01:09:38 +0800 (A-008)
+
+**已完成：** 第一輪交付的資料與方法查核，結果見 [任務追蹤](artifacts/A-008/tracker.md)。
+
+**執行中：** Claude整合與客服、behavior/tourism修正、Codex peaks/esg修正，精確handles見 [派工紀錄](artifacts/A-008/delegates.json)。
+
+**待完成：** 修正版驗收、主站整合測試與獨立審查。
+
+**下一步：** 完成通知驅動續作；保持未驗證結果不進網頁。
+
+# → 回覆 / A-008
+
+* _2026-11-04 15:45:21 +0800_
+
+1. 利用subagent 將十個方向分發給 claude code (Sonnet 5.5), codex (gpt models), and antigravity...
+
+   十方向研究、可重現成果與 Claude 網頁已完成本機整合；原十二小時超時，後經使用者授權續作完成。完整結果見[十方向交付報告](../docs/lab/report.zh-TW.md)。
+
+   **重要紀錄，建議依序閱讀**
+
+   [交付報告](../docs/lab/report.zh-TW.md)整理十方向可行性、入口、限制與各方向報告連結。
+
+   [任務追蹤](artifacts/A-008/tracker.md#最終交付與恢復點)保留審查證據與唯一待恢復的 Git 交付動作。
+
+2. 方向4 是不是卡住了？
+
+   原 Gemini 修正任務確實卡在工具錯誤，已取消；資料由 Codex 接手，UI 由 Claude 完成。
+
+3. ok 請繼續
+
+   剩餘修正、整合及獨立審查已完成；289 項測試、全站型別及建置通過。最後小修未再次獨立審查。
+
+4. 先開dev server 讓我可以看看目前進度
+
+   http://localhost:3000/lab 持續運行，方向 4 為 http://localhost:3000/lab?view=behavior 。依要求保留伺服器。
+
+5. claude is available right now...
+
+   已取消免費備援，改由 Claude Code 完成方向 4 操作驗收。未使用付費 OpenCode、未部署。
+
+Git 成果保留本機，既有 palette／首頁／分析路由混合依賴的歸屬待核實，尚未 commit／push；恢復點見任務追蹤，不把這項交付稱為完成。
+
+## 問題
+
+- 無。
+
+---
+
+# → Ask / A-009

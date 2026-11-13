@@ -1,0 +1,1789 @@
+{
+  "method": "每日 bootstrap 1000 次，seed 20261113",
+  "top10": [
+    [
+      "6670A",
+      "inbound",
+      17,
+      false
+    ],
+    [
+      "6670A",
+      "inbound",
+      16,
+      false
+    ],
+    [
+      "6670A",
+      "inbound",
+      17,
+      true
+    ],
+    [
+      "6670A",
+      "inbound",
+      16,
+      true
+    ],
+    [
+      "6670F",
+      "inbound",
+      16,
+      false
+    ],
+    [
+      "6670D",
+      "inbound",
+      13,
+      false
+    ],
+    [
+      "6670B",
+      "outbound",
+      8,
+      true
+    ],
+    [
+      "6670D",
+      "inbound",
+      14,
+      false
+    ],
+    [
+      "6670A",
+      "inbound",
+      15,
+      false
+    ],
+    [
+      "6670D",
+      "inbound",
+      18,
+      false
+    ]
+  ],
+  "reconstruction": {
+    "runs": 72975,
+    "mean_observed_stops": 2.6534703665638917,
+    "reconstructed_arrivals": 193637,
+    "reference_arrivals": 193715
+  },
+  "periods": {
+    "train": {
+      "runs": 44657,
+      "observable_runs": 23722,
+      "thresholds": {
+        "36": {
+          "k1": {
+            "conditional": {
+              "numerator": 124.0,
+              "denominator": 696.0,
+              "value": 0.1781609195402299,
+              "ci95": [
+                0.14756388275635304,
+                0.21060849205514046
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 102.78862059509999,
+              "denominator": 696.0,
+              "value": 0.14768479970560341,
+              "ci95": [
+                0.13934824796317669,
+                0.1552855140745168
+              ],
+              "unreliable": false
+            },
+            "gap_minute_quartiles": [
+              27.55,
+              56.016666666666666,
+              66.46666666666667
+            ]
+          },
+          "k2": {
+            "conditional": {
+              "numerator": 82.0,
+              "denominator": 541.0,
+              "value": 0.15157116451016636,
+              "ci95": [
+                0.122597783841892,
+                0.18064157216709747
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 59.32162811877387,
+              "denominator": 541.0,
+              "value": 0.10965180798294615,
+              "ci95": [
+                0.1007105128287795,
+                0.11810786300352966
+              ],
+              "unreliable": false
+            }
+          },
+          "previous": {
+            "precision": {
+              "numerator": 94.0,
+              "denominator": 486.0,
+              "value": 0.1934156378600823,
+              "ci95": [
+                0.15843458466007485,
+                0.23094049480732987
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 94.0,
+              "denominator": 1467.0,
+              "value": 0.06407634628493525,
+              "ci95": [
+                0.0519756474269933,
+                0.07789026300332834
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 725,
+              "denominator": 456,
+              "value": 1.5899122807017543,
+              "ci95": [
+                1.4495065789473682,
+                1.717160087719298
+              ]
+            },
+            "unobservable_alerts": 239
+          },
+          "hot": {
+            "precision": {
+              "numerator": 308.0,
+              "denominator": 2091.0,
+              "value": 0.14729794356767098,
+              "ci95": [
+                0.13049598248425992,
+                0.16658674199253248
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 308.0,
+              "denominator": 1467.0,
+              "value": 0.20995228357191548,
+              "ci95": [
+                0.18261768636533496,
+                0.23992215198697234
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 2606,
+              "denominator": 456,
+              "value": 5.714912280701754,
+              "ci95": [
+                5.403453947368421,
+                6.026370614035088
+              ]
+            },
+            "unobservable_alerts": 515
+          },
+          "all": {
+            "precision": {
+              "numerator": 1467.0,
+              "denominator": 23722.0,
+              "value": 0.06184132872439086,
+              "ci95": [
+                0.05777936796898197,
+                0.06567535282966729
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 1467.0,
+              "denominator": 1467.0,
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 44657,
+              "denominator": 456,
+              "value": 97.93201754385964,
+              "ci95": [
+                96.53700657894737,
+                99.18026315789473
+              ]
+            },
+            "unobservable_alerts": 20935
+          },
+          "hot_windows": [
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                false
+              ],
+              "conditional": {
+                "numerator": 16.0,
+                "denominator": 29.0,
+                "value": 0.5517241379310345,
+                "ci95": [
+                  0.37829391891891895,
+                  0.7273601398601398
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 62.0,
+                "denominator": 181.0,
+                "value": 0.3425414364640884,
+                "ci95": [
+                  0.2758336491095112,
+                  0.4101123595505618
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 4.0,
+                "denominator": 23.0,
+                "value": 0.17391304347826086,
+                "ci95": [
+                  0.039961538461538465,
+                  0.34782608695652173
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 32.0,
+                "denominator": 171.0,
+                "value": 0.1871345029239766,
+                "ci95": [
+                  0.13370237506185056,
+                  0.24861953113334329
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                true
+              ],
+              "conditional": {
+                "numerator": 8.0,
+                "denominator": 26.0,
+                "value": 0.3076923076923077,
+                "ci95": [
+                  0.12903225806451613,
+                  0.5
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 27.0,
+                "denominator": 93.0,
+                "value": 0.2903225806451613,
+                "ci95": [
+                  0.2022415162864601,
+                  0.3855627053669222
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                true
+              ],
+              "conditional": {
+                "numerator": 4.0,
+                "denominator": 17.0,
+                "value": 0.23529411764705882,
+                "ci95": [
+                  0.05555555555555555,
+                  0.4666666666666667
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 33.0,
+                "denominator": 90.0,
+                "value": 0.36666666666666664,
+                "ci95": [
+                  0.27080407303370785,
+                  0.47260452961672467
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670F",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 8.0,
+                "denominator": 28.0,
+                "value": 0.2857142857142857,
+                "ci95": [
+                  0.13039971949509116,
+                  0.45454545454545453
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 36.0,
+                "denominator": 159.0,
+                "value": 0.22641509433962265,
+                "ci95": [
+                  0.16129032258064516,
+                  0.2937591911764706
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                13,
+                false
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 4.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 36.0,
+                "denominator": 381.0,
+                "value": 0.09448818897637795,
+                "ci95": [
+                  0.06830439740114454,
+                  0.12281995202483419
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670B",
+                "outbound",
+                8,
+                true
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 0.0,
+                "value": null,
+                "ci95": null,
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 0.0,
+                "denominator": 1.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                14,
+                false
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 9.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 20.0,
+                "denominator": 399.0,
+                "value": 0.05012531328320802,
+                "ci95": [
+                  0.029769358801616866,
+                  0.07591856213702104
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                15,
+                false
+              ],
+              "conditional": {
+                "numerator": 2.0,
+                "denominator": 15.0,
+                "value": 0.13333333333333333,
+                "ci95": [
+                  0.0,
+                  0.3333333333333333
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 36.0,
+                "denominator": 317.0,
+                "value": 0.11356466876971609,
+                "ci95": [
+                  0.07743487506645401,
+                  0.14725058990089665
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                18,
+                false
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 2.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 26.0,
+                "denominator": 299.0,
+                "value": 0.08695652173913043,
+                "ci95": [
+                  0.05633221772881514,
+                  0.11897512391609691
+                ],
+                "unreliable": false
+              }
+            }
+          ]
+        },
+        "32": {
+          "k1": {
+            "conditional": {
+              "numerator": 492.0,
+              "denominator": 1605.0,
+              "value": 0.30654205607476637,
+              "ci95": [
+                0.28342717987841765,
+                0.3319152601512189
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 399.05131184632506,
+              "denominator": 1605.0,
+              "value": 0.24863010083883186,
+              "ci95": [
+                0.24037530521372236,
+                0.2565348114543491
+              ],
+              "unreliable": false
+            },
+            "gap_minute_quartiles": [
+              27.55,
+              56.016666666666666,
+              66.46666666666667
+            ]
+          },
+          "k2": {
+            "conditional": {
+              "numerator": 305.0,
+              "denominator": 1295.0,
+              "value": 0.23552123552123552,
+              "ci95": [
+                0.2139347789638406,
+                0.2585299892057632
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 256.20819149879276,
+              "denominator": 1295.0,
+              "value": 0.19784416331953114,
+              "ci95": [
+                0.19003833959552674,
+                0.2055567969926769
+              ],
+              "unreliable": false
+            }
+          },
+          "previous": {
+            "precision": {
+              "numerator": 360.0,
+              "denominator": 1147.0,
+              "value": 0.31386224934612034,
+              "ci95": [
+                0.28797263023109787,
+                0.34298548094373865
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 360.0,
+              "denominator": 3238.0,
+              "value": 0.11117974058060531,
+              "ci95": [
+                0.10050172368908909,
+                0.12207164003641499
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 1699,
+              "denominator": 456,
+              "value": 3.7258771929824563,
+              "ci95": [
+                3.5306469298245613,
+                3.914583333333333
+              ]
+            },
+            "unobservable_alerts": 552
+          },
+          "hot": {
+            "precision": {
+              "numerator": 568.0,
+              "denominator": 2091.0,
+              "value": 0.2716403634624582,
+              "ci95": [
+                0.246968311919802,
+                0.297444670550517
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 568.0,
+              "denominator": 3238.0,
+              "value": 0.17541692402717726,
+              "ci95": [
+                0.15771076929059416,
+                0.1952389150483612
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 2606,
+              "denominator": 456,
+              "value": 5.714912280701754,
+              "ci95": [
+                5.394682017543859,
+                6.050493421052631
+              ]
+            },
+            "unobservable_alerts": 515
+          },
+          "all": {
+            "precision": {
+              "numerator": 3238.0,
+              "denominator": 23722.0,
+              "value": 0.13649776578703313,
+              "ci95": [
+                0.13017494078067463,
+                0.14304985687325183
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 3238.0,
+              "denominator": 3238.0,
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 44657,
+              "denominator": 456,
+              "value": 97.93201754385964,
+              "ci95": [
+                96.44468201754387,
+                99.35104166666666
+              ]
+            },
+            "unobservable_alerts": 20935
+          },
+          "hot_windows": [
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                false
+              ],
+              "conditional": {
+                "numerator": 41.0,
+                "denominator": 61.0,
+                "value": 0.6721311475409836,
+                "ci95": [
+                  0.5535076530612245,
+                  0.7872501611863314
+                ],
+                "unreliable": false
+              },
+              "baseline": {
+                "numerator": 93.0,
+                "denominator": 181.0,
+                "value": 0.5138121546961326,
+                "ci95": [
+                  0.4408506144393241,
+                  0.586960028050491
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 20.0,
+                "denominator": 45.0,
+                "value": 0.4444444444444444,
+                "ci95": [
+                  0.3,
+                  0.5883021390374331
+                ],
+                "unreliable": false
+              },
+              "baseline": {
+                "numerator": 69.0,
+                "denominator": 171.0,
+                "value": 0.40350877192982454,
+                "ci95": [
+                  0.3332857142857143,
+                  0.4733805668016194
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                true
+              ],
+              "conditional": {
+                "numerator": 23.0,
+                "denominator": 43.0,
+                "value": 0.5348837209302325,
+                "ci95": [
+                  0.39465102974828375,
+                  0.6969873150105709
+                ],
+                "unreliable": false
+              },
+              "baseline": {
+                "numerator": 48.0,
+                "denominator": 93.0,
+                "value": 0.5161290322580645,
+                "ci95": [
+                  0.4157094190772173,
+                  0.6226718019733425
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                true
+              ],
+              "conditional": {
+                "numerator": 22.0,
+                "denominator": 36.0,
+                "value": 0.6111111111111112,
+                "ci95": [
+                  0.4411764705882353,
+                  0.7692857142857142
+                ],
+                "unreliable": false
+              },
+              "baseline": {
+                "numerator": 51.0,
+                "denominator": 90.0,
+                "value": 0.5666666666666667,
+                "ci95": [
+                  0.4534606866002215,
+                  0.6737095751426759
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670F",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 22.0,
+                "denominator": 50.0,
+                "value": 0.44,
+                "ci95": [
+                  0.2978723404255319,
+                  0.5813953488372093
+                ],
+                "unreliable": false
+              },
+              "baseline": {
+                "numerator": 64.0,
+                "denominator": 159.0,
+                "value": 0.4025157232704403,
+                "ci95": [
+                  0.32498758278145695,
+                  0.4774265461269776
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                13,
+                false
+              ],
+              "conditional": {
+                "numerator": 2.0,
+                "denominator": 16.0,
+                "value": 0.125,
+                "ci95": [
+                  0.0,
+                  0.3076923076923077
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 82.0,
+                "denominator": 381.0,
+                "value": 0.2152230971128609,
+                "ci95": [
+                  0.17368148350149987,
+                  0.2603112416826113
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670B",
+                "outbound",
+                8,
+                true
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 0.0,
+                "value": null,
+                "ci95": null,
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 0.0,
+                "denominator": 1.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                14,
+                false
+              ],
+              "conditional": {
+                "numerator": 3.0,
+                "denominator": 27.0,
+                "value": 0.1111111111111111,
+                "ci95": [
+                  0.0,
+                  0.24
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 44.0,
+                "denominator": 399.0,
+                "value": 0.11027568922305764,
+                "ci95": [
+                  0.08126955369230594,
+                  0.14251491751491752
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                15,
+                false
+              ],
+              "conditional": {
+                "numerator": 5.0,
+                "denominator": 36.0,
+                "value": 0.1388888888888889,
+                "ci95": [
+                  0.03225806451612903,
+                  0.25719576719576714
+                ],
+                "unreliable": false
+              },
+              "baseline": {
+                "numerator": 68.0,
+                "denominator": 317.0,
+                "value": 0.21451104100946372,
+                "ci95": [
+                  0.16877567117090303,
+                  0.2631620194687345
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                18,
+                false
+              ],
+              "conditional": {
+                "numerator": 1.0,
+                "denominator": 4.0,
+                "value": 0.25,
+                "ci95": [
+                  0.0,
+                  0.7712499999999978
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 49.0,
+                "denominator": 299.0,
+                "value": 0.16387959866220736,
+                "ci95": [
+                  0.12091229109093302,
+                  0.21073166347075742
+                ],
+                "unreliable": false
+              }
+            }
+          ]
+        }
+      }
+    },
+    "holdout": {
+      "runs": 18881,
+      "observable_runs": 9830,
+      "thresholds": {
+        "36": {
+          "k1": {
+            "conditional": {
+              "numerator": 30.0,
+              "denominator": 216.0,
+              "value": 0.1388888888888889,
+              "ci95": [
+                0.08627273422952325,
+                0.18859649122807018
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 23.24638999668837,
+              "denominator": 216.0,
+              "value": 0.10762217591059431,
+              "ci95": [
+                0.09480540910979689,
+                0.11987944213855088
+              ],
+              "unreliable": false
+            },
+            "gap_minute_quartiles": [
+              29.383333333333333,
+              56.833333333333336,
+              67.27916666666667
+            ]
+          },
+          "k2": {
+            "conditional": {
+              "numerator": 18.0,
+              "denominator": 194.0,
+              "value": 0.09278350515463918,
+              "ci95": [
+                0.04944746957078795,
+                0.1428926794598436
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 16.136827947931593,
+              "denominator": 194.0,
+              "value": 0.08317952550480204,
+              "ci95": [
+                0.07196309796090238,
+                0.09454783149916074
+              ],
+              "unreliable": false
+            }
+          },
+          "previous": {
+            "precision": {
+              "numerator": 25.0,
+              "denominator": 163.0,
+              "value": 0.15337423312883436,
+              "ci95": [
+                0.09933657413930769,
+                0.21935483870967742
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 25.0,
+              "denominator": 459.0,
+              "value": 0.054466230936819175,
+              "ci95": [
+                0.033316993464052286,
+                0.07676359025944089
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 241,
+              "denominator": 184,
+              "value": 1.309782608695652,
+              "ci95": [
+                1.1141304347826086,
+                1.516304347826087
+              ]
+            },
+            "unobservable_alerts": 78
+          },
+          "hot": {
+            "precision": {
+              "numerator": 124.0,
+              "denominator": 1104.0,
+              "value": 0.11231884057971014,
+              "ci95": [
+                0.0905688352170028,
+                0.13688730609257574
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 124.0,
+              "denominator": 459.0,
+              "value": 0.2701525054466231,
+              "ci95": [
+                0.22765702038822014,
+                0.31367741954203077
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 1293,
+              "denominator": 184,
+              "value": 7.0271739130434785,
+              "ci95": [
+                6.565217391304348,
+                7.478260869565218
+              ]
+            },
+            "unobservable_alerts": 189
+          },
+          "all": {
+            "precision": {
+              "numerator": 459.0,
+              "denominator": 9830.0,
+              "value": 0.04669379450661241,
+              "ci95": [
+                0.04132836623846364,
+                0.051874715407261095
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 459.0,
+              "denominator": 459.0,
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 18881,
+              "denominator": 184,
+              "value": 102.61413043478261,
+              "ci95": [
+                100.74986413043479,
+                104.42934782608695
+              ]
+            },
+            "unobservable_alerts": 9051
+          },
+          "hot_windows": [
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                false
+              ],
+              "conditional": {
+                "numerator": 5.0,
+                "denominator": 11.0,
+                "value": 0.45454545454545453,
+                "ci95": [
+                  0.15384615384615385,
+                  0.8
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 20.0,
+                "denominator": 126.0,
+                "value": 0.15873015873015872,
+                "ci95": [
+                  0.09834524836681868,
+                  0.22837550019362332
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 2.0,
+                "denominator": 8.0,
+                "value": 0.25,
+                "ci95": [
+                  0.0,
+                  0.5721428571428565
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 12.0,
+                "denominator": 121.0,
+                "value": 0.09917355371900827,
+                "ci95": [
+                  0.04838709677419355,
+                  0.1593013311519298
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                true
+              ],
+              "conditional": {
+                "numerator": 2.0,
+                "denominator": 7.0,
+                "value": 0.2857142857142857,
+                "ci95": [
+                  0.0,
+                  0.7010714285714276
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 16.0,
+                "denominator": 57.0,
+                "value": 0.2807017543859649,
+                "ci95": [
+                  0.15868347338935573,
+                  0.3898305084745763
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                true
+              ],
+              "conditional": {
+                "numerator": 2.0,
+                "denominator": 10.0,
+                "value": 0.2,
+                "ci95": [
+                  0.0,
+                  0.5
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 11.0,
+                "denominator": 58.0,
+                "value": 0.1896551724137931,
+                "ci95": [
+                  0.09258547008547008,
+                  0.2857142857142857
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670F",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 9.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 13.0,
+                "denominator": 110.0,
+                "value": 0.11818181818181818,
+                "ci95": [
+                  0.05940384292666555,
+                  0.18181818181818182
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                13,
+                false
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 4.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 19.0,
+                "denominator": 193.0,
+                "value": 0.09844559585492228,
+                "ci95": [
+                  0.06042313664596274,
+                  0.13942912011173184
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670B",
+                "outbound",
+                8,
+                true
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 0.0,
+                "value": null,
+                "ci95": null,
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 0.0,
+                "denominator": 3.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                14,
+                false
+              ],
+              "conditional": {
+                "numerator": 1.0,
+                "denominator": 5.0,
+                "value": 0.2,
+                "ci95": [
+                  0.0,
+                  0.6666666666666666
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 16.0,
+                "denominator": 192.0,
+                "value": 0.08333333333333333,
+                "ci95": [
+                  0.044967233009708736,
+                  0.12436852331606216
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                15,
+                false
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 2.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 8.0,
+                "denominator": 126.0,
+                "value": 0.06349206349206349,
+                "ci95": [
+                  0.023809523809523808,
+                  0.1111111111111111
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                18,
+                false
+              ],
+              "conditional": {
+                "numerator": 1.0,
+                "denominator": 4.0,
+                "value": 0.25,
+                "ci95": [
+                  0.0,
+                  1.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 9.0,
+                "denominator": 118.0,
+                "value": 0.07627118644067797,
+                "ci95": [
+                  0.03305107708982523,
+                  0.1261547911547911
+                ],
+                "unreliable": false
+              }
+            }
+          ]
+        },
+        "32": {
+          "k1": {
+            "conditional": {
+              "numerator": 156.0,
+              "denominator": 593.0,
+              "value": 0.2630691399662732,
+              "ci95": [
+                0.22051102204408818,
+                0.30807248764415157
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 132.88413485545504,
+              "denominator": 593.0,
+              "value": 0.22408791712555656,
+              "ci95": [
+                0.20591843458931344,
+                0.24196875826440317
+              ],
+              "unreliable": false
+            },
+            "gap_minute_quartiles": [
+              29.383333333333333,
+              56.833333333333336,
+              67.27916666666667
+            ]
+          },
+          "k2": {
+            "conditional": {
+              "numerator": 118.0,
+              "denominator": 512.0,
+              "value": 0.23046875,
+              "ci95": [
+                0.1971491279205335,
+                0.26482709750566896
+              ],
+              "unreliable": false
+            },
+            "matched_baseline": {
+              "numerator": 95.80737444661028,
+              "denominator": 512.0,
+              "value": 0.1871237782160357,
+              "ci95": [
+                0.1738591175514376,
+                0.20139484384929107
+              ],
+              "unreliable": false
+            }
+          },
+          "previous": {
+            "precision": {
+              "numerator": 123.0,
+              "denominator": 432.0,
+              "value": 0.2847222222222222,
+              "ci95": [
+                0.23341497035287184,
+                0.3398866488026881
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 123.0,
+              "denominator": 1191.0,
+              "value": 0.10327455919395466,
+              "ci95": [
+                0.08274005350879439,
+                0.12413864942528735
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 614,
+              "denominator": 184,
+              "value": 3.3369565217391304,
+              "ci95": [
+                3.0322010869565217,
+                3.646875
+              ]
+            },
+            "unobservable_alerts": 182
+          },
+          "hot": {
+            "precision": {
+              "numerator": 292.0,
+              "denominator": 1104.0,
+              "value": 0.2644927536231884,
+              "ci95": [
+                0.2343609330365316,
+                0.29932371386054424
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 292.0,
+              "denominator": 1191.0,
+              "value": 0.24517212426532325,
+              "ci95": [
+                0.21994463337174336,
+                0.2718812276667638
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 1293,
+              "denominator": 184,
+              "value": 7.0271739130434785,
+              "ci95": [
+                6.575951086956522,
+                7.478260869565218
+              ]
+            },
+            "unobservable_alerts": 189
+          },
+          "all": {
+            "precision": {
+              "numerator": 1191.0,
+              "denominator": 9830.0,
+              "value": 0.12115971515768056,
+              "ci95": [
+                0.11157825794097137,
+                0.13156264183566874
+              ],
+              "unreliable": false
+            },
+            "coverage": {
+              "numerator": 1191.0,
+              "denominator": 1191.0,
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "unreliable": false
+            },
+            "alerts_per_day": {
+              "numerator": 18881,
+              "denominator": 184,
+              "value": 102.61413043478261,
+              "ci95": [
+                100.809375,
+                104.33695652173913
+              ]
+            },
+            "unobservable_alerts": 9051
+          },
+          "hot_windows": [
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                false
+              ],
+              "conditional": {
+                "numerator": 12.0,
+                "denominator": 25.0,
+                "value": 0.48,
+                "ci95": [
+                  0.27981818181818185,
+                  0.6818779904306219
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 45.0,
+                "denominator": 126.0,
+                "value": 0.35714285714285715,
+                "ci95": [
+                  0.2704755399427531,
+                  0.4375129132231405
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 6.0,
+                "denominator": 20.0,
+                "value": 0.3,
+                "ci95": [
+                  0.10521778584392014,
+                  0.5
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 27.0,
+                "denominator": 121.0,
+                "value": 0.2231404958677686,
+                "ci95": [
+                  0.14754098360655737,
+                  0.3017703201970443
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                17,
+                true
+              ],
+              "conditional": {
+                "numerator": 14.0,
+                "denominator": 23.0,
+                "value": 0.6086956521739131,
+                "ci95": [
+                  0.4284340659340659,
+                  0.8125
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 28.0,
+                "denominator": 57.0,
+                "value": 0.49122807017543857,
+                "ci95": [
+                  0.35714285714285715,
+                  0.613646331738437
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                16,
+                true
+              ],
+              "conditional": {
+                "numerator": 19.0,
+                "denominator": 28.0,
+                "value": 0.6785714285714286,
+                "ci95": [
+                  0.47360681114551084,
+                  0.8484848484848485
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 30.0,
+                "denominator": 58.0,
+                "value": 0.5172413793103449,
+                "ci95": [
+                  0.38461538461538464,
+                  0.6441119350282485
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670F",
+                "inbound",
+                16,
+                false
+              ],
+              "conditional": {
+                "numerator": 9.0,
+                "denominator": 22.0,
+                "value": 0.4090909090909091,
+                "ci95": [
+                  0.21043557168784027,
+                  0.6154761904761904
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 34.0,
+                "denominator": 110.0,
+                "value": 0.3090909090909091,
+                "ci95": [
+                  0.22498724489795918,
+                  0.4
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                13,
+                false
+              ],
+              "conditional": {
+                "numerator": 3.0,
+                "denominator": 13.0,
+                "value": 0.23076923076923078,
+                "ci95": [
+                  0.0,
+                  0.5
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 47.0,
+                "denominator": 193.0,
+                "value": 0.24352331606217617,
+                "ci95": [
+                  0.180849561245342,
+                  0.30114985398679534
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670B",
+                "outbound",
+                8,
+                true
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 0.0,
+                "value": null,
+                "ci95": null,
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 0.0,
+                "denominator": 3.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                14,
+                false
+              ],
+              "conditional": {
+                "numerator": 3.0,
+                "denominator": 17.0,
+                "value": 0.17647058823529413,
+                "ci95": [
+                  0.0,
+                  0.38461538461538464
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 34.0,
+                "denominator": 192.0,
+                "value": 0.17708333333333334,
+                "ci95": [
+                  0.12743729471484025,
+                  0.22857522796352583
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670A",
+                "inbound",
+                15,
+                false
+              ],
+              "conditional": {
+                "numerator": 0.0,
+                "denominator": 4.0,
+                "value": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 23.0,
+                "denominator": 126.0,
+                "value": 0.18253968253968253,
+                "ci95": [
+                  0.11278195488721804,
+                  0.2558139534883721
+                ],
+                "unreliable": false
+              }
+            },
+            {
+              "window": [
+                "6670D",
+                "inbound",
+                18,
+                false
+              ],
+              "conditional": {
+                "numerator": 2.0,
+                "denominator": 5.0,
+                "value": 0.4,
+                "ci95": [
+                  0.0,
+                  1.0
+                ],
+                "unreliable": true
+              },
+              "baseline": {
+                "numerator": 24.0,
+                "denominator": 118.0,
+                "value": 0.2033898305084746,
+                "ci95": [
+                  0.13559322033898305,
+                  0.2778100775193798
+                ],
+                "unreliable": false
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

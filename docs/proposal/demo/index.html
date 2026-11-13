@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6670 九族文化村站牌：歷史回放</title>
+<meta name="description" content="用 2025 年真實週日的刷卡計數，回放 6670 九族文化村站牌會顯示什麼。歷史回放，不是即時資料。">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f4f3ef; --fg:#1c1f26; --fg2:#4a4f5a; --muted:#5f6470; --accent:#b35c00;
+  --panel:#ffffff; --line:rgba(28,31,38,.14); --chip:rgba(28,31,38,.045); --chip-hover:rgba(28,31,38,.09);
+  --shadow:0 10px 30px rgba(28,31,38,.10);
+  --st-ready:#087565; --sev-watch:#9a5700; --sev-review:#b3261e; --st-pending:#4a4f5a;
+  --k-history:#1f63b8; --k-scenario:#7040c0; --k-unverified:#9a5700;
+  --focus:#1f63b8;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#070a10; --fg:#f0efec; --fg2:#c3c2b7; --muted:#a9a89f; --accent:#ffcd6e;
+    --panel:#0e121a; --line:rgba(255,255,255,.16); --chip:rgba(255,255,255,.05); --chip-hover:rgba(255,255,255,.1);
+    --shadow:0 12px 40px rgba(0,0,0,.45);
+    --st-ready:#5ed4b8; --sev-watch:#ffcd6e; --sev-review:#ff9a91; --st-pending:#c3c2b7;
+    --k-history:#8ebcf5; --k-scenario:#bfa6f5; --k-unverified:#ffcd6e;
+    --focus:#8ebcf5;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#070a10; --fg:#f0efec; --fg2:#c3c2b7; --muted:#a9a89f; --accent:#ffcd6e;
+  --panel:#0e121a; --line:rgba(255,255,255,.16); --chip:rgba(255,255,255,.05); --chip-hover:rgba(255,255,255,.1);
+  --shadow:0 12px 40px rgba(0,0,0,.45);
+  --st-ready:#5ed4b8; --sev-watch:#ffcd6e; --sev-review:#ff9a91; --st-pending:#c3c2b7;
+  --k-history:#8ebcf5; --k-scenario:#bfa6f5; --k-unverified:#ffcd6e;
+  --focus:#8ebcf5;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:Manrope,"Noto Sans TC","Microsoft JhengHei","PingFang TC",system-ui,sans-serif;
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:8px;top:-60px;background:var(--panel);color:var(--fg);padding:8px 12px;border-radius:8px;border:2px solid var(--focus);z-index:100}
+.skip:focus{top:8px}
+svg.i{width:1em;height:1em;flex:none;vertical-align:-.14em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* top banner (always visible) */
+.banner{position:sticky;top:0;z-index:50;display:flex;gap:10px;align-items:flex-start;padding:10px 16px;
+  background:color-mix(in srgb,var(--k-unverified) 14%,var(--panel));
+  border-bottom:2px solid var(--k-unverified);color:var(--fg)}
+.banner svg.i{margin-top:.3em;color:var(--k-unverified);font-size:1.15em}
+.banner b{font-size:1.05rem}
+.banner span{color:var(--fg2);font-size:.85rem;margin-left:.5em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+header.top{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;justify-content:space-between}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--sev-watch)}
+h1{margin:2px 0 0;font-size:1.6rem;line-height:1.25}
+.lede{margin:8px 0 0;max-width:72ch;color:var(--fg2);font-size:.9rem}
+h2{margin:0;font-size:1rem}
+h3{margin:0;font-size:.95rem}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:16px;margin-top:16px}
+.sub{margin:4px 0 0;color:var(--muted);font-size:.8rem;max-width:80ch}
+.btn{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);
+  background:var(--chip);color:var(--fg);font:inherit;font-size:.85rem;font-weight:600;cursor:pointer}
+.btn:hover{background:var(--chip-hover)}
+.btn.primary{border-color:var(--accent);border-width:2px}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.chip{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;border-radius:6px;padding:2px 7px;font-size:.75rem;font-weight:700;line-height:1.4;
+  color:var(--tone,var(--fg2));border:1px solid color-mix(in srgb,var(--tone,var(--fg2)) 50%,transparent);
+  background:color-mix(in srgb,var(--tone,var(--fg2)) 10%,var(--panel))}
+
+/* settings */
+.ctl{display:grid;gap:14px 24px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:12px}
+fieldset{margin:0;padding:0;border:0;min-width:0}
+legend{padding:0;margin-bottom:6px;font-size:.78rem;font-weight:700;color:var(--fg2)}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg label{position:relative;cursor:pointer}
+.seg input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.seg span{display:inline-flex;align-items:center;gap:5px;min-height:40px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--chip);font-size:.85rem;font-weight:600}
+.seg span .i{display:none}
+.seg input:checked+span{border:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--panel));padding:5px 11px}
+.seg input:checked+span .i{display:inline-block}
+.seg input:focus-visible+span{outline:3px solid var(--focus);outline-offset:2px}
+.sw{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--chip);cursor:pointer;font-size:.85rem}
+.sw input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--accent)}
+.sw small{display:block;color:var(--muted);font-size:.75rem;line-height:1.45}
+select{font:inherit;font-size:.85rem;min-height:40px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--chip);color:var(--fg)}
+
+/* timeline */
+.clockrow{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.clock{font-size:2.4rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.clock small{display:block;margin-top:4px;font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:0}
+.tl{margin-top:12px}
+.tl input[type=range]{width:100%;height:34px;margin:0;accent-color:var(--accent);cursor:pointer}
+.track{position:relative;height:26px;margin:-2px 10px 0;border-bottom:1px solid var(--line)}
+.track i{position:absolute;bottom:0;display:block}
+.track .pre{height:8px;border-radius:2px;background:repeating-linear-gradient(90deg,var(--fg2) 0 2px,transparent 2px 4px);opacity:.75}
+.track .arr{width:3px;height:20px;background:var(--fg);border-radius:1px}
+.track .arr.d0{height:14px;background:repeating-linear-gradient(0deg,var(--fg) 0 3px,transparent 3px 5px)}
+.ticks{display:flex;justify-content:space-between;margin:2px 10px 0;font-size:.72rem;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin:8px 0 0;font-size:.75rem;color:var(--muted)}
+.legend b{color:var(--fg2)}
+.howto{margin:14px 0 0;padding:10px 14px;border-radius:10px;border:1px dashed var(--line);font-size:.85rem;color:var(--fg2)}
+.howto ol{margin:4px 0 0;padding-left:1.3em}
+
+/* sign */
+.pill{display:inline-flex;gap:6px;align-items:center;font-size:.8rem;font-weight:600;border-radius:8px;padding:4px 10px;border:1px solid var(--line);background:var(--chip);color:var(--fg)}
+.signs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));margin-top:12px}
+.card{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--panel)}
+.card h3{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.card h3 small{font-weight:500;color:var(--muted);font-size:.78rem}
+.state{margin-top:10px;display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:10px;
+  border:2px solid var(--tone);background:color-mix(in srgb,var(--tone) 10%,var(--panel))}
+.state.insufficient{border-style:dashed}
+.state .i{font-size:2rem;color:var(--tone)}
+.state .lbl{font-size:1.6rem;font-weight:800;line-height:1.2;color:var(--tone)}
+.state .lbl small.asm{font-size:.8rem;font-weight:700;margin-left:.4em;color:var(--fg)}
+.state .det{font-size:.85rem;color:var(--fg);line-height:1.45}
+.bar{position:relative;height:14px;margin:12px 0 4px;border-radius:7px;border:1px solid var(--line);background:var(--chip);overflow:hidden}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--tone)}
+.bar .thr{position:absolute;top:-1px;bottom:-1px;width:3px;background:var(--fg);box-shadow:0 0 0 1px var(--panel)}
+.barnote{font-size:.78rem;color:var(--fg2)}
+dl.f{margin:12px 0 0;display:grid;gap:8px}
+dl.f>div{display:grid;grid-template-columns:7.5em 1fr;gap:4px 10px;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--chip)}
+dl.f dt{font-size:.78rem;font-weight:700;color:var(--fg2)}
+dl.f dd{margin:0;font-size:.85rem}
+dl.f dd .v{display:inline-flex;gap:5px;align-items:center;font-weight:700}
+dl.f dd .why{display:block;font-size:.78rem;color:var(--fg2);font-weight:400;line-height:1.45}
+.phone{margin-top:10px;padding:10px 12px;border-radius:10px;border:2px solid var(--sev-review);background:color-mix(in srgb,var(--sev-review) 9%,var(--panel));font-size:.88rem}
+.phone b{display:flex;gap:6px;align-items:center}
+.levels{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:.78rem;color:var(--fg2);align-items:center}
+.levels .chip{white-space:normal}
+
+/* driver & gates */
+.cols{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:960px){.cols{grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr)}}
+.cols>.panel{margin-top:16px}
+.bigbtn{width:100%;min-height:64px;font-size:1.2rem;font-weight:800;gap:10px;justify-content:center;border-radius:12px;border:2px solid var(--sev-review);
+  background:color-mix(in srgb,var(--sev-review) 10%,var(--panel));color:var(--sev-review)}
+.bigbtn:hover{background:color-mix(in srgb,var(--sev-review) 18%,var(--panel))}
+.log{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.log li{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:6px 10px;border:1px solid var(--line);border-radius:8px;font-size:.85rem;background:var(--chip)}
+.gates{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin-top:12px}
+.gate h3{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.gate h4{margin:10px 0 4px;font-size:.75rem;color:var(--fg2)}
+.gate ul{margin:0;padding:0;list-style:none;display:grid;gap:3px;font-size:.82rem}
+.gate li{display:flex;gap:6px;align-items:flex-start;line-height:1.45}
+.gate li .i{margin-top:.25em}
+.gate li.ok .i{color:var(--fg2)}
+.gate li.no .i{color:var(--sev-review)}
+.gate .next{margin:10px 0 0;font-size:.8rem;color:var(--fg2)}
+
+/* day note & seat comparison */
+.daynote{margin-top:14px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--chip);font-size:.85rem;color:var(--fg2)}
+.daynote b{color:var(--fg)}
+.daynote .tag{display:inline-flex;gap:4px;align-items:center;margin-right:6px;font-weight:700;color:var(--k-unverified)}
+.cmp{margin-top:8px;overflow-x:auto}
+.cmp table{min-width:0;width:100%;font-size:.78rem}
+.cmp th,.cmp td{padding:4px 5px;white-space:nowrap;vertical-align:middle}
+.cmp .cap{margin:10px 0 0;font-size:.78rem;color:var(--muted)}
+.cmp td.n,.cmp th.n{text-align:center}
+.cmp caption{padding:0 0 4px}
+
+/* table */
+.tw{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin-top:12px}
+table{width:100%;min-width:860px;border-collapse:collapse;font-size:.8rem;font-variant-numeric:tabular-nums}
+caption{text-align:left;padding:8px 10px;font-size:.78rem;color:var(--muted)}
+th,td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--chip);font-weight:700;color:var(--fg2);white-space:nowrap}
+td.n,th.n{text-align:right}
+tr.now td{background:color-mix(in srgb,var(--accent) 14%,var(--panel));font-weight:600}
+tr:last-child td{border-bottom:0}
+.tw .btn{min-height:32px;padding:2px 8px;font-size:.78rem}
+
+details{margin-top:16px;border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:var(--shadow)}
+summary{cursor:pointer;padding:14px 16px;font-weight:700;font-size:1rem;list-style:none;display:flex;gap:8px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary .chev{transition:none}
+details[open] summary .chev{transform:rotate(90deg)}
+details .body{padding:0 16px 16px}
+.blind{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.blind>div{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--chip)}
+.blind h3{display:flex;gap:6px;align-items:center}
+.blind p{margin:6px 0 0;font-size:.85rem}
+.blind .eff{color:var(--fg2);font-size:.8rem}
+footer{margin:24px 0 48px;font-size:.82rem;color:var(--fg2)}
+footer h2{margin-bottom:6px}
+footer ul{margin:4px 0 12px;padding-left:1.2em}
+footer code{font-size:.78rem;background:var(--chip);padding:1px 5px;border-radius:4px;word-break:break-all}
+.noscript{padding:12px 16px;border:2px solid var(--sev-review);border-radius:10px;margin-top:16px}
+@media(max-width:560px){
+  h1{font-size:1.3rem} .clock{font-size:2rem}
+  dl.f>div{grid-template-columns:1fr}
+  .banner span{display:block;margin-left:0}
+}
+@media(forced-colors:active){.state,.card,.panel{border:2px solid CanvasText}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+
+<div class="banner" role="note" aria-label="資料性質">
+  <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 18h.01"/></svg>
+  <div><b>歷史回放，不是即時資料</b><span>畫面上的「現在」是回放時鐘，不是今天；資料來自 2025 年的電子票證，沒有任何即時來源。</span></div>
+</div>
+
+<div class="wrap">
+<header class="top">
+  <div>
+    <div class="eyebrow">6670 台灣好行日月潭線 · 站牌回放示範</div>
+    <h1>九族文化村站牌：如果當天有這塊牌</h1>
+    <p class="lede">用真實週日的刷卡計數，重播一天裡每班車到九族文化村時，站牌「會顯示什麼」。它同時展示三件事：站牌怎麼說、為什麼有時只能說「資料不足」、以及這一天的資料最多能讓四道閘門走到哪裡。</p>
+  </div>
+  <button type="button" class="btn" id="themeBtn" aria-pressed="false">切換深淺色</button>
+</header>
+
+<noscript><p class="noscript">此頁需要 JavaScript 才能回放。所有資料已內嵌於本檔，不需網路。</p></noscript>
+
+<main id="main">
+
+<section class="panel" aria-labelledby="h-ctl">
+  <h2 id="h-ctl">1. 回放控制</h2>
+  <p class="sub">選代表日、對照示範日（代表日前一個合格週日），或「已滿示範日」（事後挑選，非代表日，用來示範座位數與已滿），拖動時間或按播放。到站事件取自 <b>九族文化村</b> 當天所有「有人刷卡上車」的到站；沒人上車的到站不會出現在資料裡。</p>
+
+  <div class="ctl">
+    <fieldset>
+      <legend>回放日</legend>
+      <div class="seg" id="daySeg"></div>
+    </fieldset>
+    <fieldset>
+      <legend>座位數（官方車型：一般大型客車約 41 席、通用無障礙約 37 席；車碼對應車型尚未取得；38／42／43 為早期推測的敏感度選項）</legend>
+      <div class="seg" id="capSeg"></div>
+    </fieldset>
+    <div>
+      <label for="margin" style="display:block;font-size:.78rem;font-weight:700;color:var(--fg2);margin-bottom:6px">規則 R 的警示門檻</label>
+      <select id="margin">
+        <option value="5" selected>預設：上游離站載客 ≥ 座位數 − 5</option>
+        <option value="3">敏感度：≥ 座位數 − 3</option>
+        <option value="8">敏感度：≥ 座位數 − 8</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="daynote" id="dayNote"></div>
+
+  <div class="ctl">
+    <label class="sw"><input type="checkbox" id="stale"><span><b>資料過期</b>（模擬上游資料延遲超過 3 分鐘）<small>打開後，站牌必須自動改顯示「資料不足」並提示電話，不可繼續顯示舊的座位狀態。</small></span></label>
+    <label class="sw"><input type="checkbox" id="verified"><span><b>情境：假設已核對</b>（示範用，非事實）<small>切換最低等級的核對狀態與顯示文字，用來看它和規則 R 警示是兩件獨立的事。實際並未取得座位表。</small></span></label>
+  </div>
+
+  <div class="tl">
+    <div class="clockrow">
+      <div class="clock" aria-hidden="true"><span id="clockTxt">16:20</span><small id="dayTxt">回放時鐘（不是現在時間）</small></div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+        <button type="button" class="btn primary" id="play" aria-pressed="false"></button>
+        <button type="button" class="btn" id="prev"></button>
+        <button type="button" class="btn" id="next"></button>
+        <button type="button" class="btn" id="restart"></button>
+        <label style="font-size:.8rem;color:var(--fg2)">速度
+          <select id="speed"><option value="400">慢</option><option value="250" selected>標準</option><option value="120">快</option></select></label>
+        <label class="sw" style="padding:4px 10px;align-items:center"><input type="checkbox" id="autopause" checked style="margin:0"><span>到站時自動暫停</span></label>
+      </div>
+    </div>
+    <label for="slider" class="sr-only">回放時間（09:00 到 18:15，每格一分鐘）</label>
+    <input type="range" id="slider" min="540" max="1095" step="1" value="980">
+    <div class="track" id="track" aria-hidden="true"></div>
+    <div class="ticks" aria-hidden="true"><span>09:00</span><span>11:00</span><span>13:00</span><span>15:00</span><span>17:00</span><span>18:15</span></div>
+    <p class="legend"><span><b>▮</b> 到站（首筆刷卡）</span><span><b>┆┆┆</b> 預告期：上游已離站、車尚未到</span><span>回放範圍涵蓋該日九族站全部到站紀錄；到站後 10 分鐘內仍視為該班在站（回放設定）。</span></p>
+  </div>
+
+  <div class="howto"><b>建議操作（約 2 分鐘）</b>
+    <ol>
+      <li>代表日按「播放」，或「下一個事件」：看 16:19 起規則 R 亮警示、16:27 車到站。注意：此到站「到站前載客＋上車數」重建為 60，超過 43（同站下車數未知），僅作規則示範，不是座位證據。</li>
+      <li>把座位數在 37（無障礙車）、41（一般車）與 43 之間切換：同一班車的警示會出現或消失。車碼與車型的對照尚未取得，結論就不穩。</li>
+      <li>打開「資料過期」：站牌改顯示「資料不足」並提示電話。</li>
+      <li>在「司機按鍵」按下滿載過站；再看四道閘門：全部「無法判定」。</li>
+      <li>切到「對照示範日 2025-02-09」（代表日前一個合格週日，示範用，<b>不是 G2 的同期配對對照</b>）：38 席（敏感度選項）有 2 次警示（大雁 10:45 未命中、魚池 16:26 命中）；改成 43 席，同一天為 0 次警示；官方 41／37 席的結果請以頁面計算為準。</li>
+      <li>切到「已滿示範日 2025-03-23」（<b>事後挑選，非代表日</b>；時鐘自動跳到 15:10）：往臺中站牌依上游日月潭離站載客 41 人，38 席（敏感度選項）顯示「已滿」；改 43 席同一刻變「座位不多」（車尚未到站，預估到站前載客 41 人（假設座位數 43；僅在上游載客資料可得時顯示））。上方比較表同時列出各種座位數下的已滿、警示、命中次數。</li>
+    </ol>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="h-sign">
+  <div style="display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between">
+    <h2 id="h-sign">2. 九族文化村站牌（示範）</h2>
+    <span class="pill" id="seatHint"></span>
+  </div>
+  <p class="sub">三級狀態只依「到站前載客」（車未到站時為上游離站載客）與<b>假設座位數</b>分級，不是上車後的剩餘座位。規則 R 與「已核對」是兩個獨立欄位：警示不等於已核對，已核對也不等於不用警示。</p>
+  <div class="daynote" role="note"><b>讀站牌前請先知道：</b>三個日期共有 6 個到站的「到站前載客＋本站上車數」超過 43（代表日 3 個、對照示範日 1 個、已滿示範日 2 個）。同站下車數未知、票證與車日對應可能有誤差、實際座位數也可能更大，原因待查；<b>這不是超載判定</b>，所以到站後的站牌只列到站前載客與本站上車數，不顯示「剩 N 席」。清單見頁尾。</div>
+  <div class="signs" id="signs"></div>
+  <div id="phoneBox"></div>
+  <div class="levels" aria-label="狀態圖例">
+    <span>圖例：</span>
+    <span class="chip" style="--tone:var(--st-pending)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>載客未達座位不多門檻（未核對，僅供參考）：載客 ≤ 座位數−6（假設座位數）；座位與人數未核實，用中性色</span>
+    <span class="chip" style="--tone:var(--st-ready)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>有空位（已核對）：只在「已核對」欄位為已核對時使用綠色；本頁僅示範情境</span>
+    <span class="chip" style="--tone:var(--sev-watch)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg>座位不多（載客 ≥ 座位數−5 且未滿；假設 38 席時為 ≥33）</span>
+    <span class="chip" style="--tone:var(--sev-review)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></svg>已滿（載客 ≥ 座位數；假設座位數）</span>
+    <span class="chip" style="--tone:var(--st-pending)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg>資料不足</span>
+    <span style="color:var(--muted)">「載客」＝站牌當下的推算人數：車未到站取上游離站載客，到站後只取「到站前載客」（不含本站上車的人；上車後人數因同站下車數未知而不顯示）。「座位不多」只是座位狀態的分級，不是超載或滿載的判定。</span>
+    <span style="color:var(--muted)">代表日與對照示範日在九族站都沒有出現「已滿」；只有已滿示範日（事後挑選，非代表日）在 38 席下出現。「已滿」只在「到站有人上車」時看得到：滿車過站沒人上車，不會留下刷卡紀錄。</span>
+  </div>
+</section>
+
+<div class="cols">
+  <section class="panel" aria-labelledby="h-drv">
+    <h2 id="h-drv">3. 司機按鍵（示範）</h2>
+    <p class="sub">試辦時，司機在安全時機（例如停車時）按一下記錄「滿載過站」。這裡只示範介面。</p>
+    <p style="margin:10px 0 0"><span class="chip" style="--tone:var(--k-scenario)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>示範：只存在頁面記憶體，重新整理即消失</span></p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px">
+      <label for="drvDir" style="font-size:.8rem;font-weight:700;color:var(--fg2)">行駛方向</label>
+      <select id="drvDir"><option value="1">往臺中</option><option value="0">往日月潭</option></select>
+    </div>
+    <div style="margin-top:10px"><button type="button" class="btn bigbtn" id="passBtn"></button></div>
+    <p class="sub" id="logCount" aria-live="polite"></p>
+    <ol class="log" id="log" aria-label="示範事件紀錄"></ol>
+    <p class="sub">這些示範事件<b>不會</b>改變站牌，也<b>不會</b>讓任何閘門通過：真正的事件要配獨立觀察員才算數。</p>
+  </section>
+
+  <section class="panel" aria-labelledby="h-gate">
+    <h2 id="h-gate">4. 閘門 G0–G3：這一天的資料夠判定嗎？</h2>
+    <p class="sub"><b>固定判定：此展示未連接任何實際觀察或業者資料，四道閘門在歷史回放中一律無法判定。</b>面板的判定不會因按鍵、座位數或門檻而改變，改變的只有「這一天看得到」的內容。</p>
+    <p class="sub" id="gateSub"></p>
+    <div class="gates" id="gates"></div>
+  </section>
+</div>
+
+<section class="panel" aria-labelledby="h-tbl">
+  <h2 id="h-tbl">5. 當日全部到站事件（內嵌資料）</h2>
+  <p class="sub">每列是一次「九族文化村有人刷卡上車的到站」。人數均為刷卡推算，不是實測；上游為前一個有刷卡上車的站，不一定是實際相鄰站。無上游配對的到站（如代表日 09:35 往日月潭）另有列出，但不在附錄 C 表，標示「無上游配對，不列入規則判定」。</p>
+  <div class="tw" role="region" aria-label="當日到站事件表" tabindex="0"><table id="tbl"></table></div>
+</section>
+
+<details id="blind">
+  <summary><svg class="i chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>6. 我們看不到的東西（點開）</summary>
+  <div class="body">
+    <p class="sub" style="margin-top:0">刷卡資料只記錄「已經上車、成功刷卡的人」。下面這些不在資料裡，所以回放的站牌也看不到。</p>
+    <div class="blind" style="margin-top:10px">
+      <div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></svg>零上車的滿車過站</h3>
+        <p>車滿了、站上的人沒上成，沒有任何刷卡就沒有任何紀錄。時間軸上的「本時段無紀錄」可能是沒有車，也可能是車滿了直接開過去。</p>
+        <p class="eff">影響：回放只能在「有人刷卡上車的到站」看到已滿（例如已滿示範日的 38 席情境），看不到滿車直接過站；規則 R 的樣本只含有人上車的到站，不能拿來宣稱能抓到所有滿車。</p></div>
+      <div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>現金旅客（及預約票、孩童、漏刷）</h3>
+        <p>不刷電子票證的人不會被計入車上人數。</p>
+        <p class="eff">影響：車上推算人數是下限，實際可能更滿；未核對的最低等級不代表有座位。</p></div>
+      <div><h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/><path d="m4 4 16 16"/></svg>留站人數</h3>
+        <p>被拒載、放棄等候或改搭別班的人，沒有上車就沒有刷卡。刷卡資料無法算出留站人數，也看不到同一個人錯過幾班。</p>
+        <p class="eff">影響：本頁不推估「被留下幾人」。要知道，只能靠 G0 的獨立站日觀察。</p></div>
+    </div>
+  </div>
+</details>
+
+</main>
+
+<footer>
+  <h2>資料來源與限制</h2>
+  <ul>
+    <li><b>來源</b>：2024–2025 年台灣好行 6670 電子票證 1,800,910 筆旅次（上下車皆刷、無卡號）的彙總：repo 內的座位回放資料中九族文化村的列（欄位：分鐘、支線、方向、車上人數、上車人數；該彙總檔不在本交付包內）。上游離站時間與載客取自附錄 C 腳本（本交付包 <code>appendix/code/gate_walkthrough.py</code>）同一套規則（同車同日、同秒先下車、同站十分鐘合併、上游配對間隔 ≤ 30 分鐘）唯讀重算；已滿示範日同樣由唯讀旅次庫以同規則重算，不取自上述彙總檔。本頁只內嵌計數與時間，沒有卡號、車號或逐筆旅次。</li>
+    <li><b>選日方式</b>：附錄 C 在 2025 年有至少一個可配對到站的 52 個週日中，依 38 席下「上車前載客 ≥ 33」的次數排序，取下中位數得 2025-02-16；對照示範日取代表日前一個合格週日（合格＝該週日至少有一個可配對到站）2025-02-09；此選法在重跑前指定，但整個示範屬事後分析，不是事前註冊，也不保證代表全部到站。<b>它是示範對照日，不是 G2 的同期配對對照</b>（G2 為每週相對同期未導入的配對對照，單日只通報）。代表日另有一筆無上游配對的到站，不在附錄 C 表。</li>
+    <li><b>已滿示範日 2025-03-23</b>（事後挑選，非代表日，用於示範座位數與已滿狀態）：母體為 2025 年日曆標為休息日、九族文化村往臺中（往埔里／高鐵）方向、至少一個到站「到站前載客 ≥ 38」者，週日優先，共 8 個週日（03-23、03-30、04-27、06-29、07-27、10-19、11-30、12-07）。在這 8 天中取「38 席與 43 席的規則 R 警示次數差最大者」，平手取較早日期：03-23（38 席 3 次、43 席 1 次）；次高為差 1 的 03-30、04-27、12-07。此日用同一規則（上游離站載客 ≥ 座位數 − 5）重算，到站與上游配對規則同附錄 C。<b>限制</b>：它是為了呈現差異而挑的日子，警示與命中比例不可當作典型情境或預測能力；該日只有 6 次到站；有 2 個到站的「到站前載客＋本站上車數」超過 43（見下一條）。站牌狀態只用「到站前載客」或「上游離站載客」。</li>
+    <li><b>「到站前載客＋本站上車數」超過 43 的到站（以本頁內嵌資料重算，共 6 個）</b>：代表日 2025-02-16 有 3 個：15:26（30＋28＝58）、16:27（34＋26＝60）、17:26（30＋24＝54）；對照示範日 2025-02-09 有 1 個：16:26（34＋13＝47）；已滿示範日 2025-03-23 有 2 個：15:29（40＋13＝53）、17:28（34＋10＝44）。<b>原因待查，不得解讀為超載</b>：到站前載客不含同站的下車（同站下車數未知，可能在同站先下後上）；票證與車日對應可能有誤差；實際座位數也可能大於 43。因此到站後的站牌只列「到站前載客、本站上車數」，上車後人數不顯示，也不顯示「剩 N 席」；狀態分級只依到站前載客與假設座位數。</li>
+    <li><b>定義 A／B</b>：站牌與表格以定義 A（上游最後一次上車後載客）為準；比較表另列 B（扣除上游同站 10 分鐘內下車、遇他站事件即停）的警示與命中。三天內只有 2025-02-09 大雁一筆由 36 降為 34，警示與命中不變；已滿示範日 B 與 A 逐筆相同。B 不是 GPS 離站實測。</li>
+    <li><b>座位數與車型對照未取得</b>：命題頁說明一般大型客車約 41 席、通用無障礙大型客車約 37 席（站位各約 8–9 位），但車碼對應哪種車型尚未取得；38／42／43 席是早期由資料形狀推測的敏感度選項。換座位數，結論會變。</li>
+    <li><b>人數是刷卡推算</b>：不含現金、預約票、孩童、漏刷、無人上車的滿車過站；歷史回放缺少真實班次、真實座位與上傳延遲。</li>
+    <li><b>規則 R</b>（上游離站載客 ≥ 座位數 − 5 即警示）是簡單門檻，不是模型。樣本構造使「命中」偏高（相鄰上車事件之間沒有其他上車，目標站上車前載客不高於上游離站），不能當成預測能力的證據；零次警示也不等於沒有真實留站。</li>
+    <li><b>「資料過期」是模擬</b>：回放資料沒有上傳時間，無法量測真實延遲；「超過 3 分鐘轉資料不足」是 G1 的提案值，待實測。「已核對」情境與司機按鍵事件同樣不是事實。</li>
+    <li><b>電話</b>：本頁不列任何號碼。試辦時由業者提供客服電話與櫃台資訊。</li>
+    <li><b>閘門面板是固定判定</b>：此展示未連接任何實際觀察或業者資料，四道閘門在歷史回放中一律無法判定，不是即時計算的結果。</li>
+    <li><b>閘門內容</b>見本交付包的 <code>PLAN.zh-TW.md</code> §3與 <code>appendix/C-gate-walkthrough.zh-TW.md</code>；站牌回放方法見 本包 <code>drafts/seats-replay-report.zh-TW.md</code>。標「提案值」者待業者、主管機關與乘客代表約定。</li>
+  </ul>
+</footer>
+</div>
+
+<div id="live" class="sr-only" role="status" aria-live="polite"></div>
+
+<script type="application/json" id="data">{"2025-02-16":[{"t":34153,"dir":1,"sub":"6670A","load":15,"boarded":8,"up":{"stop":"魚池","t":33472,"load":15,"b":15}},{"t":34521,"dir":0,"sub":"6670A","load":7,"boarded":4,"up":null},{"t":55575,"dir":1,"sub":"6670A","load":30,"boarded":28,"up":{"stop":"魚池","t":55148,"load":30,"b":30}},{"t":59255,"dir":1,"sub":"6670A","load":34,"boarded":26,"up":{"stop":"魚池","t":58782,"load":34,"b":34}},{"t":62771,"dir":1,"sub":"6670A","load":30,"boarded":24,"up":{"stop":"日月潭","t":61614,"load":30,"b":30}},{"t":64243,"dir":0,"sub":"6670A","load":1,"boarded":2,"up":{"stop":"崎下","t":62708,"load":8,"b":8}}],"2025-02-09":[{"t":34107,"dir":1,"sub":"6670A","load":11,"boarded":4,"up":{"stop":"日月潭","t":33030,"load":13,"b":13}},{"t":38728,"dir":0,"sub":"6670A","load":20,"boarded":1,"up":{"stop":"大雁","t":37594,"load":36,"b":34}},{"t":42055,"dir":0,"sub":"6670A","load":20,"boarded":3,"up":{"stop":"大雁","t":41335,"load":28,"b":28}},{"t":55521,"dir":1,"sub":"6670A","load":27,"boarded":9,"up":{"stop":"日月潭","t":54548,"load":27,"b":27}},{"t":59199,"dir":1,"sub":"6670A","load":34,"boarded":13,"up":{"stop":"魚池","t":58768,"load":34,"b":34}},{"t":62779,"dir":1,"sub":"6670A","load":28,"boarded":2,"up":{"stop":"日月潭","t":61774,"load":28,"b":28}}],"2025-03-23":[{"t":34217,"dir":1,"sub":"6670A","load":13,"boarded":5,"up":{"stop":"魚池","t":33538,"load":17,"b":17}},{"t":42089,"dir":0,"sub":"6670A","load":31,"boarded":3,"up":{"stop":"崎下","t":40652,"load":32,"b":32}},{"t":55759,"dir":1,"sub":"6670A","load":40,"boarded":13,"up":{"stop":"日月潭","t":54648,"load":41,"b":41}},{"t":59430,"dir":1,"sub":"6670A","load":33,"boarded":3,"up":{"stop":"魚池","t":58775,"load":33,"b":33}},{"t":62892,"dir":1,"sub":"6670A","load":34,"boarded":10,"up":{"stop":"魚池","t":62440,"load":34,"b":34}},{"t":63626,"dir":0,"sub":"6670A","load":3,"boarded":3,"up":{"stop":"崎下","t":61992,"load":12,"b":12}}]}</script>
+<script>
+(function(){
+'use strict';
+
+/* ---------- pure logic (also exported for node tests) ---------- */
+var DWELL = 10;            // minutes a bus stays "at the stop" after first boarding (replay setting)
+var STALE_LIMIT = 180;     // seconds; proposal value (PLAN §三 G1)
+var STALE_DEMO = 240;      // simulated delay when the switch is on
+var FEW = 5;               // 座位不多：剩 ≤5 席
+var CAPS = [37, 38, 41, 42, 43];
+var LEVEL = { available:'有空位（已核對）', few:'座位不多', full:'已滿' };
+var LEVEL_UNV = '載客未達座位不多門檻（未核對，僅供參考）';   // 未核對時使用保守文字
+function levelLabel(lv, verified){ return lv==='available' ? (verified ? '有空位（已核對）' : LEVEL_UNV) : LEVEL[lv]; }
+var DIRS = { 0:'往日月潭', 1:'往臺中' };
+var DAYS = {
+  '2025-02-16': { name:'代表日 2025-02-16（週日）', short:'代表日', note:'52 個合格週日按 38 席「上車前載客 ≥ 33」的到站次數排序取下中位數' },
+  '2025-02-09': { name:'對照示範日 2025-02-09（週日）', short:'對照示範日', note:'代表日前一個合格週日（選法在重跑前指定）；示範對照日，不是 G2 的同期配對對照' },
+  '2025-03-23': { name:'已滿示範日 2025-03-23（週日；事後挑選，非代表日；用於示範座位數與已滿狀態）', btn:'已滿示範日（事後挑選，非代表日）2025-03-23', short:'已滿示範日（事後挑選，非代表日）', focus:910, post:true,
+    note:'2025 年休息日、九族往臺中方向有到站前載客 ≥ 38 的週日共 8 天，取「38 席與 43 席警示次數差最大」者（3 次對 1 次）。事後挑選，不是代表日，也不是 G2 對照；只用來示範座位數與已滿狀態。' }
+};
+function dayBtn(k){ return DAYS[k].btn || DAYS[k].name; }
+var OVER = 43;              // 最大的假設座位數；「到站前載客＋本站上車數」超過它者列出，原因待查，不判定超載
+var SUBLABEL = { '6670A':'6670A（經埔里站、九族文化村）' };
+
+function pad(n){ return (n<10?'0':'')+n; }
+function hm(min){ return pad(Math.floor(min/60))+':'+pad(min%60); }
+function hms(sec){ return pad(Math.floor(sec/3600))+':'+pad(Math.floor(sec%3600/60))+':'+pad(sec%60); }
+function seatLevel(load, cap){ var left=cap-load; return left<=0?'full':(left<=FEW?'few':'available'); }
+
+/* minute-resolution view of an event */
+function prep(ev){
+  return { ev:ev, a:Math.floor(ev.t/60), u: ev.up ? Math.floor(ev.up.t/60) : null };
+}
+function prepAll(list){ return list.map(prep); }
+
+/* which event (if any) drives the sign for direction d at clock minute m */
+function findActive(P, d, m){
+  var best=null, bestStart=-1;
+  P.forEach(function(p){
+    if(p.ev.dir!==d) return;
+    var phase=null, start=null;
+    if(m>=p.a && m<p.a+DWELL){ phase='at'; start=p.a; }
+    else if(p.u!==null && m>=p.u && m<p.a){ phase='pre'; start=p.u; }
+    if(phase && start>bestStart){ best={p:p, phase:phase}; bestStart=start; }
+  });
+  return best;
+}
+
+function ruleR(ev, cap, margin){
+  if(!ev.up) return { state:'na', why:'noup' };
+  var thr=cap-margin;
+  return { state: ev.up.load>=thr?'warn':'none', thr:thr, up:ev.up.load, stop:ev.up.stop };
+}
+
+/* everything the sign shows for one direction */
+function computeSign(P, d, m, cap, margin, stale){
+  var out={ dir:d, cap:cap, margin:margin };
+  if(stale){
+    out.level=null; out.reason='stale'; out.r={ state:'na', why:'stale' }; out.phase='stale'; return out;
+  }
+  var act=findActive(P,d,m);
+  if(!act){
+    out.level=null; out.reason='norecord'; out.r={ state:'na', why:'norecord' }; out.phase='none'; return out;
+  }
+  var ev=act.p.ev; out.ev=ev; out.phase=act.phase; out.reason=null;
+  out.load = act.phase==='pre' ? ev.up.load : ev.load;
+  out.level = seatLevel(out.load, cap);
+  out.left = Math.max(0, cap-out.load);
+  out.over = out.load>cap;
+  out.r = ruleR(ev, cap, margin);
+  if(act.phase==='at' && out.r.state!=='na'){
+    out.hit = out.r.state==='warn' ? (ev.load>=cap-margin ? 'hit' : 'miss') : 'quiet';
+  }
+  return out;
+}
+
+/* day summary at the chosen seats / threshold */
+function daySummary(events, cap, margin){
+  var s={ n:events.length, matched:0, alerts:0, hits:0, alertsB:0, hitsB:0, levels:{available:0,few:0,full:0}, dir1:0, dir0:0 };
+  events.forEach(function(ev){
+    s.levels[seatLevel(ev.load,cap)]++;
+    if(ev.dir===1) s.dir1++; else s.dir0++;
+    var r=ruleR(ev,cap,margin);
+    if(r.state!=='na') s.matched++;
+    if(r.state==='warn'){ s.alerts++; if(ev.load>=cap-margin) s.hits++; }
+    /* definition B: upstream load after removing same-stop alightings within 10 min */
+    if(ev.up && (ev.up.b!==undefined?ev.up.b:ev.up.load)>=cap-margin){ s.alertsB++; if(ev.load>=cap-margin) s.hitsB++; }
+  });
+  return s;
+}
+
+/* gate verdicts: a gate is determinable only when nothing required is missing */
+function gateReport(events, cap, margin, demoLogs){
+  var s=daySummary(events,cap,margin);
+  var G=[
+    { id:'G0', name:'量測',
+      seen:[ s.n+' 次有人刷卡上車的九族到站（刷卡代理，不是獨立觀察）' ],
+      missing:[
+        '缺獨立觀察：沒有站日觀察員記錄候車、上車、留站、放棄',
+        '缺司機過站事件：回放資料 0 筆（本頁示範按鍵 '+demoLogs+' 筆不計）',
+        '只有 1 個站日，門檻至少 8 站日（提案值）；無配對率、事件召回可算'
+      ],
+      next:'先打電話向業者索取逐車座位表與班次對照，再排觀察員做站日量測。' },
+    { id:'G1', name:'資訊',
+      seen:[ '規則 R（座位 '+cap+' 席、門檻 ≥ '+(cap-margin)+'）：本日警示 '+s.alerts+' 次、命中 '+s.hits+' 次（刷卡代理，命中偏高屬樣本構造）' ],
+      missing:[
+        '缺座位表：逐車座位未核實，'+cap+' 席只是假設',
+        '缺獨立核對：影子期各至少 100（警示及實際無空位）；確認期另至少 100（警示）及 200（實際無空位）；兩種錯誤率的單側 95% 上限均須 ≤5%。歷史代理速率顯示 38 席口徑約需 69／138 個休息日、43 席口徑 382／764 個休息日，才取得 100／200 個代理事件（代理不是獨立核對）',
+        '缺上傳時間：回放無延遲可量，「超過 3 分鐘轉資料不足」只是模擬',
+        '缺實際站牌顯示紀錄與三級一致率；電話櫃台可用率未測'
+      ],
+      next:'取得座位表與授權後，先做影子運行（只記錄、不對乘客顯示）。' },
+    { id:'G2', name:'保留座',
+      seen:[], none:'刷卡紀錄沒有候車與留站，無可用項目',
+      missing:[
+        '缺候車、留站與放棄紀錄（缺獨立觀察）',
+        '缺保留座設計與業者、公路局核准的票務公平規則',
+        '缺同期配對對照與上游未上車紀錄，無法看改善與護欄；也沒有至少 4 週試辦期（提案值）。本頁的對照示範日是代表日前一個合格週日，不是 G2 的同期配對對照'
+      ],
+      next:'G0 顯示重複缺口且 G1 可用之後才評估。G2 每週以相對同期未導入的配對對照比較：絕對增加 ≥5 個百分點且相對增加 ≥50% 即減配或暫停；單日只通報。現在不可據此配座。' },
+    { id:'G3', name:'預約加班',
+      seen:[], none:'刷卡紀錄不含預約，無可用項目',
+      missing:[
+        '缺預約：沒有確認預約人數（派車審查至少 20 位，提案值）',
+        '缺車輛、司機、許可、保險、無障礙與經費',
+        '缺實到的自用車來源與實測避免里程，碳門檻無法算'
+      ],
+      next:'G0–G2 評估後仍有缺口、且兩道門檻都過，才談派車。' }
+  ];
+  G.forEach(function(g){ g.verdict = g.missing.length ? 'cannot' : 'can'; });
+  return { gates:G, summary:s };
+}
+
+/* clock stepping used by playback */
+function startsOf(P){
+  var set={}; P.forEach(function(p){ set[p.a]=1; if(p.u!==null) set[p.u]=1; });
+  return Object.keys(set).map(Number).sort(function(a,b){return a-b;});
+}
+function inAnyWindow(P, m){
+  return P.some(function(p){ return (m>=p.a && m<p.a+DWELL) || (p.u!==null && m>=p.u && m<p.a); });
+}
+function nextClock(P, m, max){
+  var inc = inAnyWindow(P,m) ? 1 : 5;
+  var lim=Math.min(max, m+inc), n=lim;
+  startsOf(P).forEach(function(s){ if(s>m && s<=lim && s<n) n=s; });
+  var arrived = P.some(function(p){ return p.a>m && p.a<=n; });
+  return { clock:n, arrived:arrived };
+}
+function jump(P, m, forward){
+  var st=startsOf(P), r=null;
+  if(forward){ for(var i=0;i<st.length;i++){ if(st[i]>m){ r=st[i]; break; } } }
+  else { for(var j=st.length-1;j>=0;j--){ if(st[j]<m){ r=st[j]; break; } } }
+  return r;
+}
+
+function overList(events){ return events.filter(function(ev){ return ev.load+ev.boarded>OVER; }); }
+var CORE={ overList:overList, DWELL:DWELL, STALE_LIMIT:STALE_LIMIT, seatLevel:seatLevel, prepAll:prepAll, findActive:findActive, ruleR:ruleR,
+  computeSign:computeSign, daySummary:daySummary, gateReport:gateReport, nextClock:nextClock, jump:jump, startsOf:startsOf, hm:hm };
+if(typeof module!=='undefined' && module.exports){ module.exports=CORE; }
+if(typeof document==='undefined') return;
+
+/* ---------- UI ---------- */
+var DATA = JSON.parse(document.getElementById('data').textContent);
+var MIN=540, MAX=1095;
+var state={ day:'2025-02-16', cap:41, margin:5, stale:false, verified:false, clock:980, playing:false, timer:null, logs:[], logSeq:0 };
+var $=function(id){ return document.getElementById(id); };
+var I={
+  warn:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg>',
+  ok:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>',
+  x:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></svg>',
+  q:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg>',
+  minus:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>',
+  check:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>',
+  play:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z" fill="currentColor"/></svg>',
+  pause:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>',
+  prev:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M19 5 9 12l10 7z"/></svg>',
+  next:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5l10 7-10 7z"/></svg>',
+  restart:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg>',
+  phone:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>',
+  flag:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
+  trash:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg>'
+};
+var TONE={ available:'--st-pending', few:'--sev-watch', full:'--sev-review', insufficient:'--st-pending' };   // 未核對使用中性色；已核對才改綠色強調
+var LV_ICON={ available:I.ok, few:I.warn, full:I.x, insufficient:I.q };
+function events(){ return DATA[state.day]; }
+var P=prepAll(events());
+
+function announce(t){ $('live').textContent=t; }
+
+function stateKey(sg){ return sg.dir+'|'+(sg.level||sg.reason)+'|'+sg.r.state+'|'+(sg.phase); }
+var lastKeys='';
+
+function renderSign(sg){
+  var dirName=DIRS[sg.dir], cap=sg.cap;
+  var lvKey = sg.level || 'insufficient';
+  var lbl = sg.level ? levelLabel(sg.level, state.verified)+'<small class="asm">（假設座位數）</small>' : '資料不足';
+  var tone = (sg.level==='available' && state.verified) ? '--st-ready' : TONE[lvKey];
+  var det='';
+  if(sg.level){
+    if(sg.phase==='pre'){
+      var seatsTxt = '到站前載客 '+sg.load+' 人（假設座位數 '+cap+'；僅在上游載客資料可得時顯示）';
+      if(sg.level==='available' && !state.verified) seatsTxt += '（座位與人數未核實）';
+      det = '預估'+seatsTxt+'（依上游'+sg.ev.up.stop+'離站載客，未扣沿途下車）<br>車尚未到站';
+    } else {
+      det = '到站前載客 '+sg.load+' 人、本站上車 '+sg.ev.boarded+' 人；上車後人數因同站下車數未知而不顯示。<br>'+
+        '狀態只依到站前載客與假設 '+cap+' 席'+(sg.level==='available' && !state.verified ? '（座位與人數未核實）' : '')+'；'+hm(Math.floor(sg.ev.t/60))+' 到站，'+(SUBLABEL[sg.ev.sub]||sg.ev.sub);
+    }
+  } else if(sg.reason==='stale'){
+    det='上游資料延遲 '+STALE_DEMO+' 秒，超過 '+STALE_LIMIT+' 秒（3 分鐘）上限，<b>不顯示座位狀態</b>。';
+  } else {
+    det='此時間點沒有任何刷卡到站紀錄。可能沒有車，也可能有車但無人刷卡上車（含滿車過站），<b>無法分辨</b>。';
+  }
+  var bar='';
+  if(sg.level){
+    var pct=Math.min(100, Math.round(sg.load/cap*100)), thr=Math.min(100,(cap-sg.margin)/cap*100);
+    bar='<div class="bar" aria-hidden="true" style="--tone:var('+tone+')"><div class="fill" style="width:'+pct+'%"></div><div class="thr" style="left:calc('+thr+'% - 1px)"></div></div>'+
+        '<div class="barnote">'+(sg.phase==='pre'?'上游離站載客 ':'到站前載客 ')+sg.load+' 人／假設 '+cap+' 席（不含本站上車）；黑線＝規則 R 門檻（'+(cap-sg.margin)+' 人）</div>';
+  }
+  /* R field */
+  var r=sg.r, rHtml;
+  if(r.state==='warn'){
+    rHtml='<span class="v" style="color:var(--sev-watch)">'+I.warn+'警示</span><span class="why">上游'+r.stop+'離站載客 '+r.up+' 人 ≥ 門檻 '+r.thr+'（'+cap+' − '+sg.margin+'）</span>';
+  } else if(r.state==='none'){
+    rHtml='<span class="v">'+I.minus+'未警示</span><span class="why">上游'+r.stop+'離站載客 '+r.up+' 人 &lt; 門檻 '+r.thr+'。未警示不代表一定有位子。</span>';
+  } else {
+    var why = r.why==='stale' ? '資料過期，無法評估。' : (r.why==='noup' ? '這班沒有可配對的上游離站紀錄（間隔超過 30 分鐘或無上游），無法評估。' : '沒有車輛資料可評估。');
+    rHtml='<span class="v" style="color:var(--st-pending)">'+I.q+'無法評估</span><span class="why">'+why+'</span>';
+  }
+  if(sg.hit){
+    var ht = sg.hit==='hit' ? '命中：警示，且到站上車前載客 '+sg.ev.load+' 人 ≥ '+(cap-sg.margin) :
+             sg.hit==='miss' ? '警示未命中：到站上車前載客 '+sg.ev.load+' 人 &lt; '+(cap-sg.margin) :
+             '未警示；到站上車前載客 '+sg.ev.load+' 人';
+    rHtml+='<span class="why"><b>事後對照</b>（站牌當下看不到）：'+ht+'</span>';
+  }
+  /* verified field (independent of R) */
+  var vHtml = state.verified
+    ? '<span class="v" style="color:var(--st-ready)">'+I.ok+'已核對（示範情境）</span><span class="why">假設已取得逐車座位表並以站日觀察核對。非事實，實際尚未取得。</span>'
+    : '<span class="v" style="color:var(--st-pending)">'+I.q+'未核對</span><span class="why">未對照獨立觀察與逐車座位表：缺座位表、缺站日觀察員記錄。</span>';
+  /* freshness field */
+  var fHtml;
+  if(sg.reason==='stale') fHtml='<span class="v" style="color:var(--sev-review)">'+I.warn+'過期</span><span class="why">模擬延遲 '+STALE_DEMO+' 秒 &gt; '+STALE_LIMIT+' 秒</span>';
+  else if(sg.phase==='pre') fHtml='<span class="v">'+I.check+'回放中</span><span class="why">上游離站 '+hms(sg.ev.up.t)+'（推算）。回放資料沒有上傳時間，無真實延遲可量。</span>';
+  else if(sg.phase==='at') fHtml='<span class="v">'+I.check+'回放中</span><span class="why">本站首筆上車刷卡 '+hms(sg.ev.t)+'。回放資料沒有上傳時間，無真實延遲可量。</span>';
+  else fHtml='<span class="v">'+I.minus+'無資料時間</span><span class="why">本時段沒有紀錄可更新。</span>';
+
+  return '<article class="card" aria-label="'+dirName+'站牌"><h3>'+dirName+' <small>九族文化村 · 示範站牌</small></h3>'+
+    '<div class="state '+lvKey+'" style="--tone:var('+tone+')"><span aria-hidden="true">'+LV_ICON[lvKey]+'</span><div><div class="lbl">'+lbl+'</div><div class="det">'+det+'</div></div></div>'+
+    bar+
+    '<dl class="f"><div><dt>規則 R 警示</dt><dd>'+rHtml+'</dd></div><div><dt>已核對</dt><dd>'+vHtml+'</dd></div><div><dt>資料時間／新鮮度</dt><dd>'+fHtml+'</dd></div></dl></article>';
+}
+
+function renderSigns(){
+  var s1=computeSign(P,1,state.clock,state.cap,state.margin,state.stale);
+  var s0=computeSign(P,0,state.clock,state.cap,state.margin,state.stale);
+  $('signs').innerHTML=renderSign(s1)+renderSign(s0);
+  $('phoneBox').innerHTML = state.stale
+    ? '<div class="phone" role="alert"><b>'+I.phone+'資料不足，請改打電話向業者詢問座位</b><span>示範站牌不列電話號碼；試辦時由業者提供客服電話與櫃台資訊。未確認前不保證有座位。</span></div>'
+    : '';
+  var key=stateKey(s1)+'#'+stateKey(s0)+'#'+state.stale+state.verified;
+  if(key!==lastKeys){
+    lastKeys=key;
+    var t=function(s){ return DIRS[s.dir]+'：'+(s.level?levelLabel(s.level,state.verified):'資料不足')+'，規則 R '+(s.r.state==='warn'?'警示':s.r.state==='none'?'未警示':'無法評估')+'，'+(state.verified?'已核對（示範情境）':'未核對'); };
+    announce('回放 '+hm(state.clock)+'。'+t(s1)+'。'+t(s0)+(state.stale?'。資料過期，請改打電話。':''));
+  }
+  var cur=0;
+  var rows=document.querySelectorAll('#tbl tbody tr');
+  [].forEach.call(rows,function(tr,idx){
+    var p=P[idx], on = (state.clock>=p.a && state.clock<p.a+DWELL) || (p.u!==null && state.clock>=p.u && state.clock<p.a);
+    tr.className=on?'now':''; if(on) tr.setAttribute('aria-current','true'); else tr.removeAttribute('aria-current');
+  });
+}
+
+function renderClock(){
+  $('clockTxt').textContent=hm(state.clock);
+  var sl=$('slider'); if(Number(sl.value)!==state.clock) sl.value=state.clock;
+  sl.setAttribute('aria-valuetext','回放時間 '+hm(state.clock));
+}
+
+function renderTrack(){
+  var span=MAX-MIN, h='';
+  P.forEach(function(p){
+    if(p.u!==null) h+='<i class="pre" style="left:'+((p.u-MIN)/span*100)+'%;width:'+((p.a-p.u)/span*100)+'%"></i>';
+    h+='<i class="arr d'+p.ev.dir+'" style="left:calc('+((p.a-MIN)/span*100)+'% - 1px)"></i>';
+  });
+  $('track').innerHTML=h;
+}
+
+function renderTable(){
+  var h='<caption>'+DAYS[state.day].name+'；座位 '+state.cap+' 席、規則 R 門檻 ≥ '+(state.cap-state.margin)+'。表中人數為刷卡推算；「上車前＋本次上車」是兩欄相加，不是上車後車上人數（同站下車數未知）。「座位不多」＝上車前載客 ≥ 座位數−5 且未滿（38 席為 ≥33）。</caption><thead><tr><th>到站時間</th><th>方向</th><th>支線</th><th>上游站（離站時間）</th><th class="n">上游離站載客</th><th class="n">到站上車前</th><th class="n">本次上車</th><th class="n">上車前＋本次上車</th><th>規則 R</th><th>到站三級狀態</th><th>回放</th></tr></thead><tbody>';
+  events().forEach(function(ev,i){
+    var r=ruleR(ev,state.cap,state.margin), lv=seatLevel(ev.load,state.cap);
+    var rt = r.state==='warn' ? (ev.load>=state.cap-state.margin?'警示・命中':'警示・未命中') : r.state==='none' ? '未警示' : '無上游配對，不列入規則判定';
+    h+='<tr><td>'+hms(ev.t)+'</td><td>'+DIRS[ev.dir]+'</td><td>'+ev.sub+'</td><td>'+(ev.up?ev.up.stop+'（'+hms(ev.up.t)+'）':'無配對')+'</td><td class="n">'+(ev.up?ev.up.load:'—')+'</td><td class="n">'+ev.load+'</td><td class="n">'+ev.boarded+'</td><td class="n">'+(ev.load+ev.boarded)+(ev.load+ev.boarded>OVER?'<small style="display:block;font-weight:700;color:var(--sev-watch)">＞'+OVER+'，原因待查</small>':'')+'</td><td>'+rt+'</td><td>'+levelLabel(lv,state.verified)+'</td>'+
+        '<td><button type="button" class="btn" data-i="'+i+'">跳到此班<span class="sr-only">（'+hms(ev.t)+' '+DIRS[ev.dir]+'）</span></button></td></tr>';
+  });
+  $('tbl').innerHTML=h+'</tbody>';
+}
+
+function renderGates(){
+  var rep=gateReport(events(),state.cap,state.margin,state.logs.length);
+  var s=rep.summary;
+  $('gateSub').innerHTML='依 <b>'+DAYS[state.day].name+'</b> 的回放資料判定（'+s.n+' 次到站，其中 '+s.matched+' 次有上游配對）。閘門必須「缺什麼都不放行」：只要有一項必要資料缺席，就是<b>無法判定</b>，不是通過。單日也不能代替各關完整觀察期。'+
+    (s.alerts===0?' 此座位數與門檻下本日零次警示，但零警示不等於沒有真實留站。':'');
+  $('gates').innerHTML=rep.gates.map(function(g){
+    var chip = g.verdict==='can'
+      ? '<span class="chip" style="--tone:var(--st-ready)">'+I.ok+'可判定</span>'
+      : '<span class="chip" style="--tone:var(--sev-review)">'+I.x+'無法判定</span>';
+    return '<article class="card gate"><h3><span>'+g.id+' '+g.name+'</span>'+chip+'</h3>'+
+      '<h4>這一天看得到</h4><ul>'+(g.seen.length?g.seen.map(function(t){ return '<li class="ok">'+I.check+'<span>'+t+'</span></li>'; }).join(''):'<li>'+I.minus+'<span>'+g.none+'</span></li>')+'</ul>'+
+      '<h4>缺少（所以無法判定）</h4><ul>'+g.missing.map(function(t){ return '<li class="no">'+I.x+'<span>'+t+'</span></li>'; }).join('')+'</ul>'+
+      '<p class="next"><b>下一步：</b>'+g.next+'</p></article>';
+  }).join('');
+}
+
+function renderLog(){
+  var n=state.logs.length;
+  $('logCount').textContent='本頁示範事件 '+n+' 筆（不計入閘門判定）。';
+  $('log').innerHTML=state.logs.map(function(l){
+    return '<li><span>'+I.flag+' <b>'+l.t+'</b> '+l.day+' · 九族文化村 · '+l.dir+' <span class="chip" style="--tone:var(--k-scenario)">示範</span></span>'+
+      '<button type="button" class="btn" data-del="'+l.id+'">'+I.trash+'更正（刪除）<span class="sr-only">：'+l.t+' '+l.dir+'</span></button></li>';
+  }).join('');
+}
+
+function renderDayNote(){
+  var D=DAYS[state.day], h='<div>'+(D.post?'<span class="tag">'+I.warn+'事後挑選，非代表日</span>':'')+'<b>'+D.name+'</b>。'+D.note+'</div>';
+  h+='<p class="cap" style="margin:10px 0 0;font-size:.78rem;color:var(--muted)">同一天、不同假設座位數（門檻 ≥ 座位數 − '+state.margin+'）：到站前載客的三級狀態次數，與規則 R 警示／命中次數（定義 A／定義 B）</p><div class="cmp"><table>'+
+     '<thead><tr><th scope="col">座位數</th><th scope="col" class="n">已滿</th><th scope="col" class="n">座位<br>不多</th><th scope="col" class="n">'+(state.verified?'有空位<br>（已核對）':'載客未達座位不多門檻（未核對，僅供參考）')+'</th><th scope="col" class="n">警示<br>A／B</th><th scope="col" class="n">命中<br>A／B</th></tr></thead><tbody>';
+  CAPS.forEach(function(c){
+    var s=daySummary(events(),c,state.margin);
+    h+='<tr'+(c===state.cap?' class="now"':'')+'><th scope="row">'+c+' 席'+(c===state.cap?'<small style="display:block;font-weight:700">目前</small>':'')+'</th><td class="n">'+s.levels.full+'</td><td class="n">'+s.levels.few+'</td><td class="n">'+s.levels.available+'</td><td class="n">'+s.alerts+'／'+s.alertsB+'</td><td class="n">'+s.hits+'／'+s.hitsB+'</td></tr>';
+  });
+  $('dayNote').innerHTML=h+'</tbody></table></div>';
+  var ov=overList(events());
+  $('dayNote').insertAdjacentHTML('beforeend','<p style="margin:0 0 8px"><b>本日有 '+ov.length+' 個到站的「到站前載客＋本站上車數」超過 '+OVER+'</b>'+(ov.length?'：'+ov.map(function(ev){ return hm(Math.floor(ev.t/60))+'（'+ev.load+'＋'+ev.boarded+'＝'+(ev.load+ev.boarded)+'）'; }).join('、'):'（無）')+'。這不是超載判定：同站下車數未知，原因待查（詳見頁尾）。</p>');
+}
+
+function renderSeatHint(){
+  $('seatHint').innerHTML = state.verified
+    ? I.q+'座位已核實？只是示範情境；實際仍未取得座位表'
+    : I.warn+'座位未核實：'+state.cap+' 席是假設，未經業者證實';
+}
+
+function renderSettings(){
+  $('daySeg').innerHTML=Object.keys(DAYS).map(function(k){
+    return '<label><input type="radio" name="day" value="'+k+'"'+(state.day===k?' checked':'')+'><span>'+I.check+dayBtn(k)+'</span></label>';
+  }).join('');
+  $('capSeg').innerHTML=CAPS.map(function(c){
+    return '<label><input type="radio" name="cap" value="'+c+'"'+(state.cap===c?' checked':'')+'><span>'+I.check+c+' 席</span></label>';
+  }).join('');
+  $('dayTxt').textContent=DAYS[state.day].short+'．回放時鐘（不是現在時間）';
+}
+
+function renderButtons(){
+  var pb=$('play');
+  pb.innerHTML = state.playing ? I.pause+'暫停' : I.play+'播放';
+  pb.setAttribute('aria-pressed', state.playing?'true':'false');
+  $('prev').innerHTML=I.prev+'上一個事件';
+  $('next').innerHTML=I.next+'下一個事件';
+  $('restart').innerHTML=I.restart+'回到 09:00';
+  $('passBtn').innerHTML=I.flag+'滿載過站（示範）';
+}
+
+function renderAll(){ renderSettings(); renderDayNote(); renderClock(); renderTrack(); renderTable(); renderGates(); renderLog(); renderSeatHint(); renderSigns(); }
+
+/* ---------- playback ---------- */
+function stop(){ state.playing=false; if(state.timer){ clearInterval(state.timer); state.timer=null; } renderButtons(); }
+function tick(){
+  if(state.clock>=MAX){ stop(); return; }
+  var r=nextClock(P,state.clock,MAX);
+  state.clock=r.clock; renderClock(); renderSigns();
+  if(r.clock>=MAX){ stop(); return; }
+  if(r.arrived && $('autopause').checked){ stop(); announce('已在 '+hm(state.clock)+' 有車到站，暫停。'); }
+}
+function start(){
+  if(state.clock>=MAX) state.clock=MIN;
+  state.playing=true; renderButtons();
+  state.timer=setInterval(tick, Number($('speed').value));
+}
+function setClock(m){ state.clock=Math.max(MIN,Math.min(MAX,m)); renderClock(); renderSigns(); }
+
+/* ---------- wiring ---------- */
+$('play').addEventListener('click', function(){ state.playing?stop():start(); });
+$('slider').addEventListener('input', function(e){ setClock(Number(e.target.value)); });
+$('next').addEventListener('click', function(){ var r=jump(P,state.clock,true); if(r!==null) setClock(r); else announce('已經是最後一個事件。'); });
+$('prev').addEventListener('click', function(){ var r=jump(P,state.clock,false); if(r!==null) setClock(r); else announce('已經是第一個事件。'); });
+$('restart').addEventListener('click', function(){ stop(); setClock(MIN); });
+$('speed').addEventListener('change', function(){ if(state.playing){ stop(); start(); } });
+$('stale').addEventListener('change', function(e){ state.stale=e.target.checked; renderSigns(); });
+$('verified').addEventListener('change', function(e){ state.verified=e.target.checked; renderDayNote(); renderTable(); renderSeatHint(); renderSigns(); });
+$('margin').addEventListener('change', function(e){ state.margin=Number(e.target.value); renderTable(); renderGates(); renderDayNote(); renderSigns(); });
+document.addEventListener('change', function(e){
+  var t=e.target;
+  if(t.name==='day'){ state.day=t.value; P=prepAll(events()); if(DAYS[state.day].focus){ stop(); state.clock=DAYS[state.day].focus; } renderTrack(); renderTable(); renderGates(); renderSettings(); renderDayNote(); renderClock(); renderSigns(); document.querySelector('input[name=day]:checked').focus(); }
+  if(t.name==='cap'){ state.cap=Number(t.value); renderTable(); renderGates(); renderDayNote(); renderSeatHint(); renderSigns(); }
+});
+$('tbl').addEventListener('click', function(e){
+  var b=e.target.closest('button[data-i]'); if(!b) return;
+  stop(); setClock(P[Number(b.getAttribute('data-i'))].a);
+  document.getElementById('h-sign').scrollIntoView({block:'start'});
+});
+$('passBtn').addEventListener('click', function(){
+  var d=Number($('drvDir').value);
+  state.logs.push({ id:++state.logSeq, t:hm(state.clock), day:state.day, dir:DIRS[d] });
+  renderLog(); renderGates();
+  announce('已記錄一筆示範事件：'+hm(state.clock)+' '+DIRS[d]+'滿載過站。此事件只存在頁面記憶體。');
+});
+$('log').addEventListener('click', function(e){
+  var b=e.target.closest('button[data-del]'); if(!b) return;
+  var id=Number(b.getAttribute('data-del'));
+  state.logs=state.logs.filter(function(l){ return l.id!==id; });
+  renderLog(); renderGates(); $('passBtn').focus();
+  announce('已刪除一筆示範事件。');
+});
+$('themeBtn').addEventListener('click', function(){
+  var root=document.documentElement, cur=root.getAttribute('data-theme');
+  if(!cur) cur = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark':'light';
+  var nx = cur==='dark' ? 'light':'dark';
+  root.setAttribute('data-theme',nx); this.setAttribute('aria-pressed', nx==='dark'?'true':'false');
+});
+
+renderButtons(); renderAll();
+})();
+</script>
+</body>
+</html>

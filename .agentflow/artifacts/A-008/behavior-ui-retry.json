@@ -1,0 +1,23 @@
+{
+  "taskId": "node:delegated-task:command%3Amcp%3A0de9d4df-b8cd-4928-9ca9-6019c80280ea%3Adelegate-task%3A0472f8a1-f874-4c7b-8e5b-e03395d7fe92",
+  "childThreadId": "thread:delegated-task:command%3Amcp%3A0de9d4df-b8cd-4928-9ca9-6019c80280ea%3Adelegate-task%3A0472f8a1-f874-4c7b-8e5b-e03395d7fe92",
+  "link": "<t3-thread://v2/f7361ebc-7e75-4a33-a2b4-5957b3a530a5/thread:delegated-task:command%3Amcp%3A0de9d4df-b8cd-4928-9ca9-6019c80280ea%3Adelegate-task%3A0472f8a1-f874-4c7b-8e5b-e03395d7fe92>",
+  "childRunId": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A0de9d4df-b8cd-4928-9ca9-6019c80280ea%253Adelegate-task%253A0472f8a1-f874-4c7b-8e5b-e03395d7fe92:ordinal:1",
+  "childNodeId": "node:delegated-task:command%3Amcp%3A0de9d4df-b8cd-4928-9ca9-6019c80280ea%3Adelegate-task%3A0472f8a1-f874-4c7b-8e5b-e03395d7fe92",
+  "status": "running",
+  "workState": "working",
+  "hasPendingChildRuns": false,
+  "latestTerminalRunId": null,
+  "latestTerminalStatus": null,
+  "latestTerminalSummary": null,
+  "latestTerminalResultContextTransferId": null,
+  "providerInstanceId": "antigravity",
+  "model": "claude-sonnet-5-5-high",
+  "options": [],
+  "summary": null,
+  "resultContextTransferId": null,
+  "hasPendingQuestion": false,
+  "pendingApproval": null,
+  "waitTimedOut": false,
+  "next": "Completion wakes this thread, so end your turn. Do not wait on it or poll it."
+}

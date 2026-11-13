@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T17:15:42.058Z",
+  "dataset": {
+    "source": "本地授權資料庫 trips 成功刷卡 OD 聚合",
+    "firstRecordedDate": "2024-01-01",
+    "lastRecordedDate": "2025-12-31",
+    "recordedDates": 725,
+    "totalTrips": 1800910,
+    "coveredTrips": 1800910,
+    "unknownDistanceTrips": 0,
+    "knownDistancePkm": 95157851.25600006,
+    "totalPassengerKm": 95157851.25600006,
+    "groups": {
+      "bothSpecifiedEndpoints": 559613,
+      "outsideSpecifiedEndpointSet": 1241297,
+      "unknownStop": 0
+    },
+    "knownDistancePkmByGroup": {
+      "bothSpecifiedEndpoints": 33697974.66799995,
+      "outsideSpecifiedEndpointSet": 61459876.5880001,
+      "unknownStop": 0
+    },
+    "distanceLabel": "路網近似人公里；缺距離時 totalPassengerKm 為 null，knownDistancePkm 僅為已知部分",
+    "operatingDays": null
+  },
+  "coverage": {
+    "cacheDirectedPairs": 192,
+    "observedOdSubrouteGroups": 492,
+    "observedDirectedPairs": 206,
+    "matchedNetworkTrips": 1794629,
+    "sameStopTrips": 6281,
+    "unknownDistanceTrips": 0,
+    "unknownOdSubrouteGroups": 0,
+    "distanceCoverageRatio": 1,
+    "missingDistances": [],
+    "caveat": "OSRM driving 兩站路網近似；cache 正反向共用距離。未按支線途經點約束，跨線 OD/暨大/九族等分支路徑未驗證。相同站零距離也是假設，不代表無行駛。"
+  },
+  "specifiedEndpointSet": [
+    "臺中",
+    "高鐵臺中站",
+    "台中航空站",
+    "日月潭",
+    "水社",
+    "向山行政中心"
+  ],
+  "classificationCaveat": "固定指定端點集合描述，非各支線中間站或公平性；埔里是 6670H 端點；跨支線聚合不能推定旅次用途。unknownStop 不歸中間站。",
+  "parameters": {
+    "factors": {
+      "dieselKgCo2ePerLiter": {
+        "name": "柴油 CO2e 情境參數",
+        "value": 2.6974,
+        "unit": "kg CO2e / L",
+        "status": "assumption",
+        "sourceUrl": null,
+        "year": null,
+        "boundary": "scenario-unknown",
+        "notes": "可調展示值；未逐項核實 CO2e/GWP 與系統邊界，不是官方係數。"
+      },
+      "gasolineKgCo2ePerLiter": {
+        "name": "汽油 CO2e 情境參數，未直接參與模型",
+        "value": 2.36,
+        "unit": "kg CO2e / L",
+        "status": "assumption",
+        "sourceUrl": null,
+        "year": null,
+        "boundary": "scenario-unknown",
+        "notes": "可調展示值；未逐項核實 CO2e/GWP 與系統邊界，不是官方係數。"
+      },
+      "electricityKgCo2ePerKwh": {
+        "name": "2024 公用售電業電力排碳係數",
+        "value": 0.474,
+        "unit": "kg CO2e / kWh",
+        "status": "official",
+        "year": 2024,
+        "sourceUrl": "https://www.moeaea.gov.tw/ecw/populace/content/wHandMenuFile.ashx?file_id=16728",
+        "boundary": "purchased-electricity-combustion",
+        "notes": "113 年度；購用公用售電業電力間接承擔燃料燃燒排放。固定年度展示，非最新、非生命週期係數；不代表實際充電契約。官方搜尋索引可讀，直接擷取回覆 403。"
+      },
+      "privateCarKgCo2ePerPkm": {
+        "name": "小客車強度情境參數",
+        "value": 0.145,
+        "unit": "kg CO2e / pkm",
+        "status": "assumption",
+        "sourceUrl": null,
+        "year": null,
+        "boundary": "scenario-unknown",
+        "notes": "可調展示值；未逐項核實 CO2e/GWP 與系統邊界，不是官方係數。"
+      },
+      "motorcycleKgCo2ePerPkm": {
+        "name": "機車強度情境參數",
+        "value": 0.055,
+        "unit": "kg CO2e / pkm",
+        "status": "assumption",
+        "sourceUrl": null,
+        "year": null,
+        "boundary": "scenario-unknown",
+        "notes": "可調展示值；未逐項核實 CO2e/GWP 與系統邊界，不是官方係數。"
+      },
+      "publicTransitKgCo2ePerPkm": {
+        "name": "其他公共運具強度情境參數",
+        "value": 0.038,
+        "unit": "kg CO2e / pkm",
+        "status": "assumption",
+        "sourceUrl": null,
+        "year": null,
+        "boundary": "scenario-unknown",
+        "notes": "可調展示值；未逐項核實 CO2e/GWP 與系統邊界，不是官方係數。"
+      }
+    },
+    "vehicle": {
+      "dieselKmPerLiter": 3.2,
+      "electricKwhPerKm": 0.95,
+      "deadheadRatio": 1.08,
+      "electrificationRate": 0
+    },
+    "modalSplit": {
+      "privateCarShare": 0.48,
+      "motorcycleShare": 0.24,
+      "otherTransitShare": 0.16,
+      "inducedDemandShare": 0.12
+    },
+    "status": "除已標 official 電力係數外，均為未校準可調假設；48/24/16/12 無問卷證據"
+  },
+  "demonstration": {
+    "inputVehicleKm": 1000000,
+    "source": "獨立假設 1,000,000 車公里，與紀錄日或班次無推導關係",
+    "scenarios": [
+      {
+        "scenario": {
+          "dieselKmPerLiter": 3.2,
+          "electricKwhPerKm": 0.95,
+          "deadheadRatio": 1.08,
+          "electrificationRate": 0,
+          "id": "illustrative_electric_0",
+          "name": "假設電動化 0%",
+          "description": "固定車公里及未校準參數之獨立展示；非歷史績效、非政策最優、非淨零。",
+          "modalSplit": {
+            "privateCarShare": 0.48,
+            "motorcycleShare": 0.24,
+            "otherTransitShare": 0.16,
+            "inducedDemandShare": 0.12
+          }
+        },
+        "operational": {
+          "inputVehicleKm": 1000000,
+          "adjustedVehicleKm": 1080000,
+          "dieselLiters": 337500,
+          "electricityKwh": 0,
+          "fuelCombustionKgCo2e": 910372.5,
+          "purchasedElectricityKgCo2e": 0,
+          "totalOperationalKgCo2e": 910372.5,
+          "intensityKgCo2ePerVkm": 0.8429375,
+          "intensityKgCo2ePerPkm": 0.009566972015276539
+        },
+        "comparison": {
+          "totalPassengerKm": 95157851.25600006,
+          "counterfactualBaselineKgCo2e": 8457629.819633285,
+          "operationalEmissionsKgCo2e": 910372.5,
+          "scenarioDifferenceKgCo2e": 7547257.319633285,
+          "baselineToOperationalRatio": 9.290295807082579,
+          "breakdown": {
+            "carBaselineKgCo2e": 6622986.447417603,
+            "motorcycleBaselineKgCo2e": 1256083.6365792006,
+            "otherTransitBaselineKgCo2e": 578559.7356364804
+          }
+        },
+        "structure": {
+          "totalTrips": 1800910,
+          "coveredTrips": 1800910,
+          "unknownDistanceTrips": 0,
+          "knownDistancePkm": 95157851.25600006,
+          "totalPassengerKm": 95157851.25600006,
+          "groups": {
+            "bothSpecifiedEndpoints": 559613,
+            "outsideSpecifiedEndpointSet": 1241297,
+            "unknownStop": 0
+          },
+          "knownDistancePkmByGroup": {
+            "bothSpecifiedEndpoints": 33697974.66799995,
+            "outsideSpecifiedEndpointSet": 61459876.5880001,
+            "unknownStop": 0
+          }
+        }
+      },
+      {
+        "scenario": {
+          "dieselKmPerLiter": 3.2,
+          "electricKwhPerKm": 0.95,
+          "deadheadRatio": 1.08,
+          "electrificationRate": 0.5,
+          "id": "illustrative_electric_50",
+          "name": "假設電動化 50%",
+          "description": "固定車公里及未校準參數之獨立展示；非歷史績效、非政策最優、非淨零。",
+          "modalSplit": {
+            "privateCarShare": 0.48,
+            "motorcycleShare": 0.24,
+            "otherTransitShare": 0.16,
+            "inducedDemandShare": 0.12
+          }
+        },
+        "operational": {
+          "inputVehicleKm": 1000000,
+          "adjustedVehicleKm": 1080000,
+          "dieselLiters": 168750,
+          "electricityKwh": 513000,
+          "fuelCombustionKgCo2e": 455186.25,
+          "purchasedElectricityKgCo2e": 243162,
+          "totalOperationalKgCo2e": 698348.25,
+          "intensityKgCo2ePerVkm": 0.64661875,
+          "intensityKgCo2ePerPkm": 0.007338840051371658
+        },
+        "comparison": {
+          "totalPassengerKm": 95157851.25600006,
+          "counterfactualBaselineKgCo2e": 8457629.819633285,
+          "operationalEmissionsKgCo2e": 698348.25,
+          "scenarioDifferenceKgCo2e": 7759281.569633285,
+          "baselineToOperationalRatio": 12.110905725951607,
+          "breakdown": {
+            "carBaselineKgCo2e": 6622986.447417603,
+            "motorcycleBaselineKgCo2e": 1256083.6365792006,
+            "otherTransitBaselineKgCo2e": 578559.7356364804
+          }
+        },
+        "structure": {
+          "totalTrips": 1800910,
+          "coveredTrips": 1800910,
+          "unknownDistanceTrips": 0,
+          "knownDistancePkm": 95157851.25600006,
+          "totalPassengerKm": 95157851.25600006,
+          "groups": {
+            "bothSpecifiedEndpoints": 559613,
+            "outsideSpecifiedEndpointSet": 1241297,
+            "unknownStop": 0
+          },
+          "knownDistancePkmByGroup": {
+            "bothSpecifiedEndpoints": 33697974.66799995,
+            "outsideSpecifiedEndpointSet": 61459876.5880001,
+            "unknownStop": 0
+          }
+        }
+      },
+      {
+        "scenario": {
+          "dieselKmPerLiter": 3.2,
+          "electricKwhPerKm": 0.95,
+          "deadheadRatio": 1.08,
+          "electrificationRate": 1,
+          "id": "illustrative_electric_100",
+          "name": "假設電動化 100%",
+          "description": "固定車公里及未校準參數之獨立展示；非歷史績效、非政策最優、非淨零。",
+          "modalSplit": {
+            "privateCarShare": 0.48,
+            "motorcycleShare": 0.24,
+            "otherTransitShare": 0.16,
+            "inducedDemandShare": 0.12
+          }
+        },
+        "operational": {
+          "inputVehicleKm": 1000000,
+          "adjustedVehicleKm": 1080000,
+          "dieselLiters": 0,
+          "electricityKwh": 1026000,
+          "fuelCombustionKgCo2e": 0,
+          "purchasedElectricityKgCo2e": 486324,
+          "totalOperationalKgCo2e": 486324,
+          "intensityKgCo2ePerVkm": 0.4503,
+          "intensityKgCo2ePerPkm": 0.005110708087466776
+        },
+        "comparison": {
+          "totalPassengerKm": 95157851.25600006,
+          "counterfactualBaselineKgCo2e": 8457629.819633285,
+          "operationalEmissionsKgCo2e": 486324,
+          "scenarioDifferenceKgCo2e": 7971305.819633285,
+          "baselineToOperationalRatio": 17.390936535382348,
+          "breakdown": {
+            "carBaselineKgCo2e": 6622986.447417603,
+            "motorcycleBaselineKgCo2e": 1256083.6365792006,
+            "otherTransitBaselineKgCo2e": 578559.7356364804
+          }
+        },
+        "structure": {
+          "totalTrips": 1800910,
+          "coveredTrips": 1800910,
+          "unknownDistanceTrips": 0,
+          "knownDistancePkm": 95157851.25600006,
+          "totalPassengerKm": 95157851.25600006,
+          "groups": {
+            "bothSpecifiedEndpoints": 559613,
+            "outsideSpecifiedEndpointSet": 1241297,
+            "unknownStop": 0
+          },
+          "knownDistancePkmByGroup": {
+            "bothSpecifiedEndpoints": 33697974.66799995,
+            "outsideSpecifiedEndpointSet": 61459876.5880001,
+            "unknownStop": 0
+          }
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "不是歷史營運盤查或第三方查證",
+    "避免排放為獨立比較情境，不列 Scope 3，不抵 Scope 1/2",
+    "燃油與運具強度邊界未核實，情境差額非一致生命週期減量證據",
+    "刷卡不能推全部需求、拒載、候車或公平改善",
+    "全電巴仍有購電排放；未求解政策最優"
+  ]
+}

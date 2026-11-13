@@ -1,0 +1,12 @@
+{
+  "firstRun": {
+    "public/data/lab/forecast/ml/summary.json": "a0bb12950d4991b09482dfd1382466c827bf14b9ff090bc0f452ded8b8ed8172",
+    "public/data/lab/forecast/ml/results.json": "588128d14df82662831d71bcd046217910f1276d958084435fe54682a435bf9e"
+  },
+  "secondRun": {
+    "public/data/lab/forecast/ml/summary.json": "a0bb12950d4991b09482dfd1382466c827bf14b9ff090bc0f452ded8b8ed8172",
+    "public/data/lab/forecast/ml/results.json": "588128d14df82662831d71bcd046217910f1276d958084435fe54682a435bf9e"
+  },
+  "identical": true,
+  "baselineCodeUnchanged": true
+}

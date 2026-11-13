@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "status": "historical_backtest_not_current_forecast",
+  "reference": "吳姿樺、洪百賢、蘇昭銘、林峰正、吳東凌、何毓芬（2024）。利用集成學習模式與不同時間特徵預測短期公車服務運量。運輸學刊，36(2)，153-186。",
+  "target": "hourly observed card boardings, line 6670 total, service hours only",
+  "serviceHours": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "serviceHourShareOfTestBoardings": 0.9999781185399308,
+  "hourlyPeakThreshold2024P90": 233,
+  "protocol": {
+    "validation": [
+      "2024-07-01",
+      "2024-12-31"
+    ],
+    "test": [
+      "2025-01-01",
+      "2025-12-31"
+    ],
+    "retraining": "monthly, expanding window from 2024-01-29, rows strictly before month start",
+    "dayAheadAssumption": "previous day fully available before the target day",
+    "realtimeAssumption": "previous hour available before the target hour; not available in this project today",
+    "missing": "any missing day in prior 28 days or target day => no row; all models share identical rows",
+    "stacking": "RF(100, leaf 5) + GBR(default) + RidgeCV -> RidgeCV, KFold(5) without shuffle inside training data"
+  },
+  "candidates": {
+    "paper_dayahead": [
+      "hour",
+      "weekday",
+      "sameHourYesterday",
+      "totalYesterday"
+    ],
+    "paper_realtime": [
+      "hour",
+      "weekday",
+      "sameHourYesterday",
+      "totalYesterday",
+      "previousHour"
+    ],
+    "tourism_dayahead": [
+      "hour",
+      "weekday",
+      "sameHourYesterday",
+      "totalYesterday",
+      "sameHourLastWeek",
+      "sameHourWeekdayMedian4",
+      "dayOff",
+      "dayOffYesterday",
+      "dayOffTomorrow"
+    ],
+    "tourism_realtime": [
+      "hour",
+      "weekday",
+      "sameHourYesterday",
+      "totalYesterday",
+      "sameHourLastWeek",
+      "sameHourWeekdayMedian4",
+      "dayOff",
+      "dayOffYesterday",
+      "dayOffTomorrow",
+      "previousHour"
+    ]
+  },
+  "baselines": {
+    "yesterday_same_hour": "sameHourYesterday",
+    "last_week_same_hour": "sameHourLastWeek",
+    "weekday_median4_same_hour": "sameHourWeekdayMedian4",
+    "previous_hour": "previousHour"
+  },
+  "dayAheadSelectedOnValidation": "tourism_dayahead",
+  "validationRows": 1728,
+  "testRows": 6048,
+  "validation": {
+    "yesterday_same_hour": {
+      "n": 1728,
+      "mae": 36.241898148148145,
+      "rmse": 52.09272137612289,
+      "wape": 0.2666842679021598,
+      "bias": 0.6157407407407407,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.24861087242939794,
+      "mapePositiveHours": 0.3725680349258885
+    },
+    "last_week_same_hour": {
+      "n": 1728,
+      "mae": 23.83159722222222,
+      "rmse": 34.10584864853882,
+      "wape": 0.1753636642365606,
+      "bias": -1.9195601851851851,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.15033129021786867,
+      "mapePositiveHours": 0.25155417256945495
+    },
+    "weekday_median4_same_hour": {
+      "n": 1728,
+      "mae": 19.848958333333332,
+      "rmse": 28.90424605165848,
+      "wape": 0.1460576071404238,
+      "bias": -2.638310185185185,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.15045540470871283,
+      "mapePositiveHours": 0.20766865473982443
+    },
+    "previous_hour": {
+      "n": 1728,
+      "mae": 39.597800925925924,
+      "rmse": 52.85721178763559,
+      "wape": 0.2913785174081897,
+      "bias": -0.328125,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.1506558973477688,
+      "mapePositiveHours": 0.7663557216663263
+    },
+    "paper_dayahead": {
+      "n": 1728,
+      "mae": 20.680441162715873,
+      "rmse": 29.322159017174165,
+      "wape": 0.1521760336290328,
+      "bias": -1.1330640959224674,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.17051739720707615,
+      "mapePositiveHours": 0.22637884370466652
+    },
+    "paper_realtime": {
+      "n": 1728,
+      "mae": 19.427330862225002,
+      "rmse": 27.451403772585124,
+      "wape": 0.14295508163250664,
+      "bias": -1.0374566512370444,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.14528911480461576,
+      "mapePositiveHours": 0.20778273361240004
+    },
+    "tourism_dayahead": {
+      "n": 1728,
+      "mae": 19.098400152394255,
+      "rmse": 26.96216235589383,
+      "wape": 0.14053466079298085,
+      "bias": -0.008329507014873701,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.1459252339525924,
+      "mapePositiveHours": 0.24398140100006985
+    },
+    "tourism_realtime": {
+      "n": 1728,
+      "mae": 17.97851761777799,
+      "rmse": 25.157134313209788,
+      "wape": 0.1322940589166739,
+      "bias": 0.5296284094722694,
+      "peakN": 192,
+      "peakUnderforecastShare": 0.11596488821652941,
+      "mapePositiveHours": 0.21674972931746847
+    }
+  },
+  "test": {
+    "yesterday_same_hour": {
+      "n": 6048,
+      "mae": 37.2131283068783,
+      "rmse": 52.95785954479408,
+      "wape": 0.25920308281968363,
+      "bias": -0.12681878306878308,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.23361471476808246,
+      "mapePositiveHours": 0.3618210591991702
+    },
+    "last_week_same_hour": {
+      "n": 6048,
+      "mae": 30.227678571428573,
+      "rmse": 44.42583998008938,
+      "wape": 0.21054686420299068,
+      "bias": -0.5785383597883598,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.15821485693975476,
+      "mapePositiveHours": 0.2840614597579493
+    },
+    "weekday_median4_same_hour": {
+      "n": 6048,
+      "mae": 24.87375992063492,
+      "rmse": 36.9644770174995,
+      "wape": 0.1732548577904309,
+      "bias": -2.386656746031746,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.17085480717966944,
+      "mapePositiveHours": 0.23171588950960015
+    },
+    "previous_hour": {
+      "n": 6048,
+      "mae": 40.995866402116405,
+      "rmse": 54.178519765385374,
+      "wape": 0.2855512405907663,
+      "bias": -0.4088955026455027,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.16621645637106808,
+      "mapePositiveHours": 0.6847913422859595
+    },
+    "paper_dayahead": {
+      "n": 6048,
+      "mae": 22.18860329478013,
+      "rmse": 32.101261453118916,
+      "wape": 0.15455175738092797,
+      "bias": -2.3388571406996195,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.15760196929516526,
+      "mapePositiveHours": 0.21696527274531396
+    },
+    "paper_realtime": {
+      "n": 6048,
+      "mae": 20.88820305484664,
+      "rmse": 29.392724412278056,
+      "wape": 0.14549399291913415,
+      "bias": -1.8248540821925736,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.13579229984589963,
+      "mapePositiveHours": 0.20178241898663662
+    },
+    "tourism_dayahead": {
+      "n": 6048,
+      "mae": 22.11821535346437,
+      "rmse": 31.980115570766163,
+      "wape": 0.1540614795619841,
+      "bias": 0.10635650535595585,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.14391202279045387,
+      "mapePositiveHours": 0.22494517605321934
+    },
+    "tourism_realtime": {
+      "n": 6048,
+      "mae": 20.440221857115652,
+      "rmse": 28.908484575330803,
+      "wape": 0.14237363962500746,
+      "bias": 0.3287048566129489,
+      "peakN": 824,
+      "peakUnderforecastShare": 0.12246235327935652,
+      "mapePositiveHours": 0.209558060273478
+    }
+  },
+  "testDailyRollup": {
+    "days": 336,
+    "yesterday_same_hour": {
+      "n": 336,
+      "mae": 385.9791666666667,
+      "rmse": 496.54222534203376,
+      "wape": 0.14936035637616665,
+      "bias": -2.2827380952380953,
+      "peakN": 0,
+      "peakUnderforecastShare": null,
+      "mapePositiveHours": 0.14899204680038164
+    },
+    "last_week_same_hour": {
+      "n": 336,
+      "mae": 352.2232142857143,
+      "rmse": 481.87140462496643,
+      "wape": 0.1362979905470024,
+      "bias": -10.413690476190476,
+      "peakN": 0,
+      "peakUnderforecastShare": null,
+      "mapePositiveHours": 0.14377899372458536
+    },
+    "weekday_median4_same_hour": {
+      "n": 336,
+      "mae": 290.88839285714283,
+      "rmse": 403.895437648869,
+      "wape": 0.11256357279084551,
+      "bias": -42.95982142857143,
+      "peakN": 0,
+      "peakUnderforecastShare": null,
+      "mapePositiveHours": 0.11452245001433498
+    },
+    "paper_dayahead": {
+      "n": 336,
+      "mae": 235.1914709675797,
+      "rmse": 313.76264908829955,
+      "wape": 0.09101082378026247,
+      "bias": -42.09942853259316,
+      "peakN": 0,
+      "peakUnderforecastShare": null,
+      "mapePositiveHours": 0.09122960090471263
+    },
+    "tourism_dayahead": {
+      "n": 336,
+      "mae": 234.05814041824885,
+      "rmse": 312.8397220680974,
+      "wape": 0.09057226473521889,
+      "bias": 1.914417096407212,
+      "peakN": 0,
+      "peakUnderforecastShare": null,
+      "mapePositiveHours": 0.09272234144372338
+    }
+  },
+  "dailyBaselineSameDays": {
+    "n": 336,
+    "mae": 291.5327380952381,
+    "rmse": 402.82229406431577,
+    "wape": 0.11281044321473198,
+    "bias": -22.470238095238095,
+    "peakN": 0,
+    "peakUnderforecastShare": null
+  },
+  "monthlyTestWape": {
+    "2025-01": {
+      "rows": 558,
+      "yesterday_same_hour": 0.22532352540525813,
+      "last_week_same_hour": 0.2458111973845525,
+      "weekday_median4_same_hour": 0.21934341370385507,
+      "previous_hour": 0.3035417518049312,
+      "paper_dayahead": 0.17572398108353826,
+      "paper_realtime": 0.16476660456292916,
+      "tourism_dayahead": 0.18901434023999747,
+      "tourism_realtime": 0.17043955931934965
+    },
+    "2025-02": {
+      "rows": 504,
+      "yesterday_same_hour": 0.24136328215784653,
+      "last_week_same_hour": 0.250782670512803,
+      "weekday_median4_same_hour": 0.21375449437434207,
+      "previous_hour": 0.29681326643608075,
+      "paper_dayahead": 0.16680542623968808,
+      "paper_realtime": 0.15069667240779758,
+      "tourism_dayahead": 0.1794194651169122,
+      "tourism_realtime": 0.15899954883947395
+    },
+    "2025-03": {
+      "rows": 558,
+      "yesterday_same_hour": 0.28878247163432036,
+      "last_week_same_hour": 0.22044013427825437,
+      "weekday_median4_same_hour": 0.15820408850813972,
+      "previous_hour": 0.2880605455354887,
+      "paper_dayahead": 0.1406440810042814,
+      "paper_realtime": 0.14122850808920642,
+      "tourism_dayahead": 0.14575157241991007,
+      "tourism_realtime": 0.1374529393833181
+    },
+    "2025-04": {
+      "rows": 540,
+      "yesterday_same_hour": 0.2606375201052786,
+      "last_week_same_hour": 0.2546668616269435,
+      "weekday_median4_same_hour": 0.17818150801774138,
+      "previous_hour": 0.27452843983038455,
+      "paper_dayahead": 0.15764805226530634,
+      "paper_realtime": 0.1413852032860815,
+      "tourism_dayahead": 0.15900672990619813,
+      "tourism_realtime": 0.1387161025432719
+    },
+    "2025-05": {
+      "rows": 558,
+      "yesterday_same_hour": 0.2853499298309842,
+      "last_week_same_hour": 0.19856000976264568,
+      "weekday_median4_same_hour": 0.14868509366038196,
+      "previous_hour": 0.2870827994386479,
+      "paper_dayahead": 0.15163939294992104,
+      "paper_realtime": 0.14524399843486682,
+      "tourism_dayahead": 0.14440696431054617,
+      "tourism_realtime": 0.1367876283476232
+    },
+    "2025-06": {
+      "rows": 540,
+      "yesterday_same_hour": 0.21800011292417143,
+      "last_week_same_hour": 0.20180960984698776,
+      "weekday_median4_same_hour": 0.15755039241149568,
+      "previous_hour": 0.27467393145502794,
+      "paper_dayahead": 0.14962700516903718,
+      "paper_realtime": 0.1396216474712183,
+      "tourism_dayahead": 0.13870205397589633,
+      "tourism_realtime": 0.13012095727650586
+    },
+    "2025-07": {
+      "rows": 108,
+      "yesterday_same_hour": 0.17905010653653172,
+      "last_week_same_hour": 0.18647329713382363,
+      "weekday_median4_same_hour": 0.16660938896144065,
+      "previous_hour": 0.3029761495635439,
+      "paper_dayahead": 0.18773781106535944,
+      "paper_realtime": 0.16786997129680165,
+      "tourism_dayahead": 0.1642066777976333,
+      "tourism_realtime": 0.1586805248268986
+    },
+    "2025-08": {
+      "rows": 486,
+      "yesterday_same_hour": 0.2141722079084191,
+      "last_week_same_hour": 0.210068346267183,
+      "weekday_median4_same_hour": 0.1679651943163059,
+      "previous_hour": 0.2822253421170372,
+      "paper_dayahead": 0.14432563609303223,
+      "paper_realtime": 0.1322915040762499,
+      "tourism_dayahead": 0.13877552067122684,
+      "tourism_realtime": 0.13419168666922665
+    },
+    "2025-09": {
+      "rows": 540,
+      "yesterday_same_hour": 0.3132827949901121,
+      "last_week_same_hour": 0.20672654361678752,
+      "weekday_median4_same_hour": 0.19218303669523182,
+      "previous_hour": 0.2803092726873215,
+      "paper_dayahead": 0.16848159486924946,
+      "paper_realtime": 0.15302091457403016,
+      "tourism_dayahead": 0.16652188477136678,
+      "tourism_realtime": 0.15097905845846196
+    },
+    "2025-10": {
+      "rows": 558,
+      "yesterday_same_hour": 0.2688582730868913,
+      "last_week_same_hour": 0.21159005137998455,
+      "weekday_median4_same_hour": 0.1977220024553267,
+      "previous_hour": 0.27988450870731596,
+      "paper_dayahead": 0.1604786682816412,
+      "paper_realtime": 0.1479245509171104,
+      "tourism_dayahead": 0.16620179832491866,
+      "tourism_realtime": 0.15214855207383843
+    },
+    "2025-11": {
+      "rows": 540,
+      "yesterday_same_hour": 0.2937327995996998,
+      "last_week_same_hour": 0.18194896172129096,
+      "weekday_median4_same_hour": 0.14542782086564923,
+      "previous_hour": 0.28226169627220415,
+      "paper_dayahead": 0.14409241473538767,
+      "paper_realtime": 0.14244666721896948,
+      "tourism_dayahead": 0.13831976170236374,
+      "tourism_realtime": 0.13282822169382358
+    },
+    "2025-12": {
+      "rows": 558,
+      "yesterday_same_hour": 0.24163151164597202,
+      "last_week_same_hour": 0.14457975309822294,
+      "weekday_median4_same_hour": 0.13453517693033928,
+      "previous_hour": 0.28915950619644587,
+      "paper_dayahead": 0.1368545426264086,
+      "paper_realtime": 0.1376633074245,
+      "tourism_dayahead": 0.1286012654054901,
+      "tourism_realtime": 0.12239278410900149
+    }
+  },
+  "audits": [
+    {
+      "cutoffExclusive": "2024-07-01",
+      "trainingRows": 2772,
+      "trainingLastDate": "2024-06-30"
+    },
+    {
+      "cutoffExclusive": "2024-08-01",
+      "trainingRows": 3186,
+      "trainingLastDate": "2024-07-23"
+    },
+    {
+      "cutoffExclusive": "2024-09-01",
+      "trainingRows": 3348,
+      "trainingLastDate": "2024-08-31"
+    },
+    {
+      "cutoffExclusive": "2024-10-01",
+      "trainingRows": 3888,
+      "trainingLastDate": "2024-09-30"
+    },
+    {
+      "cutoffExclusive": "2024-11-01",
+      "trainingRows": 3906,
+      "trainingLastDate": "2024-10-01"
+    },
+    {
+      "cutoffExclusive": "2024-12-01",
+      "trainingRows": 3942,
+      "trainingLastDate": "2024-11-30"
+    },
+    {
+      "cutoffExclusive": "2025-01-01",
+      "trainingRows": 4500,
+      "trainingLastDate": "2024-12-31"
+    },
+    {
+      "cutoffExclusive": "2025-02-01",
+      "trainingRows": 5058,
+      "trainingLastDate": "2025-01-31"
+    },
+    {
+      "cutoffExclusive": "2025-03-01",
+      "trainingRows": 5562,
+      "trainingLastDate": "2025-02-28"
+    },
+    {
+      "cutoffExclusive": "2025-04-01",
+      "trainingRows": 6120,
+      "trainingLastDate": "2025-03-31"
+    },
+    {
+      "cutoffExclusive": "2025-05-01",
+      "trainingRows": 6660,
+      "trainingLastDate": "2025-04-30"
+    },
+    {
+      "cutoffExclusive": "2025-06-01",
+      "trainingRows": 7218,
+      "trainingLastDate": "2025-05-31"
+    },
+    {
+      "cutoffExclusive": "2025-07-01",
+      "trainingRows": 7758,
+      "trainingLastDate": "2025-06-30"
+    },
+    {
+      "cutoffExclusive": "2025-08-01",
+      "trainingRows": 7866,
+      "trainingLastDate": "2025-07-06"
+    },
+    {
+      "cutoffExclusive": "2025-09-01",
+      "trainingRows": 8352,
+      "trainingLastDate": "2025-08-31"
+    },
+    {
+      "cutoffExclusive": "2025-10-01",
+      "trainingRows": 8892,
+      "trainingLastDate": "2025-09-30"
+    },
+    {
+      "cutoffExclusive": "2025-11-01",
+      "trainingRows": 9450,
+      "trainingLastDate": "2025-10-31"
+    },
+    {
+      "cutoffExclusive": "2025-12-01",
+      "trainingRows": 9990,
+      "trainingLastDate": "2025-11-30"
+    }
+  ],
+  "inputs": {
+    "calendarSha256": "a646a2f2fce324d98abbc534a8f4b5767e2e059d14671296f19789b212c27470",
+    "referenceSha256": "59b9e8cc4c88b081c30523795663a5fddfdc6aa8afe036d3f04c88e5c3d30141"
+  }
+}

@@ -1,0 +1,1169 @@
+{
+  "schemaVersion": 2,
+  "qualityEvidence": {
+    "total_trips": 1800910,
+    "active_dates": 725,
+    "valid_od_trips": 1800910,
+    "same_stop_od": 6281,
+    "missing_alight_stop": 0,
+    "missing_board_stop": 0,
+    "missing_duration": 0,
+    "valid_dur_count": 1788442,
+    "duration_sum_sec": 7562498073,
+    "same_stop_under3": 4158,
+    "board_date_mismatch": 0,
+    "missing_hour": 0,
+    "missing_alight_ts": 0,
+    "negative_dur": 0,
+    "zero_dur": 0,
+    "under_3min": 12217,
+    "over_6hr": 251
+  },
+  "reconciliation": {
+    "ruleAssignments": true,
+    "subroutes": true,
+    "odCount": true,
+    "odTrips": true,
+    "clusterTrips": true,
+    "clusterMembers": true,
+    "hourly": true,
+    "perOdCounts": true,
+    "tickets": true,
+    "durationSamples": true,
+    "durationSum": true,
+    "durationPartition": true,
+    "durationMeans": true,
+    "sameStop": true,
+    "dateHour": true
+  },
+  "ticketGroupOverview": [
+    {
+      "group": "general",
+      "groupLabel": "一般全票 / 電子錢包",
+      "trips": 1037394,
+      "share": 0.576
+    },
+    {
+      "group": "student",
+      "groupLabel": "學生／校名票種",
+      "trips": 270468,
+      "share": 0.1502
+    },
+    {
+      "group": "concession",
+      "groupLabel": "敬老／愛心等名稱票種",
+      "trips": 404440,
+      "share": 0.2246
+    },
+    {
+      "group": "tpass_commuter",
+      "groupLabel": "通勤／中彰投苗等名稱票種",
+      "trips": 77903,
+      "share": 0.0433
+    },
+    {
+      "group": "other",
+      "groupLabel": "其他未分類票種",
+      "trips": 10705,
+      "share": 0.0059
+    }
+  ],
+  "rawTicketGroups": [
+    {
+      "ticketType": "EASY01000000",
+      "trips": 19793,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB000B0000",
+      "trips": 197,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB000D0000",
+      "trips": 3134,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB00130000",
+      "trips": 1,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB00160000",
+      "trips": 2,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB001D0000",
+      "trips": 134,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB04090000",
+      "trips": 17,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB04090400",
+      "trips": 2,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB04150000",
+      "trips": 17,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB04150400",
+      "trips": 1,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB04160000",
+      "trips": 131,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB04160400",
+      "trips": 37,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB05050000",
+      "trips": 26,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB050A0000",
+      "trips": 24462,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB05120000",
+      "trips": 56,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB05120500",
+      "trips": 2,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB05150000",
+      "trips": 15,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB05150500",
+      "trips": 1,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB051A0000",
+      "trips": 5,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB08050800",
+      "trips": 22,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB080A0000",
+      "trips": 254,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB080A0800",
+      "trips": 2085,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB08120000",
+      "trips": 7,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB08150000",
+      "trips": 2,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB08150800",
+      "trips": 31,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB081A0000",
+      "trips": 5,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB081A0800",
+      "trips": 2,
+      "group": "general"
+    },
+    {
+      "ticketType": "ECCB7C010003",
+      "trips": 480,
+      "group": "general"
+    },
+    {
+      "ticketType": "ICASH01020200",
+      "trips": 6,
+      "group": "general"
+    },
+    {
+      "ticketType": "ICASH01080800",
+      "trips": 1077,
+      "group": "general"
+    },
+    {
+      "ticketType": "ICASH010E0E00",
+      "trips": 24,
+      "group": "general"
+    },
+    {
+      "ticketType": "ICASH02030300",
+      "trips": 11,
+      "group": "general"
+    },
+    {
+      "ticketType": "ICASH020E0E00",
+      "trips": 341,
+      "group": "general"
+    },
+    {
+      "ticketType": "IPASSA11A1A00",
+      "trips": 14,
+      "group": "general"
+    },
+    {
+      "ticketType": "IPASSA2171700",
+      "trips": 9,
+      "group": "general"
+    },
+    {
+      "ticketType": "IPASSA2181800",
+      "trips": 2,
+      "group": "general"
+    },
+    {
+      "ticketType": "IPASSA5101000",
+      "trips": 26,
+      "group": "general"
+    },
+    {
+      "ticketType": "IPASSA5191900",
+      "trips": 4,
+      "group": "general"
+    },
+    {
+      "ticketType": "I_PAY",
+      "trips": 45,
+      "group": "general"
+    },
+    {
+      "ticketType": "LINEPAY01000000",
+      "trips": 2999,
+      "group": "general"
+    },
+    {
+      "ticketType": "LINEPAY04000000",
+      "trips": 16,
+      "group": "general"
+    },
+    {
+      "ticketType": "一卡通敬老卡",
+      "trips": 25,
+      "group": "concession"
+    },
+    {
+      "ticketType": "一般",
+      "trips": 161,
+      "group": "general"
+    },
+    {
+      "ticketType": "一般卡",
+      "trips": 160492,
+      "group": "general"
+    },
+    {
+      "ticketType": "中彰投苗(市民)",
+      "trips": 34417,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "中彰投苗(縣市民)",
+      "trips": 3526,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "中彰投苗(非市民)",
+      "trips": 33019,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "中彰投苗(非縣市民)",
+      "trips": 6871,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "優待票",
+      "trips": 168,
+      "group": "general"
+    },
+    {
+      "ticketType": "南投區",
+      "trips": 2,
+      "group": "other"
+    },
+    {
+      "ticketType": "南投縣內通勤",
+      "trips": 51,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "南投縣博愛卡",
+      "trips": 13961,
+      "group": "concession"
+    },
+    {
+      "ticketType": "南投縣境",
+      "trips": 260,
+      "group": "other"
+    },
+    {
+      "ticketType": "南投縣學生卡",
+      "trips": 2480,
+      "group": "student"
+    },
+    {
+      "ticketType": "南投縣愛心票",
+      "trips": 7441,
+      "group": "concession"
+    },
+    {
+      "ticketType": "南投縣敬老1票",
+      "trips": 56948,
+      "group": "concession"
+    },
+    {
+      "ticketType": "南投縣敬老卡",
+      "trips": 61002,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台中市一般卡",
+      "trips": 7012,
+      "group": "general"
+    },
+    {
+      "ticketType": "台中市博愛卡",
+      "trips": 5315,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台中市博愛陪伴卡",
+      "trips": 327,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台中市境(市民)",
+      "trips": 7,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "台中市境(非市民)",
+      "trips": 10,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "台中市學生卡",
+      "trips": 3666,
+      "group": "student"
+    },
+    {
+      "ticketType": "台中市敬老卡",
+      "trips": 32865,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台北市一般票",
+      "trips": 747618,
+      "group": "general"
+    },
+    {
+      "ticketType": "台北市優惠票",
+      "trips": 8074,
+      "group": "other"
+    },
+    {
+      "ticketType": "台北市學生卡",
+      "trips": 1952,
+      "group": "student"
+    },
+    {
+      "ticketType": "台北市學生票",
+      "trips": 73299,
+      "group": "student"
+    },
+    {
+      "ticketType": "台北市愛心票",
+      "trips": 2505,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台北市敬老1票",
+      "trips": 22681,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台北市敬老2票",
+      "trips": 2,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台北市陪伴票",
+      "trips": 830,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台南市博愛卡",
+      "trips": 327,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台南市博愛陪伴卡",
+      "trips": 141,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台南市學生卡",
+      "trips": 4496,
+      "group": "student"
+    },
+    {
+      "ticketType": "台南市學生票",
+      "trips": 1943,
+      "group": "student"
+    },
+    {
+      "ticketType": "台南市市民一般卡",
+      "trips": 876,
+      "group": "general"
+    },
+    {
+      "ticketType": "台南市敬老卡",
+      "trips": 2729,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台東縣一般票",
+      "trips": 5,
+      "group": "general"
+    },
+    {
+      "ticketType": "台東縣博愛卡",
+      "trips": 30,
+      "group": "concession"
+    },
+    {
+      "ticketType": "台東縣學生卡",
+      "trips": 134,
+      "group": "student"
+    },
+    {
+      "ticketType": "台東縣學生票",
+      "trips": 4,
+      "group": "student"
+    },
+    {
+      "ticketType": "台東縣敬老卡",
+      "trips": 255,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義市學生卡",
+      "trips": 40,
+      "group": "student"
+    },
+    {
+      "ticketType": "嘉義市學生票",
+      "trips": 5,
+      "group": "student"
+    },
+    {
+      "ticketType": "嘉義市愛心票",
+      "trips": 33,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義市敬老1票",
+      "trips": 749,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義市陪伴票",
+      "trips": 16,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義縣博愛卡",
+      "trips": 56,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義縣博愛陪伴卡",
+      "trips": 12,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義縣學生卡",
+      "trips": 31,
+      "group": "student"
+    },
+    {
+      "ticketType": "嘉義縣學生票",
+      "trips": 2318,
+      "group": "student"
+    },
+    {
+      "ticketType": "嘉義縣愛心票",
+      "trips": 28,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義縣敬老1票",
+      "trips": 90,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義縣敬老卡",
+      "trips": 696,
+      "group": "concession"
+    },
+    {
+      "ticketType": "嘉義縣陪伴票",
+      "trips": 6,
+      "group": "concession"
+    },
+    {
+      "ticketType": "基隆市一般票",
+      "trips": 21,
+      "group": "general"
+    },
+    {
+      "ticketType": "基隆市學生卡",
+      "trips": 134,
+      "group": "student"
+    },
+    {
+      "ticketType": "基隆市學生票",
+      "trips": 1,
+      "group": "student"
+    },
+    {
+      "ticketType": "基隆市愛心票",
+      "trips": 399,
+      "group": "concession"
+    },
+    {
+      "ticketType": "基隆市敬老1票",
+      "trips": 1296,
+      "group": "concession"
+    },
+    {
+      "ticketType": "基隆市陪伴票",
+      "trips": 62,
+      "group": "concession"
+    },
+    {
+      "ticketType": "學生卡",
+      "trips": 19797,
+      "group": "student"
+    },
+    {
+      "ticketType": "宜蘭縣一般卡",
+      "trips": 6,
+      "group": "general"
+    },
+    {
+      "ticketType": "宜蘭縣博愛卡",
+      "trips": 43,
+      "group": "concession"
+    },
+    {
+      "ticketType": "宜蘭縣博愛陪伴卡",
+      "trips": 12,
+      "group": "concession"
+    },
+    {
+      "ticketType": "宜蘭縣學生票",
+      "trips": 3,
+      "group": "student"
+    },
+    {
+      "ticketType": "宜蘭縣愛心票",
+      "trips": 29,
+      "group": "concession"
+    },
+    {
+      "ticketType": "宜蘭縣敬老1票",
+      "trips": 295,
+      "group": "concession"
+    },
+    {
+      "ticketType": "宜蘭縣敬老卡",
+      "trips": 312,
+      "group": "concession"
+    },
+    {
+      "ticketType": "宜蘭縣陪伴票",
+      "trips": 5,
+      "group": "concession"
+    },
+    {
+      "ticketType": "屏東縣一般卡",
+      "trips": 10,
+      "group": "general"
+    },
+    {
+      "ticketType": "屏東縣一般票",
+      "trips": 2,
+      "group": "general"
+    },
+    {
+      "ticketType": "屏東縣博愛卡",
+      "trips": 164,
+      "group": "concession"
+    },
+    {
+      "ticketType": "屏東縣博愛陪伴卡",
+      "trips": 48,
+      "group": "concession"
+    },
+    {
+      "ticketType": "屏東縣學生卡",
+      "trips": 879,
+      "group": "student"
+    },
+    {
+      "ticketType": "屏東縣學生票",
+      "trips": 391,
+      "group": "student"
+    },
+    {
+      "ticketType": "屏東縣敬老卡",
+      "trips": 1045,
+      "group": "concession"
+    },
+    {
+      "ticketType": "彰化縣博愛卡",
+      "trips": 842,
+      "group": "concession"
+    },
+    {
+      "ticketType": "彰化縣博愛陪伴卡",
+      "trips": 44,
+      "group": "concession"
+    },
+    {
+      "ticketType": "彰化縣學生卡",
+      "trips": 642,
+      "group": "student"
+    },
+    {
+      "ticketType": "彰化縣學生票",
+      "trips": 1929,
+      "group": "student"
+    },
+    {
+      "ticketType": "彰化縣愛心票",
+      "trips": 2397,
+      "group": "concession"
+    },
+    {
+      "ticketType": "彰化縣敬老1票",
+      "trips": 36408,
+      "group": "concession"
+    },
+    {
+      "ticketType": "彰化縣敬老卡",
+      "trips": 7441,
+      "group": "concession"
+    },
+    {
+      "ticketType": "彰化縣陪伴票",
+      "trips": 280,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新北市一般票",
+      "trips": 168,
+      "group": "general"
+    },
+    {
+      "ticketType": "新北市優惠票",
+      "trips": 1799,
+      "group": "other"
+    },
+    {
+      "ticketType": "新北市學生卡",
+      "trips": 283,
+      "group": "student"
+    },
+    {
+      "ticketType": "新北市學生票",
+      "trips": 838,
+      "group": "student"
+    },
+    {
+      "ticketType": "新北市愛心2票愛心票",
+      "trips": 20,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新北市愛心票",
+      "trips": 2526,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新北市敬老1票",
+      "trips": 21845,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新北市陪伴票",
+      "trips": 927,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新竹市一般票",
+      "trips": 205,
+      "group": "general"
+    },
+    {
+      "ticketType": "新竹市優惠票",
+      "trips": 42,
+      "group": "other"
+    },
+    {
+      "ticketType": "新竹市學生卡",
+      "trips": 1336,
+      "group": "student"
+    },
+    {
+      "ticketType": "新竹市學生票",
+      "trips": 17,
+      "group": "student"
+    },
+    {
+      "ticketType": "新竹市愛心票",
+      "trips": 143,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新竹市敬老1票",
+      "trips": 1292,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新竹市陪伴票",
+      "trips": 25,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新竹縣一般卡",
+      "trips": 14,
+      "group": "general"
+    },
+    {
+      "ticketType": "新竹縣學生卡",
+      "trips": 202,
+      "group": "student"
+    },
+    {
+      "ticketType": "新竹縣愛心票",
+      "trips": 150,
+      "group": "concession"
+    },
+    {
+      "ticketType": "新竹縣敬老1票",
+      "trips": 981,
+      "group": "concession"
+    },
+    {
+      "ticketType": "暨南大學一般卡",
+      "trips": 3184,
+      "group": "student"
+    },
+    {
+      "ticketType": "暨南大學學生卡",
+      "trips": 135406,
+      "group": "student"
+    },
+    {
+      "ticketType": "桃園市博愛卡",
+      "trips": 12,
+      "group": "concession"
+    },
+    {
+      "ticketType": "桃園市博愛陪伴卡",
+      "trips": 2,
+      "group": "concession"
+    },
+    {
+      "ticketType": "桃園市學生卡",
+      "trips": 282,
+      "group": "student"
+    },
+    {
+      "ticketType": "桃園市敬老卡",
+      "trips": 38,
+      "group": "concession"
+    },
+    {
+      "ticketType": "桃園縣一般票",
+      "trips": 4619,
+      "group": "general"
+    },
+    {
+      "ticketType": "桃園縣優惠票",
+      "trips": 467,
+      "group": "other"
+    },
+    {
+      "ticketType": "桃園縣學生票",
+      "trips": 2500,
+      "group": "student"
+    },
+    {
+      "ticketType": "桃園縣愛心票",
+      "trips": 1234,
+      "group": "concession"
+    },
+    {
+      "ticketType": "桃園縣敬老1票",
+      "trips": 6993,
+      "group": "concession"
+    },
+    {
+      "ticketType": "桃園縣陪伴票",
+      "trips": 294,
+      "group": "concession"
+    },
+    {
+      "ticketType": "澎湖縣博愛卡",
+      "trips": 8,
+      "group": "concession"
+    },
+    {
+      "ticketType": "澎湖縣博愛陪伴卡",
+      "trips": 2,
+      "group": "concession"
+    },
+    {
+      "ticketType": "澎湖縣學生卡",
+      "trips": 1,
+      "group": "student"
+    },
+    {
+      "ticketType": "澎湖縣敬老卡",
+      "trips": 194,
+      "group": "concession"
+    },
+    {
+      "ticketType": "聯合科大一般卡",
+      "trips": 4,
+      "group": "student"
+    },
+    {
+      "ticketType": "聯合科大學生卡",
+      "trips": 337,
+      "group": "student"
+    },
+    {
+      "ticketType": "臺中市一般票",
+      "trips": 60148,
+      "group": "general"
+    },
+    {
+      "ticketType": "臺中市區通勤(市民)",
+      "trips": 1,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "臺中市區通勤(非市民)",
+      "trips": 1,
+      "group": "tpass_commuter"
+    },
+    {
+      "ticketType": "臺中市學生票",
+      "trips": 2122,
+      "group": "student"
+    },
+    {
+      "ticketType": "臺中市愛心票",
+      "trips": 8643,
+      "group": "concession"
+    },
+    {
+      "ticketType": "臺中市敬老1票",
+      "trips": 82139,
+      "group": "concession"
+    },
+    {
+      "ticketType": "臺中市陪伴票",
+      "trips": 892,
+      "group": "concession"
+    },
+    {
+      "ticketType": "花蓮縣愛心票",
+      "trips": 125,
+      "group": "concession"
+    },
+    {
+      "ticketType": "花蓮縣敬老1票",
+      "trips": 435,
+      "group": "concession"
+    },
+    {
+      "ticketType": "花蓮縣陪伴票",
+      "trips": 10,
+      "group": "concession"
+    },
+    {
+      "ticketType": "苗栗縣博愛卡",
+      "trips": 18,
+      "group": "concession"
+    },
+    {
+      "ticketType": "苗栗縣學生卡",
+      "trips": 605,
+      "group": "student"
+    },
+    {
+      "ticketType": "苗栗縣愛心票",
+      "trips": 392,
+      "group": "concession"
+    },
+    {
+      "ticketType": "苗栗縣敬老1票",
+      "trips": 964,
+      "group": "concession"
+    },
+    {
+      "ticketType": "苗栗縣敬老卡",
+      "trips": 103,
+      "group": "concession"
+    },
+    {
+      "ticketType": "連江縣一般票",
+      "trips": 64,
+      "group": "general"
+    },
+    {
+      "ticketType": "連江縣優惠票",
+      "trips": 4,
+      "group": "other"
+    },
+    {
+      "ticketType": "連江縣學生票",
+      "trips": 13,
+      "group": "student"
+    },
+    {
+      "ticketType": "連江縣愛心票",
+      "trips": 2,
+      "group": "concession"
+    },
+    {
+      "ticketType": "連江縣敬老1票",
+      "trips": 21,
+      "group": "concession"
+    },
+    {
+      "ticketType": "連江縣陪伴票",
+      "trips": 2,
+      "group": "concession"
+    },
+    {
+      "ticketType": "金門縣一般票",
+      "trips": 271,
+      "group": "general"
+    },
+    {
+      "ticketType": "金門縣優惠票",
+      "trips": 26,
+      "group": "other"
+    },
+    {
+      "ticketType": "金門縣學生票",
+      "trips": 113,
+      "group": "student"
+    },
+    {
+      "ticketType": "金門縣愛心票",
+      "trips": 92,
+      "group": "concession"
+    },
+    {
+      "ticketType": "金門縣敬老1票",
+      "trips": 405,
+      "group": "concession"
+    },
+    {
+      "ticketType": "金門縣陪伴票",
+      "trips": 4,
+      "group": "concession"
+    },
+    {
+      "ticketType": "雲林縣優惠票",
+      "trips": 31,
+      "group": "other"
+    },
+    {
+      "ticketType": "雲林縣學生卡",
+      "trips": 940,
+      "group": "student"
+    },
+    {
+      "ticketType": "雲林縣愛心票",
+      "trips": 326,
+      "group": "concession"
+    },
+    {
+      "ticketType": "雲林縣敬老1票",
+      "trips": 1016,
+      "group": "concession"
+    },
+    {
+      "ticketType": "雲林縣陪伴票",
+      "trips": 116,
+      "group": "concession"
+    },
+    {
+      "ticketType": "高雄市仁愛卡",
+      "trips": 4,
+      "group": "concession"
+    },
+    {
+      "ticketType": "高雄市博愛卡",
+      "trips": 1235,
+      "group": "concession"
+    },
+    {
+      "ticketType": "高雄市博愛陪伴卡",
+      "trips": 342,
+      "group": "concession"
+    },
+    {
+      "ticketType": "高雄市學生卡",
+      "trips": 8141,
+      "group": "student"
+    },
+    {
+      "ticketType": "高雄市敬老卡",
+      "trips": 10276,
+      "group": "concession"
+    },
+    {
+      "ticketType": "高雄渡輪一般卡",
+      "trips": 39,
+      "group": "general"
+    }
+  ],
+  "generatedAt": "2026-11-04T07:16:10.933Z",
+  "totalTrips": 1800910,
+  "distinctOdPairs": 206,
+  "top8PairsTripSum": 1387088,
+  "top8PairsTripShare": 0.7702,
+  "clustersSummary": [
+    {
+      "id": 1,
+      "archetype": "regional_commute",
+      "label": "臺中端至埔里走廊",
+      "odCount": 4,
+      "trips": 884732,
+      "share": 0.4913,
+      "avgDurationMin": 62.1,
+      "weekendRatio": 0.3339,
+      "amPeakRatio": 0.2301,
+      "pmPeakRatio": 0.3053,
+      "studentRatio": 0.1873,
+      "concessionRatio": 0.2216
+    },
+    {
+      "id": 2,
+      "archetype": "tourism_intercity",
+      "label": "臺中端至日月潭／九族走廊",
+      "odCount": 8,
+      "trips": 533028,
+      "share": 0.296,
+      "avgDurationMin": 99.8,
+      "weekendRatio": 0.3284,
+      "amPeakRatio": 0.2984,
+      "pmPeakRatio": 0.1977,
+      "studentRatio": 0.0461,
+      "concessionRatio": 0.2094
+    },
+    {
+      "id": 3,
+      "archetype": "campus_student",
+      "label": "校名站點或學生票占比組",
+      "odCount": 67,
+      "trips": 157727,
+      "share": 0.0876,
+      "avgDurationMin": 47.5,
+      "weekendRatio": 0.2762,
+      "amPeakRatio": 0.2451,
+      "pmPeakRatio": 0.2519,
+      "studentRatio": 0.3583,
+      "concessionRatio": 0.1854
+    },
+    {
+      "id": 4,
+      "archetype": "local_shuttle",
+      "label": "平均時長不逾50分鐘且千筆以上組",
+      "odCount": 24,
+      "trips": 129267,
+      "share": 0.0718,
+      "avgDurationMin": 27,
+      "weekendRatio": 0.295,
+      "amPeakRatio": 0.1909,
+      "pmPeakRatio": 0.2723,
+      "studentRatio": 0.108,
+      "concessionRatio": 0.2711
+    },
+    {
+      "id": 5,
+      "archetype": "intermediate_minor",
+      "label": "其餘 OD 組",
+      "odCount": 87,
+      "trips": 89875,
+      "share": 0.0499,
+      "avgDurationMin": 80.7,
+      "weekendRatio": 0.3162,
+      "amPeakRatio": 0.2614,
+      "pmPeakRatio": 0.1879,
+      "studentRatio": 0.1005,
+      "concessionRatio": 0.3433
+    },
+    {
+      "id": 6,
+      "archetype": "abnormal_tap",
+      "label": "同站 OD 待查組",
+      "odCount": 16,
+      "trips": 6281,
+      "share": 0.0035,
+      "avgDurationMin": 31.4,
+      "weekendRatio": 0.3122,
+      "amPeakRatio": 0.2399,
+      "pmPeakRatio": 0.2436,
+      "studentRatio": 0.1108,
+      "concessionRatio": 0.2597
+    }
+  ]
+}

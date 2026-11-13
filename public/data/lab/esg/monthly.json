@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 2,
+  "months": [
+    {
+      "month": "2024-01",
+      "totalTrips": 70446,
+      "coveredTrips": 70446,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3724054.1669999994,
+      "totalPassengerKm": 3724054.1669999994,
+      "groups": {
+        "bothSpecifiedEndpoints": 23601,
+        "outsideSpecifiedEndpointSet": 46845,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1424965.8699999999,
+        "outsideSpecifiedEndpointSet": 2299088.297000001,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-02",
+      "totalTrips": 72573,
+      "coveredTrips": 72573,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3842808.6249999977,
+      "totalPassengerKm": 3842808.6249999977,
+      "groups": {
+        "bothSpecifiedEndpoints": 22068,
+        "outsideSpecifiedEndpointSet": 50505,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1343028.832,
+        "outsideSpecifiedEndpointSet": 2499779.7929999977,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-03",
+      "totalTrips": 77812,
+      "coveredTrips": 77812,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4143364.657999999,
+      "totalPassengerKm": 4143364.657999999,
+      "groups": {
+        "bothSpecifiedEndpoints": 23621,
+        "outsideSpecifiedEndpointSet": 54191,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1440718.9379999996,
+        "outsideSpecifiedEndpointSet": 2702645.7199999993,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-04",
+      "totalTrips": 72384,
+      "coveredTrips": 72384,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3835849.6580000008,
+      "totalPassengerKm": 3835849.6580000008,
+      "groups": {
+        "bothSpecifiedEndpoints": 22310,
+        "outsideSpecifiedEndpointSet": 50074,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1352355.0059999998,
+        "outsideSpecifiedEndpointSet": 2483494.6519999993,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-05",
+      "totalTrips": 71805,
+      "coveredTrips": 71805,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3799193.518999999,
+      "totalPassengerKm": 3799193.518999999,
+      "groups": {
+        "bothSpecifiedEndpoints": 20728,
+        "outsideSpecifiedEndpointSet": 51077,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1257313.3219999992,
+        "outsideSpecifiedEndpointSet": 2541880.1969999997,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-06",
+      "totalTrips": 69429,
+      "coveredTrips": 69429,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3664944.3149999985,
+      "totalPassengerKm": 3664944.3149999985,
+      "groups": {
+        "bothSpecifiedEndpoints": 19703,
+        "outsideSpecifiedEndpointSet": 49726,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1196447.4120000002,
+        "outsideSpecifiedEndpointSet": 2468496.902999999,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-07",
+      "totalTrips": 60797,
+      "coveredTrips": 60797,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3195302.5880000005,
+      "totalPassengerKm": 3195302.5880000005,
+      "groups": {
+        "bothSpecifiedEndpoints": 17010,
+        "outsideSpecifiedEndpointSet": 43787,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1031299.8880000003,
+        "outsideSpecifiedEndpointSet": 2164002.7000000007,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-08",
+      "totalTrips": 70586,
+      "coveredTrips": 70586,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3649515.219999999,
+      "totalPassengerKm": 3649515.219999999,
+      "groups": {
+        "bothSpecifiedEndpoints": 19018,
+        "outsideSpecifiedEndpointSet": 51568,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1154662.006,
+        "outsideSpecifiedEndpointSet": 2494853.2139999983,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-09",
+      "totalTrips": 71236,
+      "coveredTrips": 71236,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3732630.460999998,
+      "totalPassengerKm": 3732630.460999998,
+      "groups": {
+        "bothSpecifiedEndpoints": 18104,
+        "outsideSpecifiedEndpointSet": 53132,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1093035.852,
+        "outsideSpecifiedEndpointSet": 2639594.6089999974,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-10",
+      "totalTrips": 72753,
+      "coveredTrips": 72753,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3866622.7079999973,
+      "totalPassengerKm": 3866622.7079999973,
+      "groups": {
+        "bothSpecifiedEndpoints": 22990,
+        "outsideSpecifiedEndpointSet": 49763,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1401405.4160000002,
+        "outsideSpecifiedEndpointSet": 2465217.2919999985,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-11",
+      "totalTrips": 79976,
+      "coveredTrips": 79976,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4242442.3089999985,
+      "totalPassengerKm": 4242442.3089999985,
+      "groups": {
+        "bothSpecifiedEndpoints": 25521,
+        "outsideSpecifiedEndpointSet": 54455,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1546255.1160000004,
+        "outsideSpecifiedEndpointSet": 2696187.192999997,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2024-12",
+      "totalTrips": 85352,
+      "coveredTrips": 85352,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4559105.432999999,
+      "totalPassengerKm": 4559105.432999999,
+      "groups": {
+        "bothSpecifiedEndpoints": 30293,
+        "outsideSpecifiedEndpointSet": 55059,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1843650.6619999998,
+        "outsideSpecifiedEndpointSet": 2715454.7709999997,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-01",
+      "totalTrips": 73411,
+      "coveredTrips": 73411,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3885684.4909999976,
+      "totalPassengerKm": 3885684.4909999976,
+      "groups": {
+        "bothSpecifiedEndpoints": 25488,
+        "outsideSpecifiedEndpointSet": 47923,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1541531.6739999996,
+        "outsideSpecifiedEndpointSet": 2344152.8169999984,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-02",
+      "totalTrips": 73148,
+      "coveredTrips": 73148,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3861748.2269999986,
+      "totalPassengerKm": 3861748.2269999986,
+      "groups": {
+        "bothSpecifiedEndpoints": 22858,
+        "outsideSpecifiedEndpointSet": 50290,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1378067.3400000003,
+        "outsideSpecifiedEndpointSet": 2483680.8869999996,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-03",
+      "totalTrips": 83111,
+      "coveredTrips": 83111,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4410492.340000003,
+      "totalPassengerKm": 4410492.340000003,
+      "groups": {
+        "bothSpecifiedEndpoints": 26341,
+        "outsideSpecifiedEndpointSet": 56770,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1577047.2419999999,
+        "outsideSpecifiedEndpointSet": 2833445.0979999993,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-04",
+      "totalTrips": 82069,
+      "coveredTrips": 82069,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4363892.861,
+      "totalPassengerKm": 4363892.861,
+      "groups": {
+        "bothSpecifiedEndpoints": 27626,
+        "outsideSpecifiedEndpointSet": 54443,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1663206.0680000004,
+        "outsideSpecifiedEndpointSet": 2700686.792999997,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-05",
+      "totalTrips": 81945,
+      "coveredTrips": 81945,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4357450.873999999,
+      "totalPassengerKm": 4357450.873999999,
+      "groups": {
+        "bothSpecifiedEndpoints": 25874,
+        "outsideSpecifiedEndpointSet": 56071,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1546041.2999999996,
+        "outsideSpecifiedEndpointSet": 2811409.574,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-06",
+      "totalTrips": 70860,
+      "coveredTrips": 70860,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3756261.7309999997,
+      "totalPassengerKm": 3756261.7309999997,
+      "groups": {
+        "bothSpecifiedEndpoints": 22092,
+        "outsideSpecifiedEndpointSet": 48768,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1323890.0599999998,
+        "outsideSpecifiedEndpointSet": 2432371.670999998,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-07",
+      "totalTrips": 64724,
+      "coveredTrips": 64724,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3389496.4869999983,
+      "totalPassengerKm": 3389496.4869999983,
+      "groups": {
+        "bothSpecifiedEndpoints": 18003,
+        "outsideSpecifiedEndpointSet": 46721,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1068847.6020000002,
+        "outsideSpecifiedEndpointSet": 2320648.8849999993,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-08",
+      "totalTrips": 72088,
+      "coveredTrips": 72088,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3774037.2480000006,
+      "totalPassengerKm": 3774037.2480000006,
+      "groups": {
+        "bothSpecifiedEndpoints": 21081,
+        "outsideSpecifiedEndpointSet": 51007,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1256945.218,
+        "outsideSpecifiedEndpointSet": 2517092.0300000003,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-09",
+      "totalTrips": 72816,
+      "coveredTrips": 72816,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 3805663.685000001,
+      "totalPassengerKm": 3805663.685000001,
+      "groups": {
+        "bothSpecifiedEndpoints": 19963,
+        "outsideSpecifiedEndpointSet": 52853,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1186539.4139999999,
+        "outsideSpecifiedEndpointSet": 2619124.2710000016,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-10",
+      "totalTrips": 87972,
+      "coveredTrips": 87972,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4669405.846,
+      "totalPassengerKm": 4669405.846,
+      "groups": {
+        "bothSpecifiedEndpoints": 28875,
+        "outsideSpecifiedEndpointSet": 59097,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1729056.146,
+        "outsideSpecifiedEndpointSet": 2940349.700000001,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-11",
+      "totalTrips": 79940,
+      "coveredTrips": 79940,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4210635.445,
+      "totalPassengerKm": 4210635.445,
+      "groups": {
+        "bothSpecifiedEndpoints": 26735,
+        "outsideSpecifiedEndpointSet": 53205,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1584285.59,
+        "outsideSpecifiedEndpointSet": 2626349.854999999,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    },
+    {
+      "month": "2025-12",
+      "totalTrips": 83677,
+      "coveredTrips": 83677,
+      "unknownDistanceTrips": 0,
+      "knownDistancePkm": 4417248.3599999985,
+      "totalPassengerKm": 4417248.3599999985,
+      "groups": {
+        "bothSpecifiedEndpoints": 29710,
+        "outsideSpecifiedEndpointSet": 53967,
+        "unknownStop": 0
+      },
+      "knownDistancePkmByGroup": {
+        "bothSpecifiedEndpoints": 1757378.6939999997,
+        "outsideSpecifiedEndpointSet": 2659869.6659999997,
+        "unknownStop": 0
+      },
+      "operationalKgCo2e": null,
+      "scenarioDifferenceKgCo2e": null,
+      "reason": "無月度車公里或能源資料，不分攤全期展示假設"
+    }
+  ]
+}

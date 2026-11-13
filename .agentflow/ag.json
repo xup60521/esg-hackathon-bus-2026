@@ -16,7 +16,7 @@
     "plan-order": "external",
     "review-order": "external",
     "saving-mode": "off",
-    "use-lang": "en-us",
+    "use-lang": "zh-tw",
     "notebook-name": "esg-hackathon-bus-2026.devlog.md"
   },
   "pipeline-roles": {
@@ -27,7 +27,7 @@
     "spec": "better",
     "implementation": "basic",
     "security-scan": "best",
-    "//": "review \u4e5f\u662f\u7528 acceptance \u8a2d\u5b9a",
+    "//": "review 也是用 acceptance 設定",
     "acceptance": "better",
     "learn": "basic",
     "threeways": "better",

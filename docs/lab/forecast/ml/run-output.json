@@ -1,0 +1,173 @@
+{
+  "selectedModel": "residual_absolute",
+  "validationCandidateMetrics": {
+    "raw_squared": {
+      "n": 96,
+      "mae": 219.8878228426715,
+      "rmse": 293.27541509318695,
+      "wape": 0.08989039442027512,
+      "bias": -56.56312693557302,
+      "peakN": 16,
+      "peakUnderforecastShare": 0.13141195460053837
+    },
+    "raw_absolute": {
+      "n": 96,
+      "mae": 239.19418530163512,
+      "rmse": 317.1725538639768,
+      "wape": 0.09778285755816675,
+      "bias": -104.22435076625882,
+      "peakN": 16,
+      "peakUnderforecastShare": 0.1584051417864907
+    },
+    "residual_squared": {
+      "n": 96,
+      "mae": 205.25212830936846,
+      "rmse": 283.8433649003047,
+      "wape": 0.08390730569255331,
+      "bias": -36.72382735878002,
+      "peakN": 16,
+      "peakUnderforecastShare": 0.08969170091652595
+    },
+    "residual_absolute": {
+      "n": 96,
+      "mae": 204.77104307686304,
+      "rmse": 285.0491980786767,
+      "wape": 0.08371063749719525,
+      "bias": -51.261019901082655,
+      "peakN": 16,
+      "peakUnderforecastShare": 0.09951612847462757
+    }
+  },
+  "test": {
+    "calendarDays": 365,
+    "observedDays": 364,
+    "commonDays": 336,
+    "metrics": {
+      "seasonal7": {
+        "n": 336,
+        "mae": 352.33035714285717,
+        "rmse": 481.9542651439825,
+        "wape": 0.13633646775651692,
+        "bias": -10.413690476190476,
+        "peakN": 55,
+        "peakUnderforecastShare": 0.10492767835253738
+      },
+      "weekday_mean4": {
+        "n": 336,
+        "mae": 298.84002976190476,
+        "rmse": 407.53535875846757,
+        "wape": 0.1156380461007814,
+        "bias": -18.091517857142858,
+        "peakN": 55,
+        "peakUnderforecastShare": 0.12606190775658996
+      },
+      "weekday_median4": {
+        "n": 336,
+        "mae": 291.5327380952381,
+        "rmse": 402.82229406431577,
+        "wape": 0.11281044321473198,
+        "bias": -22.470238095238095,
+        "peakN": 55,
+        "peakUnderforecastShare": 0.12754351556754107
+      },
+      "mean28": {
+        "n": 336,
+        "mae": 418.04793792517006,
+        "rmse": 513.0766927209122,
+        "wape": 0.1617663027160157,
+        "bias": -14.416347789115642,
+        "peakN": 55,
+        "peakUnderforecastShare": 0.22542975001484655
+      },
+      "residual_absolute": {
+        "n": 336,
+        "mae": 276.5485431504603,
+        "rmse": 379.5762138938815,
+        "wape": 0.10701221388384935,
+        "bias": -10.541618971650832,
+        "peakN": 55,
+        "peakUnderforecastShare": 0.11821493964218677
+      }
+    },
+    "availability": {
+      "seasonal7": {
+        "predictedCalendarDays": 364,
+        "evaluatedObservedDays": 363,
+        "observedDayCoverage": 0.9972527472527473,
+        "individualSupportMetrics": {
+          "n": 363,
+          "mae": 351.44077134986225,
+          "rmse": 477.83124895651065,
+          "wape": 0.13814361096763225,
+          "bias": 3.5068870523415976,
+          "peakN": 55,
+          "peakUnderforecastShare": 0.10492767835253738
+        }
+      },
+      "weekday_mean4": {
+        "predictedCalendarDays": 361,
+        "evaluatedObservedDays": 360,
+        "observedDayCoverage": 0.989010989010989,
+        "individualSupportMetrics": {
+          "n": 360,
+          "mae": 299.93125,
+          "rmse": 406.04228856631016,
+          "wape": 0.11767701371905366,
+          "bias": 0.18958333333333333,
+          "peakN": 55,
+          "peakUnderforecastShare": 0.12606190775658996
+        }
+      },
+      "weekday_median4": {
+        "predictedCalendarDays": 361,
+        "evaluatedObservedDays": 360,
+        "observedDayCoverage": 0.989010989010989,
+        "individualSupportMetrics": {
+          "n": 360,
+          "mae": 293.7388888888889,
+          "rmse": 402.98567489014624,
+          "wape": 0.11524746173530553,
+          "bias": -0.6388888888888888,
+          "peakN": 55,
+          "peakUnderforecastShare": 0.12754351556754107
+        }
+      },
+      "mean28": {
+        "predictedCalendarDays": 337,
+        "evaluatedObservedDays": 336,
+        "observedDayCoverage": 0.9230769230769231,
+        "individualSupportMetrics": {
+          "n": 336,
+          "mae": 418.04793792517006,
+          "rmse": 513.0766927209122,
+          "wape": 0.1617663027160157,
+          "bias": -14.416347789115642,
+          "peakN": 55,
+          "peakUnderforecastShare": 0.22542975001484655
+        }
+      },
+      "residual_absolute": {
+        "predictedCalendarDays": 337,
+        "evaluatedObservedDays": 336,
+        "observedDayCoverage": 0.9230769230769231,
+        "individualSupportMetrics": {
+          "n": 336,
+          "mae": 276.5485431504603,
+          "rmse": 379.5762138938815,
+          "wape": 0.10701221388384935,
+          "bias": -10.541618971650832,
+          "peakN": 55,
+          "peakUnderforecastShare": 0.11821493964218677
+        }
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "scikit-learn": "1.7.2",
+    "numpy": "2.3.4",
+    "scipy": "1.16.3",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

@@ -1,0 +1,3942 @@
+{
+  "schemaVersion": 2,
+  "description": "全部 OD 支線聚合與路網近似距離；不稱走廊避免排放",
+  "od": [
+    {
+      "boardStop": "埔里站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 200779,
+      "distanceKm": 54.626,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 183759,
+      "distanceKm": 54.626,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "埔里站",
+      "subroute": "6670H",
+      "tripCount": 113782,
+      "distanceKm": 54.626,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670H",
+      "tripCount": 112941,
+      "distanceKm": 54.626,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 79122,
+      "distanceKm": 54.108,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 56659,
+      "distanceKm": 54.108,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 54670,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "埔里站",
+      "subroute": "6670H",
+      "tripCount": 39615,
+      "distanceKm": 54.108,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 39592,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 37416,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 36439,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 35717,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 33779,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 33474,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "臺中",
+      "subroute": "6670H",
+      "tripCount": 30886,
+      "distanceKm": 54.108,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 30776,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 28933,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 27740,
+      "distanceKm": 54.626,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 26787,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 25687,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 25687,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 25322,
+      "distanceKm": 54.626,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 23904,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 23116,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 22164,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 20314,
+      "distanceKm": 63.582,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 19975,
+      "distanceKm": 50.067,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 14882,
+      "distanceKm": 18.276,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 13135,
+      "distanceKm": 18.276,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "崎下",
+      "subroute": "6670H",
+      "tripCount": 12878,
+      "distanceKm": 50.067,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 11698,
+      "distanceKm": 51.596,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 10591,
+      "distanceKm": 61.928,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 10330,
+      "distanceKm": 12.972,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 10031,
+      "distanceKm": 51.596,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 8671,
+      "distanceKm": 12.972,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 8561,
+      "distanceKm": 67.338,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 8174,
+      "distanceKm": 62.446,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 8173,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 8014,
+      "distanceKm": 51.596,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 7963,
+      "distanceKm": 49.549,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 7905,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 7343,
+      "distanceKm": 50.067,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 7160,
+      "distanceKm": 54.108,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 6967,
+      "distanceKm": 54.108,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 6171,
+      "distanceKm": 61.928,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 5886,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 5850,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 5736,
+      "distanceKm": 62.446,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 5717,
+      "distanceKm": 12.891,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 5341,
+      "distanceKm": 51.596,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 5275,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 4999,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 4992,
+      "distanceKm": 18.276,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 4576,
+      "distanceKm": 2.382,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 4560,
+      "distanceKm": 12.891,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 4475,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670H",
+      "tripCount": 4314,
+      "distanceKm": 50.067,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 4303,
+      "distanceKm": 2.382,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "崎下",
+      "subroute": "6670H",
+      "tripCount": 4224,
+      "distanceKm": 49.549,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670H",
+      "tripCount": 4210,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "崎下",
+      "subroute": "6670H",
+      "tripCount": 3887,
+      "distanceKm": 2.382,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "埔里站",
+      "subroute": "6670H",
+      "tripCount": 3829,
+      "distanceKm": 2.382,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 3807,
+      "distanceKm": 51.077,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 3622,
+      "distanceKm": 18.276,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 3592,
+      "distanceKm": 49.549,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 3540,
+      "distanceKm": 3.238,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 3534,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 3503,
+      "distanceKm": 66.82,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 3394,
+      "distanceKm": 50.067,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 3314,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 3088,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 2971,
+      "distanceKm": 66.82,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 2644,
+      "distanceKm": 15.521,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 2632,
+      "distanceKm": 67.338,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 2487,
+      "distanceKm": 10.561,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 2365,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 2230,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 2196,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 2064,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 2032,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 1988,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "臺中",
+      "subroute": "6670H",
+      "tripCount": 1954,
+      "distanceKm": 49.549,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 1869,
+      "distanceKm": 64.1,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 1807,
+      "distanceKm": 51.077,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 1746,
+      "distanceKm": 7.132,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 1706,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 1674,
+      "distanceKm": 15.521,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 1666,
+      "distanceKm": 51.077,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 1618,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 1578,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 1564,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 1528,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 1525,
+      "distanceKm": 10.561,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 1510,
+      "distanceKm": 14.124,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "臺中",
+      "subroute": "6670H",
+      "tripCount": 1474,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 1287,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 1282,
+      "distanceKm": 2.382,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 1278,
+      "distanceKm": 9.682,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 1277,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 1245,
+      "distanceKm": 7.132,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 1196,
+      "distanceKm": 12.972,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 1187,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 1177,
+      "distanceKm": 9.682,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 1171,
+      "distanceKm": 9.464,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 1154,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 1090,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 1080,
+      "distanceKm": 49.549,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 1050,
+      "distanceKm": 51.709,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 979,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 970,
+      "distanceKm": 49.26,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 947,
+      "distanceKm": 3.238,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 938,
+      "distanceKm": 51.077,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 911,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 874,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 871,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 858,
+      "distanceKm": 12.504,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 853,
+      "distanceKm": 6.514,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 853,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 815,
+      "distanceKm": 50.067,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 798,
+      "distanceKm": 2.382,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 797,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 788,
+      "distanceKm": 5.296,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 763,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 760,
+      "distanceKm": 14.124,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 740,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 734,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 732,
+      "distanceKm": 5.296,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 731,
+      "distanceKm": 13.868,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 731,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "埔里站",
+      "subroute": "6670D",
+      "tripCount": 698,
+      "distanceKm": 6.514,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 667,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 662,
+      "distanceKm": 6.514,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 660,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 635,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 633,
+      "distanceKm": 21.598,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 606,
+      "distanceKm": 7.544,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 592,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 589,
+      "distanceKm": 14.84,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 586,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 577,
+      "distanceKm": 12.504,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 566,
+      "distanceKm": 51.596,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 565,
+      "distanceKm": 9.682,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670D",
+      "tripCount": 564,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 560,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 529,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 523,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 517,
+      "distanceKm": 51.709,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 504,
+      "distanceKm": 51.596,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 503,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 485,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 483,
+      "distanceKm": 6.514,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 482,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 474,
+      "distanceKm": 65.136,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 461,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 456,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 450,
+      "distanceKm": 49.26,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 448,
+      "distanceKm": 12.504,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 443,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 438,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 431,
+      "distanceKm": 15.521,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 428,
+      "distanceKm": 5.296,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 428,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 421,
+      "distanceKm": 14.84,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 420,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 420,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 416,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 407,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 405,
+      "distanceKm": 64.618,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670H",
+      "tripCount": 402,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 383,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 381,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 380,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 378,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 377,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 367,
+      "distanceKm": 49.549,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 351,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 350,
+      "distanceKm": 5.296,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 347,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 347,
+      "distanceKm": 87.568,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 344,
+      "distanceKm": 15.521,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 344,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 344,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 338,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 332,
+      "distanceKm": 12.504,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 325,
+      "distanceKm": 51.191,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 325,
+      "distanceKm": 49.26,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 313,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 308,
+      "distanceKm": 6.351,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 306,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 302,
+      "distanceKm": 49.26,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 298,
+      "distanceKm": 58.621,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 295,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 287,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "臺中",
+      "subroute": "6670D",
+      "tripCount": 279,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 279,
+      "distanceKm": 59.14,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 274,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "埔里站",
+      "subroute": "6670H",
+      "tripCount": 272,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 271,
+      "distanceKm": 51.709,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 270,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 268,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 268,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 267,
+      "distanceKm": 65.136,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 265,
+      "distanceKm": 13.868,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670B",
+      "tripCount": 260,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 257,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "崎下",
+      "subroute": "6670H",
+      "tripCount": 256,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 253,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 251,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 249,
+      "distanceKm": 14.124,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 244,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 238,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 228,
+      "distanceKm": 48.742,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 226,
+      "distanceKm": 14.84,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 221,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 220,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 220,
+      "distanceKm": 51.191,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 218,
+      "distanceKm": 7.544,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 217,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 216,
+      "distanceKm": 14.84,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 211,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 211,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 209,
+      "distanceKm": 48.742,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 209,
+      "distanceKm": 1.331,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 205,
+      "distanceKm": 3.522,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 201,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 197,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 195,
+      "distanceKm": 6.351,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 194,
+      "distanceKm": 2.202,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 191,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 191,
+      "distanceKm": 7.544,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 184,
+      "distanceKm": 48.742,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 183,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 180,
+      "distanceKm": 15.742,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 178,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 177,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 176,
+      "distanceKm": 11.37,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 175,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 175,
+      "distanceKm": 64.618,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 171,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月潭",
+      "subroute": "6670B",
+      "tripCount": 169,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 167,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 167,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 166,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 165,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 165,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 164,
+      "distanceKm": 21.598,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 163,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 159,
+      "distanceKm": 18.078,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 159,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 158,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 155,
+      "distanceKm": 48.742,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 155,
+      "distanceKm": 9.88,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 152,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 150,
+      "distanceKm": 10.561,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 147,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "埔里站",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 143,
+      "distanceKm": 12.972,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670A",
+      "tripCount": 143,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "臺中",
+      "subroute": "6670H",
+      "tripCount": 142,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 140,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 139,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 139,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 136,
+      "distanceKm": 9.682,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 136,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 135,
+      "distanceKm": 87.568,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 132,
+      "distanceKm": 15.742,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 127,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 124,
+      "distanceKm": 11.37,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "臺中",
+      "subroute": "6670B",
+      "tripCount": 119,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 116,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 115,
+      "distanceKm": 7.544,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 114,
+      "distanceKm": 1.036,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 113,
+      "distanceKm": 3.522,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670F",
+      "tripCount": 113,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 113,
+      "distanceKm": 1.036,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 112,
+      "distanceKm": 7.517,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 112,
+      "distanceKm": 59.43,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 109,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 107,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 105,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 103,
+      "distanceKm": 51.709,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 97,
+      "distanceKm": 9.88,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 96,
+      "distanceKm": 2.336,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 95,
+      "distanceKm": 8.542,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 93,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 90,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 90,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 88,
+      "distanceKm": 7.544,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 87,
+      "distanceKm": 52.409,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "臺中",
+      "subroute": "6670F",
+      "tripCount": 87,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "埔里站",
+      "subroute": "6670A",
+      "tripCount": 85,
+      "distanceKm": 14.124,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 83,
+      "distanceKm": 4.349,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 80,
+      "distanceKm": 2.336,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 79,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 79,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 78,
+      "distanceKm": 9.519,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月潭",
+      "subroute": "6670F",
+      "tripCount": 77,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 76,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 75,
+      "distanceKm": 51.191,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 74,
+      "distanceKm": 7.517,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 74,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 73,
+      "distanceKm": 4.349,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670E",
+      "tripCount": 72,
+      "distanceKm": 49.26,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 70,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "臺中",
+      "subroute": "6670A",
+      "tripCount": 67,
+      "distanceKm": 55.577,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "臺中",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 67,
+      "distanceKm": 51.191,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 67,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 65,
+      "distanceKm": 2.336,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 62,
+      "distanceKm": 7.517,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 61,
+      "distanceKm": 11.243,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 61,
+      "distanceKm": 1.331,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 60,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 60,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 58,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 58,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 57,
+      "distanceKm": 82.608,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 55,
+      "distanceKm": 9.88,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 53,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 53,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 53,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 48,
+      "distanceKm": 3.131,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 46,
+      "distanceKm": 2.336,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "崎下",
+      "subroute": "6670D",
+      "tripCount": 43,
+      "distanceKm": 3.131,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 43,
+      "distanceKm": 82.608,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "日月潭",
+      "subroute": "6670D",
+      "tripCount": 42,
+      "distanceKm": 12.402,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 40,
+      "distanceKm": 12.402,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 39,
+      "distanceKm": 4.349,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 38,
+      "distanceKm": 6.34,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 37,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 37,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670E",
+      "tripCount": 36,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 35,
+      "distanceKm": 1.331,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 35,
+      "distanceKm": 4.349,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 35,
+      "distanceKm": 49.26,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "桃米坑",
+      "subroute": "6670E",
+      "tripCount": 35,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 34,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 34,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 33,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 33,
+      "distanceKm": 3.667,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 33,
+      "distanceKm": 8.542,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 33,
+      "distanceKm": 12.504,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670E",
+      "tripCount": 33,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 32,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 31,
+      "distanceKm": 3.853,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 31,
+      "distanceKm": 7.442,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 30,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 30,
+      "distanceKm": 59.948,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "高鐵臺中站",
+      "alightStop": "大雁",
+      "subroute": "6670E",
+      "tripCount": 30,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 29,
+      "distanceKm": 11.243,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 27,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 27,
+      "distanceKm": 9.519,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 26,
+      "distanceKm": 1.229,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 26,
+      "distanceKm": 75.064,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 25,
+      "distanceKm": 2.202,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 25,
+      "distanceKm": 3.667,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 24,
+      "distanceKm": 8.353,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 24,
+      "distanceKm": 7.517,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 23,
+      "distanceKm": 8.353,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 23,
+      "distanceKm": 1.331,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 23,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 22,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 22,
+      "distanceKm": 7.39,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 21,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 21,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 21,
+      "distanceKm": 6.835,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 21,
+      "distanceKm": 56.095,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 21,
+      "distanceKm": 5.304,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 20,
+      "distanceKm": 10.561,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 20,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 20,
+      "distanceKm": 4.5,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 20,
+      "distanceKm": 3.667,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 20,
+      "distanceKm": 4.5,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 20,
+      "distanceKm": 4.674,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 19,
+      "distanceKm": 7.39,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 19,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 19,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 18,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "魚池",
+      "subroute": "6670B",
+      "tripCount": 18,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670E",
+      "tripCount": 18,
+      "distanceKm": 9.88,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 17,
+      "distanceKm": 3.667,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 17,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 17,
+      "distanceKm": 4.151,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670E",
+      "tripCount": 17,
+      "distanceKm": 72.729,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 16,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 16,
+      "distanceKm": 6.34,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670D",
+      "tripCount": 16,
+      "distanceKm": 3.853,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 16,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 16,
+      "distanceKm": 11.37,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "日月潭",
+      "subroute": "6670A",
+      "tripCount": 16,
+      "distanceKm": 12.402,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670E",
+      "tripCount": 16,
+      "distanceKm": 2.336,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 15,
+      "distanceKm": 10.688,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 15,
+      "distanceKm": 12.402,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 14,
+      "distanceKm": 3.853,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 14,
+      "distanceKm": 14.84,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "崎下",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 13,
+      "distanceKm": 3.131,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 13,
+      "distanceKm": 14.411,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 13,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 13,
+      "distanceKm": 4.5,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 13,
+      "distanceKm": 12.504,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 12,
+      "distanceKm": 1.229,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670E",
+      "tripCount": 12,
+      "distanceKm": 14.84,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 12,
+      "distanceKm": 7.544,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 12,
+      "distanceKm": 72.729,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 11,
+      "distanceKm": 9.88,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670B",
+      "tripCount": 11,
+      "distanceKm": 10.688,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 10,
+      "distanceKm": 15.876,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 10,
+      "distanceKm": 4.5,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 10,
+      "distanceKm": 18.078,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 10,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "高鐵臺中站",
+      "subroute": "6670E",
+      "tripCount": 10,
+      "distanceKm": 52.927,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "九族文化村",
+      "subroute": "6670A",
+      "tripCount": 9,
+      "distanceKm": 10.748,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 9,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 9,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 9,
+      "distanceKm": 6.835,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 9,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 9,
+      "distanceKm": 83.417,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 8,
+      "distanceKm": 4.674,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 8,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 8,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "桃米坑",
+      "subroute": "6670E",
+      "tripCount": 8,
+      "distanceKm": 76.396,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 8,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 8,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 7,
+      "distanceKm": 13.54,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 7,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "九族文化村",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 7,
+      "distanceKm": 10.748,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 7,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670B",
+      "tripCount": 7,
+      "distanceKm": 10.688,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 7,
+      "distanceKm": 10.688,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 7,
+      "distanceKm": 15.876,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 6,
+      "distanceKm": 11.37,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "崎下",
+      "subroute": "6670A",
+      "tripCount": 6,
+      "distanceKm": 3.131,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 6,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "向山行政中心",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 6,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "桃米坑",
+      "subroute": "6670F",
+      "tripCount": 6,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "台中航空站",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670E",
+      "tripCount": 6,
+      "distanceKm": 83.417,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 6,
+      "distanceKm": 75.064,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 5,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 5,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 5,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 5,
+      "distanceKm": 11.173,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "魚池",
+      "subroute": "6670F",
+      "tripCount": 5,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 5,
+      "distanceKm": 1.229,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "桃米坑",
+      "subroute": "6670E",
+      "tripCount": 4,
+      "distanceKm": 1.331,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 4,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 4,
+      "distanceKm": 5.188,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "大雁",
+      "subroute": "6670A",
+      "tripCount": 4,
+      "distanceKm": 3.853,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670F",
+      "tripCount": 4,
+      "distanceKm": 6.835,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670E",
+      "tripCount": 4,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 4,
+      "distanceKm": 12.209,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 3,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 3,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 3,
+      "distanceKm": 5.188,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "向山行政中心",
+      "subroute": "6670F",
+      "tripCount": 3,
+      "distanceKm": 14.411,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670B",
+      "tripCount": 3,
+      "distanceKm": 8.353,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "魚池",
+      "subroute": "6670A",
+      "tripCount": 3,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "魚池",
+      "subroute": "6670D",
+      "tripCount": 3,
+      "distanceKm": 7.442,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 3,
+      "distanceKm": 3.853,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 3,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 3,
+      "distanceKm": 9.88,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 3,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670E",
+      "tripCount": 3,
+      "distanceKm": 1.152,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "大雁",
+      "subroute": "6670E",
+      "tripCount": 3,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月潭",
+      "alightStop": "大雁",
+      "subroute": "6670E",
+      "tripCount": 3,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "桃米坑",
+      "subroute": "6670A",
+      "tripCount": 3,
+      "distanceKm": 6.213,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "台中航空站",
+      "subroute": "6670E",
+      "tripCount": 3,
+      "distanceKm": 76.396,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "大雁",
+      "subroute": "6670E",
+      "tripCount": 3,
+      "distanceKm": 3.168,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 2,
+      "distanceKm": 8.25,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670F",
+      "tripCount": 2,
+      "distanceKm": 8.353,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "桃米坑",
+      "subroute": "6670B",
+      "tripCount": 2,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "大雁",
+      "subroute": "6670B",
+      "tripCount": 2,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 2,
+      "distanceKm": 4.397,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 2,
+      "distanceKm": 9.041,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 2,
+      "distanceKm": 7.442,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "暨南大學",
+      "subroute": "6670A",
+      "tripCount": 2,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "桃米坑",
+      "subroute": "6670D",
+      "tripCount": 2,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670E",
+      "tripCount": 2,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670E",
+      "tripCount": 2,
+      "distanceKm": 10.688,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670E",
+      "tripCount": 2,
+      "distanceKm": 8.353,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 2,
+      "distanceKm": 3.044,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學",
+      "alightStop": "大雁",
+      "subroute": "6670D",
+      "tripCount": 2,
+      "distanceKm": 4.397,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 2,
+      "distanceKm": 1.331,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "牛耳石雕公園",
+      "subroute": "6670E",
+      "tripCount": 2,
+      "distanceKm": 3.667,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "暨南大學",
+      "subroute": "6670D",
+      "tripCount": 1,
+      "distanceKm": 8.25,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670F",
+      "tripCount": 1,
+      "distanceKm": 3.853,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "暨南大學校內",
+      "alightStop": "水社",
+      "subroute": "6670F",
+      "tripCount": 1,
+      "distanceKm": 13.54,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "桃米坑",
+      "alightStop": "日月老茶廠",
+      "subroute": "6670A",
+      "tripCount": 1,
+      "distanceKm": 7.021,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "水社",
+      "alightStop": "大雁",
+      "subroute": "6670F",
+      "tripCount": 1,
+      "distanceKm": 9.041,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "大雁",
+      "subroute": "6670E",
+      "tripCount": 1,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "魚池",
+      "alightStop": "魚池",
+      "subroute": "6670E",
+      "tripCount": 1,
+      "distanceKm": 0,
+      "method": "same-stop-zero-assumption"
+    },
+    {
+      "boardStop": "牛耳石雕公園",
+      "alightStop": "大雁",
+      "subroute": "6670E",
+      "tripCount": 1,
+      "distanceKm": 6.835,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "日月潭",
+      "subroute": "6670E",
+      "tripCount": 1,
+      "distanceKm": 8.005,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "大雁",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 1,
+      "distanceKm": 4.5,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    },
+    {
+      "boardStop": "日月老茶廠",
+      "alightStop": "暨南大學校內",
+      "subroute": "6670E",
+      "tripCount": 1,
+      "distanceKm": 8.353,
+      "method": "OSRM-pair-subroute-unresolved-reverse-copied"
+    }
+  ]
+}
